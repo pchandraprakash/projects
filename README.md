@@ -1,4 +1,4 @@
-# projects
+# academic projects at Illinois Institute of Technology, Chicago
 This repository contains code and documents related to my following academic projects:
 1. Hospital Management System
 2. Hadoop Assignments and Project
