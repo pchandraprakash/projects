@@ -1,0 +1,33 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.model;
+
+import javafx.beans.property.SimpleStringProperty;
+
+/**
+ *
+ * @author Pankaj
+ */
+public class Department
+{
+    private  SimpleStringProperty departmentIdProperty = new SimpleStringProperty();
+    private  SimpleStringProperty departmentNameProperty = new SimpleStringProperty();
+
+    public String getDepartmentIdProperty() {
+        return departmentIdProperty.get();
+    }
+
+    public void setDepartmentIdProperty(String departmentIdProperty) {
+        this.departmentIdProperty.set(departmentIdProperty);
+    }
+    public String getDepartmentNameProperty() {
+        return departmentNameProperty.get();
+    }
+
+    public void setDepartmentNameProperty(String departmentNameProperty) {
+        this.departmentNameProperty.set(departmentNameProperty);
+    }
+}

@@ -1,0 +1,251 @@
+/* <h1>FileName: Admin_confirm_appoinment_tabController.java</h1>
+ * @author	Phanindra Chandraprakash
+ * @version	1.0
+ * @date	12/02/2016
+ * FinalProject: HospitalManagementSystem
+ * Description: This is an FXML controller class which manages other details page.
+ */
+package com.controller.Tab;
+
+import com.model.Appoinment;
+import com.model.Connect_with_database;
+import com.model.Display_message;
+import com.model.Doctor;
+import com.model.Patient;
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ResourceBundle;
+import javafx.beans.value.ChangeListener;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
+
+public class Admin_confirm_appoinment_tabController implements Initializable {
+
+    @FXML
+    private ComboBox<String> cbDoctors;
+    @FXML
+    private TableView appoinmentsTable;
+    @FXML
+    private TableColumn appoinmentIdColumn;
+    @FXML
+    private TableColumn patientNameColumn;
+    @FXML
+    private TableColumn patientDiseaseColumn;
+    @FXML
+    private TableColumn doctorNameColumn;
+    @FXML
+    private TableColumn appoinmentDateColumn;
+    @FXML
+    private TableColumn isConfirmedColumn;
+    @FXML
+    private TextField tfAppoinmentDate;
+    
+     private ObservableList<Doctor> doctorData = FXCollections.observableArrayList();
+     private ObservableList<Appoinment> appoinmentData = FXCollections.observableArrayList();
+   
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        getDoctorData();
+        cbDoctorsInit();
+        getAppoinmentData();
+        initTable();
+       // appoinmentsTable.setOnMouseClicked(new EventHandler<new MouseEvent()>);
+    }    
+    public void cbDoctorsInit() 
+     {
+         for(int i=0;i<doctorData.size();i++)
+         {
+             cbDoctors.getItems().add(doctorData.get(i).getNameProperty());
+         }
+        if(doctorData.size()>0)
+            cbDoctors.setValue(doctorData.get(0).getNameProperty());
+    }
+    private void getDoctorData() 
+    {
+        Connection con=null;
+            try {
+                con=Connect_with_database.createConnection();
+            String sql = "SELECT * FROM fp.pchand_Doctor";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            while (rs.next()) {
+                Doctor doctor = new Doctor();
+                doctor.setIdProperty(rs.getInt(1)+"");
+                doctor.setNameProperty(rs.getString(2));
+                doctor.setDepartmentProperty(rs.getInt(3)+"");
+                doctorData.add(doctor);
+            }
+            }
+            catch (Exception ex) {
+            ex.printStackTrace();
+        }
+            finally
+            {
+                Connect_with_database.closeConnection(con);
+            }
+    }
+    private void getAppoinmentData() 
+    {
+        Connection con=null;
+            try {
+                con=Connect_with_database.createConnection();
+            String sql = "SELECT fp.pchand_appoinments.*,fp.pchand_doctor.doctorname,fp.pchand_patient.patientname,fp.pchand_patient.disease FROM (fp.pchand_appoinments  INNER JOIN fp.pchand_Doctor On fp.pchand_appoinments.doctorid = fp.pchand_doctor.doctorid) INNER JOIN fp.pchand_patient on fp.pchand_appoinments.patientid=fp.pchand_patient.patientid where confirmed=0";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            while (rs.next()) 
+            {
+                Appoinment appoinment=new Appoinment();
+                appoinment.setAppoinmentidProperty(rs.getInt(1)+"");
+                appoinment.setPatientIdProperty(rs.getInt(2)+"");
+                appoinment.setDoctorIdProperty(rs.getInt(3)+"");
+                appoinment.setAppoinmentDateProperty(rs.getString(4));
+                appoinment.setAppoinmentStatusProperty("Not Confirmed");
+                appoinment.setDoctorNameProperty(rs.getString(6));
+                appoinment.setPatientNameProperty(rs.getString(7));
+                appoinment.setPatientDiseaseProperty(rs.getString(8));
+                appoinmentData.add(appoinment);
+            }
+            if(rs!=null)
+                rs.close();
+            }
+            catch (Exception ex) {
+            ex.printStackTrace();
+        }
+            finally
+            {
+                Connect_with_database.closeConnection(con);
+            }
+    }
+    private void initTable() {
+        appoinmentIdColumn.setCellValueFactory(
+                new PropertyValueFactory<>("appoinmentidProperty")
+        );
+        patientNameColumn.setCellValueFactory(
+                new PropertyValueFactory<>("patientNameProperty")
+        );
+        patientDiseaseColumn.setCellValueFactory(
+                new PropertyValueFactory<>("patientDiseaseProperty")
+        );
+        appoinmentDateColumn.setCellValueFactory(
+                new PropertyValueFactory<>("appoinmentDateProperty")
+        );
+        doctorNameColumn.setCellValueFactory(
+                new PropertyValueFactory<>("doctorNameProperty")
+        );
+        isConfirmedColumn.setCellValueFactory(
+                new PropertyValueFactory<>("appoinmentStatusProperty")
+        );
+        
+        
+        FilteredList<Appoinment> filteredData = new FilteredList<>(appoinmentData, p -> true);
+        appoinmentsTable.setItems(filteredData);
+
+       appoinmentsTable.getSelectionModel().selectedItemProperty().addListener(
+                (observable, oldValue, newValue) -> showUserDetails((Appoinment)newValue));
+    }
+    
+    public void showUserDetails(Appoinment value)
+    {
+        if(value!=null)
+        {
+           cbDoctors.setValue(value.getDoctorNameProperty());
+        }
+    }
+    public void handleAllowButton()
+    {
+        
+        if (tfAppoinmentDate.getText().equals("")) {
+            Display_message.showError("Error", "Please enter appoinment date!");
+         return;
+        } 
+        if(appoinmentsTable.getSelectionModel().getSelectedIndex()<0)
+        {
+            Display_message.showError("Error", "Please select the record first!");
+            return;
+        }
+        else {
+            String appoinmentdate = tfAppoinmentDate.getText();
+            String appoinmentId = appoinmentData.get(appoinmentsTable.getSelectionModel().getSelectedIndex()).getAppoinmentidProperty();
+            String add = "update fp.pchand_appoinments set doctorid=?,appoinmenttime=? , confirmed=1 where appoinmentid=?";
+            Connection con=null;
+            try {
+                con=Connect_with_database.createConnection();
+                PreparedStatement ps = con.prepareStatement(add);
+                ps.setInt(1, Integer.parseInt(doctorData.get(cbDoctors.getSelectionModel().getSelectedIndex()).getIdProperty()));
+                ps.setString(2, appoinmentdate);
+                ps.setInt(3, Integer.parseInt(appoinmentId));
+                int res=ps.executeUpdate();
+                if(res>0)
+                {
+                    ps.close();
+                    tfAppoinmentDate.setText("");
+                    appoinmentData.remove(appoinmentsTable.getSelectionModel().getSelectedIndex());
+                    Display_message.showInformation("Sucessful", "Appoinment fixed sucessfully!");
+                }
+                else
+                {
+                    Display_message.showError("Error", "Appoinment Not fixed!");
+                }
+            } catch (SQLException ex) {
+            	ex.printStackTrace();
+                Display_message.showError("Exception", "Ooops, there was an exception!");
+            }
+            finally
+            {
+            Connect_with_database.closeConnection(con);
+            }
+        }
+        
+    }
+    public void handleDeleteButton()
+    {
+        if(appoinmentsTable.getSelectionModel().getSelectedIndex()<0)
+        {
+            Display_message.showError("Error", "Please select the record first!");
+            return;
+        }
+        else {
+            String appoinmentId = appoinmentData.get(appoinmentsTable.getSelectionModel().getSelectedIndex()).getAppoinmentidProperty();
+            String add = "delete appoinments where appoinmentid=?";
+            Connection con=null;
+            try {
+                con=Connect_with_database.createConnection();
+                PreparedStatement ps = con.prepareStatement(add);
+                ps.setInt(1, Integer.parseInt(appoinmentId));
+                int res=ps.executeUpdate();
+                if(res>0)
+                {
+                    ps.close();
+                    tfAppoinmentDate.setText("");
+                    appoinmentData.remove(appoinmentsTable.getSelectionModel().getSelectedIndex());
+                    Display_message.showInformation("Sucessful", "Request Deleted sucessfully!");
+                }
+                else
+                {
+                    Display_message.showError("Error", "Request Not Deleted!");
+                }
+            } catch (SQLException ex) {
+                Display_message.showError("Exception", "Ooops, there was an exception!");
+            }
+            finally
+            {
+            Connect_with_database.closeConnection(con);
+            }
+        }
+        
+    }
+}

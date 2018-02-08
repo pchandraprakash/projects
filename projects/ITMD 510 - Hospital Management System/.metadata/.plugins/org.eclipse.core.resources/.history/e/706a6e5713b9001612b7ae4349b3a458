@@ -1,0 +1,14 @@
+/* <h1>FileName: Appoinment.java</h1>
+ * @author	Phanindra Chandraprakash
+ * @version	1.0
+ * @date	12/02/2016
+ * FinalProject: HospitalManagementSystem
+ * Description: This java file contains getters and setters of Appointment screen.
+ */
+package com.model;
+
+public class Current_user_detail {
+  
+    public static int current_user_id;
+    public static String current_user_role;
+}

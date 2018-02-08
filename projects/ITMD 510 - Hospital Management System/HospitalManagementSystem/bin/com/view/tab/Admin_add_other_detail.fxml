@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.Tab.Admin_add_other_detailController">
+
+    <Separator layoutX="200.0" layoutY="200.0" prefHeight="5.0" prefWidth="370.0" />
+    <Separator layoutX="200.0" layoutY="200.0" orientation="VERTICAL" prefHeight="90.0" prefWidth="5.0" />
+    <Separator layoutX="200.0" layoutY="290.0" prefHeight="5.0" prefWidth="370.0" />
+    <Separator layoutX="570.0" layoutY="200.0" orientation="VERTICAL" prefHeight="90.0" prefWidth="5.0" />
+    <Label text="New Department:" layoutX="215.0" layoutY="220.0" prefWidth="100.0"    />
+        <TextField fx:id="tfDepartmentName" layoutX="325.0" layoutY="215.0"  prefHeight="25.0" prefWidth="123.0" promptText="Department Name" />
+        <Button fx:id="btAddDepartment"  layoutX="470.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleAddDepartmentButton" prefHeight="25.0" prefWidth="83.0" text="Add"/>    
+
+     <Label text="New Disease:" layoutX="215.0" layoutY="250.0" prefWidth="100.0"    />
+        <TextField fx:id="tfDiseaseName" layoutX="325.0" layoutY="250.0"  prefHeight="25.0" prefWidth="123.0" promptText="Disease Name" />
+        <Button fx:id="btAddDisease"  layoutX="470.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleAddDiseaseButton" prefHeight="25.0" prefWidth="83.0" text="Add"/>
+</AnchorPane>

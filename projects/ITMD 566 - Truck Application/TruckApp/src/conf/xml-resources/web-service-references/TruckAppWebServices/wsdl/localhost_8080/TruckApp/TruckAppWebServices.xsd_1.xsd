@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://webservices.truckapp.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservices.truckapp.com/">
+
+<xs:element name="CustomerInfo" type="tns:CustomerInfo"/>
+
+<xs:element name="CustomerInfoResponse" type="tns:CustomerInfoResponse"/>
+
+<xs:element name="EmployeeInfo" type="tns:EmployeeInfo"/>
+
+<xs:element name="EmployeeInfoResponse" type="tns:EmployeeInfoResponse"/>
+
+<xs:element name="Exception" type="tns:Exception"/>
+
+<xs:element name="ExpenseInfo" type="tns:ExpenseInfo"/>
+
+<xs:element name="ExpenseInfoResponse" type="tns:ExpenseInfoResponse"/>
+
+<xs:element name="InvoiceInfo" type="tns:InvoiceInfo"/>
+
+<xs:element name="InvoiceInfoResponse" type="tns:InvoiceInfoResponse"/>
+
+<xs:element name="LocationInfo" type="tns:LocationInfo"/>
+
+<xs:element name="LocationInfoResponse" type="tns:LocationInfoResponse"/>
+
+<xs:element name="OrdersInfo" type="tns:OrdersInfo"/>
+
+<xs:element name="OrdersInfoResponse" type="tns:OrdersInfoResponse"/>
+
+<xs:element name="PaymentInfo" type="tns:PaymentInfo"/>
+
+<xs:element name="PaymentInfoResponse" type="tns:PaymentInfoResponse"/>
+
+<xs:element name="PricingInfo" type="tns:PricingInfo"/>
+
+<xs:element name="PricingInfoResponse" type="tns:PricingInfoResponse"/>
+
+<xs:element name="TransactionInfo" type="tns:TransactionInfo"/>
+
+<xs:element name="TransactionInfoResponse" type="tns:TransactionInfoResponse"/>
+
+<xs:element name="TruckInfo" type="tns:TruckInfo"/>
+
+<xs:element name="TruckInfoResponse" type="tns:TruckInfoResponse"/>
+
+<xs:complexType name="PricingInfo">
+<xs:sequence>
+<xs:element name="PricingAttributes" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PricingInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:Pricing" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Pricing">
+<xs:sequence>
+<xs:element name="priceID" type="xs:string" minOccurs="0"/>
+<xs:element name="locationIDFrom" type="xs:string" minOccurs="0"/>
+<xs:element name="locationIDTo" type="xs:string" minOccurs="0"/>
+<xs:element name="price" type="xs:string" minOccurs="0"/>
+<xs:element name="locationCodeFrom" type="xs:string" minOccurs="0"/>
+<xs:element name="locationCodeTo" type="xs:string" minOccurs="0"/>
+<xs:element name="locationNameFrom" type="xs:string" minOccurs="0"/>
+<xs:element name="locationNameTo" type="xs:string" minOccurs="0"/>
+<xs:element name="CustomerID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PaymentInfo">
+<xs:sequence>
+<xs:element name="PaymentAttributes" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PaymentInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:Payment" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Payment">
+<xs:sequence>
+<xs:element name="PaymentID" type="xs:string" minOccurs="0"/>
+<xs:element name="TransactionID" type="xs:string" minOccurs="0"/>
+<xs:element name="OrderID" type="xs:string" minOccurs="0"/>
+<xs:element name="PaymentMethod" type="xs:string" minOccurs="0"/>
+<xs:element name="PaymentAmount" type="xs:string" minOccurs="0"/>
+<xs:element name="PaymentDate" type="xs:string" minOccurs="0"/>
+<xs:element name="CheckNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="CreditCard" type="xs:string" minOccurs="0"/>
+<xs:element name="CreditCardNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="CardholdersName" type="xs:string" minOccurs="0"/>
+<xs:element name="CreditCardExpDate" type="xs:string" minOccurs="0"/>
+<xs:element name="CreditCardAuthorizationNumber" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="OrdersInfo">
+<xs:sequence>
+<xs:element name="OrdersAttributes" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="OrdersInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:Orders" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Orders">
+<xs:sequence>
+<xs:element name="OrderID" type="xs:string" minOccurs="0"/>
+<xs:element name="OrderDate" type="xs:string" minOccurs="0"/>
+<xs:element name="CustomerID" type="xs:string" minOccurs="0"/>
+<xs:element name="EmployeeID" type="xs:string" minOccurs="0"/>
+<xs:element name="TruckNo" type="xs:string" minOccurs="0"/>
+<xs:element name="IsSpecial" type="xs:string" minOccurs="0"/>
+<xs:element name="PurchaseOrderNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="OrderTotalAmount" type="xs:string" minOccurs="0"/>
+<xs:element name="TransactionID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EmployeeInfo">
+<xs:sequence>
+<xs:element name="EmployeeAttributes" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EmployeeInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:Employee" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Employee">
+<xs:sequence>
+<xs:element name="EmployeeID" type="xs:string" minOccurs="0"/>
+<xs:element name="FirstName" type="xs:string" minOccurs="0"/>
+<xs:element name="LastName" type="xs:string" minOccurs="0"/>
+<xs:element name="Email" type="xs:string" minOccurs="0"/>
+<xs:element name="Extension" type="xs:string" minOccurs="0"/>
+<xs:element name="HomePhone" type="xs:string" minOccurs="0"/>
+<xs:element name="CellPhone" type="xs:string" minOccurs="0"/>
+<xs:element name="JobTitle" type="xs:string" minOccurs="0"/>
+<xs:element name="SocialSecurityNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="DriverLicenseNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="Address" type="xs:string" minOccurs="0"/>
+<xs:element name="City" type="xs:string" minOccurs="0"/>
+<xs:element name="State" type="xs:string" minOccurs="0"/>
+<xs:element name="PostalCode" type="xs:string" minOccurs="0"/>
+<xs:element name="BirthDate" type="xs:string" minOccurs="0"/>
+<xs:element name="DateHired" type="xs:string" minOccurs="0"/>
+<xs:element name="Salary" type="xs:string" minOccurs="0"/>
+<xs:element name="Notes" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ExpenseInfo">
+<xs:sequence>
+<xs:element name="ExpenseAttributes" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ExpenseInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:Expense" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Expense">
+<xs:sequence>
+<xs:element name="ExpenseID" type="xs:string" minOccurs="0"/>
+<xs:element name="EmployeeID" type="xs:string" minOccurs="0"/>
+<xs:element name="ExpenseType" type="xs:string" minOccurs="0"/>
+<xs:element name="PurposeofExpense" type="xs:string" minOccurs="0"/>
+<xs:element name="AmountSpent" type="xs:string" minOccurs="0"/>
+<xs:element name="Description" type="xs:string" minOccurs="0"/>
+<xs:element name="DatePurchased" type="xs:string" minOccurs="0"/>
+<xs:element name="DateSubmitted" type="xs:string" minOccurs="0"/>
+<xs:element name="AdvanceAmount" type="xs:string" minOccurs="0"/>
+<xs:element name="PaymentMethod" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TruckInfo">
+<xs:sequence>
+<xs:element name="TruckAttributes" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TruckInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:Truck" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Truck">
+<xs:sequence>
+<xs:element name="TruckNo" type="xs:string" minOccurs="0"/>
+<xs:element name="Make" type="xs:string" minOccurs="0"/>
+<xs:element name="Year" type="xs:string" minOccurs="0"/>
+<xs:element name="Model" type="xs:string" minOccurs="0"/>
+<xs:element name="LicensePlateNo" type="xs:string" minOccurs="0"/>
+<xs:element name="EmployeeID" type="xs:string" minOccurs="0"/>
+<xs:element name="Color" type="xs:string" minOccurs="0"/>
+<xs:element name="VIN" type="xs:string" minOccurs="0"/>
+<xs:element name="CommentID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LocationInfo">
+<xs:sequence>
+<xs:element name="LocationAttributes" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LocationInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:Location" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Location">
+<xs:sequence>
+<xs:element name="LocationID" type="xs:string" minOccurs="0"/>
+<xs:element name="LocName" type="xs:string" minOccurs="0"/>
+<xs:element name="LocationCode" type="xs:string" minOccurs="0"/>
+<xs:element name="IsActive" type="xs:string" minOccurs="0"/>
+<xs:element name="CustomerID" type="xs:string" minOccurs="0"/>
+<xs:element name="Addressstreet1" type="xs:string" minOccurs="0"/>
+<xs:element name="Addressstreet2" type="xs:string" minOccurs="0"/>
+<xs:element name="City" type="xs:string" minOccurs="0"/>
+<xs:element name="State" type="xs:string" minOccurs="0"/>
+<xs:element name="PostalCode" type="xs:string" minOccurs="0"/>
+<xs:element name="Region" type="xs:string" minOccurs="0"/>
+<xs:element name="Location_contact_name" type="xs:string" minOccurs="0"/>
+<xs:element name="LocPhone" type="xs:string" minOccurs="0"/>
+<xs:element name="LocFaxNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="LocEmail" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InvoiceInfo">
+<xs:sequence>
+<xs:element name="InvoiceAttributes" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InvoiceInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:Invoice" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Invoice">
+<xs:sequence>
+<xs:element name="InvoiceID" type="xs:string" minOccurs="0"/>
+<xs:element name="InvoiceDate" type="xs:string" minOccurs="0"/>
+<xs:element name="DueDate" type="xs:string" minOccurs="0"/>
+<xs:element name="OrderID" type="xs:string" minOccurs="0"/>
+<xs:element name="CustomerID" type="xs:string" minOccurs="0"/>
+<xs:element name="OrderTotalAmount" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CustomerInfo">
+<xs:sequence>
+<xs:element name="CustomerAttributes" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CustomerInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:Customer" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Customer">
+<xs:sequence>
+<xs:element name="CustomerID" type="xs:string" minOccurs="0"/>
+<xs:element name="CustomerTitle" type="xs:string" minOccurs="0"/>
+<xs:element name="BusinessName" type="xs:string" minOccurs="0"/>
+<xs:element name="LocationID" type="xs:string" minOccurs="0"/>
+<xs:element name="BillingAddress" type="xs:string" minOccurs="0"/>
+<xs:element name="City" type="xs:string" minOccurs="0"/>
+<xs:element name="State" type="xs:string" minOccurs="0"/>
+<xs:element name="PostalCode" type="xs:string" minOccurs="0"/>
+<xs:element name="Country" type="xs:string" minOccurs="0"/>
+<xs:element name="PhoneNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="CellNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="OtherNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="FaxNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="EmailAddress" type="xs:string" minOccurs="0"/>
+<xs:element name="CompanyName" type="xs:string" minOccurs="0"/>
+<xs:element name="ContactName" type="xs:string" minOccurs="0"/>
+<xs:element name="AlternateContactName" type="xs:string" minOccurs="0"/>
+<xs:element name="DateEntered" type="xs:string" minOccurs="0"/>
+<xs:element name="CustomerType" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TransactionInfo">
+<xs:sequence>
+<xs:element name="TransactionAttributes" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TransactionInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:Transaction" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Transaction">
+<xs:sequence>
+<xs:element name="TransactionID" type="xs:string" minOccurs="0"/>
+<xs:element name="OrderID" type="xs:string" minOccurs="0"/>
+<xs:element name="PriceID" type="xs:string" minOccurs="0"/>
+<xs:element name="TranxDate" type="xs:string" minOccurs="0"/>
+<xs:element name="TranxDesc" type="xs:string" minOccurs="0"/>
+<xs:element name="TranxAmt" type="xs:string" minOccurs="0"/>
+<xs:element name="Make" type="xs:string" minOccurs="0"/>
+<xs:element name="Model" type="xs:string" minOccurs="0"/>
+<xs:element name="Year" type="xs:string" minOccurs="0"/>
+<xs:element name="EmployeeID" type="xs:string" minOccurs="0"/>
+<xs:element name="TruckNo" type="xs:string" minOccurs="0"/>
+<xs:element name="Discount" type="xs:string" minOccurs="0"/>
+<xs:element name="Quantity" type="xs:string" minOccurs="0"/>
+<xs:element name="UnitPrice" type="xs:string" minOccurs="0"/>
+<xs:element name="DriverPrice" type="xs:string" minOccurs="0"/>
+<xs:element name="VIN" type="xs:string" minOccurs="0"/>
+<xs:element name="RunNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="Special" type="xs:string" minOccurs="0"/>
+<xs:element name="Rate" type="xs:string" minOccurs="0"/>
+<xs:element name="Surcharge" type="xs:string" minOccurs="0"/>
+<xs:element name="Tx_priceID" type="xs:string" minOccurs="0"/>
+<xs:element name="Amount" type="xs:string" minOccurs="0"/>
+<xs:element name="Qty" type="xs:string" minOccurs="0"/>
+<xs:element name="Description" type="xs:string" minOccurs="0"/>
+<xs:element name="Tx_date" type="xs:string" minOccurs="0"/>
+<xs:element name="Tx_car_make" type="xs:string" minOccurs="0"/>
+<xs:element name="Tx_car_model" type="xs:string" minOccurs="0"/>
+<xs:element name="Tx_car_year" type="xs:string" minOccurs="0"/>
+<xs:element name="Tx_car_VIN" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

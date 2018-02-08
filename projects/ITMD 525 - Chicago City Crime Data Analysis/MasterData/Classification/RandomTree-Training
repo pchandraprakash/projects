@@ -1,0 +1,3955 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     CR17filtered-weka.filters.unsupervised.attribute.Remove-R1-3-weka.filters.unsupervised.attribute.Remove-R3-weka.filters.unsupervised.instance.Resample-S1-Z7.0-no-replacement-weka.filters.unsupervised.instance.Resample-S1-Z66.0-no-replacement-weka.filters.unsupervised.attribute.Remove-R1-2,5,7-14,16-19
+Instances:    3366
+Attributes:   4
+              Primary.Type
+              Description
+              Arrest
+              Year
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+Description = DOMESTIC BATTERY SIMPLE : false (299/62)
+Description = FINANCIAL IDENTITY THEFT OVER $ 300 : false (51/1)
+Description = HARASSMENT BY ELECTRONIC MEANS : false (42/0)
+Description = SELL/GIVE/DEL LIQUOR TO MINOR : false (0/0)
+Description = FROM BUILDING : false (139/0)
+Description = OVER $500 : false (194/3)
+Description = TO LAND : true (53/10)
+Description = SIMPLE
+|   Primary.Type = BATTERY : false (203/38)
+|   Primary.Type = DECEPTIVE PRACTICE : false (0/0)
+|   Primary.Type = OTHER OFFENSE : false (0/0)
+|   Primary.Type = LIQUOR LAW VIOLATION : false (0/0)
+|   Primary.Type = THEFT : false (0/0)
+|   Primary.Type = CRIMINAL TRESPASS : false (0/0)
+|   Primary.Type = ASSAULT : false (152/24)
+|   Primary.Type = CRIMINAL DAMAGE : false (0/0)
+|   Primary.Type = BURGLARY : false (0/0)
+|   Primary.Type = OFFENSE INVOLVING CHILDREN : false (0/0)
+|   Primary.Type = CRIM SEXUAL ASSAULT : false (0/0)
+|   Primary.Type = MOTOR VEHICLE THEFT : false (0/0)
+|   Primary.Type = ROBBERY : false (0/0)
+|   Primary.Type = NARCOTICS : false (0/0)
+|   Primary.Type = PROSTITUTION : false (0/0)
+|   Primary.Type = PUBLIC PEACE VIOLATION : false (0/0)
+|   Primary.Type = WEAPONS VIOLATION : false (0/0)
+|   Primary.Type = HOMICIDE : false (0/0)
+|   Primary.Type = INTERFERENCE WITH PUBLIC OFFICER : false (0/0)
+|   Primary.Type = SEX OFFENSE : false (0/0)
+|   Primary.Type = CONCEALED CARRY LICENSE VIOLATION : false (0/0)
+|   Primary.Type = ARSON : false (0/0)
+|   Primary.Type = KIDNAPPING : false (0/0)
+|   Primary.Type = STALKING : false (2/0)
+|   Primary.Type = GAMBLING : false (0/0)
+|   Primary.Type = INTIMIDATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL : false (0/0)
+|   Primary.Type = OBSCENITY : false (0/0)
+|   Primary.Type = HUMAN TRAFFICKING : false (0/0)
+|   Primary.Type = OTHER NARCOTIC VIOLATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL (SUBJECT SPECIFIED) : false (0/0)
+|   Primary.Type = PUBLIC INDECENCY : false (0/0)
+Description = TO VEHICLE
+|   Primary.Type = BATTERY : false (0/0)
+|   Primary.Type = DECEPTIVE PRACTICE : false (0/0)
+|   Primary.Type = OTHER OFFENSE : false (0/0)
+|   Primary.Type = LIQUOR LAW VIOLATION : false (0/0)
+|   Primary.Type = THEFT : false (0/0)
+|   Primary.Type = CRIMINAL TRESPASS : false (9/2)
+|   Primary.Type = ASSAULT : false (0/0)
+|   Primary.Type = CRIMINAL DAMAGE : false (182/6)
+|   Primary.Type = BURGLARY : false (0/0)
+|   Primary.Type = OFFENSE INVOLVING CHILDREN : false (0/0)
+|   Primary.Type = CRIM SEXUAL ASSAULT : false (0/0)
+|   Primary.Type = MOTOR VEHICLE THEFT : false (0/0)
+|   Primary.Type = ROBBERY : false (0/0)
+|   Primary.Type = NARCOTICS : false (0/0)
+|   Primary.Type = PROSTITUTION : false (0/0)
+|   Primary.Type = PUBLIC PEACE VIOLATION : false (0/0)
+|   Primary.Type = WEAPONS VIOLATION : false (0/0)
+|   Primary.Type = HOMICIDE : false (0/0)
+|   Primary.Type = INTERFERENCE WITH PUBLIC OFFICER : false (0/0)
+|   Primary.Type = SEX OFFENSE : false (0/0)
+|   Primary.Type = CONCEALED CARRY LICENSE VIOLATION : false (0/0)
+|   Primary.Type = ARSON : false (0/0)
+|   Primary.Type = KIDNAPPING : false (0/0)
+|   Primary.Type = STALKING : false (0/0)
+|   Primary.Type = GAMBLING : false (0/0)
+|   Primary.Type = INTIMIDATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL : false (0/0)
+|   Primary.Type = OBSCENITY : false (0/0)
+|   Primary.Type = HUMAN TRAFFICKING : false (0/0)
+|   Primary.Type = OTHER NARCOTIC VIOLATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL (SUBJECT SPECIFIED) : false (0/0)
+|   Primary.Type = PUBLIC INDECENCY : false (0/0)
+Description = TELEPHONE THREAT : false (49/2)
+Description = FORCIBLE ENTRY : false (102/1)
+Description = FINANCIAL IDENTITY THEFT $300 AND UNDER : false (10/0)
+Description = OTHER OFFENSE : false (5/0)
+Description = TO PROPERTY : false (189/18)
+Description = $500 AND UNDER : false (282/14)
+Description = POCKET-PICKING : false (31/0)
+Description = COUNTERFEIT CHECK : false (8/2)
+Description = AGGRAVATED: OTHER DANG WEAPON
+|   Primary.Type = BATTERY : false (20/5)
+|   Primary.Type = DECEPTIVE PRACTICE : false (0/0)
+|   Primary.Type = OTHER OFFENSE : false (0/0)
+|   Primary.Type = LIQUOR LAW VIOLATION : false (0/0)
+|   Primary.Type = THEFT : false (0/0)
+|   Primary.Type = CRIMINAL TRESPASS : false (0/0)
+|   Primary.Type = ASSAULT : false (15/3)
+|   Primary.Type = CRIMINAL DAMAGE : false (0/0)
+|   Primary.Type = BURGLARY : false (0/0)
+|   Primary.Type = OFFENSE INVOLVING CHILDREN : false (0/0)
+|   Primary.Type = CRIM SEXUAL ASSAULT : false (0/0)
+|   Primary.Type = MOTOR VEHICLE THEFT : false (0/0)
+|   Primary.Type = ROBBERY : false (0/0)
+|   Primary.Type = NARCOTICS : false (0/0)
+|   Primary.Type = PROSTITUTION : false (0/0)
+|   Primary.Type = PUBLIC PEACE VIOLATION : false (0/0)
+|   Primary.Type = WEAPONS VIOLATION : false (0/0)
+|   Primary.Type = HOMICIDE : false (0/0)
+|   Primary.Type = INTERFERENCE WITH PUBLIC OFFICER : false (0/0)
+|   Primary.Type = SEX OFFENSE : false (0/0)
+|   Primary.Type = CONCEALED CARRY LICENSE VIOLATION : false (0/0)
+|   Primary.Type = ARSON : false (0/0)
+|   Primary.Type = KIDNAPPING : false (0/0)
+|   Primary.Type = STALKING : false (0/0)
+|   Primary.Type = GAMBLING : false (0/0)
+|   Primary.Type = INTIMIDATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL : false (0/0)
+|   Primary.Type = OBSCENITY : false (0/0)
+|   Primary.Type = HUMAN TRAFFICKING : false (0/0)
+|   Primary.Type = OTHER NARCOTIC VIOLATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL (SUBJECT SPECIFIED) : false (0/0)
+|   Primary.Type = PUBLIC INDECENCY : false (0/0)
+Description = AGGRAVATED: OTHER : false (3/1)
+Description = AGG PRO.EMP:KNIFE/CUTTING INST : false (1/0)
+Description = CHILD ABDUCTION : true (1/0)
+Description = COMPUTER FRAUD : false (4/0)
+Description = OTHER VEHICLE OFFENSE : false (18/1)
+Description = AUTOMOBILE : false (139/10)
+Description = OTHER CRIME INVOLVING PROPERTY : false (4/0)
+Description = TO CITY OF CHICAGO PROPERTY : false (6/0)
+Description = STRONGARM - NO WEAPON : false (33/0)
+Description = UNLAWFUL ENTRY : false (63/2)
+Description = HARASSMENT BY TELEPHONE : false (42/0)
+Description = AGGRAVATED: HANDGUN
+|   Primary.Type = BATTERY : false (22/1)
+|   Primary.Type = DECEPTIVE PRACTICE : false (0/0)
+|   Primary.Type = OTHER OFFENSE : false (0/0)
+|   Primary.Type = LIQUOR LAW VIOLATION : false (0/0)
+|   Primary.Type = THEFT : false (0/0)
+|   Primary.Type = CRIMINAL TRESPASS : false (0/0)
+|   Primary.Type = ASSAULT : false (43/9)
+|   Primary.Type = CRIMINAL DAMAGE : false (0/0)
+|   Primary.Type = BURGLARY : false (0/0)
+|   Primary.Type = OFFENSE INVOLVING CHILDREN : false (0/0)
+|   Primary.Type = CRIM SEXUAL ASSAULT : false (0/0)
+|   Primary.Type = MOTOR VEHICLE THEFT : false (0/0)
+|   Primary.Type = ROBBERY : false (0/0)
+|   Primary.Type = NARCOTICS : false (0/0)
+|   Primary.Type = PROSTITUTION : false (0/0)
+|   Primary.Type = PUBLIC PEACE VIOLATION : false (0/0)
+|   Primary.Type = WEAPONS VIOLATION : false (0/0)
+|   Primary.Type = HOMICIDE : false (0/0)
+|   Primary.Type = INTERFERENCE WITH PUBLIC OFFICER : false (0/0)
+|   Primary.Type = SEX OFFENSE : false (0/0)
+|   Primary.Type = CONCEALED CARRY LICENSE VIOLATION : false (0/0)
+|   Primary.Type = ARSON : false (0/0)
+|   Primary.Type = KIDNAPPING : false (0/0)
+|   Primary.Type = STALKING : false (0/0)
+|   Primary.Type = GAMBLING : false (0/0)
+|   Primary.Type = INTIMIDATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL : false (0/0)
+|   Primary.Type = OBSCENITY : false (0/0)
+|   Primary.Type = HUMAN TRAFFICKING : false (0/0)
+|   Primary.Type = OTHER NARCOTIC VIOLATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL (SUBJECT SPECIFIED) : false (0/0)
+|   Primary.Type = PUBLIC INDECENCY : false (0/0)
+Description = ARMED: HANDGUN : false (57/3)
+Description = ILLEGAL USE CASH CARD : false (16/0)
+Description = ENDANGERING LIFE/HEALTH CHILD : true (2/0)
+Description = TRUCK, BUS, MOTOR HOME : false (4/0)
+Description = RETAIL THEFT : true (126/54)
+Description = AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST : false (11/4)
+Description = POSS: AMPHETAMINES : false (0/0)
+Description = POSS: CANNABIS 30GMS OR LESS : true (13/0)
+Description = PAROLE VIOLATION : true (11/0)
+Description = SEX OFFENDER: FAIL TO REGISTER : false (1/0)
+Description = AGGRAVATED:KNIFE/CUTTING INSTR
+|   Primary.Type = BATTERY : false (8/2)
+|   Primary.Type = DECEPTIVE PRACTICE : false (0/0)
+|   Primary.Type = OTHER OFFENSE : false (0/0)
+|   Primary.Type = LIQUOR LAW VIOLATION : false (0/0)
+|   Primary.Type = THEFT : false (0/0)
+|   Primary.Type = CRIMINAL TRESPASS : false (0/0)
+|   Primary.Type = ASSAULT : false (13/3)
+|   Primary.Type = CRIMINAL DAMAGE : false (0/0)
+|   Primary.Type = BURGLARY : false (0/0)
+|   Primary.Type = OFFENSE INVOLVING CHILDREN : false (0/0)
+|   Primary.Type = CRIM SEXUAL ASSAULT : false (0/0)
+|   Primary.Type = MOTOR VEHICLE THEFT : false (0/0)
+|   Primary.Type = ROBBERY : false (0/0)
+|   Primary.Type = NARCOTICS : false (0/0)
+|   Primary.Type = PROSTITUTION : false (0/0)
+|   Primary.Type = PUBLIC PEACE VIOLATION : false (0/0)
+|   Primary.Type = WEAPONS VIOLATION : false (0/0)
+|   Primary.Type = HOMICIDE : false (0/0)
+|   Primary.Type = INTERFERENCE WITH PUBLIC OFFICER : false (0/0)
+|   Primary.Type = SEX OFFENSE : false (0/0)
+|   Primary.Type = CONCEALED CARRY LICENSE VIOLATION : false (0/0)
+|   Primary.Type = ARSON : false (0/0)
+|   Primary.Type = KIDNAPPING : false (0/0)
+|   Primary.Type = STALKING : false (0/0)
+|   Primary.Type = GAMBLING : false (0/0)
+|   Primary.Type = INTIMIDATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL : false (0/0)
+|   Primary.Type = OBSCENITY : false (0/0)
+|   Primary.Type = HUMAN TRAFFICKING : false (0/0)
+|   Primary.Type = OTHER NARCOTIC VIOLATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL (SUBJECT SPECIFIED) : false (0/0)
+|   Primary.Type = PUBLIC INDECENCY : false (0/0)
+Description = FALSE/STOLEN/ALTERED TRP : true (19/7)
+Description = VIOLATE ORDER OF PROTECTION : false (23/8)
+Description = THEFT OF LABOR/SERVICES : false (10/2)
+Description = SOLICIT ON PUBLIC WAY : true (11/0)
+Description = AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON : false (15/3)
+Description = FALSE POLICE REPORT : false (0/0)
+Description = UNLAWFUL USE HANDGUN : false (5/2)
+Description = PREDATORY : false (1/0)
+Description = FRAUD OR CONFIDENCE GAME : false (22/0)
+Description = MANU/DELIVER: HEROIN (WHITE) : true (6/0)
+Description = POSS: HEROIN(WHITE) : true (27/0)
+Description = MANU/DELIVER:CRACK : true (2/0)
+Description = FOUND SUSPECT NARCOTICS : true (8/0)
+Description = VEHICULAR HIJACKING : false (3/0)
+Description = NON-AGGRAVATED : false (13/0)
+Description = MANU/DEL:CANNABIS 10GM OR LESS : true (8/0)
+Description = CRIMINAL DEFACEMENT : false (11/0)
+Description = FIRST DEGREE MURDER : false (9/3)
+Description = CREDIT CARD FRAUD : false (36/0)
+Description = ATTEMPT THEFT : false (3/1)
+Description = UNLAWFUL POSS OF HANDGUN : true (41/5)
+Description = SOLICIT NARCOTICS ON PUBLICWAY : true (3/0)
+Description = ARMED:KNIFE/CUTTING INSTRUMENT : false (6/3)
+Description = POSS: COCAINE : true (2/0)
+Description = POSS: CRACK : true (16/0)
+Description = OBSTRUCTING IDENTIFICATION : true (8/0)
+Description = VEHICLE TITLE/REG OFFENSE : true (17/1)
+Description = AGGRAVATED : false (15/0)
+Description = MANU/DEL:CANNABIS OVER 10 GMS : true (11/0)
+Description = AGGRAVATED PO: OTHER DANG WEAP
+|   Primary.Type = BATTERY : false (2/0)
+|   Primary.Type = DECEPTIVE PRACTICE : false (0/0)
+|   Primary.Type = OTHER OFFENSE : false (0/0)
+|   Primary.Type = LIQUOR LAW VIOLATION : false (0/0)
+|   Primary.Type = THEFT : false (0/0)
+|   Primary.Type = CRIMINAL TRESPASS : false (0/0)
+|   Primary.Type = ASSAULT : false (2/1)
+|   Primary.Type = CRIMINAL DAMAGE : false (0/0)
+|   Primary.Type = BURGLARY : false (0/0)
+|   Primary.Type = OFFENSE INVOLVING CHILDREN : false (0/0)
+|   Primary.Type = CRIM SEXUAL ASSAULT : false (0/0)
+|   Primary.Type = MOTOR VEHICLE THEFT : false (0/0)
+|   Primary.Type = ROBBERY : false (0/0)
+|   Primary.Type = NARCOTICS : false (0/0)
+|   Primary.Type = PROSTITUTION : false (0/0)
+|   Primary.Type = PUBLIC PEACE VIOLATION : false (0/0)
+|   Primary.Type = WEAPONS VIOLATION : false (0/0)
+|   Primary.Type = HOMICIDE : false (0/0)
+|   Primary.Type = INTERFERENCE WITH PUBLIC OFFICER : false (0/0)
+|   Primary.Type = SEX OFFENSE : false (0/0)
+|   Primary.Type = CONCEALED CARRY LICENSE VIOLATION : false (0/0)
+|   Primary.Type = ARSON : false (0/0)
+|   Primary.Type = KIDNAPPING : false (0/0)
+|   Primary.Type = STALKING : false (0/0)
+|   Primary.Type = GAMBLING : false (0/0)
+|   Primary.Type = INTIMIDATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL : false (0/0)
+|   Primary.Type = OBSCENITY : false (0/0)
+|   Primary.Type = HUMAN TRAFFICKING : false (0/0)
+|   Primary.Type = OTHER NARCOTIC VIOLATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL (SUBJECT SPECIFIED) : false (0/0)
+|   Primary.Type = PUBLIC INDECENCY : false (0/0)
+Description = OTHER VIOLATION : false (2/1)
+Description = OTHER : true (1/0)
+Description = MANU/DELIVER: HEROIN(BRN/TAN) : false (0/0)
+Description = GUN OFFENDER: DUTY TO REGISTER : true (4/0)
+Description = UNLAWFUL USE OTHER FIREARM : false (0/0)
+Description = ATTEMPT: ARMED-HANDGUN : false (1/0)
+Description = RECKLESS CONDUCT : true (20/4)
+Description = POSS: SYNTHETIC DRUGS : true (2/0)
+Description = PROHIBITED PLACES : true (1/0)
+Description = ATTEMPT FORCIBLE ENTRY : false (8/0)
+Description = POSS: CANNABIS MORE THAN 30GMS : true (11/0)
+Description = AGGRAVATED VEHICULAR HIJACKING : false (3/1)
+Description = TO STATE SUP LAND : true (4/0)
+Description = SEX OFFENDER: FAIL REG NEW ADD : false (4/0)
+Description = POSS: HALLUCINOGENS : false (0/0)
+Description = PURSE-SNATCHING : false (10/0)
+Description = AGG CRIMINAL SEXUAL ABUSE : false (1/0)
+Description = BY FIRE : false (6/1)
+Description = TO RESIDENCE : false (20/9)
+Description = RESIST/OBSTRUCT/DISARM OFFICER : true (5/0)
+Description = CALL OPERATION : true (1/0)
+Description = CHILD ABUSE : false (14/1)
+Description = THEFT OF LOST/MISLAID PROP : true (1/0)
+Description = BOGUS CHECK : false (3/0)
+Description = OTHER CRIME AGAINST PERSON : false (3/1)
+Description = ATT: AUTOMOBILE : false (7/0)
+Description = AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY : false (5/2)
+Description = UNAUTHORIZED VIDEOTAPING : false (0/0)
+Description = ARMED: OTHER DANGEROUS WEAPON : false (4/0)
+Description = CYCLE, SCOOTER, BIKE NO VIN : false (0/0)
+Description = LICENSE VIOLATION : false (8/0)
+Description = ABUSE/NEGLECT: CARE FACILITY : false (0/0)
+Description = POSS: PCP : true (5/0)
+Description = GUN OFFENDER: ANNUAL REGISTRATION : true (5/0)
+Description = AGGRAVATED FINANCIAL IDENTITY THEFT : false (3/0)
+Description = POSS: BARBITUATES : true (4/0)
+Description = THEFT/RECOVERY: TRUCK,BUS,MHOME : false (0/0)
+Description = HOME INVASION : true (1/0)
+Description = AGG SEX ASSLT OF CHILD FAM MBR : false (1/0)
+Description = AGG PO HANDS NO/MIN INJURY
+|   Primary.Type = BATTERY : true (5/2)
+|   Primary.Type = DECEPTIVE PRACTICE : false (0/0)
+|   Primary.Type = OTHER OFFENSE : false (0/0)
+|   Primary.Type = LIQUOR LAW VIOLATION : false (0/0)
+|   Primary.Type = THEFT : false (0/0)
+|   Primary.Type = CRIMINAL TRESPASS : false (0/0)
+|   Primary.Type = ASSAULT : true (3/0)
+|   Primary.Type = CRIMINAL DAMAGE : false (0/0)
+|   Primary.Type = BURGLARY : false (0/0)
+|   Primary.Type = OFFENSE INVOLVING CHILDREN : false (0/0)
+|   Primary.Type = CRIM SEXUAL ASSAULT : false (0/0)
+|   Primary.Type = MOTOR VEHICLE THEFT : false (0/0)
+|   Primary.Type = ROBBERY : false (0/0)
+|   Primary.Type = NARCOTICS : false (0/0)
+|   Primary.Type = PROSTITUTION : false (0/0)
+|   Primary.Type = PUBLIC PEACE VIOLATION : false (0/0)
+|   Primary.Type = WEAPONS VIOLATION : false (0/0)
+|   Primary.Type = HOMICIDE : false (0/0)
+|   Primary.Type = INTERFERENCE WITH PUBLIC OFFICER : false (0/0)
+|   Primary.Type = SEX OFFENSE : false (0/0)
+|   Primary.Type = CONCEALED CARRY LICENSE VIOLATION : false (0/0)
+|   Primary.Type = ARSON : false (0/0)
+|   Primary.Type = KIDNAPPING : false (0/0)
+|   Primary.Type = STALKING : false (0/0)
+|   Primary.Type = GAMBLING : false (0/0)
+|   Primary.Type = INTIMIDATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL : false (0/0)
+|   Primary.Type = OBSCENITY : false (0/0)
+|   Primary.Type = HUMAN TRAFFICKING : false (0/0)
+|   Primary.Type = OTHER NARCOTIC VIOLATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL (SUBJECT SPECIFIED) : false (0/0)
+|   Primary.Type = PUBLIC INDECENCY : false (0/0)
+Description = ATTEMPT: STRONGARM-NO WEAPON : false (4/0)
+Description = AGG PRO.EMP: HANDGUN : false (0/0)
+Description = THEFT/RECOVERY: AUTOMOBILE : false (14/5)
+Description = CHILD ABDUCTION/STRANGER : false (1/0)
+Description = CYCLE, SCOOTER, BIKE W-VIN : false (1/0)
+Description = GUN OFFENDER: DUTY TO REPORT CHANGE OF INFORMATION : true (1/0)
+Description = PROBATION VIOLATION : true (1/0)
+Description = POSSESSION OF BURGLARY TOOLS : false (0/0)
+Description = ATT CRIM SEXUAL ABUSE : false (0/0)
+Description = PRO EMP HANDS NO/MIN INJURY
+|   Primary.Type = BATTERY : true (13/6)
+|   Primary.Type = DECEPTIVE PRACTICE : false (0/0)
+|   Primary.Type = OTHER OFFENSE : false (0/0)
+|   Primary.Type = LIQUOR LAW VIOLATION : false (0/0)
+|   Primary.Type = THEFT : false (0/0)
+|   Primary.Type = CRIMINAL TRESPASS : false (0/0)
+|   Primary.Type = ASSAULT : false (10/2)
+|   Primary.Type = CRIMINAL DAMAGE : false (0/0)
+|   Primary.Type = BURGLARY : false (0/0)
+|   Primary.Type = OFFENSE INVOLVING CHILDREN : false (0/0)
+|   Primary.Type = CRIM SEXUAL ASSAULT : false (0/0)
+|   Primary.Type = MOTOR VEHICLE THEFT : false (0/0)
+|   Primary.Type = ROBBERY : false (0/0)
+|   Primary.Type = NARCOTICS : false (0/0)
+|   Primary.Type = PROSTITUTION : false (0/0)
+|   Primary.Type = PUBLIC PEACE VIOLATION : false (0/0)
+|   Primary.Type = WEAPONS VIOLATION : false (0/0)
+|   Primary.Type = HOMICIDE : false (0/0)
+|   Primary.Type = INTERFERENCE WITH PUBLIC OFFICER : false (0/0)
+|   Primary.Type = SEX OFFENSE : false (0/0)
+|   Primary.Type = CONCEALED CARRY LICENSE VIOLATION : false (0/0)
+|   Primary.Type = ARSON : false (0/0)
+|   Primary.Type = KIDNAPPING : false (0/0)
+|   Primary.Type = STALKING : false (0/0)
+|   Primary.Type = GAMBLING : false (0/0)
+|   Primary.Type = INTIMIDATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL : false (0/0)
+|   Primary.Type = OBSCENITY : false (0/0)
+|   Primary.Type = HUMAN TRAFFICKING : false (0/0)
+|   Primary.Type = OTHER NARCOTIC VIOLATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL (SUBJECT SPECIFIED) : false (0/0)
+|   Primary.Type = PUBLIC INDECENCY : false (0/0)
+Description = UNLAWFUL RESTRAINT : false (0/0)
+Description = ARSONIST: FAIL TO REGISTER NEW ADDRESS : false (0/0)
+Description = AGG CRIM SEX ABUSE FAM MEMBER : false (0/0)
+Description = OBSTRUCTING JUSTICE : true (1/0)
+Description = GAME/DICE : true (1/0)
+Description = OTHER WEAPONS VIOLATION : false (2/1)
+Description = POSS: HEROIN(BRN/TAN) : true (2/0)
+Description = INTIMIDATION : false (1/0)
+Description = RECKLESS FIREARM DISCHARGE : true (1/0)
+Description = FORGERY : false (3/0)
+Description = COUNTERFEITING DOCUMENT : false (11/3)
+Description = AGGRAVATED OF A CHILD : false (0/0)
+Description = OTHER PROSTITUTION OFFENSE : false (0/0)
+Description = AGGRAVATED DOMESTIC BATTERY: OTHER FIREARM : false (0/0)
+Description = POSS FIREARM/AMMO:NO FOID CARD : true (1/0)
+Description = LIQUOR LICENSE VIOLATION : true (4/0)
+Description = OBSTRUCTING SERVICE : false (2/1)
+Description = POSSESSION OF DRUG EQUIPMENT : true (1/0)
+Description = ATTEMPT: ARMED-OTHER DANG WEAP : false (4/0)
+Description = ATTEMPT - FINANCIAL IDENTITY THEFT : false (9/0)
+Description = CRIMINAL SEXUAL ABUSE : false (6/2)
+Description = FINAN EXPLOIT-ELDERLY/DISABLED : false (0/0)
+Description = ATTEMPT NON-AGGRAVATED : false (2/0)
+Description = POSS: METHAMPHETAMINES : false (0/0)
+Description = AGG: HANDS/FIST/FEET NO/MINOR INJURY : false (2/0)
+Description = ATTEMPT: ARMED-OTHER FIREARM : false (0/0)
+Description = ARMED: OTHER FIREARM : false (0/0)
+Description = TO STATE SUP PROP : false (4/1)
+Description = PUBLIC INDECENCY : true (2/0)
+Description = SEX ASSLT OF CHILD BY FAM MBR : false (0/0)
+Description = SEXUAL EXPLOITATION OF A CHILD : false (1/0)
+Description = AGGRAVATED: OTHER FIREARM : false (1/0)
+Description = AGG: HANDS/FIST/FEET SERIOUS INJURY : false (1/0)
+Description = AGGRAVATED OF A SENIOR CITIZEN : false (0/0)
+Description = UNLAWFUL USE OF A COMPUTER : false (1/0)
+Description = VIOLENT OFFENDER: DUTY TO REGISTER : false (0/0)
+Description = CHILD PORNOGRAPHY : false (2/0)
+Description = LOST PASSPORT : false (0/0)
+Description = VIOLENT OFFENDER: ANNUAL REGISTRATION : false (2/1)
+Description = VIOLATION OF CIVIL NO CONTACT ORDER : false (0/0)
+Description = ATTEMPT: ARMED-KNIFE/CUT INSTR : false (0/0)
+Description = TAMPER WITH MOTOR VEHICLE : false (0/0)
+Description = TO AIRPORT : false (0/0)
+Description = VIO BAIL BOND: DOM VIOLENCE : true (1/0)
+Description = FORFEIT PROPERTY : false (0/0)
+Description = UNLAWFUL POSS OTHER FIREARM : true (1/0)
+Description = THEFT BY LESSEE,MOTOR VEH : false (3/0)
+Description = AGG PO HANDS ETC SERIOUS INJ : false (0/0)
+Description = CHILD ABANDONMENT : false (0/0)
+Description = ANIMAL ABUSE/NEGLECT : false (2/0)
+Description = ARMED WHILE UNDER THE INFLUENCE : false (0/0)
+Description = BOMB THREAT : false (3/0)
+Description = INDECENT SOLICITATION/CHILD : false (0/0)
+Description = UNLAWFUL INTERFERE/VISITATION : false (1/0)
+Description = ATT AGG CRIMINAL SEXUAL ABUSE : false (0/0)
+Description = ARSON THREAT : false (2/0)
+Description = UNLAWFUL USE OTHER DANG WEAPON : true (1/0)
+Description = OBSCENE MATTER : false (0/0)
+Description = AGG PRO.EMP: OTHER DANG WEAPON : false (2/1)
+Description = MANU/DELIVER:BARBITUATES : true (1/0)
+Description = POSSESSION: SYNTHETIC MARIJUANA : true (1/0)
+Description = ATTEMPT: CYCLE, SCOOTER, BIKE W-VIN : false (0/0)
+Description = ARSONIST: DUTY TO REGISTER : false (0/0)
+Description = PEEPING TOM : false (1/0)
+Description = ATTEMPT ARSON : false (0/0)
+Description = SOLICIT FOR BUSINESS : false (0/0)
+Description = EMBEZZLEMENT : false (0/0)
+Description = CRIM SEX ABUSE BY FAM MEMBER : false (0/0)
+Description = UNLAWFUL POSS AMMUNITION : true (1/0)
+Description = AGGRAVATED PO: HANDGUN : true (1/0)
+Description = BOARD PLANE WITH WEAPON : true (2/0)
+Description = MOB ACTION : false (0/0)
+Description = SECOND DEGREE MURDER : false (0/0)
+Description = MANU/DELIVER: METHAMPHETAMINES : false (0/0)
+Description = ATTEMPT: AGGRAVATED : false (1/0)
+Description = SEX RELATION IN FAMILY : false (1/0)
+Description = OBSCENE TELEPHONE CALLS : false (3/0)
+Description = DELIVERY CONTAINER THEFT : false (0/0)
+Description = BY EXPLOSIVE : false (0/0)
+Description = CAB OPERATION : false (0/0)
+Description = MANU/DELIVER:PCP : true (1/0)
+Description = AGGRAVATED: KNIFE/CUT INSTR : false (0/0)
+Description = AGGRAVATED PO: KNIFE/CUT INSTR : false (0/0)
+Description = FORCIBLE DETENTION : false (0/0)
+Description = AGGRAVATED PO:KNIFE/CUT INSTR : false (1/0)
+Description = OF UNBORN CHILD : false (0/0)
+Description = INTERFERENCE JUDICIAL PROCESS : false (0/0)
+Description = PAY TV SERVICE OFFENSES : false (2/0)
+Description = UNLAWFUL USE OF RECORDED SOUND : false (0/0)
+Description = AGGRAVATED OF A UNBORN CHILD : false (0/0)
+Description = ALTER/FORGE PRESCRIPTION : true (1/0)
+Description = POS: HYPODERMIC NEEDLE : false (0/0)
+Description = FALSE FIRE ALARM : false (0/0)
+Description = UNLAWFUL USE/SALE AIR RIFLE : false (0/0)
+Description = EXTORTION : false (3/0)
+Description = EAVESDROPPING : false (1/0)
+Description = CONTRIBUTE DELINQUENCY OF A CHILD : false (1/0)
+Description = THEFT BY LESSEE,NON-VEH : false (0/0)
+Description = DECEPTIVE COLLECTION PRACTICES : false (0/0)
+Description = VIOLATION OF STALKING NO CONTACT ORDER : false (1/0)
+Description = POS: PORNOGRAPHIC PRINT : false (0/0)
+Description = MONEY LAUNDERING : false (0/0)
+Description = MANU/DELIVER:COCAINE : false (0/0)
+Description = FROM COIN-OP MACHINE/DEVICE : false (0/0)
+Description = AGGRAVATED DOMESTIC BATTERY: HANDGUN : false (0/0)
+Description = GAME/CARDS : false (0/0)
+Description = DELIVER CANNABIS TO PERSON <18 : false (0/0)
+Description = COMMERCIAL SEX ACTS : false (0/0)
+Description = TO FIRE FIGHT.APP.EQUIP : false (1/0)
+Description = CONTRIBUTE CRIM DELINQUENCY JUVENILE : false (0/0)
+Description = VIOLENT OFFENDER: FAIL TO REGISTER NEW ADDRESS : false (0/0)
+Description = FOUND PASSPORT : false (0/0)
+Description = AGG PRO EMP HANDS SERIOUS INJ : false (0/0)
+Description = SOLICIT FOR PROSTITUTE : false (0/0)
+Description = INTOXICATING COMPOUNDS : false (0/0)
+Description = DEL CONT SUBS TO PERSON <18 : false (0/0)
+Description = MANU/DELIVER: HALLUCINOGEN : false (0/0)
+Description = KIDNAPPING : false (0/0)
+Description = CANNABIS PLANT : false (0/0)
+Description = VIOLATION GPS MONITORING DEVICE : false (0/0)
+Description = POSS: HEROIN(BLACK TAR) : false (0/0)
+Description = INSTITUTIONAL VANDALISM : false (1/0)
+Description = CRIMINAL DRUG CONSPIRACY : false (0/0)
+Description = OBSCENITY : false (0/0)
+Description = ILLEGAL POSSESSION BY MINOR : false (0/0)
+Description = INVOLUNTARY SERVITUDE : false (1/0)
+Description = VIOLATION OF SMOKING BAN : false (0/0)
+Description = NOTIFICATION OF CIVIL NO CONTACT ORDER : false (0/0)
+Description = ILLEGAL CONSUMPTION BY MINOR : false (0/0)
+Description = SALE/DIST OBSCENE MAT TO MINOR : false (0/0)
+Description = ATTEMPT POSSESSION NARCOTICS : false (0/0)
+Description = ATTEMPT AGG: HANDGUN : false (0/0)
+Description = INDECENT SOLICITATION/ADULT : false (0/0)
+Description = UNLAWFUL SALE HANDGUN : true (1/0)
+Description = CYBERSTALKING : false (0/0)
+Description = STOLEN PROP: BUY/RECEIVE/POS. : false (0/0)
+Description = PUBLIC DEMONSTRATION : false (0/0)
+Description = SEX OFFENDER: PROHIBITED ZONE : false (0/0)
+Description = MANU/POSS. W/INTENT TO DELIVER: SYNTHETIC MARIJUANA : false (0/0)
+Description = IMPERSONATION : false (0/0)
+Description = ILLEGAL POSSESSION CASH CARD : false (0/0)
+Description = LICENSED PREMISE : false (0/0)
+Description = MANU/DELIVER:SYNTHETIC DRUGS : false (0/0)
+Description = ARSONIST: ANNUAL REGISTRATION : false (0/0)
+Description = HARBOR RUNAWAY : false (0/0)
+Description = INTERFERE W/ HIGHER EDUCATION : false (1/0)
+Description = ATTEMPT AGG: OTHER : false (0/0)
+Description = SALE/DEL DRUG PARAPHERNALIA : false (0/0)
+Description = BRIBERY : false (0/0)
+Description = POS: EXPLOSIVE/INCENDIARY DEV : false (0/0)
+Description = RECKLESS HOMICIDE : false (0/0)
+Description = SOLICIT OFF PUBLIC WAY : false (0/0)
+Description = LIBRARY VANDALISM : false (1/0)
+Description = MANU/DELIVER:AMPHETAMINES : false (0/0)
+Description = POSS: LOOK-ALIKE DRUGS : false (0/0)
+Description = KEEP PLACE OF PROSTITUTION : false (0/0)
+Description = ESCAPE : false (0/0)
+
+Size of the tree : 535
+
+Time taken to build model: 0 seconds
+
+=== Predictions on training set ===
+
+inst#,actual,predicted,error,prediction
+1,1:false,1:false,,1
+2,1:false,1:false,,0.959
+3,1:false,1:false,,0.905
+4,1:false,1:false,,0.95
+5,1:false,1:false,,0.967
+6,1:false,1:false,,0.905
+7,1:false,1:false,,0.95
+8,1:false,1:false,,1
+9,2:true,1:false,+,0.842
+10,1:false,1:false,,0.967
+11,1:false,1:false,,0.947
+12,2:true,2:true,,0.878
+13,1:false,1:false,,0.793
+14,1:false,1:false,,1
+15,1:false,1:false,,0.813
+16,1:false,1:false,,0.928
+17,1:false,1:false,,0.905
+18,1:false,1:false,,0.8
+19,1:false,1:false,,1
+20,1:false,1:false,,0.99
+21,2:true,1:false,+,0.842
+22,1:false,1:false,,1
+23,2:true,1:false,+,0.55
+24,2:true,1:false,+,0.842
+25,2:true,2:true,,0.941
+26,1:false,1:false,,0.928
+27,1:false,1:false,,1
+28,1:false,1:false,,0.813
+29,2:true,2:true,,0.571
+30,2:true,2:true,,1
+31,1:false,1:false,,0.791
+32,1:false,1:false,,0.905
+33,2:true,2:true,,1
+34,1:false,1:false,,0.905
+35,2:true,1:false,+,0.842
+36,1:false,1:false,,0.928
+37,1:false,1:false,,0.985
+38,2:true,2:true,,0.571
+39,1:false,1:false,,0.842
+40,1:false,1:false,,0.842
+41,1:false,1:false,,1
+42,1:false,1:false,,0.95
+43,1:false,1:false,,1
+44,1:false,1:false,,0.75
+45,1:false,1:false,,1
+46,1:false,1:false,,0.842
+47,1:false,1:false,,0.793
+48,2:true,1:false,+,0.842
+49,1:false,1:false,,0.985
+50,1:false,1:false,,0.842
+51,1:false,1:false,,1
+52,2:true,2:true,,1
+53,1:false,1:false,,0.8
+54,1:false,1:false,,0.842
+55,1:false,1:false,,0.959
+56,2:true,1:false,+,0.95
+57,1:false,1:false,,1
+58,1:false,1:false,,0.99
+59,1:false,1:false,,0.905
+60,2:true,2:true,,0.878
+61,1:false,1:false,,0.791
+62,1:false,1:false,,0.99
+63,1:false,1:false,,1
+64,1:false,1:false,,1
+65,1:false,1:false,,0.985
+66,1:false,1:false,,0.944
+67,1:false,1:false,,1
+68,2:true,2:true,,0.811
+69,1:false,1:false,,1
+70,1:false,1:false,,0.842
+71,1:false,2:true,+,0.8
+72,1:false,1:false,,0.98
+73,1:false,1:false,,0.793
+74,1:false,1:false,,1
+75,1:false,1:false,,0.955
+76,2:true,2:true,,1
+77,1:false,1:false,,0.967
+78,1:false,1:false,,0.985
+79,1:false,1:false,,1
+80,1:false,1:false,,0.99
+81,2:true,2:true,,0.8
+82,1:false,1:false,,0.985
+83,1:false,1:false,,0.8
+84,1:false,1:false,,1
+85,1:false,1:false,,0.968
+86,1:false,1:false,,0.968
+87,1:false,1:false,,0.813
+88,1:false,1:false,,1
+89,1:false,1:false,,0.813
+90,1:false,1:false,,0.813
+91,1:false,1:false,,0.905
+92,1:false,1:false,,0.985
+93,2:true,2:true,,0.811
+94,2:true,1:false,+,0.842
+95,1:false,1:false,,0.667
+96,1:false,1:false,,0.842
+97,1:false,1:false,,0.967
+98,1:false,1:false,,0.967
+99,2:true,2:true,,0.878
+100,1:false,1:false,,0.793
+101,1:false,1:false,,0.905
+102,2:true,1:false,+,0.793
+103,1:false,1:false,,1
+104,2:true,2:true,,1
+105,2:true,1:false,+,0.842
+106,1:false,1:false,,0.905
+107,1:false,1:false,,1
+108,1:false,1:false,,0.967
+109,1:false,1:false,,0.98
+110,1:false,1:false,,0.95
+111,1:false,1:false,,1
+112,1:false,1:false,,0.985
+113,1:false,1:false,,0.842
+114,1:false,1:false,,0.8
+115,1:false,1:false,,0.842
+116,1:false,1:false,,0.791
+117,1:false,1:false,,0.95
+118,1:false,1:false,,0.99
+119,1:false,1:false,,0.95
+120,2:true,2:true,,1
+121,1:false,1:false,,0.95
+122,1:false,1:false,,0.95
+123,1:false,1:false,,0.95
+124,2:true,1:false,+,0.813
+125,1:false,1:false,,0.813
+126,1:false,1:false,,0.985
+127,1:false,1:false,,1
+128,1:false,1:false,,0.95
+129,1:false,1:false,,0.968
+130,1:false,1:false,,0.928
+131,1:false,2:true,+,0.632
+132,1:false,1:false,,0.793
+133,1:false,1:false,,0.95
+134,1:false,1:false,,0.652
+135,1:false,1:false,,0.842
+136,2:true,2:true,,0.811
+137,1:false,1:false,,0.75
+138,1:false,1:false,,0.95
+139,2:true,2:true,,0.538
+140,1:false,1:false,,0.95
+141,1:false,1:false,,0.967
+142,1:false,1:false,,0.98
+143,2:true,1:false,+,0.793
+144,1:false,1:false,,0.95
+145,1:false,1:false,,0.95
+146,1:false,1:false,,1
+147,1:false,1:false,,0.98
+148,1:false,2:true,+,0.538
+149,2:true,2:true,,0.941
+150,1:false,1:false,,0.99
+151,1:false,1:false,,1
+152,1:false,1:false,,0.95
+153,1:false,1:false,,0.793
+154,1:false,1:false,,0.842
+155,2:true,2:true,,0.571
+156,1:false,1:false,,1
+157,2:true,2:true,,1
+158,1:false,1:false,,0.793
+159,1:false,1:false,,0.905
+160,2:true,1:false,+,0.842
+161,1:false,1:false,,0.985
+162,2:true,1:false,+,0.643
+163,1:false,1:false,,0.905
+164,1:false,1:false,,0.985
+165,1:false,1:false,,0.667
+166,1:false,1:false,,0.905
+167,1:false,1:false,,0.95
+168,1:false,1:false,,0.968
+169,1:false,1:false,,0.947
+170,2:true,1:false,+,0.793
+171,1:false,1:false,,0.985
+172,1:false,1:false,,0.968
+173,1:false,1:false,,0.944
+174,1:false,1:false,,1
+175,1:false,1:false,,1
+176,1:false,2:true,+,0.571
+177,1:false,1:false,,0.813
+178,1:false,1:false,,0.905
+179,1:false,1:false,,0.985
+180,1:false,1:false,,1
+181,1:false,1:false,,1
+182,1:false,1:false,,0.99
+183,1:false,1:false,,0.967
+184,2:true,2:true,,0.632
+185,1:false,1:false,,0.813
+186,1:false,1:false,,0.791
+187,1:false,1:false,,0.928
+188,1:false,1:false,,0.928
+189,1:false,1:false,,0.791
+190,1:false,1:false,,0.985
+191,2:true,1:false,+,0.968
+192,1:false,1:false,,0.98
+193,1:false,1:false,,0.99
+194,1:false,1:false,,0.793
+195,1:false,1:false,,0.968
+196,1:false,1:false,,1
+197,1:false,1:false,,0.793
+198,2:true,1:false,+,0.769
+199,1:false,1:false,,0.928
+200,1:false,1:false,,0.968
+201,1:false,1:false,,0.985
+202,2:true,2:true,,1
+203,1:false,1:false,,0.947
+204,1:false,1:false,,0.928
+205,1:false,1:false,,0.985
+206,1:false,1:false,,0.959
+207,1:false,1:false,,0.905
+208,2:true,2:true,,1
+209,1:false,1:false,,0.95
+210,1:false,1:false,,1
+211,1:false,1:false,,0.793
+212,2:true,2:true,,0.811
+213,1:false,1:false,,0.968
+214,1:false,1:false,,0.99
+215,1:false,1:false,,1
+216,1:false,1:false,,1
+217,1:false,1:false,,0.967
+218,1:false,1:false,,0.928
+219,1:false,1:false,,0.813
+220,1:false,1:false,,0.769
+221,1:false,1:false,,1
+222,1:false,1:false,,1
+223,1:false,1:false,,0.905
+224,1:false,1:false,,0.968
+225,1:false,1:false,,0.985
+226,1:false,1:false,,1
+227,1:false,1:false,,0.959
+228,1:false,1:false,,0.813
+229,2:true,2:true,,0.538
+230,1:false,1:false,,0.99
+231,1:false,1:false,,0.793
+232,1:false,1:false,,0.75
+233,1:false,1:false,,0.793
+234,2:true,2:true,,0.811
+235,1:false,1:false,,0.99
+236,1:false,1:false,,0.95
+237,1:false,1:false,,0.95
+238,1:false,1:false,,0.947
+239,2:true,2:true,,0.571
+240,1:false,1:false,,0.99
+241,1:false,1:false,,0.99
+242,1:false,1:false,,1
+243,1:false,1:false,,0.95
+244,1:false,1:false,,0.95
+245,1:false,1:false,,0.95
+246,1:false,1:false,,0.813
+247,1:false,1:false,,1
+248,1:false,1:false,,0.727
+249,1:false,1:false,,1
+250,1:false,1:false,,0.95
+251,1:false,1:false,,0.793
+252,1:false,1:false,,0.99
+253,1:false,1:false,,0.793
+254,2:true,2:true,,0.941
+255,2:true,1:false,+,0.813
+256,2:true,2:true,,1
+257,1:false,1:false,,0.652
+258,1:false,1:false,,0.667
+259,1:false,1:false,,0.99
+260,2:true,1:false,+,0.793
+261,1:false,1:false,,0.967
+262,2:true,2:true,,0.571
+263,1:false,1:false,,0.95
+264,1:false,1:false,,1
+265,1:false,1:false,,0.905
+266,1:false,1:false,,0.929
+267,1:false,1:false,,0.967
+268,2:true,2:true,,1
+269,1:false,1:false,,0.905
+270,1:false,1:false,,1
+271,1:false,1:false,,0.905
+272,1:false,1:false,,0.944
+273,1:false,1:false,,0.813
+274,1:false,1:false,,0.95
+275,1:false,1:false,,0.99
+276,1:false,1:false,,0.793
+277,1:false,1:false,,0.95
+278,1:false,1:false,,0.793
+279,1:false,1:false,,1
+280,1:false,1:false,,0.95
+281,1:false,1:false,,1
+282,1:false,1:false,,0.793
+283,1:false,1:false,,0.813
+284,2:true,2:true,,1
+285,1:false,1:false,,0.793
+286,1:false,1:false,,1
+287,1:false,1:false,,1
+288,2:true,2:true,,1
+289,1:false,1:false,,0.842
+290,2:true,2:true,,1
+291,1:false,1:false,,1
+292,1:false,1:false,,1
+293,1:false,1:false,,0.813
+294,1:false,1:false,,0.905
+295,2:true,2:true,,0.571
+296,1:false,1:false,,1
+297,1:false,1:false,,0.833
+298,1:false,1:false,,0.813
+299,1:false,1:false,,0.95
+300,2:true,2:true,,0.571
+301,1:false,1:false,,0.967
+302,1:false,1:false,,0.98
+303,1:false,1:false,,0.95
+304,1:false,1:false,,0.944
+305,1:false,1:false,,0.98
+306,2:true,1:false,+,0.99
+307,1:false,1:false,,0.985
+308,2:true,2:true,,0.811
+309,1:false,1:false,,0.813
+310,1:false,1:false,,0.793
+311,1:false,1:false,,0.98
+312,1:false,1:false,,0.95
+313,2:true,1:false,+,0.813
+314,1:false,2:true,+,0.571
+315,1:false,1:false,,0.905
+316,1:false,1:false,,0.967
+317,1:false,1:false,,0.967
+318,1:false,1:false,,1
+319,2:true,2:true,,1
+320,1:false,1:false,,0.793
+321,1:false,1:false,,0.985
+322,1:false,1:false,,0.793
+323,1:false,1:false,,0.985
+324,2:true,2:true,,0.941
+325,1:false,1:false,,0.75
+326,1:false,1:false,,0.959
+327,1:false,1:false,,0.813
+328,1:false,1:false,,0.905
+329,2:true,2:true,,0.571
+330,1:false,1:false,,0.95
+331,1:false,1:false,,0.905
+332,1:false,1:false,,0.967
+333,1:false,1:false,,0.842
+334,1:false,1:false,,0.968
+335,1:false,1:false,,0.928
+336,2:true,2:true,,0.6
+337,1:false,1:false,,1
+338,1:false,1:false,,0.8
+339,1:false,1:false,,0.95
+340,1:false,1:false,,1
+341,2:true,2:true,,0.571
+342,1:false,1:false,,0.968
+343,1:false,1:false,,0.793
+344,1:false,1:false,,0.793
+345,1:false,1:false,,1
+346,1:false,1:false,,0.967
+347,1:false,1:false,,0.95
+348,1:false,1:false,,0.75
+349,1:false,1:false,,0.968
+350,1:false,1:false,,0.842
+351,1:false,1:false,,0.905
+352,1:false,1:false,,0.967
+353,1:false,1:false,,1
+354,1:false,2:true,+,0.571
+355,1:false,1:false,,1
+356,1:false,1:false,,0.905
+357,1:false,1:false,,0.793
+358,1:false,1:false,,0.95
+359,1:false,1:false,,0.967
+360,1:false,1:false,,0.793
+361,1:false,1:false,,0.98
+362,1:false,1:false,,0.967
+363,2:true,1:false,+,0.793
+364,2:true,2:true,,0.878
+365,1:false,1:false,,1
+366,1:false,1:false,,0.95
+367,1:false,1:false,,0.5
+368,1:false,1:false,,0.905
+369,1:false,1:false,,0.652
+370,1:false,1:false,,0.967
+371,1:false,1:false,,0.985
+372,2:true,1:false,+,0.905
+373,1:false,1:false,,1
+374,1:false,1:false,,0.6
+375,1:false,1:false,,1
+376,1:false,1:false,,0.8
+377,1:false,1:false,,0.905
+378,1:false,1:false,,0.928
+379,1:false,1:false,,1
+380,1:false,1:false,,0.99
+381,1:false,1:false,,1
+382,1:false,1:false,,0.813
+383,1:false,1:false,,1
+384,1:false,1:false,,0.985
+385,1:false,2:true,+,0.8
+386,1:false,1:false,,0.944
+387,1:false,1:false,,0.95
+388,1:false,1:false,,0.793
+389,2:true,1:false,+,0.813
+390,1:false,1:false,,0.905
+391,1:false,1:false,,1
+392,1:false,1:false,,0.95
+393,2:true,2:true,,0.941
+394,2:true,1:false,+,0.842
+395,2:true,2:true,,0.571
+396,1:false,1:false,,0.793
+397,2:true,2:true,,1
+398,1:false,1:false,,0.98
+399,2:true,2:true,,1
+400,2:true,2:true,,0.571
+401,2:true,1:false,+,0.793
+402,2:true,1:false,+,0.928
+403,1:false,1:false,,1
+404,1:false,1:false,,0.842
+405,2:true,2:true,,1
+406,1:false,1:false,,0.793
+407,1:false,1:false,,0.985
+408,2:true,2:true,,1
+409,2:true,2:true,,0.632
+410,1:false,1:false,,1
+411,1:false,1:false,,0.967
+412,1:false,1:false,,1
+413,1:false,1:false,,0.842
+414,1:false,1:false,,0.95
+415,1:false,1:false,,1
+416,1:false,1:false,,0.842
+417,1:false,1:false,,0.98
+418,1:false,1:false,,0.842
+419,1:false,1:false,,0.955
+420,1:false,1:false,,0.813
+421,2:true,2:true,,0.941
+422,1:false,1:false,,1
+423,1:false,1:false,,0.813
+424,1:false,1:false,,0.928
+425,1:false,1:false,,1
+426,1:false,1:false,,0.99
+427,1:false,1:false,,0.967
+428,1:false,1:false,,1
+429,1:false,1:false,,0.813
+430,2:true,1:false,+,0.95
+431,1:false,1:false,,0.99
+432,1:false,1:false,,0.967
+433,1:false,1:false,,0.5
+434,1:false,1:false,,1
+435,1:false,1:false,,0.842
+436,1:false,1:false,,0.95
+437,1:false,1:false,,1
+438,1:false,1:false,,1
+439,1:false,1:false,,0.985
+440,1:false,1:false,,0.813
+441,2:true,2:true,,0.571
+442,1:false,1:false,,0.793
+443,1:false,1:false,,0.793
+444,1:false,1:false,,1
+445,1:false,1:false,,0.813
+446,1:false,1:false,,0.967
+447,1:false,1:false,,0.967
+448,1:false,1:false,,0.95
+449,1:false,1:false,,0.842
+450,1:false,1:false,,1
+451,1:false,1:false,,1
+452,1:false,1:false,,0.905
+453,1:false,1:false,,0.928
+454,1:false,1:false,,0.985
+455,1:false,1:false,,1
+456,1:false,1:false,,1
+457,1:false,1:false,,0.8
+458,1:false,1:false,,1
+459,2:true,1:false,+,0.985
+460,1:false,1:false,,1
+461,2:true,2:true,,1
+462,1:false,1:false,,0.905
+463,1:false,1:false,,0.985
+464,1:false,1:false,,0.985
+465,1:false,1:false,,0.813
+466,1:false,1:false,,0.793
+467,1:false,1:false,,1
+468,1:false,1:false,,0.75
+469,2:true,1:false,+,0.793
+470,1:false,1:false,,0.985
+471,1:false,1:false,,0.985
+472,1:false,1:false,,0.928
+473,2:true,2:true,,0.8
+474,1:false,1:false,,1
+475,1:false,1:false,,0.842
+476,1:false,1:false,,0.95
+477,2:true,2:true,,0.811
+478,1:false,1:false,,1
+479,1:false,1:false,,0.928
+480,1:false,1:false,,0.95
+481,2:true,2:true,,1
+482,2:true,2:true,,0.571
+483,2:true,2:true,,0.811
+484,2:true,2:true,,0.571
+485,1:false,1:false,,0.928
+486,1:false,1:false,,0.905
+487,1:false,1:false,,0.98
+488,1:false,1:false,,0.95
+489,1:false,1:false,,1
+490,1:false,1:false,,0.813
+491,2:true,1:false,+,0.8
+492,1:false,1:false,,0.955
+493,1:false,1:false,,0.99
+494,1:false,1:false,,0.985
+495,1:false,1:false,,0.905
+496,1:false,1:false,,0.98
+497,2:true,2:true,,1
+498,1:false,1:false,,0.928
+499,1:false,1:false,,0.967
+500,1:false,1:false,,0.985
+501,2:true,2:true,,1
+502,2:true,1:false,+,0.5
+503,1:false,1:false,,1
+504,1:false,1:false,,0.959
+505,1:false,1:false,,0.95
+506,1:false,1:false,,0.813
+507,1:false,1:false,,0.95
+508,2:true,2:true,,1
+509,2:true,1:false,+,0.667
+510,1:false,1:false,,0.75
+511,1:false,1:false,,0.95
+512,1:false,1:false,,0.99
+513,2:true,2:true,,0.571
+514,1:false,1:false,,1
+515,1:false,1:false,,0.947
+516,2:true,2:true,,1
+517,1:false,1:false,,0.793
+518,1:false,1:false,,0.55
+519,1:false,1:false,,1
+520,1:false,1:false,,0.929
+521,1:false,1:false,,0.769
+522,1:false,1:false,,0.985
+523,1:false,1:false,,1
+524,1:false,1:false,,0.99
+525,1:false,1:false,,0.842
+526,2:true,1:false,+,0.55
+527,1:false,1:false,,0.813
+528,1:false,1:false,,0.793
+529,1:false,1:false,,0.967
+530,1:false,1:false,,0.842
+531,1:false,1:false,,0.905
+532,1:false,2:true,+,0.571
+533,1:false,1:false,,0.95
+534,1:false,1:false,,0.793
+535,1:false,1:false,,0.793
+536,1:false,1:false,,0.778
+537,1:false,1:false,,0.967
+538,1:false,1:false,,0.793
+539,1:false,1:false,,0.968
+540,1:false,1:false,,0.842
+541,2:true,1:false,+,0.905
+542,1:false,1:false,,1
+543,1:false,1:false,,0.968
+544,1:false,1:false,,0.99
+545,1:false,1:false,,0.643
+546,2:true,2:true,,1
+547,1:false,1:false,,0.95
+548,1:false,1:false,,0.793
+549,1:false,1:false,,1
+550,2:true,2:true,,0.571
+551,2:true,1:false,+,0.793
+552,2:true,2:true,,0.878
+553,1:false,1:false,,0.95
+554,1:false,1:false,,0.985
+555,2:true,1:false,+,0.813
+556,1:false,1:false,,0.967
+557,1:false,1:false,,0.928
+558,1:false,1:false,,1
+559,1:false,1:false,,0.727
+560,1:false,1:false,,1
+561,1:false,1:false,,0.985
+562,1:false,1:false,,0.793
+563,1:false,2:true,+,0.538
+564,1:false,1:false,,0.842
+565,1:false,1:false,,1
+566,2:true,2:true,,0.811
+567,1:false,1:false,,0.967
+568,1:false,1:false,,0.842
+569,2:true,2:true,,1
+570,1:false,1:false,,0.793
+571,2:true,2:true,,1
+572,1:false,2:true,+,0.811
+573,1:false,1:false,,0.929
+574,1:false,1:false,,1
+575,1:false,1:false,,0.928
+576,1:false,1:false,,0.95
+577,1:false,1:false,,0.842
+578,1:false,1:false,,0.967
+579,1:false,1:false,,0.842
+580,1:false,1:false,,0.967
+581,1:false,1:false,,1
+582,1:false,1:false,,0.813
+583,1:false,1:false,,0.95
+584,2:true,2:true,,1
+585,1:false,1:false,,0.95
+586,1:false,1:false,,0.968
+587,2:true,2:true,,0.8
+588,2:true,2:true,,0.571
+589,1:false,2:true,+,0.571
+590,1:false,1:false,,0.967
+591,2:true,1:false,+,0.905
+592,1:false,1:false,,0.99
+593,1:false,1:false,,0.95
+594,1:false,1:false,,0.8
+595,1:false,2:true,+,0.878
+596,2:true,2:true,,1
+597,2:true,1:false,+,0.813
+598,1:false,1:false,,0.985
+599,1:false,1:false,,0.813
+600,1:false,1:false,,0.967
+601,1:false,1:false,,0.8
+602,1:false,1:false,,0.95
+603,1:false,1:false,,0.793
+604,1:false,1:false,,1
+605,1:false,1:false,,0.813
+606,1:false,1:false,,0.95
+607,1:false,1:false,,0.928
+608,1:false,2:true,+,0.571
+609,1:false,1:false,,0.967
+610,1:false,1:false,,0.95
+611,1:false,1:false,,0.968
+612,1:false,1:false,,0.929
+613,1:false,1:false,,0.95
+614,1:false,1:false,,0.947
+615,1:false,1:false,,0.813
+616,1:false,1:false,,0.955
+617,1:false,1:false,,0.99
+618,1:false,1:false,,0.928
+619,1:false,1:false,,0.98
+620,1:false,1:false,,0.905
+621,1:false,1:false,,1
+622,1:false,1:false,,0.967
+623,2:true,1:false,+,0.8
+624,2:true,2:true,,0.878
+625,1:false,1:false,,0.959
+626,1:false,1:false,,0.967
+627,1:false,1:false,,0.95
+628,1:false,1:false,,0.842
+629,1:false,1:false,,1
+630,1:false,1:false,,0.95
+631,1:false,1:false,,0.8
+632,1:false,1:false,,1
+633,2:true,2:true,,0.811
+634,1:false,1:false,,1
+635,1:false,2:true,+,0.571
+636,1:false,1:false,,0.967
+637,1:false,1:false,,0.793
+638,1:false,1:false,,0.955
+639,2:true,2:true,,1
+640,1:false,1:false,,1
+641,1:false,1:false,,1
+642,1:false,1:false,,0.985
+643,1:false,2:true,+,0.571
+644,2:true,2:true,,1
+645,1:false,1:false,,1
+646,1:false,1:false,,0.928
+647,1:false,1:false,,0.813
+648,2:true,2:true,,0.632
+649,1:false,2:true,+,0.571
+650,2:true,1:false,+,0.793
+651,1:false,1:false,,0.5
+652,1:false,1:false,,0.967
+653,1:false,1:false,,0.793
+654,1:false,1:false,,0.985
+655,1:false,1:false,,0.985
+656,1:false,1:false,,0.813
+657,1:false,1:false,,0.95
+658,1:false,1:false,,0.967
+659,1:false,1:false,,0.95
+660,1:false,1:false,,0.968
+661,1:false,1:false,,0.793
+662,1:false,1:false,,0.842
+663,1:false,1:false,,0.99
+664,1:false,1:false,,0.813
+665,1:false,1:false,,0.959
+666,1:false,1:false,,0.98
+667,1:false,1:false,,0.967
+668,1:false,1:false,,1
+669,1:false,1:false,,0.98
+670,1:false,1:false,,1
+671,2:true,1:false,+,0.95
+672,1:false,1:false,,0.95
+673,1:false,1:false,,1
+674,1:false,1:false,,0.95
+675,1:false,2:true,+,0.571
+676,1:false,1:false,,0.985
+677,2:true,2:true,,1
+678,1:false,1:false,,1
+679,1:false,1:false,,0.813
+680,2:true,2:true,,1
+681,1:false,1:false,,0.959
+682,1:false,1:false,,0.813
+683,1:false,1:false,,0.928
+684,1:false,1:false,,1
+685,1:false,1:false,,0.842
+686,1:false,1:false,,1
+687,1:false,1:false,,1
+688,2:true,1:false,+,0.5
+689,2:true,2:true,,0.571
+690,1:false,1:false,,0.793
+691,1:false,1:false,,0.967
+692,1:false,1:false,,1
+693,1:false,1:false,,0.928
+694,1:false,1:false,,1
+695,1:false,1:false,,1
+696,1:false,2:true,+,0.941
+697,1:false,1:false,,0.947
+698,1:false,1:false,,1
+699,1:false,1:false,,0.928
+700,1:false,2:true,+,0.571
+701,2:true,1:false,+,0.842
+702,1:false,1:false,,0.985
+703,1:false,1:false,,0.636
+704,2:true,2:true,,0.538
+705,2:true,1:false,+,0.813
+706,1:false,1:false,,1
+707,1:false,1:false,,0.968
+708,1:false,1:false,,1
+709,1:false,1:false,,0.985
+710,1:false,1:false,,0.8
+711,1:false,1:false,,0.985
+712,1:false,1:false,,0.985
+713,2:true,2:true,,0.538
+714,1:false,1:false,,0.947
+715,1:false,1:false,,0.905
+716,1:false,1:false,,0.793
+717,1:false,1:false,,0.967
+718,1:false,1:false,,0.928
+719,2:true,1:false,+,0.793
+720,1:false,1:false,,0.842
+721,2:true,2:true,,1
+722,1:false,1:false,,0.967
+723,1:false,1:false,,0.905
+724,1:false,1:false,,0.967
+725,2:true,2:true,,0.878
+726,1:false,1:false,,0.75
+727,1:false,1:false,,0.793
+728,1:false,1:false,,0.968
+729,1:false,1:false,,0.95
+730,1:false,1:false,,0.793
+731,1:false,1:false,,0.98
+732,1:false,1:false,,0.95
+733,1:false,1:false,,0.928
+734,1:false,1:false,,0.99
+735,1:false,1:false,,1
+736,1:false,1:false,,0.905
+737,1:false,1:false,,0.643
+738,2:true,2:true,,0.811
+739,1:false,1:false,,1
+740,1:false,1:false,,0.928
+741,1:false,1:false,,0.8
+742,1:false,1:false,,0.985
+743,2:true,1:false,+,0.905
+744,1:false,1:false,,0.905
+745,1:false,1:false,,0.95
+746,1:false,1:false,,1
+747,1:false,1:false,,1
+748,1:false,1:false,,1
+749,1:false,1:false,,0.95
+750,1:false,2:true,+,0.571
+751,1:false,1:false,,0.842
+752,2:true,2:true,,0.941
+753,2:true,2:true,,0.571
+754,1:false,1:false,,0.985
+755,1:false,1:false,,0.55
+756,1:false,1:false,,0.947
+757,1:false,1:false,,1
+758,1:false,1:false,,0.813
+759,1:false,1:false,,0.95
+760,1:false,1:false,,0.8
+761,1:false,1:false,,0.99
+762,1:false,1:false,,0.905
+763,1:false,1:false,,0.959
+764,2:true,1:false,+,0.813
+765,1:false,1:false,,0.769
+766,2:true,1:false,+,0.793
+767,2:true,1:false,+,0.793
+768,1:false,1:false,,0.842
+769,1:false,1:false,,0.95
+770,1:false,1:false,,0.75
+771,1:false,1:false,,1
+772,1:false,1:false,,0.842
+773,1:false,1:false,,1
+774,1:false,1:false,,0.959
+775,1:false,1:false,,0.985
+776,2:true,2:true,,1
+777,1:false,2:true,+,0.571
+778,1:false,1:false,,0.793
+779,1:false,1:false,,0.928
+780,1:false,1:false,,0.793
+781,1:false,1:false,,0.813
+782,1:false,1:false,,0.985
+783,1:false,1:false,,0.967
+784,1:false,1:false,,0.959
+785,1:false,1:false,,1
+786,1:false,1:false,,0.967
+787,1:false,1:false,,0.928
+788,1:false,1:false,,0.905
+789,1:false,1:false,,0.813
+790,1:false,1:false,,0.947
+791,1:false,1:false,,0.95
+792,1:false,1:false,,0.985
+793,1:false,1:false,,0.967
+794,2:true,2:true,,1
+795,1:false,1:false,,0.99
+796,1:false,1:false,,0.905
+797,1:false,1:false,,0.793
+798,2:true,2:true,,1
+799,1:false,1:false,,1
+800,1:false,1:false,,0.652
+801,1:false,1:false,,0.99
+802,1:false,1:false,,0.652
+803,1:false,1:false,,1
+804,1:false,1:false,,0.99
+805,1:false,1:false,,1
+806,1:false,1:false,,0.95
+807,1:false,1:false,,0.791
+808,1:false,1:false,,0.813
+809,1:false,1:false,,0.813
+810,2:true,1:false,+,0.643
+811,1:false,1:false,,1
+812,1:false,1:false,,1
+813,1:false,1:false,,0.959
+814,1:false,1:false,,0.793
+815,1:false,1:false,,0.842
+816,1:false,1:false,,1
+817,1:false,1:false,,1
+818,1:false,1:false,,0.905
+819,2:true,2:true,,1
+820,1:false,1:false,,0.905
+821,1:false,1:false,,0.793
+822,1:false,1:false,,0.99
+823,2:true,2:true,,1
+824,2:true,2:true,,1
+825,1:false,2:true,+,0.571
+826,1:false,1:false,,0.967
+827,1:false,1:false,,0.813
+828,1:false,1:false,,0.95
+829,1:false,1:false,,0.813
+830,1:false,1:false,,0.95
+831,2:true,2:true,,0.878
+832,1:false,1:false,,0.967
+833,1:false,1:false,,0.813
+834,1:false,1:false,,1
+835,1:false,1:false,,1
+836,1:false,1:false,,0.75
+837,2:true,2:true,,0.811
+838,1:false,1:false,,0.791
+839,2:true,1:false,+,0.813
+840,1:false,1:false,,0.968
+841,2:true,2:true,,0.811
+842,1:false,1:false,,0.985
+843,2:true,2:true,,0.571
+844,1:false,1:false,,0.842
+845,1:false,1:false,,1
+846,1:false,1:false,,0.95
+847,2:true,2:true,,0.811
+848,1:false,1:false,,0.928
+849,1:false,1:false,,0.95
+850,2:true,2:true,,0.571
+851,1:false,1:false,,0.985
+852,1:false,1:false,,0.636
+853,1:false,1:false,,0.928
+854,1:false,1:false,,0.95
+855,1:false,1:false,,0.793
+856,2:true,2:true,,0.571
+857,2:true,2:true,,0.811
+858,2:true,2:true,,1
+859,1:false,1:false,,0.905
+860,2:true,2:true,,1
+861,1:false,1:false,,0.905
+862,2:true,2:true,,1
+863,1:false,1:false,,0.95
+864,2:true,2:true,,1
+865,2:true,1:false,+,0.5
+866,1:false,1:false,,0.905
+867,1:false,1:false,,0.928
+868,1:false,1:false,,0.842
+869,1:false,1:false,,1
+870,1:false,1:false,,1
+871,1:false,1:false,,0.905
+872,1:false,1:false,,0.947
+873,2:true,2:true,,0.571
+874,1:false,1:false,,0.793
+875,2:true,1:false,+,0.652
+876,2:true,2:true,,1
+877,1:false,1:false,,0.791
+878,1:false,1:false,,0.75
+879,1:false,1:false,,0.95
+880,1:false,1:false,,0.985
+881,1:false,1:false,,0.985
+882,1:false,1:false,,0.842
+883,2:true,2:true,,0.878
+884,1:false,1:false,,0.95
+885,1:false,1:false,,0.928
+886,1:false,1:false,,1
+887,1:false,1:false,,0.985
+888,2:true,2:true,,0.571
+889,1:false,1:false,,0.928
+890,1:false,1:false,,1
+891,1:false,1:false,,0.95
+892,1:false,1:false,,0.905
+893,1:false,1:false,,1
+894,1:false,1:false,,0.967
+895,1:false,1:false,,1
+896,1:false,1:false,,1
+897,1:false,1:false,,0.99
+898,2:true,2:true,,1
+899,1:false,1:false,,0.985
+900,2:true,1:false,+,0.842
+901,1:false,1:false,,0.842
+902,1:false,1:false,,0.813
+903,1:false,1:false,,0.967
+904,2:true,2:true,,1
+905,1:false,1:false,,0.985
+906,1:false,1:false,,0.985
+907,2:true,2:true,,0.632
+908,1:false,1:false,,1
+909,1:false,1:false,,1
+910,1:false,1:false,,0.955
+911,2:true,2:true,,0.811
+912,1:false,1:false,,0.842
+913,1:false,1:false,,0.947
+914,1:false,1:false,,0.985
+915,1:false,1:false,,0.813
+916,1:false,1:false,,0.905
+917,2:true,2:true,,0.878
+918,1:false,2:true,+,0.811
+919,1:false,1:false,,1
+920,1:false,1:false,,1
+921,2:true,2:true,,0.878
+922,1:false,1:false,,0.813
+923,1:false,1:false,,0.95
+924,1:false,1:false,,0.813
+925,2:true,2:true,,1
+926,1:false,1:false,,0.813
+927,1:false,1:false,,0.95
+928,1:false,1:false,,0.985
+929,1:false,1:false,,1
+930,1:false,1:false,,0.95
+931,1:false,1:false,,0.813
+932,1:false,1:false,,0.928
+933,1:false,1:false,,0.652
+934,1:false,1:false,,1
+935,1:false,1:false,,0.95
+936,1:false,1:false,,0.813
+937,1:false,1:false,,0.968
+938,1:false,1:false,,0.842
+939,1:false,1:false,,1
+940,1:false,1:false,,0.842
+941,1:false,1:false,,0.8
+942,1:false,1:false,,0.928
+943,1:false,1:false,,0.968
+944,2:true,2:true,,1
+945,1:false,1:false,,0.98
+946,1:false,1:false,,1
+947,1:false,1:false,,0.842
+948,2:true,2:true,,0.811
+949,1:false,1:false,,0.95
+950,1:false,1:false,,1
+951,2:true,2:true,,1
+952,1:false,1:false,,1
+953,1:false,1:false,,0.95
+954,1:false,1:false,,1
+955,1:false,1:false,,1
+956,1:false,1:false,,0.842
+957,1:false,1:false,,0.967
+958,1:false,1:false,,0.842
+959,1:false,1:false,,0.95
+960,1:false,1:false,,0.967
+961,1:false,1:false,,0.928
+962,1:false,1:false,,0.95
+963,1:false,1:false,,0.905
+964,1:false,1:false,,1
+965,1:false,1:false,,0.944
+966,2:true,2:true,,0.571
+967,1:false,2:true,+,0.571
+968,1:false,1:false,,0.905
+969,1:false,1:false,,1
+970,1:false,1:false,,0.985
+971,1:false,1:false,,1
+972,1:false,1:false,,0.95
+973,1:false,1:false,,0.928
+974,1:false,1:false,,0.905
+975,1:false,1:false,,0.95
+976,1:false,1:false,,0.959
+977,1:false,1:false,,0.813
+978,1:false,1:false,,0.55
+979,1:false,1:false,,0.928
+980,1:false,1:false,,0.968
+981,1:false,1:false,,0.95
+982,2:true,1:false,+,0.905
+983,1:false,1:false,,0.99
+984,2:true,2:true,,0.878
+985,1:false,1:false,,1
+986,2:true,2:true,,0.878
+987,2:true,1:false,+,0.928
+988,2:true,1:false,+,0.667
+989,2:true,2:true,,0.8
+990,1:false,1:false,,0.793
+991,1:false,1:false,,0.959
+992,1:false,1:false,,0.793
+993,1:false,1:false,,0.968
+994,1:false,1:false,,0.905
+995,1:false,1:false,,0.793
+996,1:false,1:false,,0.75
+997,1:false,1:false,,0.842
+998,2:true,2:true,,1
+999,1:false,1:false,,0.842
+1000,1:false,1:false,,0.928
+1001,1:false,1:false,,0.947
+1002,1:false,1:false,,0.99
+1003,1:false,2:true,+,0.6
+1004,1:false,1:false,,0.6
+1005,1:false,1:false,,0.967
+1006,1:false,1:false,,0.905
+1007,1:false,2:true,+,0.571
+1008,1:false,1:false,,0.985
+1009,1:false,1:false,,1
+1010,1:false,1:false,,0.967
+1011,1:false,1:false,,0.95
+1012,1:false,1:false,,0.95
+1013,1:false,1:false,,0.813
+1014,1:false,2:true,+,0.8
+1015,1:false,1:false,,0.793
+1016,2:true,2:true,,0.571
+1017,2:true,2:true,,0.878
+1018,2:true,2:true,,0.811
+1019,2:true,1:false,+,0.813
+1020,2:true,1:false,+,0.793
+1021,1:false,1:false,,0.985
+1022,1:false,1:false,,0.813
+1023,1:false,1:false,,0.793
+1024,1:false,1:false,,1
+1025,2:true,1:false,+,0.636
+1026,1:false,1:false,,0.813
+1027,1:false,1:false,,0.842
+1028,1:false,1:false,,1
+1029,2:true,2:true,,0.811
+1030,1:false,1:false,,0.905
+1031,1:false,1:false,,0.95
+1032,1:false,1:false,,0.967
+1033,1:false,1:false,,0.959
+1034,1:false,1:false,,0.95
+1035,1:false,1:false,,0.947
+1036,1:false,1:false,,0.928
+1037,2:true,1:false,+,0.793
+1038,1:false,1:false,,0.813
+1039,1:false,1:false,,0.99
+1040,2:true,2:true,,0.538
+1041,1:false,1:false,,0.985
+1042,1:false,1:false,,0.652
+1043,1:false,1:false,,0.967
+1044,1:false,1:false,,1
+1045,1:false,1:false,,0.643
+1046,1:false,1:false,,0.8
+1047,1:false,1:false,,0.905
+1048,1:false,1:false,,0.928
+1049,2:true,1:false,+,0.813
+1050,1:false,1:false,,0.8
+1051,1:false,1:false,,0.98
+1052,1:false,1:false,,1
+1053,2:true,1:false,+,0.905
+1054,1:false,1:false,,0.842
+1055,1:false,1:false,,0.95
+1056,1:false,1:false,,0.99
+1057,2:true,2:true,,1
+1058,1:false,1:false,,0.967
+1059,2:true,2:true,,1
+1060,1:false,1:false,,1
+1061,1:false,1:false,,0.99
+1062,2:true,2:true,,1
+1063,1:false,1:false,,1
+1064,2:true,2:true,,1
+1065,1:false,1:false,,0.813
+1066,1:false,1:false,,0.813
+1067,1:false,1:false,,0.985
+1068,1:false,1:false,,0.985
+1069,1:false,1:false,,1
+1070,1:false,1:false,,0.842
+1071,1:false,1:false,,0.95
+1072,2:true,1:false,+,0.791
+1073,1:false,1:false,,0.95
+1074,1:false,1:false,,0.813
+1075,1:false,1:false,,1
+1076,1:false,1:false,,1
+1077,1:false,1:false,,0.928
+1078,2:true,1:false,+,0.793
+1079,1:false,1:false,,0.643
+1080,1:false,1:false,,0.98
+1081,1:false,1:false,,1
+1082,1:false,1:false,,0.928
+1083,1:false,1:false,,0.8
+1084,1:false,1:false,,0.928
+1085,2:true,2:true,,1
+1086,1:false,1:false,,0.793
+1087,1:false,1:false,,0.8
+1088,1:false,1:false,,1
+1089,1:false,1:false,,1
+1090,1:false,1:false,,0.905
+1091,1:false,1:false,,0.905
+1092,2:true,1:false,+,0.667
+1093,1:false,1:false,,0.985
+1094,1:false,1:false,,1
+1095,1:false,1:false,,1
+1096,2:true,2:true,,1
+1097,1:false,1:false,,0.947
+1098,1:false,2:true,+,0.632
+1099,1:false,1:false,,0.905
+1100,1:false,1:false,,0.99
+1101,2:true,1:false,+,0.813
+1102,1:false,1:false,,0.842
+1103,1:false,2:true,+,0.632
+1104,1:false,1:false,,1
+1105,2:true,2:true,,1
+1106,1:false,1:false,,0.793
+1107,1:false,1:false,,0.793
+1108,1:false,1:false,,1
+1109,2:true,2:true,,1
+1110,1:false,1:false,,0.95
+1111,2:true,1:false,+,0.813
+1112,1:false,2:true,+,0.571
+1113,2:true,2:true,,0.878
+1114,1:false,1:false,,1
+1115,1:false,1:false,,0.95
+1116,1:false,1:false,,0.8
+1117,1:false,1:false,,0.95
+1118,1:false,1:false,,0.667
+1119,1:false,1:false,,0.968
+1120,1:false,1:false,,0.967
+1121,1:false,1:false,,1
+1122,1:false,1:false,,0.99
+1123,1:false,1:false,,0.968
+1124,1:false,1:false,,1
+1125,2:true,2:true,,0.811
+1126,1:false,1:false,,0.985
+1127,1:false,1:false,,0.905
+1128,1:false,1:false,,0.967
+1129,1:false,1:false,,0.842
+1130,1:false,1:false,,0.791
+1131,1:false,1:false,,1
+1132,2:true,2:true,,0.941
+1133,1:false,1:false,,0.98
+1134,1:false,1:false,,0.95
+1135,1:false,1:false,,1
+1136,2:true,2:true,,1
+1137,1:false,1:false,,0.968
+1138,1:false,1:false,,1
+1139,1:false,1:false,,0.95
+1140,1:false,1:false,,0.842
+1141,1:false,1:false,,0.813
+1142,1:false,1:false,,1
+1143,2:true,2:true,,0.878
+1144,1:false,1:false,,0.793
+1145,1:false,1:false,,0.99
+1146,1:false,1:false,,0.99
+1147,1:false,1:false,,0.968
+1148,2:true,1:false,+,0.967
+1149,1:false,1:false,,0.793
+1150,1:false,1:false,,0.99
+1151,2:true,2:true,,0.8
+1152,1:false,1:false,,0.985
+1153,1:false,1:false,,0.967
+1154,2:true,2:true,,1
+1155,1:false,1:false,,0.967
+1156,2:true,2:true,,0.878
+1157,1:false,1:false,,0.968
+1158,2:true,1:false,+,0.8
+1159,2:true,2:true,,0.811
+1160,1:false,1:false,,0.959
+1161,1:false,1:false,,0.967
+1162,1:false,1:false,,0.968
+1163,1:false,1:false,,0.967
+1164,1:false,1:false,,0.944
+1165,1:false,1:false,,0.842
+1166,2:true,1:false,+,0.928
+1167,2:true,1:false,+,0.793
+1168,1:false,1:false,,0.793
+1169,1:false,2:true,+,0.632
+1170,2:true,2:true,,0.878
+1171,2:true,2:true,,0.811
+1172,1:false,2:true,+,0.6
+1173,1:false,1:false,,0.985
+1174,1:false,1:false,,0.6
+1175,2:true,1:false,+,0.791
+1176,1:false,1:false,,0.636
+1177,2:true,1:false,+,0.793
+1178,1:false,1:false,,0.99
+1179,1:false,1:false,,1
+1180,1:false,1:false,,0.793
+1181,1:false,1:false,,1
+1182,2:true,1:false,+,0.667
+1183,2:true,2:true,,1
+1184,1:false,1:false,,0.968
+1185,2:true,2:true,,0.878
+1186,1:false,1:false,,0.985
+1187,1:false,1:false,,0.813
+1188,2:true,2:true,,0.941
+1189,1:false,1:false,,0.667
+1190,1:false,1:false,,0.813
+1191,1:false,1:false,,0.959
+1192,1:false,1:false,,0.905
+1193,1:false,1:false,,0.928
+1194,1:false,1:false,,0.967
+1195,2:true,2:true,,1
+1196,1:false,1:false,,1
+1197,1:false,1:false,,0.905
+1198,2:true,2:true,,1
+1199,1:false,1:false,,0.813
+1200,1:false,1:false,,0.967
+1201,1:false,1:false,,0.643
+1202,1:false,1:false,,0.905
+1203,1:false,1:false,,1
+1204,1:false,1:false,,1
+1205,1:false,1:false,,0.985
+1206,2:true,2:true,,1
+1207,2:true,1:false,+,0.793
+1208,1:false,1:false,,0.55
+1209,1:false,1:false,,0.968
+1210,1:false,1:false,,0.791
+1211,1:false,1:false,,0.944
+1212,1:false,1:false,,0.905
+1213,1:false,1:false,,0.967
+1214,1:false,1:false,,0.985
+1215,1:false,1:false,,0.813
+1216,2:true,1:false,+,0.928
+1217,1:false,1:false,,1
+1218,1:false,2:true,+,0.571
+1219,1:false,1:false,,0.8
+1220,1:false,1:false,,0.985
+1221,1:false,1:false,,0.967
+1222,1:false,1:false,,0.967
+1223,1:false,1:false,,0.95
+1224,1:false,1:false,,0.968
+1225,1:false,1:false,,0.75
+1226,1:false,1:false,,0.959
+1227,1:false,1:false,,0.905
+1228,1:false,1:false,,0.793
+1229,2:true,2:true,,1
+1230,1:false,1:false,,0.95
+1231,1:false,1:false,,1
+1232,1:false,1:false,,1
+1233,2:true,2:true,,0.571
+1234,1:false,1:false,,0.842
+1235,2:true,1:false,+,0.55
+1236,1:false,1:false,,0.985
+1237,1:false,2:true,+,0.538
+1238,1:false,1:false,,0.667
+1239,1:false,1:false,,0.929
+1240,2:true,2:true,,1
+1241,1:false,1:false,,1
+1242,2:true,2:true,,1
+1243,1:false,1:false,,0.905
+1244,1:false,1:false,,0.793
+1245,2:true,2:true,,1
+1246,1:false,1:false,,0.967
+1247,1:false,1:false,,0.95
+1248,1:false,1:false,,1
+1249,1:false,1:false,,0.947
+1250,1:false,1:false,,1
+1251,1:false,1:false,,0.813
+1252,1:false,1:false,,0.95
+1253,1:false,1:false,,0.769
+1254,2:true,1:false,+,0.793
+1255,1:false,1:false,,0.985
+1256,1:false,1:false,,0.944
+1257,1:false,1:false,,0.947
+1258,1:false,1:false,,0.967
+1259,1:false,1:false,,0.985
+1260,1:false,1:false,,0.813
+1261,2:true,2:true,,0.8
+1262,1:false,1:false,,0.842
+1263,2:true,1:false,+,0.985
+1264,2:true,2:true,,1
+1265,1:false,1:false,,0.928
+1266,1:false,1:false,,1
+1267,2:true,1:false,+,0.793
+1268,1:false,1:false,,0.95
+1269,1:false,1:false,,0.905
+1270,1:false,1:false,,0.928
+1271,1:false,1:false,,0.793
+1272,1:false,1:false,,0.813
+1273,1:false,1:false,,0.985
+1274,1:false,1:false,,1
+1275,2:true,2:true,,1
+1276,1:false,1:false,,0.813
+1277,1:false,1:false,,0.967
+1278,2:true,2:true,,1
+1279,1:false,1:false,,0.8
+1280,1:false,1:false,,0.95
+1281,2:true,2:true,,1
+1282,1:false,1:false,,0.813
+1283,1:false,1:false,,0.985
+1284,1:false,1:false,,0.95
+1285,1:false,1:false,,0.985
+1286,1:false,1:false,,0.905
+1287,1:false,1:false,,0.813
+1288,2:true,1:false,+,0.95
+1289,1:false,1:false,,1
+1290,1:false,1:false,,0.905
+1291,1:false,1:false,,0.813
+1292,1:false,1:false,,0.928
+1293,1:false,1:false,,0.8
+1294,2:true,2:true,,0.941
+1295,1:false,1:false,,0.985
+1296,1:false,1:false,,1
+1297,1:false,1:false,,0.793
+1298,1:false,1:false,,0.985
+1299,2:true,2:true,,1
+1300,1:false,1:false,,0.813
+1301,1:false,1:false,,0.55
+1302,1:false,1:false,,0.793
+1303,1:false,1:false,,1
+1304,1:false,1:false,,0.944
+1305,1:false,1:false,,1
+1306,1:false,1:false,,0.985
+1307,1:false,1:false,,0.8
+1308,1:false,1:false,,0.793
+1309,1:false,1:false,,0.99
+1310,1:false,1:false,,0.99
+1311,1:false,1:false,,0.98
+1312,1:false,1:false,,0.959
+1313,1:false,1:false,,0.793
+1314,1:false,1:false,,0.793
+1315,1:false,1:false,,0.985
+1316,1:false,1:false,,1
+1317,1:false,1:false,,0.99
+1318,1:false,1:false,,1
+1319,1:false,1:false,,1
+1320,1:false,1:false,,0.793
+1321,1:false,1:false,,0.793
+1322,1:false,1:false,,0.967
+1323,1:false,1:false,,0.793
+1324,1:false,1:false,,0.95
+1325,1:false,1:false,,0.99
+1326,1:false,1:false,,0.793
+1327,1:false,1:false,,0.968
+1328,1:false,1:false,,0.905
+1329,1:false,1:false,,0.95
+1330,1:false,2:true,+,0.571
+1331,1:false,1:false,,1
+1332,1:false,1:false,,0.985
+1333,1:false,1:false,,1
+1334,1:false,1:false,,1
+1335,1:false,1:false,,1
+1336,1:false,1:false,,0.8
+1337,1:false,1:false,,0.8
+1338,1:false,1:false,,0.967
+1339,1:false,1:false,,0.947
+1340,1:false,1:false,,0.6
+1341,1:false,1:false,,0.793
+1342,2:true,1:false,+,0.793
+1343,1:false,1:false,,0.928
+1344,1:false,1:false,,0.813
+1345,2:true,1:false,+,0.778
+1346,1:false,1:false,,0.985
+1347,1:false,1:false,,0.842
+1348,1:false,1:false,,0.947
+1349,1:false,1:false,,0.813
+1350,1:false,1:false,,0.985
+1351,2:true,2:true,,1
+1352,1:false,1:false,,0.813
+1353,2:true,2:true,,0.571
+1354,2:true,1:false,+,0.791
+1355,1:false,1:false,,0.928
+1356,1:false,1:false,,0.793
+1357,2:true,1:false,+,0.6
+1358,1:false,1:false,,1
+1359,1:false,1:false,,0.905
+1360,2:true,1:false,+,0.793
+1361,2:true,1:false,+,0.652
+1362,1:false,1:false,,0.75
+1363,1:false,1:false,,0.985
+1364,2:true,2:true,,0.571
+1365,2:true,1:false,+,0.769
+1366,1:false,1:false,,0.813
+1367,1:false,1:false,,0.813
+1368,1:false,1:false,,0.985
+1369,1:false,1:false,,0.967
+1370,1:false,1:false,,1
+1371,1:false,1:false,,0.967
+1372,1:false,1:false,,0.793
+1373,2:true,2:true,,0.571
+1374,1:false,1:false,,0.98
+1375,2:true,1:false,+,0.8
+1376,2:true,2:true,,1
+1377,1:false,1:false,,0.652
+1378,1:false,1:false,,0.985
+1379,1:false,1:false,,0.791
+1380,1:false,1:false,,0.842
+1381,1:false,1:false,,0.842
+1382,1:false,1:false,,0.793
+1383,1:false,1:false,,0.959
+1384,1:false,1:false,,0.95
+1385,1:false,1:false,,0.95
+1386,1:false,1:false,,0.99
+1387,1:false,1:false,,0.95
+1388,1:false,1:false,,0.791
+1389,1:false,1:false,,0.905
+1390,1:false,1:false,,0.75
+1391,1:false,1:false,,0.947
+1392,1:false,1:false,,1
+1393,1:false,1:false,,0.95
+1394,1:false,1:false,,0.813
+1395,2:true,2:true,,1
+1396,2:true,2:true,,0.571
+1397,1:false,1:false,,0.793
+1398,1:false,1:false,,0.905
+1399,1:false,1:false,,0.791
+1400,1:false,1:false,,0.99
+1401,1:false,1:false,,0.813
+1402,1:false,1:false,,0.793
+1403,1:false,1:false,,0.967
+1404,1:false,1:false,,0.905
+1405,1:false,1:false,,0.842
+1406,1:false,1:false,,0.99
+1407,1:false,1:false,,1
+1408,2:true,2:true,,0.571
+1409,1:false,1:false,,0.842
+1410,1:false,1:false,,0.99
+1411,1:false,1:false,,0.813
+1412,2:true,2:true,,0.811
+1413,1:false,1:false,,0.95
+1414,1:false,1:false,,1
+1415,1:false,1:false,,0.95
+1416,1:false,1:false,,0.793
+1417,1:false,1:false,,0.959
+1418,1:false,1:false,,0.985
+1419,1:false,1:false,,0.99
+1420,1:false,1:false,,1
+1421,1:false,1:false,,0.842
+1422,2:true,2:true,,0.811
+1423,1:false,1:false,,0.98
+1424,1:false,1:false,,0.985
+1425,1:false,1:false,,0.643
+1426,1:false,1:false,,0.955
+1427,1:false,1:false,,0.842
+1428,1:false,1:false,,0.905
+1429,1:false,1:false,,1
+1430,1:false,1:false,,0.98
+1431,1:false,1:false,,0.813
+1432,1:false,1:false,,1
+1433,1:false,1:false,,0.99
+1434,2:true,1:false,+,0.985
+1435,1:false,1:false,,0.793
+1436,1:false,1:false,,1
+1437,1:false,1:false,,0.905
+1438,1:false,1:false,,0.95
+1439,1:false,1:false,,0.928
+1440,1:false,1:false,,0.842
+1441,1:false,1:false,,1
+1442,1:false,1:false,,0.791
+1443,1:false,1:false,,0.985
+1444,2:true,2:true,,1
+1445,1:false,1:false,,0.95
+1446,1:false,1:false,,1
+1447,1:false,1:false,,0.967
+1448,1:false,1:false,,0.95
+1449,1:false,1:false,,1
+1450,1:false,1:false,,1
+1451,2:true,1:false,+,0.769
+1452,1:false,1:false,,1
+1453,1:false,1:false,,0.99
+1454,1:false,1:false,,0.793
+1455,2:true,1:false,+,0.652
+1456,2:true,2:true,,0.571
+1457,2:true,2:true,,1
+1458,2:true,1:false,+,0.793
+1459,1:false,1:false,,1
+1460,1:false,1:false,,1
+1461,1:false,1:false,,0.793
+1462,1:false,1:false,,0.967
+1463,1:false,1:false,,0.813
+1464,1:false,1:false,,0.95
+1465,1:false,1:false,,0.95
+1466,1:false,1:false,,0.95
+1467,2:true,1:false,+,0.813
+1468,1:false,1:false,,0.944
+1469,1:false,1:false,,0.985
+1470,1:false,1:false,,1
+1471,1:false,1:false,,0.967
+1472,1:false,1:false,,0.8
+1473,1:false,1:false,,0.727
+1474,1:false,1:false,,0.905
+1475,1:false,1:false,,0.813
+1476,1:false,1:false,,0.793
+1477,1:false,1:false,,0.793
+1478,1:false,1:false,,1
+1479,1:false,1:false,,1
+1480,1:false,1:false,,0.95
+1481,2:true,1:false,+,0.6
+1482,1:false,1:false,,0.905
+1483,1:false,1:false,,0.5
+1484,1:false,1:false,,0.967
+1485,1:false,1:false,,0.99
+1486,2:true,2:true,,0.571
+1487,1:false,1:false,,0.955
+1488,1:false,1:false,,0.793
+1489,1:false,1:false,,0.967
+1490,2:true,2:true,,0.811
+1491,1:false,1:false,,0.793
+1492,1:false,1:false,,0.968
+1493,2:true,1:false,+,0.791
+1494,1:false,1:false,,0.967
+1495,1:false,1:false,,1
+1496,1:false,1:false,,0.813
+1497,2:true,1:false,+,0.955
+1498,1:false,1:false,,0.967
+1499,1:false,1:false,,0.667
+1500,1:false,1:false,,0.929
+1501,1:false,1:false,,0.99
+1502,1:false,1:false,,0.95
+1503,2:true,1:false,+,0.667
+1504,1:false,1:false,,0.95
+1505,1:false,1:false,,0.793
+1506,1:false,1:false,,0.95
+1507,1:false,1:false,,0.5
+1508,2:true,2:true,,0.811
+1509,2:true,2:true,,0.8
+1510,1:false,1:false,,0.95
+1511,2:true,2:true,,0.811
+1512,1:false,1:false,,0.793
+1513,2:true,2:true,,0.941
+1514,1:false,1:false,,1
+1515,1:false,1:false,,1
+1516,1:false,1:false,,1
+1517,1:false,1:false,,0.985
+1518,2:true,1:false,+,0.793
+1519,1:false,1:false,,0.928
+1520,1:false,1:false,,0.793
+1521,1:false,1:false,,1
+1522,1:false,1:false,,0.793
+1523,2:true,2:true,,1
+1524,1:false,2:true,+,0.571
+1525,1:false,1:false,,0.813
+1526,1:false,1:false,,0.813
+1527,1:false,1:false,,0.793
+1528,1:false,1:false,,0.95
+1529,2:true,2:true,,0.571
+1530,1:false,1:false,,0.813
+1531,1:false,1:false,,0.793
+1532,1:false,1:false,,0.95
+1533,1:false,1:false,,0.95
+1534,1:false,1:false,,0.947
+1535,1:false,1:false,,0.968
+1536,1:false,1:false,,0.813
+1537,1:false,1:false,,0.959
+1538,1:false,1:false,,0.947
+1539,1:false,1:false,,1
+1540,1:false,1:false,,1
+1541,1:false,1:false,,0.793
+1542,1:false,1:false,,0.8
+1543,1:false,1:false,,0.905
+1544,1:false,1:false,,0.95
+1545,1:false,1:false,,0.793
+1546,1:false,1:false,,0.905
+1547,1:false,1:false,,1
+1548,1:false,1:false,,0.98
+1549,1:false,1:false,,0.98
+1550,1:false,1:false,,1
+1551,1:false,1:false,,0.947
+1552,1:false,2:true,+,0.571
+1553,1:false,1:false,,1
+1554,1:false,1:false,,0.95
+1555,1:false,1:false,,0.985
+1556,1:false,1:false,,1
+1557,1:false,1:false,,0.955
+1558,2:true,2:true,,1
+1559,1:false,1:false,,0.813
+1560,2:true,2:true,,1
+1561,2:true,2:true,,0.538
+1562,1:false,1:false,,1
+1563,2:true,2:true,,1
+1564,2:true,1:false,+,0.793
+1565,1:false,1:false,,1
+1566,2:true,1:false,+,0.905
+1567,1:false,1:false,,0.95
+1568,1:false,2:true,+,0.571
+1569,1:false,1:false,,0.813
+1570,1:false,1:false,,0.95
+1571,1:false,1:false,,1
+1572,1:false,2:true,+,0.571
+1573,2:true,1:false,+,0.793
+1574,1:false,1:false,,0.928
+1575,1:false,1:false,,0.667
+1576,1:false,1:false,,0.769
+1577,1:false,1:false,,1
+1578,1:false,1:false,,0.793
+1579,1:false,1:false,,0.905
+1580,2:true,2:true,,0.8
+1581,1:false,2:true,+,0.571
+1582,1:false,1:false,,1
+1583,1:false,2:true,+,0.571
+1584,1:false,1:false,,1
+1585,1:false,1:false,,0.967
+1586,1:false,1:false,,0.793
+1587,1:false,1:false,,0.985
+1588,2:true,2:true,,0.6
+1589,1:false,1:false,,1
+1590,1:false,1:false,,0.842
+1591,1:false,1:false,,0.985
+1592,2:true,2:true,,1
+1593,1:false,1:false,,1
+1594,2:true,2:true,,1
+1595,1:false,2:true,+,0.571
+1596,1:false,1:false,,0.99
+1597,1:false,1:false,,1
+1598,1:false,1:false,,0.813
+1599,1:false,1:false,,0.947
+1600,1:false,1:false,,0.959
+1601,2:true,1:false,+,0.947
+1602,1:false,1:false,,0.985
+1603,1:false,1:false,,0.793
+1604,1:false,1:false,,0.793
+1605,1:false,1:false,,1
+1606,1:false,1:false,,0.947
+1607,1:false,1:false,,0.75
+1608,1:false,1:false,,0.905
+1609,1:false,1:false,,0.793
+1610,1:false,1:false,,0.99
+1611,1:false,1:false,,0.905
+1612,2:true,2:true,,1
+1613,1:false,1:false,,0.793
+1614,2:true,2:true,,1
+1615,2:true,1:false,+,0.791
+1616,1:false,1:false,,0.95
+1617,1:false,1:false,,1
+1618,1:false,1:false,,0.793
+1619,2:true,2:true,,1
+1620,2:true,2:true,,0.878
+1621,1:false,1:false,,0.905
+1622,1:false,1:false,,0.95
+1623,1:false,1:false,,0.905
+1624,1:false,1:false,,1
+1625,2:true,1:false,+,0.833
+1626,1:false,1:false,,1
+1627,1:false,1:false,,0.95
+1628,1:false,1:false,,1
+1629,1:false,1:false,,0.959
+1630,2:true,2:true,,1
+1631,1:false,1:false,,0.793
+1632,1:false,1:false,,0.955
+1633,1:false,1:false,,1
+1634,1:false,1:false,,1
+1635,1:false,1:false,,0.793
+1636,1:false,1:false,,0.8
+1637,1:false,1:false,,0.947
+1638,2:true,2:true,,0.571
+1639,1:false,1:false,,1
+1640,1:false,1:false,,1
+1641,2:true,2:true,,0.878
+1642,1:false,1:false,,0.813
+1643,1:false,1:false,,0.905
+1644,2:true,1:false,+,0.95
+1645,2:true,2:true,,1
+1646,1:false,1:false,,0.813
+1647,1:false,1:false,,0.967
+1648,1:false,2:true,+,0.571
+1649,1:false,1:false,,0.985
+1650,1:false,1:false,,0.95
+1651,1:false,1:false,,0.813
+1652,2:true,2:true,,1
+1653,1:false,1:false,,0.98
+1654,2:true,2:true,,0.571
+1655,1:false,1:false,,0.793
+1656,1:false,1:false,,0.95
+1657,1:false,1:false,,0.842
+1658,1:false,1:false,,0.928
+1659,1:false,1:false,,0.793
+1660,2:true,1:false,+,0.5
+1661,1:false,1:false,,0.947
+1662,1:false,1:false,,0.793
+1663,1:false,1:false,,1
+1664,2:true,1:false,+,0.905
+1665,2:true,1:false,+,0.55
+1666,2:true,2:true,,0.632
+1667,1:false,1:false,,0.967
+1668,1:false,1:false,,0.967
+1669,1:false,1:false,,1
+1670,1:false,1:false,,0.98
+1671,1:false,1:false,,0.967
+1672,1:false,1:false,,0.652
+1673,2:true,2:true,,1
+1674,1:false,1:false,,1
+1675,1:false,1:false,,1
+1676,2:true,1:false,+,0.793
+1677,1:false,1:false,,0.99
+1678,1:false,1:false,,0.98
+1679,1:false,2:true,+,0.811
+1680,1:false,1:false,,0.968
+1681,1:false,1:false,,0.928
+1682,2:true,1:false,+,0.842
+1683,1:false,1:false,,0.643
+1684,2:true,1:false,+,0.793
+1685,2:true,1:false,+,0.842
+1686,1:false,1:false,,0.98
+1687,1:false,1:false,,0.793
+1688,1:false,1:false,,0.967
+1689,1:false,1:false,,1
+1690,1:false,1:false,,0.8
+1691,2:true,1:false,+,0.813
+1692,1:false,1:false,,0.793
+1693,1:false,1:false,,0.928
+1694,1:false,1:false,,1
+1695,1:false,1:false,,0.793
+1696,1:false,1:false,,1
+1697,2:true,2:true,,1
+1698,2:true,1:false,+,0.813
+1699,1:false,1:false,,0.905
+1700,1:false,1:false,,0.928
+1701,1:false,1:false,,1
+1702,1:false,1:false,,0.55
+1703,1:false,1:false,,0.959
+1704,1:false,1:false,,1
+1705,2:true,1:false,+,0.793
+1706,1:false,1:false,,0.95
+1707,1:false,1:false,,1
+1708,1:false,1:false,,0.99
+1709,1:false,1:false,,0.95
+1710,1:false,1:false,,0.793
+1711,1:false,1:false,,0.985
+1712,1:false,1:false,,0.95
+1713,2:true,2:true,,0.941
+1714,2:true,2:true,,1
+1715,1:false,1:false,,0.985
+1716,1:false,1:false,,1
+1717,1:false,2:true,+,0.571
+1718,1:false,1:false,,0.793
+1719,1:false,1:false,,0.75
+1720,1:false,1:false,,0.95
+1721,2:true,2:true,,1
+1722,1:false,1:false,,0.905
+1723,2:true,2:true,,1
+1724,1:false,1:false,,0.793
+1725,1:false,1:false,,0.95
+1726,1:false,1:false,,0.985
+1727,1:false,1:false,,0.928
+1728,1:false,1:false,,0.8
+1729,2:true,2:true,,0.571
+1730,1:false,1:false,,0.905
+1731,1:false,1:false,,0.985
+1732,1:false,1:false,,0.793
+1733,1:false,1:false,,1
+1734,1:false,1:false,,0.95
+1735,1:false,1:false,,0.813
+1736,1:false,1:false,,1
+1737,1:false,1:false,,0.95
+1738,1:false,1:false,,0.985
+1739,1:false,1:false,,1
+1740,2:true,2:true,,0.811
+1741,1:false,1:false,,1
+1742,1:false,2:true,+,0.571
+1743,1:false,1:false,,0.813
+1744,2:true,2:true,,0.6
+1745,2:true,2:true,,0.8
+1746,2:true,1:false,+,0.928
+1747,2:true,2:true,,0.571
+1748,1:false,1:false,,0.791
+1749,1:false,1:false,,0.793
+1750,1:false,1:false,,1
+1751,1:false,1:false,,0.813
+1752,1:false,1:false,,0.95
+1753,2:true,1:false,+,0.793
+1754,1:false,1:false,,0.928
+1755,1:false,1:false,,0.967
+1756,1:false,2:true,+,0.571
+1757,2:true,1:false,+,0.75
+1758,1:false,1:false,,1
+1759,1:false,1:false,,0.636
+1760,1:false,1:false,,0.947
+1761,2:true,2:true,,1
+1762,1:false,1:false,,1
+1763,1:false,1:false,,0.967
+1764,1:false,1:false,,0.793
+1765,1:false,1:false,,0.959
+1766,2:true,2:true,,0.571
+1767,1:false,1:false,,1
+1768,1:false,1:false,,0.95
+1769,1:false,1:false,,0.793
+1770,1:false,1:false,,0.95
+1771,1:false,1:false,,0.929
+1772,1:false,1:false,,0.967
+1773,1:false,1:false,,0.813
+1774,1:false,1:false,,0.905
+1775,1:false,1:false,,0.928
+1776,1:false,1:false,,0.95
+1777,1:false,1:false,,0.905
+1778,1:false,1:false,,0.95
+1779,1:false,1:false,,0.813
+1780,1:false,1:false,,1
+1781,1:false,1:false,,0.793
+1782,1:false,2:true,+,0.878
+1783,2:true,1:false,+,0.905
+1784,2:true,2:true,,1
+1785,1:false,1:false,,1
+1786,1:false,1:false,,1
+1787,1:false,1:false,,1
+1788,1:false,1:false,,0.95
+1789,1:false,1:false,,0.968
+1790,1:false,1:false,,0.793
+1791,1:false,1:false,,0.947
+1792,1:false,2:true,+,0.811
+1793,1:false,1:false,,0.793
+1794,1:false,1:false,,0.95
+1795,2:true,1:false,+,0.793
+1796,1:false,1:false,,0.967
+1797,2:true,1:false,+,0.6
+1798,1:false,1:false,,0.967
+1799,1:false,1:false,,1
+1800,2:true,1:false,+,0.793
+1801,2:true,1:false,+,0.75
+1802,1:false,1:false,,0.95
+1803,1:false,1:false,,0.968
+1804,1:false,1:false,,1
+1805,1:false,1:false,,0.842
+1806,1:false,1:false,,1
+1807,1:false,1:false,,0.944
+1808,1:false,1:false,,0.5
+1809,1:false,1:false,,0.95
+1810,1:false,1:false,,1
+1811,1:false,1:false,,0.959
+1812,1:false,1:false,,0.99
+1813,1:false,1:false,,0.967
+1814,1:false,1:false,,1
+1815,2:true,2:true,,0.811
+1816,1:false,2:true,+,0.632
+1817,1:false,1:false,,0.95
+1818,1:false,1:false,,0.842
+1819,2:true,1:false,+,0.75
+1820,1:false,1:false,,0.905
+1821,1:false,1:false,,0.985
+1822,1:false,1:false,,0.95
+1823,1:false,1:false,,0.985
+1824,1:false,1:false,,0.905
+1825,1:false,1:false,,0.985
+1826,1:false,1:false,,0.968
+1827,2:true,1:false,+,0.5
+1828,1:false,1:false,,0.793
+1829,1:false,1:false,,0.947
+1830,1:false,1:false,,1
+1831,1:false,1:false,,0.842
+1832,1:false,1:false,,0.985
+1833,1:false,1:false,,1
+1834,1:false,1:false,,0.905
+1835,2:true,1:false,+,0.813
+1836,2:true,2:true,,0.878
+1837,1:false,1:false,,0.793
+1838,1:false,1:false,,1
+1839,1:false,1:false,,0.928
+1840,1:false,1:false,,1
+1841,2:true,1:false,+,0.95
+1842,1:false,1:false,,1
+1843,1:false,1:false,,0.813
+1844,1:false,2:true,+,0.571
+1845,1:false,1:false,,0.985
+1846,1:false,1:false,,0.985
+1847,1:false,1:false,,0.985
+1848,2:true,2:true,,0.811
+1849,1:false,1:false,,0.928
+1850,1:false,1:false,,1
+1851,1:false,1:false,,1
+1852,2:true,1:false,+,0.8
+1853,1:false,1:false,,0.959
+1854,2:true,2:true,,1
+1855,2:true,2:true,,0.571
+1856,1:false,1:false,,0.905
+1857,1:false,1:false,,0.793
+1858,1:false,1:false,,0.967
+1859,1:false,1:false,,0.99
+1860,2:true,2:true,,1
+1861,1:false,1:false,,0.985
+1862,2:true,2:true,,1
+1863,1:false,1:false,,0.905
+1864,2:true,2:true,,1
+1865,1:false,1:false,,1
+1866,1:false,1:false,,0.985
+1867,1:false,1:false,,1
+1868,1:false,1:false,,0.905
+1869,1:false,1:false,,0.985
+1870,1:false,1:false,,0.95
+1871,2:true,2:true,,1
+1872,2:true,1:false,+,0.643
+1873,2:true,1:false,+,0.793
+1874,1:false,1:false,,0.905
+1875,1:false,1:false,,0.985
+1876,1:false,1:false,,0.985
+1877,1:false,1:false,,0.955
+1878,2:true,2:true,,0.811
+1879,1:false,1:false,,0.793
+1880,1:false,1:false,,0.928
+1881,1:false,1:false,,1
+1882,1:false,1:false,,0.813
+1883,1:false,1:false,,0.985
+1884,1:false,1:false,,1
+1885,1:false,1:false,,0.947
+1886,1:false,1:false,,0.813
+1887,1:false,1:false,,0.928
+1888,1:false,1:false,,0.967
+1889,1:false,1:false,,1
+1890,1:false,1:false,,0.985
+1891,1:false,1:false,,0.99
+1892,1:false,1:false,,0.967
+1893,2:true,2:true,,1
+1894,2:true,2:true,,0.571
+1895,2:true,2:true,,0.571
+1896,1:false,1:false,,0.967
+1897,2:true,1:false,+,0.75
+1898,2:true,2:true,,1
+1899,1:false,1:false,,1
+1900,1:false,1:false,,0.813
+1901,1:false,1:false,,0.793
+1902,1:false,1:false,,0.928
+1903,1:false,1:false,,0.985
+1904,2:true,2:true,,0.571
+1905,1:false,1:false,,0.95
+1906,1:false,1:false,,0.813
+1907,2:true,1:false,+,0.793
+1908,1:false,1:false,,0.967
+1909,1:false,1:false,,0.985
+1910,1:false,1:false,,0.967
+1911,1:false,1:false,,0.928
+1912,1:false,1:false,,0.95
+1913,2:true,2:true,,1
+1914,1:false,1:false,,0.928
+1915,2:true,1:false,+,0.55
+1916,1:false,1:false,,0.959
+1917,1:false,1:false,,0.985
+1918,1:false,1:false,,1
+1919,1:false,1:false,,0.793
+1920,1:false,1:false,,0.99
+1921,2:true,1:false,+,0.928
+1922,1:false,1:false,,0.928
+1923,1:false,1:false,,0.842
+1924,1:false,1:false,,0.967
+1925,1:false,1:false,,0.928
+1926,1:false,1:false,,0.842
+1927,1:false,1:false,,0.985
+1928,1:false,1:false,,0.793
+1929,1:false,1:false,,0.99
+1930,2:true,2:true,,0.8
+1931,2:true,2:true,,0.571
+1932,1:false,1:false,,0.95
+1933,1:false,1:false,,0.928
+1934,1:false,1:false,,1
+1935,1:false,1:false,,1
+1936,1:false,1:false,,0.75
+1937,1:false,1:false,,0.905
+1938,1:false,1:false,,1
+1939,1:false,1:false,,0.813
+1940,1:false,1:false,,0.842
+1941,1:false,1:false,,0.968
+1942,1:false,1:false,,0.95
+1943,2:true,2:true,,1
+1944,1:false,1:false,,0.95
+1945,1:false,1:false,,0.95
+1946,1:false,1:false,,0.928
+1947,1:false,1:false,,0.793
+1948,1:false,1:false,,0.842
+1949,1:false,1:false,,0.793
+1950,1:false,1:false,,0.985
+1951,1:false,1:false,,0.842
+1952,1:false,1:false,,0.791
+1953,1:false,1:false,,0.793
+1954,1:false,1:false,,0.95
+1955,1:false,1:false,,0.793
+1956,2:true,2:true,,0.878
+1957,1:false,1:false,,0.793
+1958,1:false,1:false,,1
+1959,1:false,1:false,,0.778
+1960,1:false,1:false,,1
+1961,2:true,2:true,,1
+1962,1:false,1:false,,0.905
+1963,1:false,1:false,,0.928
+1964,1:false,1:false,,1
+1965,2:true,1:false,+,0.95
+1966,1:false,1:false,,0.985
+1967,1:false,1:false,,0.813
+1968,2:true,1:false,+,0.55
+1969,2:true,2:true,,1
+1970,1:false,1:false,,0.95
+1971,1:false,1:false,,1
+1972,1:false,1:false,,0.842
+1973,1:false,1:false,,1
+1974,1:false,1:false,,0.95
+1975,1:false,1:false,,0.968
+1976,2:true,2:true,,1
+1977,1:false,1:false,,0.95
+1978,1:false,1:false,,0.985
+1979,1:false,1:false,,1
+1980,1:false,1:false,,0.985
+1981,1:false,1:false,,1
+1982,1:false,1:false,,1
+1983,2:true,2:true,,0.878
+1984,2:true,2:true,,1
+1985,1:false,1:false,,0.55
+1986,1:false,1:false,,0.667
+1987,1:false,1:false,,1
+1988,1:false,1:false,,0.95
+1989,2:true,1:false,+,0.842
+1990,1:false,1:false,,0.959
+1991,1:false,1:false,,1
+1992,1:false,1:false,,1
+1993,1:false,1:false,,1
+1994,1:false,1:false,,1
+1995,1:false,1:false,,0.967
+1996,1:false,1:false,,1
+1997,2:true,2:true,,0.632
+1998,2:true,2:true,,1
+1999,1:false,2:true,+,0.571
+2000,1:false,1:false,,1
+2001,1:false,1:false,,0.813
+2002,1:false,1:false,,0.95
+2003,2:true,2:true,,1
+2004,2:true,2:true,,0.878
+2005,1:false,1:false,,1
+2006,1:false,1:false,,0.95
+2007,1:false,1:false,,0.95
+2008,1:false,1:false,,0.793
+2009,1:false,1:false,,0.652
+2010,2:true,1:false,+,0.75
+2011,1:false,1:false,,0.667
+2012,2:true,1:false,+,0.667
+2013,1:false,1:false,,1
+2014,1:false,1:false,,0.99
+2015,2:true,2:true,,0.571
+2016,1:false,1:false,,0.968
+2017,2:true,1:false,+,0.813
+2018,1:false,1:false,,0.793
+2019,2:true,2:true,,0.941
+2020,2:true,1:false,+,0.793
+2021,2:true,2:true,,0.632
+2022,2:true,2:true,,1
+2023,1:false,1:false,,0.793
+2024,2:true,1:false,+,0.959
+2025,1:false,1:false,,0.947
+2026,2:true,2:true,,1
+2027,1:false,1:false,,1
+2028,2:true,1:false,+,0.652
+2029,1:false,1:false,,0.905
+2030,1:false,1:false,,0.813
+2031,2:true,1:false,+,0.793
+2032,1:false,1:false,,0.968
+2033,2:true,2:true,,1
+2034,1:false,1:false,,1
+2035,1:false,1:false,,0.95
+2036,1:false,1:false,,0.793
+2037,1:false,1:false,,0.652
+2038,2:true,2:true,,1
+2039,1:false,1:false,,0.955
+2040,1:false,1:false,,0.793
+2041,1:false,1:false,,1
+2042,1:false,1:false,,0.793
+2043,1:false,1:false,,0.793
+2044,1:false,1:false,,0.793
+2045,2:true,2:true,,1
+2046,2:true,2:true,,1
+2047,1:false,1:false,,0.8
+2048,2:true,2:true,,1
+2049,1:false,1:false,,1
+2050,1:false,1:false,,0.905
+2051,1:false,1:false,,0.99
+2052,1:false,1:false,,0.928
+2053,1:false,1:false,,0.905
+2054,1:false,1:false,,0.98
+2055,1:false,1:false,,0.793
+2056,1:false,1:false,,0.967
+2057,1:false,1:false,,1
+2058,2:true,2:true,,0.571
+2059,1:false,1:false,,0.928
+2060,1:false,1:false,,0.985
+2061,1:false,1:false,,0.928
+2062,1:false,1:false,,1
+2063,1:false,1:false,,0.967
+2064,1:false,1:false,,0.791
+2065,1:false,1:false,,0.813
+2066,1:false,1:false,,0.985
+2067,1:false,1:false,,1
+2068,1:false,1:false,,1
+2069,1:false,1:false,,0.98
+2070,1:false,1:false,,1
+2071,2:true,2:true,,1
+2072,1:false,1:false,,0.793
+2073,1:false,1:false,,1
+2074,1:false,1:false,,0.813
+2075,1:false,2:true,+,0.571
+2076,1:false,1:false,,1
+2077,1:false,1:false,,0.985
+2078,1:false,1:false,,1
+2079,2:true,1:false,+,0.793
+2080,1:false,1:false,,0.793
+2081,2:true,2:true,,1
+2082,1:false,1:false,,1
+2083,2:true,1:false,+,0.95
+2084,1:false,1:false,,0.95
+2085,1:false,1:false,,0.793
+2086,2:true,2:true,,1
+2087,2:true,1:false,+,0.842
+2088,1:false,1:false,,0.99
+2089,1:false,1:false,,0.928
+2090,1:false,1:false,,0.842
+2091,2:true,1:false,+,0.793
+2092,1:false,1:false,,1
+2093,2:true,2:true,,1
+2094,2:true,2:true,,0.811
+2095,1:false,1:false,,1
+2096,1:false,1:false,,0.968
+2097,1:false,1:false,,1
+2098,1:false,1:false,,0.842
+2099,1:false,1:false,,0.967
+2100,1:false,1:false,,0.813
+2101,1:false,1:false,,0.928
+2102,1:false,1:false,,0.95
+2103,1:false,1:false,,0.813
+2104,1:false,1:false,,0.791
+2105,1:false,1:false,,0.967
+2106,1:false,1:false,,1
+2107,2:true,2:true,,1
+2108,1:false,1:false,,1
+2109,1:false,1:false,,0.929
+2110,1:false,1:false,,0.98
+2111,1:false,1:false,,0.967
+2112,1:false,1:false,,0.967
+2113,1:false,1:false,,0.769
+2114,1:false,1:false,,0.842
+2115,2:true,1:false,+,0.959
+2116,1:false,1:false,,0.928
+2117,1:false,1:false,,0.944
+2118,1:false,1:false,,0.813
+2119,2:true,1:false,+,0.813
+2120,1:false,1:false,,1
+2121,1:false,1:false,,1
+2122,1:false,1:false,,1
+2123,1:false,1:false,,0.967
+2124,1:false,1:false,,0.55
+2125,1:false,1:false,,0.95
+2126,1:false,1:false,,0.955
+2127,1:false,1:false,,0.95
+2128,2:true,1:false,+,0.842
+2129,1:false,1:false,,0.842
+2130,1:false,1:false,,1
+2131,1:false,1:false,,0.905
+2132,1:false,1:false,,0.813
+2133,2:true,2:true,,1
+2134,1:false,1:false,,0.793
+2135,1:false,1:false,,0.99
+2136,1:false,1:false,,0.98
+2137,1:false,1:false,,0.842
+2138,1:false,1:false,,0.959
+2139,1:false,1:false,,0.928
+2140,1:false,1:false,,0.967
+2141,1:false,1:false,,1
+2142,1:false,1:false,,0.75
+2143,1:false,1:false,,0.985
+2144,1:false,1:false,,0.793
+2145,1:false,1:false,,0.967
+2146,1:false,1:false,,0.793
+2147,1:false,1:false,,0.947
+2148,2:true,2:true,,0.811
+2149,1:false,1:false,,0.947
+2150,1:false,2:true,+,0.571
+2151,1:false,1:false,,0.95
+2152,1:false,1:false,,0.968
+2153,1:false,1:false,,0.793
+2154,1:false,1:false,,1
+2155,1:false,1:false,,1
+2156,1:false,1:false,,0.99
+2157,1:false,1:false,,0.95
+2158,1:false,1:false,,0.928
+2159,2:true,1:false,+,0.791
+2160,1:false,1:false,,1
+2161,1:false,1:false,,0.842
+2162,1:false,1:false,,0.793
+2163,1:false,1:false,,0.95
+2164,2:true,1:false,+,0.813
+2165,1:false,1:false,,1
+2166,1:false,1:false,,0.905
+2167,1:false,1:false,,0.813
+2168,2:true,1:false,+,0.947
+2169,1:false,1:false,,0.8
+2170,1:false,1:false,,0.95
+2171,2:true,1:false,+,0.842
+2172,1:false,1:false,,0.813
+2173,1:false,1:false,,1
+2174,1:false,1:false,,0.967
+2175,1:false,1:false,,0.928
+2176,1:false,1:false,,0.955
+2177,1:false,1:false,,0.928
+2178,1:false,1:false,,0.944
+2179,1:false,1:false,,1
+2180,1:false,1:false,,1
+2181,1:false,1:false,,1
+2182,2:true,1:false,+,0.778
+2183,1:false,1:false,,0.791
+2184,1:false,1:false,,1
+2185,1:false,1:false,,0.928
+2186,1:false,1:false,,1
+2187,2:true,2:true,,0.571
+2188,1:false,1:false,,1
+2189,1:false,1:false,,0.813
+2190,1:false,1:false,,1
+2191,1:false,1:false,,0.791
+2192,2:true,1:false,+,0.636
+2193,2:true,1:false,+,0.813
+2194,1:false,1:false,,1
+2195,2:true,1:false,+,0.967
+2196,1:false,1:false,,0.99
+2197,1:false,1:false,,1
+2198,2:true,1:false,+,0.727
+2199,1:false,1:false,,0.95
+2200,2:true,1:false,+,0.793
+2201,1:false,1:false,,0.98
+2202,2:true,2:true,,1
+2203,1:false,1:false,,1
+2204,1:false,1:false,,0.99
+2205,1:false,1:false,,1
+2206,1:false,1:false,,0.793
+2207,1:false,1:false,,0.842
+2208,1:false,1:false,,0.95
+2209,1:false,1:false,,0.968
+2210,2:true,1:false,+,0.813
+2211,2:true,2:true,,0.632
+2212,2:true,1:false,+,0.793
+2213,2:true,2:true,,1
+2214,1:false,1:false,,1
+2215,1:false,1:false,,0.8
+2216,1:false,1:false,,0.905
+2217,1:false,1:false,,1
+2218,1:false,1:false,,0.905
+2219,1:false,1:false,,0.959
+2220,1:false,1:false,,0.955
+2221,1:false,1:false,,0.813
+2222,2:true,1:false,+,0.5
+2223,1:false,1:false,,0.793
+2224,2:true,2:true,,1
+2225,1:false,1:false,,0.985
+2226,1:false,1:false,,0.947
+2227,1:false,1:false,,0.928
+2228,1:false,1:false,,1
+2229,1:false,1:false,,1
+2230,2:true,1:false,+,0.793
+2231,1:false,1:false,,0.928
+2232,1:false,1:false,,0.793
+2233,1:false,1:false,,1
+2234,1:false,1:false,,0.813
+2235,1:false,1:false,,0.813
+2236,2:true,1:false,+,0.967
+2237,1:false,1:false,,0.813
+2238,1:false,1:false,,1
+2239,2:true,2:true,,1
+2240,2:true,2:true,,1
+2241,1:false,1:false,,0.667
+2242,1:false,1:false,,0.967
+2243,2:true,2:true,,1
+2244,1:false,1:false,,1
+2245,1:false,1:false,,0.95
+2246,1:false,1:false,,0.75
+2247,2:true,1:false,+,0.791
+2248,1:false,1:false,,0.985
+2249,1:false,1:false,,1
+2250,1:false,1:false,,0.905
+2251,1:false,1:false,,0.99
+2252,1:false,1:false,,1
+2253,2:true,2:true,,1
+2254,1:false,1:false,,1
+2255,2:true,2:true,,0.632
+2256,1:false,1:false,,0.905
+2257,2:true,2:true,,0.8
+2258,2:true,2:true,,1
+2259,2:true,1:false,+,0.944
+2260,1:false,1:false,,0.905
+2261,2:true,1:false,+,0.643
+2262,2:true,2:true,,0.941
+2263,1:false,1:false,,0.75
+2264,1:false,1:false,,0.959
+2265,1:false,1:false,,0.842
+2266,2:true,2:true,,1
+2267,1:false,2:true,+,0.878
+2268,1:false,2:true,+,0.571
+2269,1:false,1:false,,1
+2270,2:true,1:false,+,0.75
+2271,1:false,1:false,,0.929
+2272,1:false,1:false,,0.8
+2273,1:false,1:false,,0.793
+2274,1:false,1:false,,0.793
+2275,1:false,1:false,,0.905
+2276,2:true,1:false,+,0.55
+2277,1:false,1:false,,0.813
+2278,1:false,1:false,,0.99
+2279,1:false,1:false,,0.793
+2280,1:false,1:false,,1
+2281,1:false,1:false,,1
+2282,2:true,1:false,+,0.905
+2283,1:false,1:false,,1
+2284,1:false,1:false,,0.928
+2285,1:false,1:false,,0.985
+2286,2:true,2:true,,0.571
+2287,2:true,1:false,+,0.842
+2288,2:true,1:false,+,0.652
+2289,1:false,1:false,,1
+2290,1:false,1:false,,0.985
+2291,1:false,2:true,+,0.571
+2292,1:false,1:false,,0.778
+2293,2:true,2:true,,0.571
+2294,1:false,1:false,,0.928
+2295,1:false,1:false,,0.928
+2296,1:false,1:false,,0.813
+2297,1:false,1:false,,0.842
+2298,1:false,1:false,,1
+2299,1:false,1:false,,0.905
+2300,1:false,1:false,,0.905
+2301,1:false,1:false,,0.928
+2302,1:false,1:false,,0.793
+2303,1:false,1:false,,0.947
+2304,1:false,1:false,,1
+2305,2:true,1:false,+,0.928
+2306,2:true,2:true,,1
+2307,1:false,1:false,,1
+2308,2:true,1:false,+,0.793
+2309,1:false,2:true,+,0.8
+2310,1:false,1:false,,0.813
+2311,1:false,1:false,,0.905
+2312,2:true,2:true,,1
+2313,1:false,1:false,,0.928
+2314,1:false,1:false,,1
+2315,2:true,2:true,,0.632
+2316,1:false,1:false,,0.985
+2317,2:true,2:true,,1
+2318,2:true,1:false,+,0.727
+2319,1:false,1:false,,0.793
+2320,1:false,1:false,,0.99
+2321,1:false,1:false,,0.905
+2322,1:false,1:false,,1
+2323,1:false,1:false,,0.5
+2324,1:false,1:false,,0.947
+2325,2:true,1:false,+,0.643
+2326,1:false,2:true,+,0.571
+2327,1:false,1:false,,0.967
+2328,2:true,1:false,+,0.928
+2329,1:false,1:false,,0.842
+2330,1:false,1:false,,0.928
+2331,1:false,1:false,,0.955
+2332,1:false,1:false,,0.955
+2333,1:false,1:false,,1
+2334,2:true,2:true,,1
+2335,1:false,1:false,,0.793
+2336,1:false,1:false,,0.947
+2337,2:true,2:true,,1
+2338,1:false,1:false,,0.95
+2339,1:false,1:false,,1
+2340,1:false,1:false,,0.643
+2341,1:false,1:false,,1
+2342,1:false,1:false,,0.968
+2343,1:false,1:false,,1
+2344,1:false,1:false,,0.793
+2345,1:false,1:false,,1
+2346,1:false,1:false,,0.793
+2347,1:false,1:false,,0.967
+2348,1:false,1:false,,0.791
+2349,1:false,1:false,,0.793
+2350,1:false,1:false,,0.947
+2351,1:false,1:false,,1
+2352,1:false,1:false,,0.842
+2353,1:false,1:false,,0.793
+2354,1:false,1:false,,0.905
+2355,1:false,1:false,,1
+2356,1:false,1:false,,0.985
+2357,1:false,1:false,,0.928
+2358,1:false,1:false,,1
+2359,1:false,1:false,,0.95
+2360,1:false,1:false,,0.905
+2361,1:false,1:false,,0.967
+2362,1:false,1:false,,0.793
+2363,1:false,1:false,,0.99
+2364,1:false,1:false,,0.959
+2365,1:false,1:false,,0.95
+2366,2:true,2:true,,1
+2367,1:false,1:false,,0.842
+2368,1:false,1:false,,1
+2369,2:true,2:true,,0.811
+2370,1:false,1:false,,0.813
+2371,1:false,1:false,,0.967
+2372,1:false,1:false,,0.959
+2373,1:false,1:false,,0.959
+2374,1:false,1:false,,0.99
+2375,2:true,2:true,,1
+2376,1:false,1:false,,0.905
+2377,1:false,1:false,,0.95
+2378,1:false,1:false,,1
+2379,1:false,1:false,,0.99
+2380,1:false,1:false,,1
+2381,1:false,1:false,,0.95
+2382,1:false,1:false,,0.791
+2383,1:false,1:false,,0.75
+2384,1:false,1:false,,0.95
+2385,1:false,1:false,,0.842
+2386,1:false,1:false,,0.905
+2387,1:false,1:false,,0.793
+2388,1:false,1:false,,0.928
+2389,1:false,1:false,,1
+2390,1:false,2:true,+,0.571
+2391,1:false,1:false,,0.985
+2392,1:false,1:false,,0.793
+2393,1:false,1:false,,0.95
+2394,1:false,1:false,,0.905
+2395,1:false,1:false,,0.967
+2396,1:false,1:false,,1
+2397,1:false,1:false,,0.99
+2398,1:false,1:false,,0.791
+2399,2:true,2:true,,1
+2400,1:false,1:false,,0.967
+2401,1:false,1:false,,1
+2402,2:true,2:true,,1
+2403,2:true,1:false,+,0.793
+2404,1:false,2:true,+,0.571
+2405,1:false,1:false,,0.905
+2406,1:false,1:false,,0.791
+2407,1:false,1:false,,0.842
+2408,2:true,2:true,,0.571
+2409,2:true,2:true,,1
+2410,1:false,1:false,,0.842
+2411,1:false,1:false,,0.967
+2412,1:false,1:false,,1
+2413,2:true,1:false,+,0.905
+2414,2:true,2:true,,1
+2415,1:false,1:false,,1
+2416,1:false,1:false,,0.5
+2417,1:false,1:false,,0.905
+2418,1:false,1:false,,0.905
+2419,1:false,1:false,,0.905
+2420,2:true,2:true,,0.811
+2421,1:false,1:false,,0.947
+2422,1:false,1:false,,1
+2423,2:true,2:true,,1
+2424,1:false,1:false,,1
+2425,1:false,1:false,,0.842
+2426,1:false,1:false,,0.905
+2427,1:false,1:false,,1
+2428,1:false,1:false,,0.905
+2429,1:false,1:false,,0.813
+2430,1:false,1:false,,0.968
+2431,1:false,1:false,,0.905
+2432,1:false,1:false,,0.75
+2433,1:false,1:false,,1
+2434,1:false,1:false,,0.793
+2435,1:false,1:false,,0.967
+2436,1:false,1:false,,0.985
+2437,2:true,2:true,,1
+2438,1:false,1:false,,0.842
+2439,2:true,1:false,+,0.905
+2440,1:false,1:false,,0.95
+2441,2:true,2:true,,1
+2442,2:true,1:false,+,0.793
+2443,1:false,1:false,,0.905
+2444,1:false,1:false,,0.95
+2445,1:false,1:false,,0.905
+2446,1:false,1:false,,0.842
+2447,1:false,1:false,,1
+2448,1:false,1:false,,1
+2449,1:false,1:false,,0.769
+2450,1:false,1:false,,0.99
+2451,1:false,1:false,,0.95
+2452,1:false,1:false,,0.905
+2453,1:false,1:false,,0.968
+2454,2:true,2:true,,1
+2455,1:false,1:false,,0.985
+2456,1:false,1:false,,0.791
+2457,1:false,1:false,,0.967
+2458,1:false,1:false,,1
+2459,2:true,2:true,,1
+2460,1:false,1:false,,0.813
+2461,1:false,1:false,,0.95
+2462,1:false,1:false,,0.793
+2463,1:false,1:false,,0.95
+2464,2:true,1:false,+,0.842
+2465,1:false,1:false,,0.985
+2466,1:false,1:false,,0.95
+2467,1:false,1:false,,0.793
+2468,1:false,1:false,,0.98
+2469,2:true,1:false,+,0.55
+2470,1:false,1:false,,1
+2471,1:false,1:false,,0.6
+2472,1:false,1:false,,0.944
+2473,1:false,1:false,,1
+2474,1:false,1:false,,0.793
+2475,2:true,2:true,,1
+2476,1:false,1:false,,0.905
+2477,1:false,1:false,,0.985
+2478,1:false,1:false,,0.947
+2479,2:true,2:true,,1
+2480,1:false,1:false,,0.793
+2481,1:false,1:false,,1
+2482,1:false,1:false,,0.769
+2483,1:false,1:false,,0.95
+2484,1:false,1:false,,0.793
+2485,1:false,1:false,,0.727
+2486,1:false,1:false,,0.905
+2487,1:false,1:false,,0.778
+2488,2:true,2:true,,0.538
+2489,1:false,2:true,+,0.571
+2490,1:false,1:false,,0.793
+2491,1:false,1:false,,0.842
+2492,2:true,2:true,,0.878
+2493,1:false,2:true,+,0.538
+2494,1:false,1:false,,0.985
+2495,1:false,1:false,,0.842
+2496,1:false,1:false,,0.813
+2497,2:true,2:true,,1
+2498,1:false,1:false,,0.95
+2499,2:true,2:true,,0.811
+2500,2:true,2:true,,1
+2501,1:false,1:false,,0.905
+2502,1:false,1:false,,1
+2503,1:false,1:false,,0.842
+2504,1:false,1:false,,0.98
+2505,1:false,1:false,,1
+2506,1:false,1:false,,0.985
+2507,1:false,1:false,,0.793
+2508,2:true,2:true,,1
+2509,1:false,1:false,,0.793
+2510,2:true,1:false,+,0.95
+2511,1:false,1:false,,1
+2512,1:false,1:false,,0.813
+2513,1:false,1:false,,1
+2514,1:false,1:false,,0.98
+2515,1:false,1:false,,0.793
+2516,1:false,1:false,,0.842
+2517,1:false,1:false,,1
+2518,1:false,1:false,,1
+2519,2:true,2:true,,1
+2520,2:true,1:false,+,0.968
+2521,1:false,1:false,,0.813
+2522,1:false,1:false,,0.928
+2523,2:true,1:false,+,0.95
+2524,1:false,1:false,,0.793
+2525,2:true,1:false,+,0.793
+2526,1:false,1:false,,0.813
+2527,1:false,1:false,,0.813
+2528,1:false,1:false,,0.667
+2529,2:true,2:true,,0.878
+2530,1:false,1:false,,0.928
+2531,1:false,1:false,,0.791
+2532,2:true,2:true,,0.878
+2533,1:false,1:false,,0.928
+2534,1:false,1:false,,0.833
+2535,1:false,1:false,,0.667
+2536,2:true,1:false,+,0.967
+2537,1:false,1:false,,0.905
+2538,1:false,1:false,,0.985
+2539,1:false,1:false,,1
+2540,1:false,1:false,,0.95
+2541,1:false,1:false,,0.905
+2542,1:false,1:false,,1
+2543,1:false,1:false,,0.793
+2544,1:false,1:false,,0.842
+2545,2:true,1:false,+,0.813
+2546,1:false,1:false,,1
+2547,2:true,2:true,,1
+2548,2:true,1:false,+,0.813
+2549,1:false,1:false,,1
+2550,1:false,1:false,,0.985
+2551,2:true,2:true,,1
+2552,2:true,1:false,+,0.75
+2553,1:false,1:false,,0.985
+2554,1:false,1:false,,0.813
+2555,1:false,2:true,+,0.811
+2556,1:false,1:false,,0.967
+2557,2:true,2:true,,1
+2558,1:false,1:false,,0.985
+2559,1:false,1:false,,0.793
+2560,1:false,1:false,,0.928
+2561,1:false,1:false,,0.813
+2562,2:true,1:false,+,0.8
+2563,1:false,1:false,,0.967
+2564,2:true,1:false,+,0.55
+2565,1:false,1:false,,0.95
+2566,2:true,1:false,+,0.813
+2567,1:false,1:false,,1
+2568,1:false,1:false,,0.985
+2569,1:false,1:false,,0.95
+2570,1:false,1:false,,0.95
+2571,1:false,1:false,,1
+2572,1:false,1:false,,1
+2573,1:false,1:false,,0.793
+2574,2:true,1:false,+,0.8
+2575,1:false,1:false,,0.833
+2576,1:false,1:false,,0.55
+2577,2:true,1:false,+,0.636
+2578,2:true,1:false,+,0.905
+2579,2:true,1:false,+,0.813
+2580,1:false,1:false,,0.967
+2581,2:true,1:false,+,0.5
+2582,2:true,2:true,,1
+2583,1:false,1:false,,0.947
+2584,2:true,2:true,,0.571
+2585,1:false,1:false,,0.928
+2586,2:true,2:true,,0.571
+2587,1:false,1:false,,0.793
+2588,1:false,1:false,,0.905
+2589,1:false,1:false,,1
+2590,1:false,1:false,,1
+2591,1:false,1:false,,0.905
+2592,1:false,1:false,,1
+2593,1:false,1:false,,1
+2594,2:true,2:true,,0.571
+2595,1:false,1:false,,0.905
+2596,1:false,1:false,,0.967
+2597,1:false,1:false,,0.985
+2598,2:true,2:true,,0.571
+2599,1:false,1:false,,0.95
+2600,2:true,2:true,,0.8
+2601,1:false,1:false,,0.95
+2602,1:false,2:true,+,0.571
+2603,1:false,1:false,,0.947
+2604,1:false,1:false,,0.95
+2605,1:false,1:false,,1
+2606,1:false,1:false,,0.95
+2607,1:false,1:false,,0.967
+2608,2:true,1:false,+,0.793
+2609,1:false,1:false,,0.959
+2610,1:false,1:false,,0.793
+2611,1:false,1:false,,1
+2612,1:false,1:false,,0.95
+2613,1:false,1:false,,0.652
+2614,2:true,2:true,,1
+2615,1:false,1:false,,0.928
+2616,2:true,1:false,+,0.813
+2617,1:false,1:false,,0.8
+2618,1:false,1:false,,1
+2619,1:false,1:false,,1
+2620,1:false,1:false,,0.95
+2621,1:false,1:false,,1
+2622,1:false,1:false,,0.793
+2623,1:false,1:false,,0.778
+2624,1:false,1:false,,1
+2625,1:false,1:false,,0.905
+2626,1:false,1:false,,0.95
+2627,2:true,1:false,+,0.967
+2628,1:false,1:false,,0.793
+2629,1:false,1:false,,1
+2630,2:true,2:true,,0.571
+2631,2:true,1:false,+,0.793
+2632,1:false,2:true,+,0.571
+2633,1:false,1:false,,0.928
+2634,1:false,1:false,,1
+2635,1:false,1:false,,0.95
+2636,1:false,1:false,,1
+2637,1:false,2:true,+,0.811
+2638,1:false,1:false,,0.967
+2639,1:false,1:false,,1
+2640,1:false,1:false,,0.727
+2641,1:false,2:true,+,0.632
+2642,1:false,1:false,,1
+2643,2:true,1:false,+,0.793
+2644,2:true,2:true,,0.571
+2645,2:true,2:true,,0.878
+2646,1:false,1:false,,0.95
+2647,1:false,1:false,,0.955
+2648,1:false,1:false,,0.967
+2649,1:false,2:true,+,0.811
+2650,1:false,1:false,,0.95
+2651,1:false,1:false,,0.793
+2652,1:false,1:false,,1
+2653,1:false,1:false,,0.8
+2654,1:false,1:false,,0.667
+2655,1:false,1:false,,1
+2656,1:false,1:false,,0.727
+2657,1:false,1:false,,0.905
+2658,2:true,2:true,,0.878
+2659,1:false,2:true,+,0.538
+2660,1:false,1:false,,0.947
+2661,1:false,1:false,,0.928
+2662,1:false,1:false,,1
+2663,1:false,2:true,+,0.811
+2664,1:false,1:false,,0.98
+2665,1:false,1:false,,0.959
+2666,1:false,1:false,,0.928
+2667,1:false,1:false,,1
+2668,1:false,1:false,,1
+2669,2:true,2:true,,0.571
+2670,1:false,1:false,,1
+2671,2:true,1:false,+,0.928
+2672,1:false,1:false,,1
+2673,1:false,1:false,,1
+2674,1:false,1:false,,0.985
+2675,1:false,1:false,,1
+2676,1:false,1:false,,0.967
+2677,1:false,1:false,,0.985
+2678,1:false,1:false,,0.99
+2679,1:false,1:false,,0.985
+2680,1:false,1:false,,0.842
+2681,1:false,1:false,,0.985
+2682,2:true,1:false,+,0.793
+2683,1:false,1:false,,0.813
+2684,1:false,1:false,,0.727
+2685,1:false,1:false,,0.947
+2686,2:true,1:false,+,0.813
+2687,1:false,1:false,,0.905
+2688,1:false,1:false,,0.95
+2689,1:false,1:false,,1
+2690,1:false,1:false,,1
+2691,1:false,1:false,,0.95
+2692,1:false,1:false,,1
+2693,1:false,1:false,,1
+2694,1:false,1:false,,0.959
+2695,1:false,1:false,,0.98
+2696,1:false,1:false,,0.833
+2697,1:false,1:false,,1
+2698,1:false,1:false,,0.652
+2699,1:false,1:false,,0.842
+2700,2:true,1:false,+,0.929
+2701,2:true,2:true,,1
+2702,1:false,1:false,,0.985
+2703,1:false,1:false,,0.813
+2704,1:false,1:false,,0.842
+2705,1:false,1:false,,0.929
+2706,2:true,2:true,,1
+2707,1:false,1:false,,0.967
+2708,1:false,1:false,,0.905
+2709,1:false,1:false,,0.928
+2710,1:false,1:false,,0.967
+2711,2:true,2:true,,0.8
+2712,1:false,1:false,,0.98
+2713,1:false,1:false,,0.643
+2714,1:false,1:false,,0.842
+2715,2:true,1:false,+,0.5
+2716,2:true,1:false,+,0.8
+2717,1:false,1:false,,1
+2718,1:false,1:false,,0.842
+2719,1:false,1:false,,0.99
+2720,1:false,1:false,,0.947
+2721,2:true,1:false,+,0.793
+2722,1:false,1:false,,0.905
+2723,1:false,1:false,,0.95
+2724,1:false,1:false,,0.99
+2725,2:true,1:false,+,0.813
+2726,1:false,1:false,,0.95
+2727,1:false,1:false,,0.967
+2728,2:true,2:true,,0.632
+2729,1:false,1:false,,0.928
+2730,1:false,1:false,,1
+2731,1:false,1:false,,1
+2732,2:true,2:true,,0.811
+2733,1:false,1:false,,0.985
+2734,1:false,1:false,,1
+2735,1:false,1:false,,0.793
+2736,1:false,1:false,,1
+2737,1:false,1:false,,1
+2738,2:true,1:false,+,0.793
+2739,1:false,1:false,,0.667
+2740,1:false,1:false,,0.95
+2741,1:false,1:false,,0.905
+2742,1:false,1:false,,0.967
+2743,2:true,1:false,+,0.95
+2744,2:true,2:true,,0.811
+2745,1:false,1:false,,0.75
+2746,1:false,1:false,,0.959
+2747,1:false,1:false,,0.95
+2748,1:false,1:false,,0.813
+2749,1:false,1:false,,0.99
+2750,1:false,1:false,,1
+2751,2:true,2:true,,1
+2752,1:false,1:false,,0.793
+2753,2:true,2:true,,1
+2754,1:false,1:false,,1
+2755,1:false,1:false,,0.95
+2756,2:true,1:false,+,0.967
+2757,2:true,1:false,+,0.793
+2758,1:false,1:false,,1
+2759,1:false,1:false,,0.905
+2760,2:true,2:true,,1
+2761,1:false,1:false,,0.793
+2762,1:false,1:false,,1
+2763,1:false,1:false,,1
+2764,1:false,1:false,,0.791
+2765,1:false,1:false,,0.967
+2766,1:false,1:false,,0.793
+2767,1:false,1:false,,0.99
+2768,1:false,1:false,,0.928
+2769,1:false,1:false,,0.813
+2770,1:false,1:false,,1
+2771,1:false,1:false,,0.985
+2772,1:false,1:false,,0.985
+2773,1:false,1:false,,1
+2774,1:false,1:false,,1
+2775,1:false,1:false,,0.842
+2776,1:false,1:false,,0.95
+2777,1:false,1:false,,0.813
+2778,1:false,1:false,,1
+2779,1:false,1:false,,0.95
+2780,1:false,1:false,,0.905
+2781,1:false,1:false,,0.967
+2782,2:true,2:true,,1
+2783,1:false,1:false,,0.905
+2784,2:true,2:true,,1
+2785,2:true,1:false,+,0.842
+2786,1:false,1:false,,1
+2787,1:false,1:false,,0.928
+2788,1:false,1:false,,0.905
+2789,1:false,1:false,,1
+2790,1:false,1:false,,0.968
+2791,1:false,1:false,,0.95
+2792,1:false,1:false,,0.968
+2793,1:false,1:false,,1
+2794,1:false,1:false,,0.967
+2795,2:true,1:false,+,0.813
+2796,1:false,1:false,,1
+2797,1:false,1:false,,0.793
+2798,1:false,1:false,,0.55
+2799,1:false,1:false,,0.793
+2800,1:false,1:false,,0.667
+2801,1:false,1:false,,0.842
+2802,1:false,1:false,,0.967
+2803,1:false,1:false,,0.793
+2804,1:false,2:true,+,0.571
+2805,1:false,1:false,,0.98
+2806,2:true,1:false,+,0.793
+2807,1:false,1:false,,0.985
+2808,1:false,1:false,,1
+2809,1:false,1:false,,1
+2810,2:true,1:false,+,0.667
+2811,1:false,1:false,,0.985
+2812,1:false,1:false,,1
+2813,2:true,2:true,,1
+2814,1:false,1:false,,0.95
+2815,1:false,1:false,,0.95
+2816,1:false,1:false,,0.955
+2817,1:false,1:false,,1
+2818,1:false,1:false,,0.985
+2819,1:false,1:false,,0.636
+2820,1:false,1:false,,0.967
+2821,1:false,1:false,,1
+2822,1:false,2:true,+,0.571
+2823,1:false,1:false,,1
+2824,1:false,1:false,,0.985
+2825,1:false,1:false,,0.813
+2826,2:true,2:true,,0.878
+2827,1:false,1:false,,0.813
+2828,1:false,2:true,+,0.632
+2829,1:false,1:false,,0.95
+2830,2:true,1:false,+,0.813
+2831,1:false,1:false,,0.905
+2832,2:true,1:false,+,0.6
+2833,2:true,2:true,,1
+2834,1:false,1:false,,0.95
+2835,1:false,1:false,,0.944
+2836,1:false,1:false,,0.967
+2837,1:false,1:false,,0.793
+2838,1:false,1:false,,0.947
+2839,1:false,1:false,,1
+2840,1:false,1:false,,1
+2841,2:true,2:true,,1
+2842,2:true,2:true,,0.571
+2843,2:true,2:true,,1
+2844,1:false,1:false,,0.967
+2845,1:false,2:true,+,0.571
+2846,2:true,2:true,,0.8
+2847,1:false,1:false,,0.8
+2848,1:false,1:false,,0.793
+2849,1:false,1:false,,0.793
+2850,2:true,1:false,+,0.652
+2851,1:false,1:false,,0.778
+2852,1:false,1:false,,0.905
+2853,1:false,1:false,,1
+2854,2:true,2:true,,0.571
+2855,1:false,1:false,,1
+2856,1:false,1:false,,1
+2857,1:false,1:false,,0.793
+2858,1:false,1:false,,0.793
+2859,2:true,2:true,,1
+2860,1:false,1:false,,0.928
+2861,1:false,1:false,,1
+2862,2:true,2:true,,0.878
+2863,1:false,1:false,,0.793
+2864,1:false,1:false,,0.842
+2865,2:true,1:false,+,0.793
+2866,1:false,1:false,,0.959
+2867,1:false,1:false,,0.968
+2868,2:true,2:true,,1
+2869,1:false,1:false,,0.75
+2870,1:false,1:false,,0.793
+2871,1:false,1:false,,0.905
+2872,1:false,1:false,,0.968
+2873,2:true,2:true,,1
+2874,1:false,1:false,,0.985
+2875,1:false,1:false,,0.95
+2876,1:false,1:false,,0.928
+2877,2:true,2:true,,1
+2878,2:true,1:false,+,0.75
+2879,2:true,2:true,,0.571
+2880,2:true,2:true,,0.811
+2881,1:false,1:false,,0.929
+2882,1:false,1:false,,1
+2883,2:true,1:false,+,0.75
+2884,1:false,1:false,,0.793
+2885,2:true,2:true,,1
+2886,2:true,2:true,,1
+2887,2:true,1:false,+,0.652
+2888,1:false,1:false,,0.842
+2889,1:false,1:false,,0.985
+2890,2:true,2:true,,0.811
+2891,1:false,1:false,,0.985
+2892,2:true,1:false,+,0.95
+2893,1:false,2:true,+,0.571
+2894,1:false,1:false,,0.95
+2895,1:false,1:false,,0.98
+2896,1:false,1:false,,0.8
+2897,1:false,1:false,,0.842
+2898,2:true,2:true,,0.878
+2899,1:false,1:false,,0.967
+2900,1:false,1:false,,0.813
+2901,1:false,1:false,,0.905
+2902,2:true,1:false,+,0.791
+2903,1:false,1:false,,0.967
+2904,1:false,1:false,,0.905
+2905,1:false,1:false,,0.793
+2906,1:false,1:false,,0.98
+2907,1:false,1:false,,1
+2908,1:false,1:false,,0.928
+2909,1:false,1:false,,1
+2910,1:false,1:false,,0.985
+2911,1:false,1:false,,0.967
+2912,1:false,1:false,,1
+2913,1:false,1:false,,0.968
+2914,2:true,2:true,,0.571
+2915,2:true,1:false,+,0.75
+2916,1:false,1:false,,0.905
+2917,1:false,1:false,,0.905
+2918,1:false,1:false,,0.928
+2919,1:false,1:false,,0.791
+2920,2:true,2:true,,0.941
+2921,1:false,1:false,,1
+2922,1:false,1:false,,0.95
+2923,1:false,2:true,+,0.878
+2924,1:false,1:false,,0.947
+2925,1:false,2:true,+,0.571
+2926,1:false,1:false,,0.95
+2927,1:false,1:false,,0.95
+2928,1:false,1:false,,0.967
+2929,1:false,1:false,,0.959
+2930,1:false,1:false,,1
+2931,2:true,1:false,+,0.905
+2932,1:false,1:false,,0.967
+2933,1:false,1:false,,0.985
+2934,2:true,2:true,,1
+2935,1:false,1:false,,0.99
+2936,1:false,1:false,,1
+2937,1:false,1:false,,0.967
+2938,2:true,2:true,,1
+2939,1:false,2:true,+,0.571
+2940,1:false,1:false,,0.95
+2941,2:true,2:true,,0.571
+2942,1:false,1:false,,0.985
+2943,2:true,1:false,+,0.842
+2944,1:false,1:false,,0.793
+2945,1:false,1:false,,1
+2946,1:false,1:false,,0.905
+2947,1:false,1:false,,0.967
+2948,1:false,1:false,,0.813
+2949,1:false,1:false,,0.968
+2950,1:false,1:false,,1
+2951,1:false,1:false,,0.905
+2952,2:true,1:false,+,0.905
+2953,2:true,2:true,,1
+2954,2:true,2:true,,1
+2955,1:false,1:false,,0.944
+2956,1:false,1:false,,1
+2957,1:false,1:false,,0.967
+2958,2:true,2:true,,0.811
+2959,1:false,1:false,,0.833
+2960,1:false,1:false,,1
+2961,1:false,1:false,,0.813
+2962,2:true,1:false,+,0.813
+2963,1:false,1:false,,1
+2964,1:false,1:false,,0.813
+2965,1:false,1:false,,0.769
+2966,1:false,1:false,,0.813
+2967,2:true,2:true,,0.811
+2968,2:true,2:true,,1
+2969,1:false,1:false,,0.842
+2970,1:false,1:false,,0.985
+2971,1:false,1:false,,1
+2972,1:false,1:false,,0.98
+2973,1:false,1:false,,0.95
+2974,1:false,1:false,,0.95
+2975,2:true,2:true,,1
+2976,2:true,1:false,+,0.813
+2977,2:true,2:true,,0.8
+2978,1:false,1:false,,0.985
+2979,1:false,1:false,,1
+2980,2:true,1:false,+,0.813
+2981,1:false,1:false,,0.98
+2982,1:false,1:false,,1
+2983,1:false,1:false,,0.968
+2984,1:false,1:false,,0.793
+2985,1:false,1:false,,1
+2986,2:true,1:false,+,0.842
+2987,1:false,1:false,,0.99
+2988,1:false,1:false,,0.842
+2989,2:true,2:true,,1
+2990,1:false,1:false,,0.793
+2991,2:true,2:true,,0.571
+2992,1:false,1:false,,0.793
+2993,1:false,1:false,,0.95
+2994,1:false,1:false,,1
+2995,2:true,2:true,,1
+2996,1:false,1:false,,0.985
+2997,1:false,1:false,,0.967
+2998,1:false,1:false,,0.842
+2999,1:false,1:false,,0.905
+3000,1:false,1:false,,1
+3001,1:false,1:false,,0.793
+3002,1:false,1:false,,0.905
+3003,1:false,1:false,,0.967
+3004,1:false,1:false,,0.95
+3005,1:false,1:false,,1
+3006,1:false,1:false,,0.967
+3007,1:false,1:false,,0.95
+3008,1:false,1:false,,0.985
+3009,1:false,1:false,,1
+3010,2:true,2:true,,1
+3011,1:false,1:false,,1
+3012,1:false,1:false,,0.95
+3013,1:false,1:false,,0.842
+3014,1:false,1:false,,0.905
+3015,2:true,1:false,+,0.8
+3016,1:false,1:false,,0.955
+3017,1:false,1:false,,0.928
+3018,1:false,1:false,,1
+3019,1:false,1:false,,0.813
+3020,2:true,2:true,,0.941
+3021,1:false,1:false,,0.793
+3022,2:true,1:false,+,0.928
+3023,1:false,1:false,,0.967
+3024,1:false,1:false,,1
+3025,1:false,1:false,,0.791
+3026,1:false,1:false,,0.929
+3027,1:false,1:false,,0.793
+3028,1:false,1:false,,0.967
+3029,1:false,1:false,,1
+3030,1:false,1:false,,0.813
+3031,1:false,1:false,,0.959
+3032,1:false,1:false,,0.75
+3033,1:false,1:false,,1
+3034,2:true,1:false,+,0.793
+3035,1:false,1:false,,0.95
+3036,1:false,1:false,,0.967
+3037,1:false,1:false,,0.928
+3038,1:false,1:false,,0.813
+3039,1:false,1:false,,0.95
+3040,1:false,1:false,,0.99
+3041,1:false,1:false,,0.968
+3042,1:false,1:false,,0.667
+3043,1:false,1:false,,0.967
+3044,1:false,1:false,,0.985
+3045,1:false,1:false,,0.985
+3046,1:false,1:false,,0.985
+3047,1:false,1:false,,0.842
+3048,1:false,1:false,,1
+3049,1:false,1:false,,0.928
+3050,1:false,1:false,,0.95
+3051,1:false,1:false,,0.95
+3052,2:true,2:true,,0.571
+3053,2:true,2:true,,0.571
+3054,2:true,1:false,+,0.793
+3055,1:false,1:false,,0.985
+3056,1:false,1:false,,1
+3057,1:false,1:false,,0.813
+3058,2:true,1:false,+,0.842
+3059,2:true,1:false,+,0.842
+3060,1:false,1:false,,1
+3061,1:false,1:false,,0.95
+3062,1:false,1:false,,0.842
+3063,2:true,1:false,+,0.652
+3064,1:false,1:false,,1
+3065,1:false,1:false,,0.985
+3066,1:false,1:false,,0.793
+3067,1:false,1:false,,1
+3068,1:false,2:true,+,0.811
+3069,1:false,1:false,,1
+3070,1:false,1:false,,1
+3071,1:false,1:false,,0.928
+3072,1:false,1:false,,1
+3073,1:false,1:false,,1
+3074,1:false,1:false,,0.905
+3075,1:false,1:false,,1
+3076,1:false,1:false,,0.968
+3077,1:false,1:false,,0.905
+3078,1:false,1:false,,1
+3079,1:false,1:false,,1
+3080,1:false,1:false,,0.99
+3081,1:false,1:false,,0.813
+3082,1:false,1:false,,0.928
+3083,1:false,1:false,,0.652
+3084,1:false,1:false,,0.95
+3085,1:false,1:false,,0.95
+3086,1:false,1:false,,1
+3087,1:false,1:false,,1
+3088,1:false,1:false,,1
+3089,1:false,1:false,,0.98
+3090,2:true,1:false,+,0.813
+3091,1:false,1:false,,0.959
+3092,1:false,1:false,,0.75
+3093,1:false,1:false,,0.985
+3094,2:true,2:true,,0.878
+3095,1:false,1:false,,0.95
+3096,1:false,1:false,,0.793
+3097,1:false,1:false,,1
+3098,1:false,1:false,,0.967
+3099,1:false,1:false,,0.95
+3100,1:false,1:false,,0.842
+3101,1:false,1:false,,0.727
+3102,2:true,2:true,,1
+3103,2:true,1:false,+,0.905
+3104,1:false,1:false,,0.652
+3105,1:false,1:false,,0.793
+3106,1:false,1:false,,0.967
+3107,1:false,1:false,,0.793
+3108,2:true,2:true,,1
+3109,1:false,1:false,,0.928
+3110,1:false,1:false,,0.947
+3111,1:false,1:false,,0.636
+3112,1:false,1:false,,0.947
+3113,1:false,1:false,,0.95
+3114,1:false,2:true,+,0.571
+3115,1:false,1:false,,1
+3116,1:false,1:false,,0.842
+3117,1:false,1:false,,0.6
+3118,1:false,1:false,,0.667
+3119,1:false,1:false,,0.813
+3120,1:false,1:false,,0.98
+3121,1:false,1:false,,0.813
+3122,1:false,1:false,,0.967
+3123,1:false,1:false,,0.95
+3124,1:false,1:false,,0.55
+3125,1:false,1:false,,0.95
+3126,1:false,1:false,,0.905
+3127,1:false,2:true,+,0.538
+3128,2:true,1:false,+,0.793
+3129,2:true,1:false,+,0.667
+3130,1:false,1:false,,1
+3131,1:false,1:false,,0.636
+3132,2:true,1:false,+,0.95
+3133,2:true,2:true,,1
+3134,2:true,2:true,,0.811
+3135,1:false,1:false,,1
+3136,1:false,1:false,,0.985
+3137,1:false,1:false,,0.985
+3138,1:false,1:false,,0.842
+3139,2:true,1:false,+,0.905
+3140,2:true,2:true,,0.878
+3141,2:true,2:true,,1
+3142,1:false,1:false,,0.813
+3143,1:false,1:false,,0.842
+3144,1:false,1:false,,1
+3145,1:false,1:false,,1
+3146,1:false,1:false,,0.95
+3147,1:false,1:false,,0.928
+3148,1:false,1:false,,0.928
+3149,1:false,1:false,,1
+3150,1:false,1:false,,0.905
+3151,1:false,1:false,,0.967
+3152,2:true,2:true,,1
+3153,1:false,2:true,+,0.571
+3154,1:false,1:false,,0.793
+3155,1:false,1:false,,0.985
+3156,1:false,1:false,,0.928
+3157,1:false,1:false,,0.95
+3158,1:false,1:false,,0.791
+3159,1:false,1:false,,0.793
+3160,1:false,1:false,,0.842
+3161,1:false,1:false,,0.95
+3162,1:false,1:false,,0.793
+3163,1:false,1:false,,0.842
+3164,1:false,1:false,,1
+3165,2:true,2:true,,1
+3166,2:true,2:true,,1
+3167,1:false,1:false,,0.985
+3168,1:false,1:false,,1
+3169,1:false,1:false,,0.967
+3170,1:false,1:false,,0.99
+3171,2:true,2:true,,0.878
+3172,2:true,2:true,,0.571
+3173,1:false,1:false,,0.985
+3174,1:false,1:false,,0.95
+3175,1:false,2:true,+,0.878
+3176,2:true,2:true,,1
+3177,1:false,1:false,,0.959
+3178,2:true,2:true,,0.8
+3179,1:false,1:false,,1
+3180,1:false,1:false,,0.905
+3181,2:true,1:false,+,0.5
+3182,1:false,1:false,,0.5
+3183,2:true,2:true,,0.571
+3184,1:false,1:false,,0.928
+3185,1:false,1:false,,0.928
+3186,1:false,1:false,,1
+3187,2:true,2:true,,0.571
+3188,1:false,1:false,,0.985
+3189,1:false,1:false,,0.928
+3190,1:false,1:false,,1
+3191,1:false,1:false,,0.813
+3192,2:true,2:true,,1
+3193,1:false,1:false,,0.842
+3194,1:false,1:false,,0.793
+3195,1:false,1:false,,0.8
+3196,1:false,1:false,,0.793
+3197,1:false,1:false,,1
+3198,2:true,2:true,,1
+3199,1:false,1:false,,0.813
+3200,1:false,1:false,,1
+3201,1:false,1:false,,0.98
+3202,1:false,1:false,,0.967
+3203,2:true,1:false,+,0.98
+3204,1:false,1:false,,1
+3205,1:false,1:false,,1
+3206,1:false,1:false,,0.95
+3207,1:false,1:false,,0.813
+3208,1:false,1:false,,0.793
+3209,1:false,1:false,,1
+3210,2:true,1:false,+,0.667
+3211,1:false,1:false,,1
+3212,1:false,1:false,,0.967
+3213,1:false,1:false,,0.99
+3214,1:false,1:false,,1
+3215,1:false,1:false,,0.842
+3216,2:true,2:true,,1
+3217,1:false,1:false,,1
+3218,1:false,1:false,,0.928
+3219,1:false,1:false,,0.967
+3220,1:false,1:false,,0.778
+3221,1:false,1:false,,0.813
+3222,2:true,1:false,+,0.636
+3223,1:false,1:false,,0.842
+3224,2:true,1:false,+,0.793
+3225,1:false,1:false,,0.985
+3226,1:false,1:false,,0.905
+3227,1:false,1:false,,0.967
+3228,1:false,1:false,,0.985
+3229,1:false,1:false,,0.985
+3230,1:false,1:false,,0.793
+3231,1:false,1:false,,0.905
+3232,1:false,1:false,,0.793
+3233,1:false,1:false,,0.947
+3234,2:true,1:false,+,0.793
+3235,1:false,1:false,,0.95
+3236,2:true,1:false,+,0.793
+3237,1:false,1:false,,0.95
+3238,1:false,1:false,,0.791
+3239,1:false,1:false,,1
+3240,1:false,1:false,,1
+3241,1:false,1:false,,1
+3242,1:false,1:false,,0.959
+3243,1:false,1:false,,1
+3244,1:false,1:false,,0.793
+3245,1:false,1:false,,0.791
+3246,2:true,1:false,+,0.813
+3247,1:false,1:false,,0.95
+3248,1:false,1:false,,1
+3249,1:false,1:false,,0.793
+3250,1:false,1:false,,0.99
+3251,2:true,1:false,+,0.95
+3252,1:false,1:false,,0.813
+3253,2:true,1:false,+,0.793
+3254,1:false,1:false,,1
+3255,1:false,1:false,,1
+3256,1:false,1:false,,0.842
+3257,1:false,1:false,,1
+3258,1:false,1:false,,0.955
+3259,1:false,1:false,,0.95
+3260,1:false,1:false,,0.968
+3261,1:false,1:false,,1
+3262,1:false,1:false,,0.75
+3263,1:false,1:false,,0.791
+3264,1:false,1:false,,0.813
+3265,1:false,1:false,,0.793
+3266,1:false,1:false,,0.842
+3267,1:false,1:false,,0.905
+3268,1:false,1:false,,0.967
+3269,2:true,1:false,+,0.813
+3270,2:true,2:true,,0.571
+3271,1:false,1:false,,0.813
+3272,2:true,2:true,,1
+3273,1:false,1:false,,0.947
+3274,1:false,1:false,,0.842
+3275,2:true,2:true,,1
+3276,2:true,2:true,,0.571
+3277,1:false,1:false,,0.793
+3278,1:false,1:false,,0.95
+3279,1:false,1:false,,0.967
+3280,1:false,1:false,,1
+3281,1:false,1:false,,1
+3282,1:false,1:false,,0.985
+3283,1:false,1:false,,0.793
+3284,1:false,1:false,,1
+3285,1:false,1:false,,1
+3286,2:true,1:false,+,0.947
+3287,1:false,1:false,,0.905
+3288,1:false,1:false,,1
+3289,1:false,1:false,,0.813
+3290,1:false,1:false,,0.967
+3291,1:false,1:false,,1
+3292,1:false,1:false,,0.947
+3293,1:false,1:false,,0.928
+3294,1:false,1:false,,1
+3295,1:false,1:false,,0.967
+3296,1:false,1:false,,0.813
+3297,2:true,2:true,,1
+3298,1:false,1:false,,1
+3299,1:false,1:false,,0.95
+3300,1:false,1:false,,0.928
+3301,2:true,1:false,+,0.813
+3302,1:false,1:false,,0.99
+3303,1:false,1:false,,0.99
+3304,1:false,2:true,+,0.811
+3305,1:false,1:false,,0.967
+3306,1:false,1:false,,0.95
+3307,1:false,1:false,,0.905
+3308,1:false,1:false,,1
+3309,1:false,1:false,,0.985
+3310,1:false,1:false,,0.947
+3311,1:false,2:true,+,0.571
+3312,1:false,1:false,,0.99
+3313,1:false,1:false,,0.793
+3314,1:false,1:false,,0.985
+3315,1:false,2:true,+,0.571
+3316,1:false,1:false,,1
+3317,1:false,1:false,,0.95
+3318,1:false,1:false,,0.99
+3319,1:false,1:false,,1
+3320,1:false,2:true,+,0.571
+3321,1:false,1:false,,0.985
+3322,1:false,1:false,,0.929
+3323,1:false,1:false,,0.793
+3324,2:true,1:false,+,0.791
+3325,1:false,1:false,,0.985
+3326,1:false,1:false,,0.793
+3327,1:false,1:false,,0.793
+3328,1:false,1:false,,0.813
+3329,1:false,1:false,,0.967
+3330,1:false,1:false,,1
+3331,1:false,1:false,,0.75
+3332,1:false,1:false,,0.791
+3333,1:false,1:false,,0.99
+3334,1:false,1:false,,0.842
+3335,1:false,1:false,,0.985
+3336,1:false,1:false,,0.793
+3337,1:false,1:false,,0.769
+3338,2:true,1:false,+,0.727
+3339,1:false,1:false,,0.75
+3340,2:true,2:true,,0.571
+3341,1:false,1:false,,0.99
+3342,1:false,1:false,,0.813
+3343,1:false,1:false,,0.928
+3344,1:false,1:false,,0.793
+3345,2:true,2:true,,1
+3346,1:false,1:false,,0.793
+3347,1:false,1:false,,0.967
+3348,1:false,1:false,,0.793
+3349,1:false,1:false,,1
+3350,1:false,1:false,,1
+3351,1:false,1:false,,0.985
+3352,1:false,1:false,,0.8
+3353,1:false,1:false,,1
+3354,1:false,1:false,,0.968
+3355,1:false,1:false,,0.967
+3356,1:false,1:false,,0.905
+3357,1:false,1:false,,0.99
+3358,1:false,1:false,,0.99
+3359,1:false,1:false,,0.95
+3360,2:true,1:false,+,0.8
+3361,1:false,2:true,+,0.571
+3362,2:true,1:false,+,0.793
+3363,1:false,1:false,,0.928
+3364,2:true,1:false,+,0.905
+3365,2:true,2:true,,0.632
+3366,1:false,1:false,,0.905
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.47 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3004               89.2454 %
+Incorrectly Classified Instances       362               10.7546 %
+Kappa statistic                          0.6299
+Mean absolute error                      0.1628
+Root mean squared error                  0.2853
+Relative absolute error                 50.3753 %
+Root relative squared error             70.9871 %
+Total Number of Instances             3366     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.967    0.400    0.905      0.967    0.935      0.641    0.909     0.970     false
+                 0.600    0.033    0.821      0.600    0.693      0.641    0.909     0.782     true
+Weighted Avg.    0.892    0.326    0.888      0.892    0.886      0.641    0.909     0.932     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 2595   89 |    a = false
+  273  409 |    b = true
+

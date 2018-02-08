@@ -1,0 +1,8 @@
+sqoop import --connect jdbc:mysql://127.0.0.1/itmd521 --username root --password root --table bwslogs --m 1
+sqoop import --connect jdbc:mysql://127.0.0.1/itmd521 --username root --password root --table swslogs --m 1
+
+sqoop import --connect jdbc:mysql://127.0.0.1/itmd521 --username root --password root --query 'select substr(logdate,6,2) as Month, uristem, count(uristem) as urlcount from bwslogs where $CONDITIONS AND status='200'
+group by Month, uristem order by urlcount DESC LIMIT 19;' --m 1 --target-dir /user/$USER/output22/
+
+sqoop import --connect jdbc:mysql://127.0.0.1/itmd521 --username root --password root --query 'select substr(logdate,9,2) as days, uristem, count(uristem) as urlcount from swslogs where $CONDITIONS AND status='200'
+group by days, uristem order by days, urlcount DESC LIMIT 1;' --m 1 --target-dir /user/$USER/output23/

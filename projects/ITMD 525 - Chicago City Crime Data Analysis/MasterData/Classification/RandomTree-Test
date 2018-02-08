@@ -1,0 +1,1745 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.RandomTree -- -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     CR17filtered-weka.filters.unsupervised.attribute.Remove-R1-3-weka.filters.unsupervised.attribute.Remove-R3-weka.filters.unsupervised.instance.Resample-S1-Z7.0-no-replacement-weka.filters.unsupervised.instance.Resample-S1-Z66.0-no-replacement-weka.filters.unsupervised.attribute.Remove-R1-2,5,7-14,16-19
+Instances:    3366
+Attributes:   4
+              Primary.Type
+              Description
+              Arrest
+              Year
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+
+RandomTree
+==========
+
+Description = DOMESTIC BATTERY SIMPLE : false (299/62)
+Description = FINANCIAL IDENTITY THEFT OVER $ 300 : false (51/1)
+Description = HARASSMENT BY ELECTRONIC MEANS : false (42/0)
+Description = SELL/GIVE/DEL LIQUOR TO MINOR : false (0/0)
+Description = FROM BUILDING : false (139/0)
+Description = OVER $500 : false (194/3)
+Description = TO LAND : true (53/10)
+Description = SIMPLE
+|   Primary.Type = BATTERY : false (203/38)
+|   Primary.Type = DECEPTIVE PRACTICE : false (0/0)
+|   Primary.Type = OTHER OFFENSE : false (0/0)
+|   Primary.Type = LIQUOR LAW VIOLATION : false (0/0)
+|   Primary.Type = THEFT : false (0/0)
+|   Primary.Type = CRIMINAL TRESPASS : false (0/0)
+|   Primary.Type = ASSAULT : false (152/24)
+|   Primary.Type = CRIMINAL DAMAGE : false (0/0)
+|   Primary.Type = BURGLARY : false (0/0)
+|   Primary.Type = OFFENSE INVOLVING CHILDREN : false (0/0)
+|   Primary.Type = CRIM SEXUAL ASSAULT : false (0/0)
+|   Primary.Type = MOTOR VEHICLE THEFT : false (0/0)
+|   Primary.Type = ROBBERY : false (0/0)
+|   Primary.Type = NARCOTICS : false (0/0)
+|   Primary.Type = PROSTITUTION : false (0/0)
+|   Primary.Type = PUBLIC PEACE VIOLATION : false (0/0)
+|   Primary.Type = WEAPONS VIOLATION : false (0/0)
+|   Primary.Type = HOMICIDE : false (0/0)
+|   Primary.Type = INTERFERENCE WITH PUBLIC OFFICER : false (0/0)
+|   Primary.Type = SEX OFFENSE : false (0/0)
+|   Primary.Type = CONCEALED CARRY LICENSE VIOLATION : false (0/0)
+|   Primary.Type = ARSON : false (0/0)
+|   Primary.Type = KIDNAPPING : false (0/0)
+|   Primary.Type = STALKING : false (2/0)
+|   Primary.Type = GAMBLING : false (0/0)
+|   Primary.Type = INTIMIDATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL : false (0/0)
+|   Primary.Type = OBSCENITY : false (0/0)
+|   Primary.Type = HUMAN TRAFFICKING : false (0/0)
+|   Primary.Type = OTHER NARCOTIC VIOLATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL (SUBJECT SPECIFIED) : false (0/0)
+|   Primary.Type = PUBLIC INDECENCY : false (0/0)
+Description = TO VEHICLE
+|   Primary.Type = BATTERY : false (0/0)
+|   Primary.Type = DECEPTIVE PRACTICE : false (0/0)
+|   Primary.Type = OTHER OFFENSE : false (0/0)
+|   Primary.Type = LIQUOR LAW VIOLATION : false (0/0)
+|   Primary.Type = THEFT : false (0/0)
+|   Primary.Type = CRIMINAL TRESPASS : false (9/2)
+|   Primary.Type = ASSAULT : false (0/0)
+|   Primary.Type = CRIMINAL DAMAGE : false (182/6)
+|   Primary.Type = BURGLARY : false (0/0)
+|   Primary.Type = OFFENSE INVOLVING CHILDREN : false (0/0)
+|   Primary.Type = CRIM SEXUAL ASSAULT : false (0/0)
+|   Primary.Type = MOTOR VEHICLE THEFT : false (0/0)
+|   Primary.Type = ROBBERY : false (0/0)
+|   Primary.Type = NARCOTICS : false (0/0)
+|   Primary.Type = PROSTITUTION : false (0/0)
+|   Primary.Type = PUBLIC PEACE VIOLATION : false (0/0)
+|   Primary.Type = WEAPONS VIOLATION : false (0/0)
+|   Primary.Type = HOMICIDE : false (0/0)
+|   Primary.Type = INTERFERENCE WITH PUBLIC OFFICER : false (0/0)
+|   Primary.Type = SEX OFFENSE : false (0/0)
+|   Primary.Type = CONCEALED CARRY LICENSE VIOLATION : false (0/0)
+|   Primary.Type = ARSON : false (0/0)
+|   Primary.Type = KIDNAPPING : false (0/0)
+|   Primary.Type = STALKING : false (0/0)
+|   Primary.Type = GAMBLING : false (0/0)
+|   Primary.Type = INTIMIDATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL : false (0/0)
+|   Primary.Type = OBSCENITY : false (0/0)
+|   Primary.Type = HUMAN TRAFFICKING : false (0/0)
+|   Primary.Type = OTHER NARCOTIC VIOLATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL (SUBJECT SPECIFIED) : false (0/0)
+|   Primary.Type = PUBLIC INDECENCY : false (0/0)
+Description = TELEPHONE THREAT : false (49/2)
+Description = FORCIBLE ENTRY : false (102/1)
+Description = FINANCIAL IDENTITY THEFT $300 AND UNDER : false (10/0)
+Description = OTHER OFFENSE : false (5/0)
+Description = TO PROPERTY : false (189/18)
+Description = $500 AND UNDER : false (282/14)
+Description = POCKET-PICKING : false (31/0)
+Description = COUNTERFEIT CHECK : false (8/2)
+Description = AGGRAVATED: OTHER DANG WEAPON
+|   Primary.Type = BATTERY : false (20/5)
+|   Primary.Type = DECEPTIVE PRACTICE : false (0/0)
+|   Primary.Type = OTHER OFFENSE : false (0/0)
+|   Primary.Type = LIQUOR LAW VIOLATION : false (0/0)
+|   Primary.Type = THEFT : false (0/0)
+|   Primary.Type = CRIMINAL TRESPASS : false (0/0)
+|   Primary.Type = ASSAULT : false (15/3)
+|   Primary.Type = CRIMINAL DAMAGE : false (0/0)
+|   Primary.Type = BURGLARY : false (0/0)
+|   Primary.Type = OFFENSE INVOLVING CHILDREN : false (0/0)
+|   Primary.Type = CRIM SEXUAL ASSAULT : false (0/0)
+|   Primary.Type = MOTOR VEHICLE THEFT : false (0/0)
+|   Primary.Type = ROBBERY : false (0/0)
+|   Primary.Type = NARCOTICS : false (0/0)
+|   Primary.Type = PROSTITUTION : false (0/0)
+|   Primary.Type = PUBLIC PEACE VIOLATION : false (0/0)
+|   Primary.Type = WEAPONS VIOLATION : false (0/0)
+|   Primary.Type = HOMICIDE : false (0/0)
+|   Primary.Type = INTERFERENCE WITH PUBLIC OFFICER : false (0/0)
+|   Primary.Type = SEX OFFENSE : false (0/0)
+|   Primary.Type = CONCEALED CARRY LICENSE VIOLATION : false (0/0)
+|   Primary.Type = ARSON : false (0/0)
+|   Primary.Type = KIDNAPPING : false (0/0)
+|   Primary.Type = STALKING : false (0/0)
+|   Primary.Type = GAMBLING : false (0/0)
+|   Primary.Type = INTIMIDATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL : false (0/0)
+|   Primary.Type = OBSCENITY : false (0/0)
+|   Primary.Type = HUMAN TRAFFICKING : false (0/0)
+|   Primary.Type = OTHER NARCOTIC VIOLATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL (SUBJECT SPECIFIED) : false (0/0)
+|   Primary.Type = PUBLIC INDECENCY : false (0/0)
+Description = AGGRAVATED: OTHER : false (3/1)
+Description = AGG PRO.EMP:KNIFE/CUTTING INST : false (1/0)
+Description = CHILD ABDUCTION : true (1/0)
+Description = COMPUTER FRAUD : false (4/0)
+Description = OTHER VEHICLE OFFENSE : false (18/1)
+Description = AUTOMOBILE : false (139/10)
+Description = OTHER CRIME INVOLVING PROPERTY : false (4/0)
+Description = TO CITY OF CHICAGO PROPERTY : false (6/0)
+Description = STRONGARM - NO WEAPON : false (33/0)
+Description = UNLAWFUL ENTRY : false (63/2)
+Description = HARASSMENT BY TELEPHONE : false (42/0)
+Description = AGGRAVATED: HANDGUN
+|   Primary.Type = BATTERY : false (22/1)
+|   Primary.Type = DECEPTIVE PRACTICE : false (0/0)
+|   Primary.Type = OTHER OFFENSE : false (0/0)
+|   Primary.Type = LIQUOR LAW VIOLATION : false (0/0)
+|   Primary.Type = THEFT : false (0/0)
+|   Primary.Type = CRIMINAL TRESPASS : false (0/0)
+|   Primary.Type = ASSAULT : false (43/9)
+|   Primary.Type = CRIMINAL DAMAGE : false (0/0)
+|   Primary.Type = BURGLARY : false (0/0)
+|   Primary.Type = OFFENSE INVOLVING CHILDREN : false (0/0)
+|   Primary.Type = CRIM SEXUAL ASSAULT : false (0/0)
+|   Primary.Type = MOTOR VEHICLE THEFT : false (0/0)
+|   Primary.Type = ROBBERY : false (0/0)
+|   Primary.Type = NARCOTICS : false (0/0)
+|   Primary.Type = PROSTITUTION : false (0/0)
+|   Primary.Type = PUBLIC PEACE VIOLATION : false (0/0)
+|   Primary.Type = WEAPONS VIOLATION : false (0/0)
+|   Primary.Type = HOMICIDE : false (0/0)
+|   Primary.Type = INTERFERENCE WITH PUBLIC OFFICER : false (0/0)
+|   Primary.Type = SEX OFFENSE : false (0/0)
+|   Primary.Type = CONCEALED CARRY LICENSE VIOLATION : false (0/0)
+|   Primary.Type = ARSON : false (0/0)
+|   Primary.Type = KIDNAPPING : false (0/0)
+|   Primary.Type = STALKING : false (0/0)
+|   Primary.Type = GAMBLING : false (0/0)
+|   Primary.Type = INTIMIDATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL : false (0/0)
+|   Primary.Type = OBSCENITY : false (0/0)
+|   Primary.Type = HUMAN TRAFFICKING : false (0/0)
+|   Primary.Type = OTHER NARCOTIC VIOLATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL (SUBJECT SPECIFIED) : false (0/0)
+|   Primary.Type = PUBLIC INDECENCY : false (0/0)
+Description = ARMED: HANDGUN : false (57/3)
+Description = ILLEGAL USE CASH CARD : false (16/0)
+Description = ENDANGERING LIFE/HEALTH CHILD : true (2/0)
+Description = TRUCK, BUS, MOTOR HOME : false (4/0)
+Description = RETAIL THEFT : true (126/54)
+Description = AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST : false (11/4)
+Description = POSS: AMPHETAMINES : false (0/0)
+Description = POSS: CANNABIS 30GMS OR LESS : true (13/0)
+Description = PAROLE VIOLATION : true (11/0)
+Description = SEX OFFENDER: FAIL TO REGISTER : false (1/0)
+Description = AGGRAVATED:KNIFE/CUTTING INSTR
+|   Primary.Type = BATTERY : false (8/2)
+|   Primary.Type = DECEPTIVE PRACTICE : false (0/0)
+|   Primary.Type = OTHER OFFENSE : false (0/0)
+|   Primary.Type = LIQUOR LAW VIOLATION : false (0/0)
+|   Primary.Type = THEFT : false (0/0)
+|   Primary.Type = CRIMINAL TRESPASS : false (0/0)
+|   Primary.Type = ASSAULT : false (13/3)
+|   Primary.Type = CRIMINAL DAMAGE : false (0/0)
+|   Primary.Type = BURGLARY : false (0/0)
+|   Primary.Type = OFFENSE INVOLVING CHILDREN : false (0/0)
+|   Primary.Type = CRIM SEXUAL ASSAULT : false (0/0)
+|   Primary.Type = MOTOR VEHICLE THEFT : false (0/0)
+|   Primary.Type = ROBBERY : false (0/0)
+|   Primary.Type = NARCOTICS : false (0/0)
+|   Primary.Type = PROSTITUTION : false (0/0)
+|   Primary.Type = PUBLIC PEACE VIOLATION : false (0/0)
+|   Primary.Type = WEAPONS VIOLATION : false (0/0)
+|   Primary.Type = HOMICIDE : false (0/0)
+|   Primary.Type = INTERFERENCE WITH PUBLIC OFFICER : false (0/0)
+|   Primary.Type = SEX OFFENSE : false (0/0)
+|   Primary.Type = CONCEALED CARRY LICENSE VIOLATION : false (0/0)
+|   Primary.Type = ARSON : false (0/0)
+|   Primary.Type = KIDNAPPING : false (0/0)
+|   Primary.Type = STALKING : false (0/0)
+|   Primary.Type = GAMBLING : false (0/0)
+|   Primary.Type = INTIMIDATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL : false (0/0)
+|   Primary.Type = OBSCENITY : false (0/0)
+|   Primary.Type = HUMAN TRAFFICKING : false (0/0)
+|   Primary.Type = OTHER NARCOTIC VIOLATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL (SUBJECT SPECIFIED) : false (0/0)
+|   Primary.Type = PUBLIC INDECENCY : false (0/0)
+Description = FALSE/STOLEN/ALTERED TRP : true (19/7)
+Description = VIOLATE ORDER OF PROTECTION : false (23/8)
+Description = THEFT OF LABOR/SERVICES : false (10/2)
+Description = SOLICIT ON PUBLIC WAY : true (11/0)
+Description = AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON : false (15/3)
+Description = FALSE POLICE REPORT : false (0/0)
+Description = UNLAWFUL USE HANDGUN : false (5/2)
+Description = PREDATORY : false (1/0)
+Description = FRAUD OR CONFIDENCE GAME : false (22/0)
+Description = MANU/DELIVER: HEROIN (WHITE) : true (6/0)
+Description = POSS: HEROIN(WHITE) : true (27/0)
+Description = MANU/DELIVER:CRACK : true (2/0)
+Description = FOUND SUSPECT NARCOTICS : true (8/0)
+Description = VEHICULAR HIJACKING : false (3/0)
+Description = NON-AGGRAVATED : false (13/0)
+Description = MANU/DEL:CANNABIS 10GM OR LESS : true (8/0)
+Description = CRIMINAL DEFACEMENT : false (11/0)
+Description = FIRST DEGREE MURDER : false (9/3)
+Description = CREDIT CARD FRAUD : false (36/0)
+Description = ATTEMPT THEFT : false (3/1)
+Description = UNLAWFUL POSS OF HANDGUN : true (41/5)
+Description = SOLICIT NARCOTICS ON PUBLICWAY : true (3/0)
+Description = ARMED:KNIFE/CUTTING INSTRUMENT : false (6/3)
+Description = POSS: COCAINE : true (2/0)
+Description = POSS: CRACK : true (16/0)
+Description = OBSTRUCTING IDENTIFICATION : true (8/0)
+Description = VEHICLE TITLE/REG OFFENSE : true (17/1)
+Description = AGGRAVATED : false (15/0)
+Description = MANU/DEL:CANNABIS OVER 10 GMS : true (11/0)
+Description = AGGRAVATED PO: OTHER DANG WEAP
+|   Primary.Type = BATTERY : false (2/0)
+|   Primary.Type = DECEPTIVE PRACTICE : false (0/0)
+|   Primary.Type = OTHER OFFENSE : false (0/0)
+|   Primary.Type = LIQUOR LAW VIOLATION : false (0/0)
+|   Primary.Type = THEFT : false (0/0)
+|   Primary.Type = CRIMINAL TRESPASS : false (0/0)
+|   Primary.Type = ASSAULT : false (2/1)
+|   Primary.Type = CRIMINAL DAMAGE : false (0/0)
+|   Primary.Type = BURGLARY : false (0/0)
+|   Primary.Type = OFFENSE INVOLVING CHILDREN : false (0/0)
+|   Primary.Type = CRIM SEXUAL ASSAULT : false (0/0)
+|   Primary.Type = MOTOR VEHICLE THEFT : false (0/0)
+|   Primary.Type = ROBBERY : false (0/0)
+|   Primary.Type = NARCOTICS : false (0/0)
+|   Primary.Type = PROSTITUTION : false (0/0)
+|   Primary.Type = PUBLIC PEACE VIOLATION : false (0/0)
+|   Primary.Type = WEAPONS VIOLATION : false (0/0)
+|   Primary.Type = HOMICIDE : false (0/0)
+|   Primary.Type = INTERFERENCE WITH PUBLIC OFFICER : false (0/0)
+|   Primary.Type = SEX OFFENSE : false (0/0)
+|   Primary.Type = CONCEALED CARRY LICENSE VIOLATION : false (0/0)
+|   Primary.Type = ARSON : false (0/0)
+|   Primary.Type = KIDNAPPING : false (0/0)
+|   Primary.Type = STALKING : false (0/0)
+|   Primary.Type = GAMBLING : false (0/0)
+|   Primary.Type = INTIMIDATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL : false (0/0)
+|   Primary.Type = OBSCENITY : false (0/0)
+|   Primary.Type = HUMAN TRAFFICKING : false (0/0)
+|   Primary.Type = OTHER NARCOTIC VIOLATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL (SUBJECT SPECIFIED) : false (0/0)
+|   Primary.Type = PUBLIC INDECENCY : false (0/0)
+Description = OTHER VIOLATION : false (2/1)
+Description = OTHER : true (1/0)
+Description = MANU/DELIVER: HEROIN(BRN/TAN) : false (0/0)
+Description = GUN OFFENDER: DUTY TO REGISTER : true (4/0)
+Description = UNLAWFUL USE OTHER FIREARM : false (0/0)
+Description = ATTEMPT: ARMED-HANDGUN : false (1/0)
+Description = RECKLESS CONDUCT : true (20/4)
+Description = POSS: SYNTHETIC DRUGS : true (2/0)
+Description = PROHIBITED PLACES : true (1/0)
+Description = ATTEMPT FORCIBLE ENTRY : false (8/0)
+Description = POSS: CANNABIS MORE THAN 30GMS : true (11/0)
+Description = AGGRAVATED VEHICULAR HIJACKING : false (3/1)
+Description = TO STATE SUP LAND : true (4/0)
+Description = SEX OFFENDER: FAIL REG NEW ADD : false (4/0)
+Description = POSS: HALLUCINOGENS : false (0/0)
+Description = PURSE-SNATCHING : false (10/0)
+Description = AGG CRIMINAL SEXUAL ABUSE : false (1/0)
+Description = BY FIRE : false (6/1)
+Description = TO RESIDENCE : false (20/9)
+Description = RESIST/OBSTRUCT/DISARM OFFICER : true (5/0)
+Description = CALL OPERATION : true (1/0)
+Description = CHILD ABUSE : false (14/1)
+Description = THEFT OF LOST/MISLAID PROP : true (1/0)
+Description = BOGUS CHECK : false (3/0)
+Description = OTHER CRIME AGAINST PERSON : false (3/1)
+Description = ATT: AUTOMOBILE : false (7/0)
+Description = AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY : false (5/2)
+Description = UNAUTHORIZED VIDEOTAPING : false (0/0)
+Description = ARMED: OTHER DANGEROUS WEAPON : false (4/0)
+Description = CYCLE, SCOOTER, BIKE NO VIN : false (0/0)
+Description = LICENSE VIOLATION : false (8/0)
+Description = ABUSE/NEGLECT: CARE FACILITY : false (0/0)
+Description = POSS: PCP : true (5/0)
+Description = GUN OFFENDER: ANNUAL REGISTRATION : true (5/0)
+Description = AGGRAVATED FINANCIAL IDENTITY THEFT : false (3/0)
+Description = POSS: BARBITUATES : true (4/0)
+Description = THEFT/RECOVERY: TRUCK,BUS,MHOME : false (0/0)
+Description = HOME INVASION : true (1/0)
+Description = AGG SEX ASSLT OF CHILD FAM MBR : false (1/0)
+Description = AGG PO HANDS NO/MIN INJURY
+|   Primary.Type = BATTERY : true (5/2)
+|   Primary.Type = DECEPTIVE PRACTICE : false (0/0)
+|   Primary.Type = OTHER OFFENSE : false (0/0)
+|   Primary.Type = LIQUOR LAW VIOLATION : false (0/0)
+|   Primary.Type = THEFT : false (0/0)
+|   Primary.Type = CRIMINAL TRESPASS : false (0/0)
+|   Primary.Type = ASSAULT : true (3/0)
+|   Primary.Type = CRIMINAL DAMAGE : false (0/0)
+|   Primary.Type = BURGLARY : false (0/0)
+|   Primary.Type = OFFENSE INVOLVING CHILDREN : false (0/0)
+|   Primary.Type = CRIM SEXUAL ASSAULT : false (0/0)
+|   Primary.Type = MOTOR VEHICLE THEFT : false (0/0)
+|   Primary.Type = ROBBERY : false (0/0)
+|   Primary.Type = NARCOTICS : false (0/0)
+|   Primary.Type = PROSTITUTION : false (0/0)
+|   Primary.Type = PUBLIC PEACE VIOLATION : false (0/0)
+|   Primary.Type = WEAPONS VIOLATION : false (0/0)
+|   Primary.Type = HOMICIDE : false (0/0)
+|   Primary.Type = INTERFERENCE WITH PUBLIC OFFICER : false (0/0)
+|   Primary.Type = SEX OFFENSE : false (0/0)
+|   Primary.Type = CONCEALED CARRY LICENSE VIOLATION : false (0/0)
+|   Primary.Type = ARSON : false (0/0)
+|   Primary.Type = KIDNAPPING : false (0/0)
+|   Primary.Type = STALKING : false (0/0)
+|   Primary.Type = GAMBLING : false (0/0)
+|   Primary.Type = INTIMIDATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL : false (0/0)
+|   Primary.Type = OBSCENITY : false (0/0)
+|   Primary.Type = HUMAN TRAFFICKING : false (0/0)
+|   Primary.Type = OTHER NARCOTIC VIOLATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL (SUBJECT SPECIFIED) : false (0/0)
+|   Primary.Type = PUBLIC INDECENCY : false (0/0)
+Description = ATTEMPT: STRONGARM-NO WEAPON : false (4/0)
+Description = AGG PRO.EMP: HANDGUN : false (0/0)
+Description = THEFT/RECOVERY: AUTOMOBILE : false (14/5)
+Description = CHILD ABDUCTION/STRANGER : false (1/0)
+Description = CYCLE, SCOOTER, BIKE W-VIN : false (1/0)
+Description = GUN OFFENDER: DUTY TO REPORT CHANGE OF INFORMATION : true (1/0)
+Description = PROBATION VIOLATION : true (1/0)
+Description = POSSESSION OF BURGLARY TOOLS : false (0/0)
+Description = ATT CRIM SEXUAL ABUSE : false (0/0)
+Description = PRO EMP HANDS NO/MIN INJURY
+|   Primary.Type = BATTERY : true (13/6)
+|   Primary.Type = DECEPTIVE PRACTICE : false (0/0)
+|   Primary.Type = OTHER OFFENSE : false (0/0)
+|   Primary.Type = LIQUOR LAW VIOLATION : false (0/0)
+|   Primary.Type = THEFT : false (0/0)
+|   Primary.Type = CRIMINAL TRESPASS : false (0/0)
+|   Primary.Type = ASSAULT : false (10/2)
+|   Primary.Type = CRIMINAL DAMAGE : false (0/0)
+|   Primary.Type = BURGLARY : false (0/0)
+|   Primary.Type = OFFENSE INVOLVING CHILDREN : false (0/0)
+|   Primary.Type = CRIM SEXUAL ASSAULT : false (0/0)
+|   Primary.Type = MOTOR VEHICLE THEFT : false (0/0)
+|   Primary.Type = ROBBERY : false (0/0)
+|   Primary.Type = NARCOTICS : false (0/0)
+|   Primary.Type = PROSTITUTION : false (0/0)
+|   Primary.Type = PUBLIC PEACE VIOLATION : false (0/0)
+|   Primary.Type = WEAPONS VIOLATION : false (0/0)
+|   Primary.Type = HOMICIDE : false (0/0)
+|   Primary.Type = INTERFERENCE WITH PUBLIC OFFICER : false (0/0)
+|   Primary.Type = SEX OFFENSE : false (0/0)
+|   Primary.Type = CONCEALED CARRY LICENSE VIOLATION : false (0/0)
+|   Primary.Type = ARSON : false (0/0)
+|   Primary.Type = KIDNAPPING : false (0/0)
+|   Primary.Type = STALKING : false (0/0)
+|   Primary.Type = GAMBLING : false (0/0)
+|   Primary.Type = INTIMIDATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL : false (0/0)
+|   Primary.Type = OBSCENITY : false (0/0)
+|   Primary.Type = HUMAN TRAFFICKING : false (0/0)
+|   Primary.Type = OTHER NARCOTIC VIOLATION : false (0/0)
+|   Primary.Type = NON-CRIMINAL (SUBJECT SPECIFIED) : false (0/0)
+|   Primary.Type = PUBLIC INDECENCY : false (0/0)
+Description = UNLAWFUL RESTRAINT : false (0/0)
+Description = ARSONIST: FAIL TO REGISTER NEW ADDRESS : false (0/0)
+Description = AGG CRIM SEX ABUSE FAM MEMBER : false (0/0)
+Description = OBSTRUCTING JUSTICE : true (1/0)
+Description = GAME/DICE : true (1/0)
+Description = OTHER WEAPONS VIOLATION : false (2/1)
+Description = POSS: HEROIN(BRN/TAN) : true (2/0)
+Description = INTIMIDATION : false (1/0)
+Description = RECKLESS FIREARM DISCHARGE : true (1/0)
+Description = FORGERY : false (3/0)
+Description = COUNTERFEITING DOCUMENT : false (11/3)
+Description = AGGRAVATED OF A CHILD : false (0/0)
+Description = OTHER PROSTITUTION OFFENSE : false (0/0)
+Description = AGGRAVATED DOMESTIC BATTERY: OTHER FIREARM : false (0/0)
+Description = POSS FIREARM/AMMO:NO FOID CARD : true (1/0)
+Description = LIQUOR LICENSE VIOLATION : true (4/0)
+Description = OBSTRUCTING SERVICE : false (2/1)
+Description = POSSESSION OF DRUG EQUIPMENT : true (1/0)
+Description = ATTEMPT: ARMED-OTHER DANG WEAP : false (4/0)
+Description = ATTEMPT - FINANCIAL IDENTITY THEFT : false (9/0)
+Description = CRIMINAL SEXUAL ABUSE : false (6/2)
+Description = FINAN EXPLOIT-ELDERLY/DISABLED : false (0/0)
+Description = ATTEMPT NON-AGGRAVATED : false (2/0)
+Description = POSS: METHAMPHETAMINES : false (0/0)
+Description = AGG: HANDS/FIST/FEET NO/MINOR INJURY : false (2/0)
+Description = ATTEMPT: ARMED-OTHER FIREARM : false (0/0)
+Description = ARMED: OTHER FIREARM : false (0/0)
+Description = TO STATE SUP PROP : false (4/1)
+Description = PUBLIC INDECENCY : true (2/0)
+Description = SEX ASSLT OF CHILD BY FAM MBR : false (0/0)
+Description = SEXUAL EXPLOITATION OF A CHILD : false (1/0)
+Description = AGGRAVATED: OTHER FIREARM : false (1/0)
+Description = AGG: HANDS/FIST/FEET SERIOUS INJURY : false (1/0)
+Description = AGGRAVATED OF A SENIOR CITIZEN : false (0/0)
+Description = UNLAWFUL USE OF A COMPUTER : false (1/0)
+Description = VIOLENT OFFENDER: DUTY TO REGISTER : false (0/0)
+Description = CHILD PORNOGRAPHY : false (2/0)
+Description = LOST PASSPORT : false (0/0)
+Description = VIOLENT OFFENDER: ANNUAL REGISTRATION : false (2/1)
+Description = VIOLATION OF CIVIL NO CONTACT ORDER : false (0/0)
+Description = ATTEMPT: ARMED-KNIFE/CUT INSTR : false (0/0)
+Description = TAMPER WITH MOTOR VEHICLE : false (0/0)
+Description = TO AIRPORT : false (0/0)
+Description = VIO BAIL BOND: DOM VIOLENCE : true (1/0)
+Description = FORFEIT PROPERTY : false (0/0)
+Description = UNLAWFUL POSS OTHER FIREARM : true (1/0)
+Description = THEFT BY LESSEE,MOTOR VEH : false (3/0)
+Description = AGG PO HANDS ETC SERIOUS INJ : false (0/0)
+Description = CHILD ABANDONMENT : false (0/0)
+Description = ANIMAL ABUSE/NEGLECT : false (2/0)
+Description = ARMED WHILE UNDER THE INFLUENCE : false (0/0)
+Description = BOMB THREAT : false (3/0)
+Description = INDECENT SOLICITATION/CHILD : false (0/0)
+Description = UNLAWFUL INTERFERE/VISITATION : false (1/0)
+Description = ATT AGG CRIMINAL SEXUAL ABUSE : false (0/0)
+Description = ARSON THREAT : false (2/0)
+Description = UNLAWFUL USE OTHER DANG WEAPON : true (1/0)
+Description = OBSCENE MATTER : false (0/0)
+Description = AGG PRO.EMP: OTHER DANG WEAPON : false (2/1)
+Description = MANU/DELIVER:BARBITUATES : true (1/0)
+Description = POSSESSION: SYNTHETIC MARIJUANA : true (1/0)
+Description = ATTEMPT: CYCLE, SCOOTER, BIKE W-VIN : false (0/0)
+Description = ARSONIST: DUTY TO REGISTER : false (0/0)
+Description = PEEPING TOM : false (1/0)
+Description = ATTEMPT ARSON : false (0/0)
+Description = SOLICIT FOR BUSINESS : false (0/0)
+Description = EMBEZZLEMENT : false (0/0)
+Description = CRIM SEX ABUSE BY FAM MEMBER : false (0/0)
+Description = UNLAWFUL POSS AMMUNITION : true (1/0)
+Description = AGGRAVATED PO: HANDGUN : true (1/0)
+Description = BOARD PLANE WITH WEAPON : true (2/0)
+Description = MOB ACTION : false (0/0)
+Description = SECOND DEGREE MURDER : false (0/0)
+Description = MANU/DELIVER: METHAMPHETAMINES : false (0/0)
+Description = ATTEMPT: AGGRAVATED : false (1/0)
+Description = SEX RELATION IN FAMILY : false (1/0)
+Description = OBSCENE TELEPHONE CALLS : false (3/0)
+Description = DELIVERY CONTAINER THEFT : false (0/0)
+Description = BY EXPLOSIVE : false (0/0)
+Description = CAB OPERATION : false (0/0)
+Description = MANU/DELIVER:PCP : true (1/0)
+Description = AGGRAVATED: KNIFE/CUT INSTR : false (0/0)
+Description = AGGRAVATED PO: KNIFE/CUT INSTR : false (0/0)
+Description = FORCIBLE DETENTION : false (0/0)
+Description = AGGRAVATED PO:KNIFE/CUT INSTR : false (1/0)
+Description = OF UNBORN CHILD : false (0/0)
+Description = INTERFERENCE JUDICIAL PROCESS : false (0/0)
+Description = PAY TV SERVICE OFFENSES : false (2/0)
+Description = UNLAWFUL USE OF RECORDED SOUND : false (0/0)
+Description = AGGRAVATED OF A UNBORN CHILD : false (0/0)
+Description = ALTER/FORGE PRESCRIPTION : true (1/0)
+Description = POS: HYPODERMIC NEEDLE : false (0/0)
+Description = FALSE FIRE ALARM : false (0/0)
+Description = UNLAWFUL USE/SALE AIR RIFLE : false (0/0)
+Description = EXTORTION : false (3/0)
+Description = EAVESDROPPING : false (1/0)
+Description = CONTRIBUTE DELINQUENCY OF A CHILD : false (1/0)
+Description = THEFT BY LESSEE,NON-VEH : false (0/0)
+Description = DECEPTIVE COLLECTION PRACTICES : false (0/0)
+Description = VIOLATION OF STALKING NO CONTACT ORDER : false (1/0)
+Description = POS: PORNOGRAPHIC PRINT : false (0/0)
+Description = MONEY LAUNDERING : false (0/0)
+Description = MANU/DELIVER:COCAINE : false (0/0)
+Description = FROM COIN-OP MACHINE/DEVICE : false (0/0)
+Description = AGGRAVATED DOMESTIC BATTERY: HANDGUN : false (0/0)
+Description = GAME/CARDS : false (0/0)
+Description = DELIVER CANNABIS TO PERSON <18 : false (0/0)
+Description = COMMERCIAL SEX ACTS : false (0/0)
+Description = TO FIRE FIGHT.APP.EQUIP : false (1/0)
+Description = CONTRIBUTE CRIM DELINQUENCY JUVENILE : false (0/0)
+Description = VIOLENT OFFENDER: FAIL TO REGISTER NEW ADDRESS : false (0/0)
+Description = FOUND PASSPORT : false (0/0)
+Description = AGG PRO EMP HANDS SERIOUS INJ : false (0/0)
+Description = SOLICIT FOR PROSTITUTE : false (0/0)
+Description = INTOXICATING COMPOUNDS : false (0/0)
+Description = DEL CONT SUBS TO PERSON <18 : false (0/0)
+Description = MANU/DELIVER: HALLUCINOGEN : false (0/0)
+Description = KIDNAPPING : false (0/0)
+Description = CANNABIS PLANT : false (0/0)
+Description = VIOLATION GPS MONITORING DEVICE : false (0/0)
+Description = POSS: HEROIN(BLACK TAR) : false (0/0)
+Description = INSTITUTIONAL VANDALISM : false (1/0)
+Description = CRIMINAL DRUG CONSPIRACY : false (0/0)
+Description = OBSCENITY : false (0/0)
+Description = ILLEGAL POSSESSION BY MINOR : false (0/0)
+Description = INVOLUNTARY SERVITUDE : false (1/0)
+Description = VIOLATION OF SMOKING BAN : false (0/0)
+Description = NOTIFICATION OF CIVIL NO CONTACT ORDER : false (0/0)
+Description = ILLEGAL CONSUMPTION BY MINOR : false (0/0)
+Description = SALE/DIST OBSCENE MAT TO MINOR : false (0/0)
+Description = ATTEMPT POSSESSION NARCOTICS : false (0/0)
+Description = ATTEMPT AGG: HANDGUN : false (0/0)
+Description = INDECENT SOLICITATION/ADULT : false (0/0)
+Description = UNLAWFUL SALE HANDGUN : true (1/0)
+Description = CYBERSTALKING : false (0/0)
+Description = STOLEN PROP: BUY/RECEIVE/POS. : false (0/0)
+Description = PUBLIC DEMONSTRATION : false (0/0)
+Description = SEX OFFENDER: PROHIBITED ZONE : false (0/0)
+Description = MANU/POSS. W/INTENT TO DELIVER: SYNTHETIC MARIJUANA : false (0/0)
+Description = IMPERSONATION : false (0/0)
+Description = ILLEGAL POSSESSION CASH CARD : false (0/0)
+Description = LICENSED PREMISE : false (0/0)
+Description = MANU/DELIVER:SYNTHETIC DRUGS : false (0/0)
+Description = ARSONIST: ANNUAL REGISTRATION : false (0/0)
+Description = HARBOR RUNAWAY : false (0/0)
+Description = INTERFERE W/ HIGHER EDUCATION : false (1/0)
+Description = ATTEMPT AGG: OTHER : false (0/0)
+Description = SALE/DEL DRUG PARAPHERNALIA : false (0/0)
+Description = BRIBERY : false (0/0)
+Description = POS: EXPLOSIVE/INCENDIARY DEV : false (0/0)
+Description = RECKLESS HOMICIDE : false (0/0)
+Description = SOLICIT OFF PUBLIC WAY : false (0/0)
+Description = LIBRARY VANDALISM : false (1/0)
+Description = MANU/DELIVER:AMPHETAMINES : false (0/0)
+Description = POSS: LOOK-ALIKE DRUGS : false (0/0)
+Description = KEEP PLACE OF PROSTITUTION : false (0/0)
+Description = ESCAPE : false (0/0)
+
+Size of the tree : 535
+Attribute mappings:
+
+Model attributes        	    Incoming attributes
+------------------------	    ----------------
+(nominal) Primary.Type  	--> 3 (nominal) Primary.Type
+(nominal) Description   	--> 4 (nominal) Description
+(nominal) Arrest        	--> 6 (nominal) Arrest
+(numeric) Year          	--> 15 (numeric) Year
+
+
+Time taken to build model: 0 seconds
+
+=== Predictions on test set ===
+
+inst#,actual,predicted,error,prediction
+1,1:false,1:false,,0.643
+2,1:false,1:false,,0.905
+3,1:false,1:false,,0.905
+4,2:true,1:false,+,0.95
+5,1:false,1:false,,0.813
+6,1:false,1:false,,1
+7,1:false,1:false,,0.95
+8,1:false,1:false,,1
+9,2:true,1:false,+,0.842
+10,1:false,1:false,,1
+11,1:false,1:false,,0.99
+12,2:true,2:true,,0.878
+13,1:false,2:true,+,0.571
+14,1:false,1:false,,1
+15,2:true,2:true,,1
+16,1:false,1:false,,0.842
+17,1:false,1:false,,0.905
+18,1:false,1:false,,0.8
+19,1:false,1:false,,0.842
+20,1:false,1:false,,1
+21,2:true,1:false,+,0.842
+22,1:false,1:false,,1
+23,2:true,1:false,+,0.55
+24,1:false,1:false,,0.98
+25,1:false,1:false,,0.928
+26,1:false,1:false,,0.928
+27,1:false,1:false,,0.842
+28,2:true,1:false,+,0.813
+29,1:false,1:false,,0.813
+30,2:true,2:true,,1
+31,2:true,1:false,+,0.813
+32,1:false,1:false,,0.95
+33,2:true,2:true,,1
+34,2:true,2:true,,0.571
+35,1:false,1:false,,1
+36,1:false,1:false,,0.95
+37,1:false,1:false,,0.985
+38,2:true,2:true,,0.571
+39,2:true,1:false,+,0.643
+40,1:false,1:false,,0.967
+41,1:false,1:false,,0.98
+42,1:false,1:false,,0.985
+43,1:false,1:false,,0.813
+44,1:false,1:false,,0.959
+45,1:false,1:false,,0.99
+46,2:true,1:false,+,0.6
+47,2:true,2:true,,0.941
+48,2:true,1:false,+,0.791
+49,2:true,2:true,,1
+50,1:false,1:false,,1
+51,1:false,1:false,,0.791
+52,2:true,2:true,,1
+53,1:false,1:false,,0.791
+54,1:false,2:true,+,0.632
+55,2:true,2:true,,1
+56,2:true,1:false,+,0.813
+57,1:false,1:false,,0.905
+58,1:false,1:false,,0.667
+59,1:false,1:false,,0.95
+60,2:true,2:true,,0.878
+61,1:false,1:false,,0.791
+62,1:false,1:false,,0.99
+63,1:false,1:false,,0.636
+64,2:true,2:true,,1
+65,1:false,1:false,,0.985
+66,1:false,1:false,,0.944
+67,1:false,1:false,,1
+68,2:true,2:true,,0.811
+69,1:false,1:false,,1
+70,1:false,1:false,,0.791
+71,1:false,1:false,,0.928
+72,1:false,1:false,,0.98
+73,1:false,1:false,,0.793
+74,1:false,1:false,,1
+75,1:false,1:false,,0.905
+76,1:false,1:false,,0.98
+77,1:false,1:false,,1
+78,1:false,1:false,,0.985
+79,1:false,1:false,,0.95
+80,1:false,1:false,,0.99
+81,1:false,1:false,,1
+82,1:false,1:false,,0.985
+83,1:false,1:false,,0.8
+84,1:false,1:false,,1
+85,1:false,1:false,,0.968
+86,1:false,1:false,,0.967
+87,2:true,1:false,+,0.813
+88,1:false,1:false,,0.967
+89,2:true,2:true,,0.571
+90,1:false,1:false,,0.793
+91,1:false,1:false,,0.99
+92,1:false,1:false,,0.928
+93,2:true,2:true,,0.811
+94,1:false,1:false,,0.905
+95,1:false,1:false,,1
+96,1:false,1:false,,0.95
+97,1:false,1:false,,0.967
+98,1:false,1:false,,0.967
+99,2:true,2:true,,0.878
+100,1:false,2:true,+,0.571
+101,1:false,1:false,,0.778
+102,2:true,1:false,+,0.793
+103,1:false,2:true,+,0.538
+104,2:true,1:false,+,0.985
+105,2:true,1:false,+,0.793
+106,1:false,1:false,,0.985
+107,1:false,1:false,,1
+108,2:true,1:false,+,0.793
+109,1:false,1:false,,0.985
+110,1:false,1:false,,1
+111,1:false,1:false,,0.793
+112,1:false,1:false,,0.985
+113,1:false,1:false,,0.842
+114,1:false,1:false,,0.8
+115,1:false,1:false,,0.842
+116,1:false,1:false,,0.791
+117,1:false,1:false,,0.95
+118,1:false,1:false,,0.813
+119,1:false,1:false,,1
+120,1:false,1:false,,0.793
+121,1:false,1:false,,0.928
+122,1:false,1:false,,0.95
+123,1:false,1:false,,1
+124,1:false,1:false,,0.947
+125,1:false,1:false,,0.813
+126,1:false,1:false,,1
+127,1:false,1:false,,0.985
+128,1:false,1:false,,0.813
+129,1:false,1:false,,0.813
+130,2:true,2:true,,1
+131,1:false,2:true,+,0.632
+132,1:false,1:false,,0.793
+133,1:false,1:false,,1
+134,1:false,1:false,,0.98
+135,1:false,1:false,,0.813
+136,2:true,2:true,,0.811
+137,1:false,1:false,,0.905
+138,1:false,1:false,,0.769
+139,2:true,2:true,,0.538
+140,1:false,1:false,,1
+141,1:false,1:false,,0.842
+142,1:false,1:false,,0.98
+143,1:false,1:false,,0.99
+144,2:true,2:true,,0.8
+145,1:false,1:false,,0.95
+146,2:true,2:true,,1
+147,1:false,1:false,,0.98
+148,2:true,1:false,+,0.947
+149,2:true,2:true,,0.941
+150,1:false,1:false,,0.985
+151,1:false,1:false,,0.75
+152,1:false,1:false,,0.985
+153,1:false,1:false,,0.967
+154,1:false,1:false,,0.842
+155,1:false,1:false,,0.55
+156,1:false,1:false,,0.8
+157,1:false,1:false,,1
+158,1:false,1:false,,0.967
+159,2:true,1:false,+,0.842
+160,2:true,1:false,+,0.842
+161,1:false,1:false,,0.985
+162,2:true,1:false,+,0.643
+163,1:false,1:false,,0.905
+164,1:false,1:false,,0.928
+165,1:false,1:false,,1
+166,1:false,1:false,,0.905
+167,2:true,2:true,,0.811
+168,1:false,1:false,,0.793
+169,2:true,2:true,,1
+170,1:false,1:false,,0.905
+171,2:true,2:true,,1
+172,1:false,1:false,,0.793
+173,1:false,1:false,,0.813
+174,1:false,1:false,,1
+175,1:false,1:false,,1
+176,1:false,2:true,+,0.571
+177,1:false,1:false,,0.98
+178,1:false,1:false,,0.967
+179,1:false,1:false,,1
+180,1:false,1:false,,0.95
+181,1:false,1:false,,1
+182,1:false,1:false,,0.791
+183,2:true,2:true,,0.571
+184,2:true,2:true,,0.632
+185,1:false,2:true,+,0.811
+186,1:false,1:false,,0.769
+187,2:true,1:false,+,0.842
+188,2:true,2:true,,1
+189,1:false,1:false,,1
+190,1:false,1:false,,0.793
+191,2:true,2:true,,0.571
+192,2:true,2:true,,0.878
+193,1:false,1:false,,0.99
+194,1:false,1:false,,0.905
+195,1:false,1:false,,0.833
+196,1:false,1:false,,1
+197,1:false,1:false,,0.905
+198,1:false,1:false,,1
+199,1:false,1:false,,0.928
+200,1:false,1:false,,0.968
+201,1:false,1:false,,0.813
+202,2:true,2:true,,1
+203,1:false,1:false,,0.813
+204,1:false,1:false,,0.928
+205,1:false,1:false,,0.985
+206,2:true,2:true,,0.878
+207,1:false,1:false,,0.905
+208,1:false,1:false,,0.793
+209,1:false,1:false,,0.985
+210,1:false,1:false,,0.959
+211,1:false,1:false,,0.947
+212,1:false,1:false,,0.793
+213,1:false,1:false,,0.75
+214,1:false,1:false,,0.99
+215,1:false,1:false,,1
+216,1:false,1:false,,0.947
+217,1:false,1:false,,0.967
+218,1:false,1:false,,0.905
+219,1:false,1:false,,0.813
+220,2:true,2:true,,1
+221,2:true,2:true,,1
+222,1:false,1:false,,1
+223,1:false,1:false,,0.813
+224,1:false,1:false,,0.968
+225,1:false,1:false,,1
+226,1:false,1:false,,0.905
+227,1:false,1:false,,0.95
+228,2:true,2:true,,0.571
+229,1:false,1:false,,0.95
+230,1:false,1:false,,0.793
+231,1:false,1:false,,0.793
+232,1:false,1:false,,0.75
+233,1:false,1:false,,1
+234,1:false,1:false,,0.95
+235,1:false,1:false,,0.905
+236,2:true,1:false,+,0.793
+237,1:false,1:false,,0.95
+238,1:false,1:false,,0.947
+239,1:false,1:false,,0.928
+240,1:false,1:false,,0.968
+241,1:false,1:false,,1
+242,1:false,1:false,,0.98
+243,2:true,2:true,,0.632
+244,1:false,1:false,,0.95
+245,1:false,1:false,,0.967
+246,1:false,1:false,,0.813
+247,1:false,1:false,,1
+248,1:false,1:false,,0.727
+249,1:false,1:false,,1
+250,1:false,1:false,,0.967
+251,1:false,1:false,,0.793
+252,1:false,1:false,,1
+253,1:false,1:false,,0.793
+254,1:false,1:false,,0.967
+255,2:true,1:false,+,0.813
+256,2:true,1:false,+,0.813
+257,1:false,1:false,,0.652
+258,1:false,1:false,,1
+259,1:false,1:false,,0.959
+260,1:false,1:false,,0.6
+261,1:false,1:false,,1
+262,1:false,1:false,,0.95
+263,1:false,1:false,,1
+264,1:false,1:false,,0.985
+265,1:false,1:false,,1
+266,1:false,1:false,,0.98
+267,2:true,2:true,,1
+268,1:false,1:false,,0.842
+269,1:false,1:false,,0.791
+270,1:false,1:false,,1
+271,1:false,1:false,,0.793
+272,1:false,1:false,,0.985
+273,2:true,2:true,,1
+274,2:true,1:false,+,0.667
+275,1:false,1:false,,0.99
+276,1:false,1:false,,0.793
+277,2:true,1:false,+,0.955
+278,1:false,1:false,,0.793
+279,1:false,1:false,,1
+280,1:false,1:false,,0.95
+281,1:false,1:false,,1
+282,1:false,1:false,,0.793
+283,1:false,1:false,,0.793
+284,1:false,1:false,,0.905
+285,1:false,1:false,,0.793
+286,1:false,1:false,,1
+287,1:false,1:false,,0.793
+288,1:false,1:false,,0.928
+289,1:false,1:false,,0.842
+290,2:true,2:true,,1
+291,1:false,1:false,,0.967
+292,2:true,2:true,,1
+293,1:false,1:false,,0.99
+294,1:false,1:false,,1
+295,1:false,1:false,,1
+296,1:false,1:false,,1
+297,2:true,1:false,+,0.8
+298,1:false,1:false,,0.905
+299,1:false,1:false,,0.905
+300,2:true,2:true,,0.571
+301,1:false,1:false,,0.905
+302,2:true,2:true,,1
+303,1:false,1:false,,0.793
+304,1:false,1:false,,0.98
+305,1:false,1:false,,0.98
+306,2:true,1:false,+,0.99
+307,1:false,1:false,,0.985
+308,2:true,2:true,,0.811
+309,2:true,1:false,+,0.929
+310,1:false,1:false,,0.793
+311,1:false,1:false,,0.98
+312,1:false,1:false,,0.99
+313,1:false,1:false,,1
+314,1:false,2:true,+,0.571
+315,1:false,1:false,,0.985
+316,1:false,1:false,,0.967
+317,1:false,1:false,,1
+318,2:true,2:true,,0.571
+319,1:false,1:false,,0.95
+320,1:false,1:false,,0.793
+321,1:false,1:false,,1
+322,1:false,1:false,,0.793
+323,1:false,1:false,,0.967
+324,1:false,1:false,,1
+325,2:true,2:true,,0.878
+326,1:false,1:false,,0.959
+327,1:false,1:false,,0.928
+328,1:false,1:false,,0.98
+329,2:true,2:true,,0.571
+330,1:false,1:false,,0.643
+331,2:true,1:false,+,0.667
+332,1:false,1:false,,1
+333,1:false,1:false,,0.793
+334,2:true,2:true,,1
+335,1:false,1:false,,0.928
+336,2:true,2:true,,0.6
+337,1:false,1:false,,1
+338,2:true,2:true,,1
+339,1:false,1:false,,0.947
+340,1:false,1:false,,1
+341,2:true,2:true,,0.571
+342,2:true,1:false,+,0.793
+343,1:false,1:false,,0.652
+344,1:false,1:false,,0.793
+345,1:false,1:false,,1
+346,1:false,1:false,,1
+347,1:false,2:true,+,0.571
+348,2:true,1:false,+,0.793
+349,1:false,1:false,,0.968
+350,1:false,1:false,,0.95
+351,1:false,1:false,,0.905
+352,1:false,1:false,,0.967
+353,1:false,1:false,,0.905
+354,1:false,1:false,,0.985
+355,2:true,2:true,,1
+356,1:false,1:false,,0.905
+357,2:true,2:true,,0.941
+358,2:true,1:false,+,0.842
+359,1:false,1:false,,1
+360,1:false,1:false,,0.793
+361,1:false,1:false,,0.98
+362,2:true,2:true,,0.941
+363,2:true,1:false,+,0.793
+364,2:true,2:true,,0.878
+365,1:false,1:false,,0.95
+366,1:false,1:false,,0.95
+367,2:true,2:true,,1
+368,2:true,1:false,+,0.793
+369,1:false,1:false,,0.652
+370,1:false,1:false,,1
+371,1:false,1:false,,0.98
+372,2:true,1:false,+,0.905
+373,1:false,1:false,,1
+374,1:false,1:false,,0.6
+375,1:false,2:true,+,0.811
+376,1:false,1:false,,0.8
+377,1:false,1:false,,0.905
+378,1:false,1:false,,0.968
+379,1:false,1:false,,1
+380,1:false,1:false,,0.813
+381,1:false,1:false,,0.905
+382,1:false,1:false,,0.813
+383,1:false,1:false,,0.813
+384,1:false,1:false,,0.985
+385,1:false,1:false,,0.905
+386,1:false,1:false,,0.944
+387,1:false,1:false,,0.947
+388,1:false,1:false,,0.793
+389,2:true,1:false,+,0.928
+390,2:true,2:true,,0.6
+391,2:true,1:false,+,0.842
+392,1:false,1:false,,0.55
+393,2:true,2:true,,0.941
+394,2:true,1:false,+,0.842
+395,1:false,1:false,,0.929
+396,1:false,1:false,,0.793
+397,1:false,1:false,,0.985
+398,2:true,2:true,,0.811
+399,1:false,1:false,,0.967
+400,1:false,1:false,,0.813
+401,2:true,1:false,+,0.55
+402,1:false,1:false,,1
+403,1:false,1:false,,0.959
+404,2:true,1:false,+,0.95
+405,1:false,1:false,,1
+406,2:true,2:true,,1
+407,1:false,1:false,,0.985
+408,2:true,2:true,,1
+409,1:false,1:false,,0.928
+410,1:false,1:false,,0.793
+411,1:false,1:false,,0.95
+412,1:false,1:false,,1
+413,1:false,1:false,,0.928
+414,1:false,1:false,,1
+415,1:false,1:false,,1
+416,1:false,1:false,,1
+417,1:false,1:false,,0.98
+418,1:false,1:false,,0.968
+419,1:false,1:false,,0.55
+420,1:false,1:false,,1
+421,1:false,1:false,,0.95
+422,2:true,1:false,+,0.95
+423,1:false,1:false,,1
+424,1:false,1:false,,0.928
+425,1:false,1:false,,0.928
+426,2:true,2:true,,1
+427,1:false,1:false,,0.967
+428,1:false,1:false,,0.75
+429,1:false,1:false,,0.967
+430,1:false,1:false,,0.793
+431,1:false,1:false,,0.985
+432,1:false,1:false,,0.842
+433,1:false,1:false,,0.928
+434,1:false,1:false,,1
+435,2:true,1:false,+,0.8
+436,1:false,1:false,,1
+437,1:false,1:false,,1
+438,2:true,1:false,+,0.793
+439,1:false,1:false,,0.985
+440,1:false,1:false,,0.813
+441,1:false,1:false,,0.793
+442,1:false,1:false,,0.813
+443,2:true,2:true,,0.811
+444,1:false,1:false,,1
+445,1:false,1:false,,0.667
+446,1:false,1:false,,0.842
+447,1:false,1:false,,0.967
+448,1:false,1:false,,0.95
+449,1:false,1:false,,0.95
+450,1:false,1:false,,0.928
+451,1:false,1:false,,0.793
+452,1:false,1:false,,0.793
+453,1:false,1:false,,0.928
+454,1:false,1:false,,1
+455,1:false,1:false,,1
+456,1:false,1:false,,0.95
+457,2:true,1:false,+,0.967
+458,1:false,1:false,,0.959
+459,1:false,1:false,,0.652
+460,1:false,1:false,,1
+461,1:false,1:false,,1
+462,2:true,1:false,+,0.95
+463,1:false,1:false,,0.813
+464,1:false,1:false,,0.985
+465,1:false,1:false,,0.967
+466,1:false,2:true,+,0.811
+467,1:false,1:false,,1
+468,1:false,1:false,,0.75
+469,2:true,1:false,+,0.842
+470,1:false,1:false,,0.905
+471,1:false,1:false,,0.905
+472,2:true,1:false,+,0.905
+473,2:true,2:true,,0.8
+474,1:false,1:false,,1
+475,1:false,1:false,,0.947
+476,1:false,1:false,,0.842
+477,1:false,1:false,,1
+478,1:false,1:false,,0.905
+479,1:false,1:false,,0.928
+480,1:false,2:true,+,0.571
+481,1:false,1:false,,0.947
+482,1:false,1:false,,1
+483,1:false,1:false,,1
+484,2:true,2:true,,0.571
+485,1:false,1:false,,0.928
+486,1:false,1:false,,0.813
+487,2:true,1:false,+,0.793
+488,1:false,1:false,,0.95
+489,1:false,1:false,,1
+490,1:false,1:false,,0.813
+491,2:true,1:false,+,0.8
+492,1:false,1:false,,0.967
+493,1:false,1:false,,0.791
+494,1:false,1:false,,0.842
+495,1:false,1:false,,0.793
+496,1:false,1:false,,0.98
+497,2:true,2:true,,1
+498,1:false,1:false,,0.793
+499,2:true,2:true,,1
+500,1:false,1:false,,0.985
+501,2:true,2:true,,1
+502,1:false,1:false,,0.769
+503,1:false,1:false,,0.95
+504,1:false,1:false,,1
+505,1:false,1:false,,0.95
+506,1:false,1:false,,0.813
+507,2:true,2:true,,0.8
+508,2:true,2:true,,1
+509,1:false,1:false,,0.793
+510,1:false,1:false,,0.985
+511,1:false,1:false,,0.95
+512,1:false,1:false,,1
+513,1:false,1:false,,0.99
+514,2:true,2:true,,1
+515,1:false,1:false,,1
+516,2:true,2:true,,1
+517,2:true,1:false,+,0.791
+518,1:false,1:false,,0.55
+519,1:false,1:false,,0.98
+520,1:false,1:false,,0.985
+521,1:false,1:false,,1
+522,1:false,1:false,,0.905
+523,2:true,2:true,,0.811
+524,1:false,1:false,,1
+525,1:false,1:false,,0.959
+526,2:true,1:false,+,0.55
+527,1:false,1:false,,0.813
+528,1:false,1:false,,0.793
+529,2:true,2:true,,0.811
+530,2:true,1:false,+,0.842
+531,1:false,1:false,,0.95
+532,1:false,2:true,+,0.571
+533,1:false,1:false,,0.95
+534,1:false,1:false,,0.985
+535,2:true,1:false,+,0.55
+536,1:false,1:false,,0.967
+537,1:false,1:false,,0.842
+538,1:false,1:false,,0.793
+539,1:false,1:false,,0.769
+540,1:false,1:false,,0.98
+541,1:false,1:false,,0.99
+542,1:false,1:false,,0.99
+543,1:false,1:false,,0.968
+544,1:false,1:false,,0.813
+545,1:false,1:false,,0.643
+546,1:false,1:false,,0.99
+547,1:false,1:false,,1
+548,1:false,1:false,,0.793
+549,1:false,1:false,,1
+550,2:true,2:true,,0.571
+551,1:false,1:false,,1
+552,2:true,2:true,,0.878
+553,2:true,2:true,,1
+554,1:false,1:false,,0.985
+555,2:true,1:false,+,0.813
+556,1:false,1:false,,0.967
+557,1:false,1:false,,0.636
+558,1:false,1:false,,1
+559,1:false,1:false,,0.985
+560,1:false,1:false,,0.55
+561,1:false,1:false,,1
+562,1:false,1:false,,0.793
+563,1:false,1:false,,1
+564,1:false,1:false,,0.842
+565,1:false,1:false,,0.985
+566,2:true,2:true,,0.571
+567,1:false,1:false,,0.985
+568,2:true,1:false,+,0.75
+569,2:true,2:true,,1
+570,1:false,1:false,,0.793
+571,1:false,1:false,,0.967
+572,1:false,1:false,,0.967
+573,1:false,1:false,,0.929
+574,1:false,1:false,,0.944
+575,1:false,1:false,,0.905
+576,1:false,1:false,,0.99
+577,2:true,2:true,,0.878
+578,1:false,1:false,,0.967
+579,1:false,1:false,,0.842
+580,2:true,2:true,,0.571
+581,1:false,1:false,,0.928
+582,1:false,1:false,,0.967
+583,1:false,1:false,,0.667
+584,2:true,2:true,,1
+585,2:true,2:true,,0.632
+586,1:false,1:false,,0.905
+587,1:false,1:false,,0.985
+588,1:false,1:false,,0.95
+589,1:false,1:false,,0.985
+590,1:false,1:false,,0.985
+591,2:true,1:false,+,0.905
+592,1:false,1:false,,0.99
+593,1:false,1:false,,0.95
+594,1:false,1:false,,1
+595,1:false,1:false,,0.99
+596,2:true,2:true,,1
+597,2:true,1:false,+,0.813
+598,1:false,1:false,,0.985
+599,1:false,1:false,,0.959
+600,2:true,1:false,+,0.8
+601,1:false,2:true,+,0.878
+602,1:false,1:false,,0.793
+603,1:false,1:false,,0.793
+604,1:false,1:false,,0.95
+605,1:false,1:false,,0.813
+606,1:false,1:false,,0.793
+607,1:false,1:false,,0.985
+608,2:true,2:true,,1
+609,1:false,1:false,,0.967
+610,1:false,1:false,,0.75
+611,1:false,1:false,,0.727
+612,1:false,1:false,,1
+613,1:false,1:false,,0.813
+614,2:true,1:false,+,0.75
+615,1:false,1:false,,0.813
+616,2:true,1:false,+,0.5
+617,2:true,1:false,+,0.667
+618,1:false,1:false,,0.95
+619,1:false,1:false,,0.985
+620,1:false,1:false,,0.95
+621,2:true,1:false,+,0.793
+622,1:false,1:false,,0.928
+623,1:false,1:false,,0.95
+624,1:false,1:false,,1
+625,1:false,1:false,,0.959
+626,1:false,1:false,,0.967
+627,1:false,1:false,,0.99
+628,1:false,1:false,,0.95
+629,1:false,1:false,,0.793
+630,1:false,1:false,,0.95
+631,1:false,1:false,,0.8
+632,1:false,1:false,,1
+633,2:true,2:true,,0.811
+634,1:false,1:false,,1
+635,1:false,1:false,,0.791
+636,1:false,1:false,,0.967
+637,1:false,1:false,,1
+638,2:true,1:false,+,0.842
+639,2:true,2:true,,1
+640,1:false,1:false,,1
+641,1:false,1:false,,1
+642,2:true,2:true,,0.571
+643,1:false,1:false,,0.99
+644,2:true,2:true,,1
+645,1:false,1:false,,1
+646,1:false,1:false,,0.967
+647,1:false,1:false,,0.985
+648,1:false,1:false,,1
+649,1:false,1:false,,0.95
+650,1:false,1:false,,0.985
+651,1:false,1:false,,1
+652,1:false,1:false,,0.95
+653,1:false,1:false,,0.968
+654,1:false,1:false,,1
+655,1:false,1:false,,0.985
+656,1:false,1:false,,0.813
+657,1:false,1:false,,0.95
+658,1:false,1:false,,1
+659,1:false,1:false,,0.95
+660,1:false,1:false,,0.813
+661,1:false,1:false,,1
+662,1:false,1:false,,0.842
+663,2:true,2:true,,0.571
+664,1:false,1:false,,0.813
+665,1:false,1:false,,0.793
+666,1:false,1:false,,1
+667,2:true,1:false,+,0.652
+668,1:false,1:false,,0.793
+669,1:false,1:false,,0.967
+670,2:true,1:false,+,0.5
+671,1:false,1:false,,0.813
+672,1:false,1:false,,0.95
+673,1:false,1:false,,0.967
+674,1:false,1:false,,0.95
+675,1:false,1:false,,1
+676,1:false,1:false,,0.985
+677,1:false,1:false,,0.98
+678,1:false,1:false,,1
+679,2:true,1:false,+,0.793
+680,2:true,2:true,,1
+681,1:false,1:false,,0.959
+682,1:false,1:false,,0.842
+683,1:false,1:false,,0.95
+684,1:false,1:false,,0.99
+685,1:false,1:false,,1
+686,2:true,2:true,,1
+687,1:false,1:false,,0.791
+688,2:true,2:true,,0.811
+689,2:true,1:false,+,0.985
+690,1:false,1:false,,0.99
+691,1:false,1:false,,1
+692,1:false,1:false,,0.793
+693,1:false,1:false,,0.667
+694,1:false,1:false,,0.667
+695,1:false,1:false,,0.985
+696,1:false,1:false,,0.99
+697,1:false,1:false,,1
+698,2:true,1:false,+,0.8
+699,1:false,1:false,,0.813
+700,1:false,1:false,,0.905
+701,2:true,1:false,+,0.842
+702,1:false,1:false,,0.985
+703,1:false,1:false,,0.842
+704,2:true,2:true,,0.538
+705,1:false,1:false,,0.99
+706,1:false,1:false,,0.793
+707,1:false,1:false,,0.985
+708,2:true,1:false,+,0.793
+709,2:true,2:true,,0.632
+710,1:false,1:false,,0.791
+711,2:true,2:true,,0.632
+712,1:false,1:false,,0.968
+713,1:false,1:false,,0.842
+714,1:false,1:false,,1
+715,1:false,1:false,,0.959
+716,1:false,1:false,,0.95
+717,1:false,1:false,,0.967
+718,2:true,2:true,,0.878
+719,2:true,1:false,+,0.793
+720,1:false,1:false,,0.955
+721,2:true,2:true,,1
+722,1:false,1:false,,0.967
+723,1:false,1:false,,1
+724,1:false,1:false,,0.967
+725,2:true,2:true,,0.878
+726,1:false,1:false,,1
+727,1:false,1:false,,0.793
+728,2:true,2:true,,1
+729,1:false,1:false,,0.95
+730,1:false,1:false,,0.95
+731,1:false,1:false,,0.813
+732,1:false,1:false,,0.947
+733,1:false,1:false,,0.793
+734,1:false,1:false,,0.99
+735,1:false,1:false,,1
+736,1:false,1:false,,0.967
+737,1:false,1:false,,1
+738,1:false,1:false,,0.955
+739,2:true,2:true,,1
+740,1:false,1:false,,0.793
+741,1:false,1:false,,0.905
+742,2:true,1:false,+,0.667
+743,2:true,1:false,+,0.905
+744,1:false,1:false,,0.95
+745,1:false,1:false,,0.95
+746,1:false,1:false,,0.947
+747,1:false,1:false,,1
+748,1:false,1:false,,1
+749,1:false,1:false,,0.967
+750,1:false,2:true,+,0.571
+751,2:true,2:true,,0.571
+752,2:true,2:true,,1
+753,1:false,1:false,,0.955
+754,1:false,1:false,,0.947
+755,1:false,1:false,,0.793
+756,1:false,1:false,,1
+757,1:false,1:false,,1
+758,1:false,1:false,,0.99
+759,1:false,1:false,,0.95
+760,1:false,1:false,,0.8
+761,1:false,1:false,,0.793
+762,1:false,1:false,,0.905
+763,1:false,1:false,,1
+764,2:true,1:false,+,0.652
+765,1:false,1:false,,0.95
+766,1:false,1:false,,0.813
+767,2:true,1:false,+,0.793
+768,1:false,1:false,,0.842
+769,1:false,1:false,,0.95
+770,1:false,1:false,,0.75
+771,1:false,1:false,,1
+772,1:false,1:false,,0.985
+773,2:true,1:false,+,0.813
+774,1:false,1:false,,0.959
+775,1:false,1:false,,1
+776,2:true,2:true,,0.571
+777,1:false,1:false,,0.778
+778,1:false,1:false,,0.98
+779,1:false,1:false,,0.928
+780,1:false,1:false,,0.793
+781,1:false,1:false,,0.813
+782,1:false,1:false,,0.791
+783,1:false,1:false,,0.967
+784,1:false,1:false,,0.793
+785,1:false,1:false,,0.813
+786,1:false,1:false,,0.967
+787,1:false,1:false,,1
+788,1:false,1:false,,0.905
+789,1:false,1:false,,0.967
+790,2:true,2:true,,0.571
+791,1:false,1:false,,0.793
+792,1:false,1:false,,0.985
+793,1:false,1:false,,0.967
+794,1:false,2:true,+,0.632
+795,1:false,1:false,,0.99
+796,1:false,1:false,,0.905
+797,1:false,1:false,,0.985
+798,2:true,2:true,,1
+799,2:true,2:true,,1
+800,1:false,1:false,,0.652
+801,2:true,2:true,,1
+802,1:false,2:true,+,0.571
+803,2:true,2:true,,0.811
+804,1:false,1:false,,0.99
+805,1:false,1:false,,0.95
+806,1:false,1:false,,0.95
+807,1:false,1:false,,0.929
+808,1:false,1:false,,0.813
+809,1:false,1:false,,0.95
+810,1:false,1:false,,0.959
+811,1:false,1:false,,0.905
+812,1:false,1:false,,0.905
+813,1:false,2:true,+,0.571
+814,1:false,1:false,,1
+815,1:false,1:false,,0.99
+816,1:false,1:false,,1
+817,1:false,1:false,,1
+818,1:false,1:false,,0.905
+819,2:true,1:false,+,0.793
+820,1:false,1:false,,0.985
+821,1:false,1:false,,0.793
+822,1:false,1:false,,1
+823,1:false,1:false,,0.842
+824,2:true,2:true,,0.571
+825,2:true,1:false,+,0.793
+826,2:true,2:true,,1
+827,1:false,1:false,,0.813
+828,2:true,2:true,,1
+829,1:false,1:false,,0.813
+830,1:false,1:false,,0.95
+831,2:true,2:true,,0.878
+832,1:false,1:false,,0.813
+833,1:false,1:false,,1
+834,1:false,1:false,,1
+835,1:false,1:false,,0.95
+836,1:false,1:false,,0.95
+837,2:true,2:true,,0.811
+838,2:true,2:true,,0.811
+839,2:true,2:true,,0.941
+840,1:false,1:false,,0.968
+841,1:false,1:false,,0.75
+842,1:false,1:false,,0.95
+843,1:false,1:false,,0.793
+844,1:false,1:false,,0.842
+845,1:false,2:true,+,0.571
+846,2:true,2:true,,1
+847,1:false,1:false,,0.968
+848,2:true,1:false,+,0.905
+849,1:false,1:false,,0.793
+850,1:false,1:false,,0.967
+851,1:false,2:true,+,0.878
+852,2:true,2:true,,1
+853,1:false,1:false,,0.99
+854,1:false,2:true,+,0.571
+855,1:false,1:false,,0.793
+856,2:true,2:true,,0.571
+857,1:false,1:false,,0.967
+858,1:false,1:false,,0.985
+859,1:false,1:false,,0.905
+860,2:true,1:false,+,0.905
+861,1:false,2:true,+,0.878
+862,2:true,2:true,,1
+863,1:false,1:false,,0.95
+864,2:true,2:true,,1
+865,2:true,1:false,+,0.5
+866,1:false,1:false,,0.95
+867,1:false,1:false,,0.928
+868,2:true,1:false,+,0.55
+869,1:false,1:false,,1
+870,1:false,1:false,,0.944
+871,1:false,1:false,,0.967
+872,1:false,1:false,,0.793
+873,1:false,1:false,,0.928
+874,1:false,1:false,,0.652
+875,1:false,1:false,,0.99
+876,2:true,1:false,+,0.652
+877,1:false,2:true,+,0.811
+878,1:false,1:false,,0.75
+879,1:false,1:false,,1
+880,2:true,2:true,,0.571
+881,1:false,1:false,,0.813
+882,1:false,1:false,,0.813
+883,1:false,1:false,,0.967
+884,1:false,1:false,,0.95
+885,1:false,2:true,+,0.811
+886,1:false,1:false,,0.905
+887,2:true,2:true,,1
+888,1:false,1:false,,1
+889,1:false,1:false,,1
+890,1:false,1:false,,1
+891,1:false,1:false,,1
+892,1:false,1:false,,0.905
+893,1:false,1:false,,0.905
+894,1:false,1:false,,0.967
+895,1:false,1:false,,1
+896,1:false,1:false,,0.967
+897,1:false,1:false,,0.967
+898,2:true,2:true,,1
+899,1:false,1:false,,0.985
+900,1:false,2:true,+,0.571
+901,1:false,1:false,,0.968
+902,1:false,1:false,,0.813
+903,2:true,2:true,,0.878
+904,1:false,1:false,,0.967
+905,1:false,1:false,,1
+906,1:false,1:false,,0.95
+907,1:false,1:false,,0.905
+908,1:false,1:false,,1
+909,1:false,1:false,,0.905
+910,1:false,1:false,,0.793
+911,2:true,2:true,,0.811
+912,1:false,1:false,,0.842
+913,1:false,1:false,,0.793
+914,1:false,1:false,,0.928
+915,1:false,1:false,,0.813
+916,1:false,1:false,,0.905
+917,2:true,2:true,,0.878
+918,1:false,1:false,,0.985
+919,2:true,1:false,+,0.793
+920,1:false,1:false,,0.95
+921,1:false,1:false,,0.968
+922,1:false,1:false,,0.985
+923,1:false,1:false,,0.928
+924,1:false,1:false,,0.793
+925,1:false,1:false,,0.793
+926,1:false,1:false,,0.985
+927,1:false,2:true,+,0.571
+928,1:false,1:false,,0.985
+929,1:false,1:false,,1
+930,2:true,1:false,+,0.813
+931,1:false,1:false,,1
+932,1:false,1:false,,0.99
+933,1:false,1:false,,0.652
+934,1:false,1:false,,1
+935,2:true,2:true,,1
+936,2:true,1:false,+,0.793
+937,1:false,1:false,,0.944
+938,1:false,1:false,,0.793
+939,1:false,1:false,,1
+940,1:false,1:false,,0.985
+941,1:false,1:false,,0.905
+942,1:false,1:false,,1
+943,1:false,1:false,,0.905
+944,1:false,1:false,,0.8
+945,1:false,1:false,,0.98
+946,1:false,1:false,,1
+947,1:false,1:false,,0.842
+948,2:true,1:false,+,0.905
+949,1:false,1:false,,0.95
+950,1:false,1:false,,0.842
+951,2:true,2:true,,1
+952,1:false,1:false,,0.95
+953,1:false,1:false,,0.667
+954,1:false,1:false,,1
+955,1:false,1:false,,1
+956,1:false,1:false,,0.842
+957,1:false,1:false,,0.967
+958,2:true,2:true,,0.878
+959,1:false,1:false,,0.95
+960,1:false,1:false,,0.905
+961,2:true,1:false,+,0.95
+962,1:false,1:false,,0.98
+963,1:false,1:false,,1
+964,1:false,1:false,,0.95
+965,2:true,2:true,,0.8
+966,2:true,1:false,+,0.5
+967,1:false,1:false,,0.967
+968,1:false,1:false,,0.967
+969,2:true,1:false,+,0.793
+970,1:false,1:false,,0.98
+971,1:false,1:false,,1
+972,1:false,1:false,,0.928
+973,1:false,1:false,,0.793
+974,1:false,1:false,,0.905
+975,1:false,1:false,,0.842
+976,2:true,1:false,+,0.75
+977,1:false,1:false,,1
+978,1:false,1:false,,0.55
+979,2:true,2:true,,0.571
+980,1:false,1:false,,1
+981,1:false,1:false,,0.95
+982,2:true,2:true,,1
+983,1:false,1:false,,0.95
+984,2:true,2:true,,0.878
+985,2:true,2:true,,1
+986,1:false,1:false,,0.928
+987,1:false,2:true,+,0.571
+988,2:true,1:false,+,0.667
+989,1:false,1:false,,0.967
+990,1:false,2:true,+,0.571
+991,1:false,1:false,,0.793
+992,1:false,1:false,,0.778
+993,1:false,1:false,,1
+994,2:true,2:true,,1
+995,2:true,2:true,,1
+996,1:false,1:false,,0.75
+997,1:false,1:false,,0.793
+998,1:false,1:false,,0.905
+999,1:false,1:false,,0.813
+1000,1:false,1:false,,0.928
+1001,2:true,1:false,+,0.793
+1002,1:false,1:false,,0.813
+1003,1:false,2:true,+,0.6
+1004,1:false,1:false,,0.6
+1005,1:false,1:false,,1
+1006,1:false,1:false,,1
+1007,1:false,1:false,,1
+1008,1:false,1:false,,0.985
+1009,1:false,1:false,,1
+1010,1:false,1:false,,0.667
+1011,1:false,1:false,,0.95
+1012,1:false,1:false,,0.967
+1013,1:false,1:false,,0.813
+1014,1:false,1:false,,1
+1015,1:false,1:false,,0.95
+1016,1:false,1:false,,0.793
+1017,2:true,2:true,,0.878
+1018,2:true,2:true,,0.811
+1019,2:true,1:false,+,0.813
+1020,2:true,1:false,+,0.793
+1021,1:false,1:false,,0.791
+1022,2:true,1:false,+,0.75
+1023,1:false,1:false,,0.793
+1024,1:false,1:false,,0.959
+1025,2:true,1:false,+,0.636
+1026,1:false,1:false,,0.813
+1027,1:false,1:false,,0.842
+1028,1:false,1:false,,0.928
+1029,2:true,2:true,,0.811
+1030,1:false,1:false,,0.793
+1031,1:false,1:false,,0.95
+1032,1:false,1:false,,1
+1033,1:false,1:false,,0.793
+1034,1:false,1:false,,0.95
+1035,1:false,1:false,,0.667
+1036,2:true,2:true,,0.8
+1037,2:true,2:true,,0.811
+1038,1:false,1:false,,0.791
+1039,1:false,1:false,,0.985
+1040,1:false,1:false,,0.95
+1041,1:false,1:false,,0.985
+1042,1:false,1:false,,1
+1043,2:true,2:true,,1
+1044,1:false,1:false,,0.842
+1045,2:true,2:true,,1
+1046,1:false,1:false,,0.842
+1047,1:false,1:false,,1
+1048,1:false,1:false,,0.793
+1049,2:true,1:false,+,0.813
+1050,1:false,1:false,,1
+1051,1:false,1:false,,0.905
+1052,1:false,1:false,,0.944
+1053,1:false,1:false,,0.985
+1054,1:false,1:false,,0.842
+1055,1:false,1:false,,0.95
+1056,1:false,1:false,,0.928
+1057,1:false,1:false,,0.95
+1058,1:false,1:false,,0.967
+1059,2:true,1:false,+,0.636
+1060,1:false,1:false,,1
+1061,2:true,2:true,,0.811
+1062,1:false,1:false,,0.928
+1063,1:false,1:false,,0.98
+1064,1:false,1:false,,1
+1065,1:false,1:false,,0.813
+1066,1:false,1:false,,0.75
+1067,1:false,1:false,,1
+1068,1:false,1:false,,0.95
+1069,1:false,1:false,,1
+1070,1:false,1:false,,0.985
+1071,1:false,1:false,,0.95
+1072,1:false,1:false,,0.99
+1073,1:false,1:false,,0.95
+1074,1:false,1:false,,0.813
+1075,1:false,1:false,,1
+1076,1:false,1:false,,1
+1077,1:false,1:false,,0.928
+1078,1:false,1:false,,0.793
+1079,1:false,1:false,,0.928
+1080,1:false,1:false,,0.98
+1081,1:false,1:false,,0.98
+1082,1:false,1:false,,0.928
+1083,1:false,1:false,,0.928
+1084,1:false,1:false,,0.967
+1085,2:true,2:true,,1
+1086,1:false,1:false,,1
+1087,1:false,1:false,,0.985
+1088,1:false,1:false,,0.985
+1089,1:false,1:false,,1
+1090,1:false,1:false,,0.75
+1091,1:false,1:false,,0.905
+1092,2:true,1:false,+,0.667
+1093,1:false,1:false,,0.813
+1094,1:false,1:false,,1
+1095,1:false,1:false,,1
+1096,2:true,2:true,,0.941
+1097,1:false,1:false,,0.905
+1098,2:true,2:true,,1
+1099,1:false,1:false,,1
+1100,1:false,1:false,,0.95
+1101,1:false,1:false,,0.947
+1102,1:false,1:false,,0.95
+1103,2:true,2:true,,1
+1104,2:true,1:false,+,0.793
+1105,1:false,1:false,,0.791
+1106,1:false,1:false,,0.793
+1107,1:false,1:false,,0.793
+1108,1:false,1:false,,1
+1109,2:true,2:true,,1
+1110,1:false,1:false,,1
+1111,1:false,1:false,,0.967
+1112,1:false,1:false,,0.842
+1113,1:false,1:false,,0.968
+1114,2:true,1:false,+,0.652
+1115,2:true,2:true,,1
+1116,1:false,1:false,,0.959
+1117,1:false,1:false,,0.793
+1118,1:false,1:false,,0.667
+1119,1:false,1:false,,0.793
+1120,1:false,1:false,,1
+1121,1:false,1:false,,1
+1122,1:false,1:false,,0.99
+1123,1:false,1:false,,0.967
+1124,1:false,1:false,,0.842
+1125,2:true,2:true,,0.811
+1126,1:false,1:false,,0.985
+1127,1:false,1:false,,1
+1128,1:false,1:false,,0.99
+1129,1:false,1:false,,0.778
+1130,1:false,1:false,,0.905
+1131,1:false,1:false,,1
+1132,1:false,1:false,,0.928
+1133,1:false,1:false,,0.905
+1134,1:false,1:false,,0.813
+1135,1:false,1:false,,0.95
+1136,2:true,2:true,,1
+1137,1:false,1:false,,0.947
+1138,1:false,1:false,,1
+1139,1:false,1:false,,1
+1140,1:false,1:false,,0.842
+1141,1:false,1:false,,0.813
+1142,1:false,1:false,,0.985
+1143,2:true,2:true,,0.878
+1144,1:false,1:false,,0.75
+1145,1:false,1:false,,0.905
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 2.93 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1014               88.559  %
+Incorrectly Classified Instances       131               11.441  %
+Kappa statistic                          0.632 
+Mean absolute error                      0.1686
+Root mean squared error                  0.2921
+Relative absolute error                 50.3024 %
+Root relative squared error             70.1162 %
+Total Number of Instances             1145     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.967    0.400    0.894      0.967    0.929      0.646    0.910     0.967     false
+                 0.600    0.033    0.841      0.600    0.700      0.646    0.910     0.796     true
+Weighted Avg.    0.886    0.318    0.882      0.886    0.878      0.646    0.910     0.929     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 861  29 |   a = false
+ 102 153 |   b = true
+

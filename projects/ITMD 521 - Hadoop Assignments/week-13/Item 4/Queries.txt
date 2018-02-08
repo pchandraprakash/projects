@@ -1,0 +1,6 @@
+sqoop import --connect jdbc:mysql://127.0.0.1/itmd521 --username root --password root --table bwslogs --m 1 --hive-import
+sqoop import --connect jdbc:mysql://127.0.0.1/itmd521 --username root --password root --table swslogs --m 1 --hive-import
+
+select substr(logdate,6,2), uristem, count(uristem) as urlcount from bwslogs where status='200' group by substr(logdate,6,2), uristem order by urlcount DESC LIMIT 19;
+
+select substr(logdate,9,2), uristem, count(uristem) as urlcount from swslogs where status='200' group by substr(logdate,9,2), uristem order by urlcount DESC LIMIT 1;

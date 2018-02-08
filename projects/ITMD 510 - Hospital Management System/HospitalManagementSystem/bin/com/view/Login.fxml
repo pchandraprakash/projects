@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="213.0" prefWidth="421.0" style="-fx-background-color: linear-gradient(gray,DimGrey );;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.LoginController">
+   <children>
+      <Text layoutX="39.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hospital Management System" wrappingWidth="286.13671875">
+         <effect>
+            <DropShadow />
+         </effect>
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="ORANGE" />
+                  <Stop color="ORANGERED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Text>
+      <GridPane fx:id="gridPane" alignment="CENTER" layoutX="22.0" layoutY="55.0" prefHeight="136.0" prefWidth="361.0" stylesheets="@../style.css">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="72.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="172.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="216.0" minWidth="10.0" prefWidth="95.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="60.0" text="Username" />
+            <Label prefHeight="17.0" prefWidth="58.0" text="Password" GridPane.rowIndex="1" />
+            <PasswordField fx:id="tfPassword" onAction="#btLoginAction" promptText="Enter Password" text="" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btLogin" mnemonicParsing="false" onAction="#btLoginAction" prefHeight="25.0" prefWidth="59.0" text="Login" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <TextField fx:id="tfUser" promptText="Enter UserName" text="" GridPane.columnIndex="1" />
+            <!--<Button fx:id="btForgot" alignment="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#handleBtForgot" prefHeight="25.0" prefWidth="111.0" text="Forgot Pasword?" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            -->
+            <ComboBox fx:id="cbUsertype" prefHeight="25.0" prefWidth="80.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+         </children>
+      </GridPane>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

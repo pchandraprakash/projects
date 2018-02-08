@@ -1,0 +1,44 @@
+CREATE TABLE swslogs
+(logdate VARCHAR(768),
+time VARCHAR(768),
+serverip  VARCHAR(768),
+method VARCHAR(768),
+uristem VARCHAR(768),
+uriquery VARCHAR(768),
+serverport VARCHAR(768),
+username VARCHAR(768),
+clientip VARCHAR(768),
+useragent VARCHAR(768),
+status VARCHAR(768),
+substatus VARCHAR(768),
+win32status VARCHAR(768),
+timetaken VARCHAR(768));
+
+CREATE TABLE bwslogs
+(logdate VARCHAR(768),
+time VARCHAR(768),
+serverip  VARCHAR(768),
+method VARCHAR(768),
+uristem VARCHAR(768),
+uriquery VARCHAR(768),
+serverport VARCHAR(768),
+username VARCHAR(768),
+clientip VARCHAR(768),
+useragent VARCHAR(768),
+status VARCHAR(768),
+substatus VARCHAR(768),
+win32status VARCHAR(768),
+timetaken VARCHAR(768));
+
+Query To Fetch most frequently visted WebPage per month:
+Assumptions:
+1. I have ensured that all the 9 months data are pulled from the database. -- This if for months (I did similar assumption for counting URLs for days as well)
+2. Based on the Number of counts of URI's I have sorted the number of hits. 
+3. files from "logs-2015-2014" zip file is used for counting url's per month
+4. files from "small-logs-08-09-2016" zip file is used for counting url's per day.
+
+Counting URLs per Month:
+select substr(logdate,6,2) as Month, uristem, count(uristem) as CountURI from bwslogs where status='200' group by Month, uristem order by CountURI DESC LIMIT 19;
+
+Counting URLs per day:
+select substr(logdate,9,2) as days, uristem, count(uristem) as urlcount from swslogs where status='200' group by days, uristem order by days, urlcount DESC LIMIT 26;

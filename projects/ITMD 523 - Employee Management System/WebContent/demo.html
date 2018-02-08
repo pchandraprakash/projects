@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Image-less CSS3 Glowing Form Implementation</title>
+<link rel="stylesheet" type="text/css" href="demo.css" />
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script>
+	$(function() {
+		var $form_inputs = $('form input');
+		var $rainbow_and_border = $('.rain, .border');
+		/* Used to provide loping animations in fallback mode */
+		$form_inputs.bind('focus', function() {
+			$rainbow_and_border.addClass('end').removeClass('unfocus start');
+		});
+		$form_inputs.bind('blur', function() {
+			$rainbow_and_border.addClass('unfocus start').removeClass('end');
+		});
+		$form_inputs.first().delay(800).queue(function() {
+			$(this).focus();
+		});
+	});
+</script>
+
+<!-- <script type="text/javascript" src="AdminValidate.js"></script> -->
+</head>
+<body background="Employee-Management-System.jpg">
+	<div class="rain">
+		<div class="border start">
+			<form name="login">
+				<div>
+					<br />
+					<h3 align="center">ADMIN LOGIN</h3>
+					<input type="text" placeholder="Enter user name" name="userid" />
+				</div>
+				<div>
+					<input type="password" placeholder="Enter password " name="pswrd" />
+				</div>
+				<br /> <br /> <br />
+				<div align="center">
+					<table>
+						<tr>
+							<td><input type="button" value=" Login "
+								style="background-color: blue; color: #fff;"
+								onclick="check(this.form)" value="Login" /></td>
+							<td><input type="reset" value="Cancel"
+								style="background-color: blue; color: #fff; border-style: groove;" />
+							</td>
+						</tr>
+					</table>
+				</div>
+			</form>
+			<script language="javascript">
+				function check(form)/*function to check userid & password*/
+				{
+					/*the following code checkes whether the entered userid and password are matching*/
+					if (form.userid.value == "admin"
+							&& form.pswrd.value == "admin") {
+						window.open('AdminPage.html')/*opens the target page while Id & password matches*/
+					} else {
+						alert("Incorrect Username or Password")/*displays error message*/
+					}
+				}
+			</script>
+
+		</div>
+	</div>
+</body>
+</html>

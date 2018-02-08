@@ -1,0 +1,220 @@
+/* <h1>FileName: DAOModel.java</h1>
+ * @author	Phanindra Chandraprakash
+ * @version	1.0
+ * @date	12/02/2016
+ * FinalProject: HospitalManagementSystem
+ * Description: This java file contains all the necessary SQL queries to create the table.
+ */
+package com.model;
+
+import java.sql.SQLException;
+import java.sql.Statement;
+public class DAOModel 
+{
+	Connect_with_database connect = new Connect_with_database();
+	private Statement statement = null;
+	public void createTable() throws Exception
+	{
+		try
+		{
+			//statement = connect.createConnection().createStatement();
+			//String SQL1 = "drop table pchand_user";
+				//statement.execute(SQL1);
+			//System.out.println("user table is dropped from the given database...");
+			SQL1 = "CREATE TABLE IF NOT EXISTS `pchand_user`"+
+					 "(`userid` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,"+
+					 "`username` varchar(20) NOT NULL, "+
+					 "`role` varchar(30) NOT NULL, "+
+					 "`password` varchar(20) NOT NULL)"+
+					 " ENGINE=InnoDB  DEFAULT CHARSET=latin1 ";
+			statement.execute(SQL1);
+			System.out.println("user table is created in the given database..."); 
+			
+			String SQL2 = "INSERT INTO `pchand_user` "+
+			"(`userid`, `username`, `role`, `password`) VALUES"+
+			"(1, 'admin', 'admin', '1234'),"+
+			"(2, 'phanindra', 'doctor', '1234'),"+
+			"(7, 'Dr.Bharadwaj', 'doctor', '1234'),"+
+			"(8, 'Dr.Micky Polus', 'doctor', '1234'),"+
+			"(9, 'Dr.Oliver Sacks', 'doctor', '1234'),"+
+			"(12, 'Patient1', 'patient', '1234'),"+
+			"(13, 'Patient2', 'patient', '1234'),"+
+			"(14, 'Patient3', 'patient', '1234'),"+
+			"(15, 'Patient4', 'patient', '1234'),"+
+			"(16, 'Patient5', 'patient', '1234'),"+
+			"(17, 'Patient6', 'patient', '1234'),"+
+			"(18, 'Patient7', 'patient', '1234'),"+
+			"(19, 'Patient8', 'patient', '1234'),"+
+			"(10, 'Dr.DeviShetty', 'doctor', '1234');";
+			statement.execute(SQL2);
+			System.out.println("user Data successfully inserted into the table..."); 
+			
+			System.out.println("================================================="); 
+						
+			String SQL3 = "drop table pchand_doctor";
+			statement.execute(SQL3);
+			System.out.println("doctor table is dropped from the given database...");
+			SQL3 = "CREATE TABLE IF NOT EXISTS `pchand_doctor` "+
+					 "(`doctorid` int(11) NOT NULL,"+
+					 "`doctorname` varchar(50) NOT NULL, "+
+					 "`departmentid` int(11) NOT NULL)"+
+					 " ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=24;";
+			statement.execute(SQL3);
+			System.out.println("doctor table is created in the given database..."); 
+			
+			/*String SQL4 = "INSERT INTO `pchand_doctor` "+
+					"(`doctorid`, `doctorname`, `departmentid`) VALUES"+
+					"(1, 'phanindra', '20'),"+
+					"(2, 'ram', '21'),"+
+					"(3, 'john', '22');";
+			statement.execute(SQL4);*/
+			System.out.println("doctor Data successfully inserted into the table...");
+					
+			System.out.println("================================================="); 
+			
+			String SQL5 = "drop table pchand_patient";
+			statement.execute(SQL5);
+			System.out.println("patient table is dropped from the given database...");
+			SQL5 = "CREATE TABLE IF NOT EXISTS `pchand_patient`("+
+					"`patientid` int(11) NOT NULL,"+
+					"`patientname` varchar(40) NOT NULL,"+
+					  "`age` int(11) NOT NULL,"+
+					 " `sex` varchar(15) NOT NULL,"+
+					 " `address` varchar(100) NOT NULL,"+
+					 " `phone` bigint(10) NOT NULL,"+
+					 " `weight` double NOT NULL,"+
+					 " `doctorid` int(11) NOT NULL,"+
+					 " `disease` varchar(50) NOT NULL"+
+					") ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=27;" ;
+			statement.execute(SQL5);
+			System.out.println("patient table is created in the given database..."); 
+			
+			/*String SQL6 = "INSERT INTO `pchand_patient` (`patientid`, `patientname`, `age`, `sex`, `address`, `phone`, `weight`, `doctorid`, `disease`) VALUES"+
+					"(17, 'aman kumar', 45, 'male', 'bangalore', 101010101, 46, 1, 'oiokjk'),"+
+					"(19, 'mohan kumar', 55, 'male', 'karnataka', 1234567890, 66.21, 1, 'headache'),"+
+					"(20, 'xyz', 56, 'female', 'bangalore', 2312312310, 78, 1, 'headache');";
+			statement.execute(SQL6);*/
+			System.out.println("patient Data successfully inserted into the table...");
+			
+			System.out.println("================================================="); 
+			
+			String SQL7 = "drop table pchand_department";
+			statement.execute(SQL7);
+			System.out.println("department table is dropped from the given database...");
+			SQL7 = "CREATE TABLE IF NOT EXISTS `pchand_department` ("+
+					"`departmentid` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,"+
+					 " `departmentname` varchar(30) NOT NULL"+
+					") ENGINE=InnoDB  DEFAULT CHARSET=latin1;" ;
+			statement.execute(SQL7);
+			System.out.println("department table is created in the given database..."); 
+			
+			String SQL8 = "INSERT INTO `pchand_department` (`departmentid`, `departmentname`) VALUES"+
+					"(3, 'Neurology'),"+
+					"(10, 'Cardiology'),"+
+					"(20, 'Nephrology'),"+
+					"(22, 'Dental');";
+			statement.execute(SQL8);
+			System.out.println("department Data successfully inserted into the table...");
+			
+			System.out.println("=================================================");
+			
+			String SQL9 = "drop table pchand_disease";
+			statement.execute(SQL9);
+			System.out.println("disease table is dropped from the given database...");
+			SQL9 = "CREATE TABLE IF NOT EXISTS `pchand_disease` ("+
+					"`diseaseid` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,"+
+					  "`diseasename` varchar(50) NOT NULL"+
+					") ENGINE=InnoDB  DEFAULT CHARSET=latin1 ; ";
+			statement.execute(SQL9);
+			System.out.println("disease table is created in the given database..."); 
+			
+			String SQL10 = "INSERT INTO `pchand_disease` (`diseaseid`, `diseasename`) VALUES"+
+					"(1, 'fever'),"+
+					"(2, 'headache');";
+			statement.execute(SQL10);
+			System.out.println("disease Data successfully inserted into the table...");
+			
+			System.out.println("=================================================");
+			
+			String SQL11 = "drop table pchand_billing";
+			statement.execute(SQL11);
+			System.out.println("billing table is dropped from the given database...");
+			SQL11 = "CREATE TABLE IF NOT EXISTS `pchand_billing` ("+
+					"`billno` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,"+
+					  "`patientid` int(11) NOT NULL,"+
+					  "`patientname` varchar(50) NOT NULL,"+
+					  "`doctorid` int(11) NOT NULL,"+
+					  "`doctorname` varchar(50) NOT NULL,"+
+					  "`diseasename` varchar(50) NOT NULL,"+
+					  "`dischargedate` varchar(50) NOT NULL,"+
+					  "`finalamount` double NOT NULL"+
+					") ENGINE=InnoDB  DEFAULT CHARSET=latin1;" ;
+			statement.execute(SQL11);
+			System.out.println("billing table is created in the given database..."); 
+			
+			String SQL12 = "INSERT INTO `pchand_billing` (`billno`, `patientid`, `patientname`, `doctorid`, `doctorname`, `diseasename`, `dischargedate`, `finalamount`) VALUES"+
+					"(1, 20, 'xyz', 1, 'Pankaj', 'headache', '2016-10-29', 705.55),"+
+					"(2, 21, 'patient1', 1, 'Pankaj', 'cold', '2016-10-29', 800.69),"+
+					"(3, 26, 'patient22', 1, 'Pankaj', 'fever', '2016-10-30', 6000);";
+			statement.execute(SQL12);
+			System.out.println("billing Data successfully inserted into the table...");
+			
+			System.out.println("=================================================");
+			
+			String SQL13 = "drop table pchand_appoinments";
+			statement.execute(SQL13);
+			System.out.println("appointments table is dropped from the given database...");
+			SQL13 = "CREATE TABLE IF NOT EXISTS `pchand_appoinments` ("+
+					"`appoinmentid` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,"+
+					 " `patientid` int(11) NOT NULL,"+
+					 " `doctorid` int(11) NOT NULL,"+
+					 " `appoinmenttime` varchar(30) NOT NULL,"+
+					  "`confirmed` int(11) NOT NULL"+
+					") ENGINE=InnoDB  DEFAULT CHARSET=latin1";
+			statement.execute(SQL13);
+			System.out.println("appointments table is created in the given database..."); 
+			
+			String SQL14 = "INSERT INTO `pchand_appoinments` (`appoinmentid`, `patientid`, `doctorid`, `appoinmenttime`, `confirmed`) VALUES"+
+					 "(7, 21, 18, '2016-12-10 10:30:00', 1),"+
+					 "(8, 17, 16, '2014-12-11 12:15:00', 1),"+
+					 "(9, 17, 1, '2016-12-01 10:30:15', 1);";
+			statement.execute(SQL14);
+			System.out.println("appointments Data successfully inserted into the table...");
+			
+			System.out.println("=================================================");
+			
+			String SQL15 = "drop table pchand_admindetail";
+			statement.execute(SQL15);
+			System.out.println("admindetail table is dropped from the given database...");
+			SQL15 = "CREATE TABLE IF NOT EXISTS `pchand_admindetail` ("+
+					 " `adminid` int(11) NOT NULL,"+
+					  "`adminname` varchar(30) NOT NULL,"+
+					  "`departmentid` int(11) NOT NULL"+
+					") ENGINE=InnoDB DEFAULT CHARSET=latin1;";
+			statement.execute(SQL15);
+			System.out.println("admindetail table is created in the given database..."); 
+			
+			String SQL16 = "INSERT INTO `pchand_admindetail` (`adminid`, `adminname`, `departmentid`) VALUES"+
+					"(27, 'adminname', 10);";
+			statement.execute(SQL16);
+			System.out.println("appointments Data successfully inserted into the table...");
+			
+			System.out.println("=================================================");
+			
+			String SQL17 = "ALTER TABLE `pchand_billing` ADD `departmentname` VARCHAR(50) NOT NULL AFTER `doctorname`;";
+			statement.execute(SQL17);
+			System.out.println("billing table successfully altered...");
+			
+			System.out.println("=================================================");
+			System.out.println("All tables are successfully created in the database..."); 
+			statement.close();
+			System.out.println("Connection closed successfully..."); 
+			System.out.println("=================================================");
+			System.out.println("Launching Hospital Management System Application"); 
+		}
+		catch(SQLException e)
+		{
+			System.out.println(e.getMessage());
+		}
+	}
+}

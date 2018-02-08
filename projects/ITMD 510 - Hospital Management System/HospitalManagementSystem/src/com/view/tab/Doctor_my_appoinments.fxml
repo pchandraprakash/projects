@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.Tab.Doctor_my_appoinmentsController">
+    <TableView fx:id="appoinmentsTable" layoutX="100.0"  layoutY="50.0" prefHeight="309.0" prefWidth="570.0">
+         <columns>
+            <TableColumn fx:id="appoinmentIdColumn" prefWidth="30.0" text="ID" />
+            <TableColumn fx:id="patientNameColumn" prefWidth="130.0" text="Patient Name" />
+            <TableColumn fx:id="patientDiseaseColumn" prefWidth="130.0" text="Disease" />
+            <TableColumn fx:id="doctorNameColumn" prefWidth="130.0" text="Doctor Name" />
+            <TableColumn fx:id="appoinmentDateColumn" prefWidth="180.0" text="Date" />
+            <TableColumn fx:id="isConfirmedColumn" prefWidth="100.0" text="Status" />
+         </columns>
+      </TableView>
+</AnchorPane>

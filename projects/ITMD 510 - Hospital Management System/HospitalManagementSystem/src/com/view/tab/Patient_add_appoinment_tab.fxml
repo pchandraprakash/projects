@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" prefHeight="400.0" prefWidth="600.0"  fx:controller="com.controller.Tab.Patient_add_appoinment_tabController">
+    <children>
+      
+      <TableView fx:id="appoinmentsTable" layoutX="100.0"  layoutY="50.0" prefHeight="309.0" prefWidth="570.0">
+         <columns>
+            <TableColumn fx:id="appoinmentIdColumn" prefWidth="30.0" text="ID" />
+            <TableColumn fx:id="patientNameColumn" prefWidth="130.0" text="Patient Name" />
+            <TableColumn fx:id="doctorNameColumn" prefWidth="130.0" text="Doctor Name" />
+            <TableColumn fx:id="appoinmentDateColumn" prefWidth="180.0" text="Date" />
+            <TableColumn fx:id="isConfirmedColumn" prefWidth="100.0" text="Status" />
+         </columns>
+      </TableView>
+      <!--
+      <TitledPane animated="false" layoutX="297.0" layoutY="425.0" prefHeight="148.0" prefWidth="457.0" text="Patient Details">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="141.0" prefWidth="441.0">
+               <children>
+                  <ScrollPane layoutX="1.0" prefHeight="123.0" prefViewportHeight="155.0" prefViewportWidth="443.0" prefWidth="457.0">
+                     <content>
+                        <TextArea fx:id="taDetails" layoutX="-1.0" prefHeight="120.0" prefWidth="454.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>-->
+      
+      <Label text="Appoinment To:" layoutX="15.0" layoutY="20.0" prefWidth="100.0"    />
+        <ComboBox fx:id="cbDoctors" layoutX="125.0" layoutY="15.0"  prefHeight="25.0" prefWidth="123.0" promptText="Search by..." />
+        <Button fx:id="btAppoinment"  layoutX="270.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleAddButton" prefHeight="25.0" prefWidth="83.0" text="Apply"/>
+   </children>
+</AnchorPane>

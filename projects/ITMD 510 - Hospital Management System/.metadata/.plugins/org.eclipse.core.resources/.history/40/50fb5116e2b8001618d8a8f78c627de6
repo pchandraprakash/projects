@@ -1,0 +1,224 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.controller.Tab;
+
+import com.model.Connect_with_database;
+import com.model.Display_message;
+import com.model.Doctor;
+import com.model.Patient;
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Date;
+import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
+
+/**
+ * FXML Controller class
+ *
+ * @author Phanindra
+ */
+public class Billiing_tabController implements Initializable {
+
+    @FXML
+    private ComboBox cbPatientId;
+    @FXML
+    private TextField tfPatientName;
+    @FXML
+    private TextField tfDoctorId;
+    @FXML
+    private TextField tfDoctorName;
+    @FXML
+    private TextField tfDiseaseName;
+    @FXML
+    private TextField tfDischargeDate;
+    @FXML
+    private TextField tfFinalAmount;
+    
+    @FXML
+    private TextField departmentNameProperty;
+    
+    @FXML
+    private TextField tfBillId;
+    @FXML
+    private TextField tfDepartment;
+    private ObservableList<Patient> patientData = FXCollections.observableArrayList();
+            
+    @Override
+    public void initialize(URL url, ResourceBundle rb) 
+    {
+        Date d=new Date();
+        tfDischargeDate.setText(1900+d.getYear()+"-"+d.getMonth()+"-"+d.getDate());
+        cbPatientId.valueProperty().addListener(new ChangeListener<String>() {
+        @Override public void changed(ObservableValue ov, String t, String t1) {
+         
+            setData();
+        }    
+    });
+        getCurrentBillId();
+         getPatientDetail();
+        cbPatientinit();
+        ///setData();
+    }   
+    
+    public void handleAddButton()
+    {
+        
+        if(cbPatientId.getSelectionModel().getSelectedIndex()<0)
+        {
+            Display_message.showError("Error", "Select the Patient Name!");
+        }
+        else  if (tfFinalAmount.getText().trim().equals("")) 
+         {
+            Display_message.showError("Error", "Please enter final amount!");
+        } 
+        else {
+            String patientname = tfPatientName.getText();
+            String patientId =patientData.get(cbPatientId.getSelectionModel().getSelectedIndex()).getIdProperty();
+            String doctorId=tfDoctorId.getText();
+            String doctorName = tfDoctorName.getText();
+            String disease=tfDiseaseName.getText();
+            String dischargeDate=tfDischargeDate.getText();
+            String finalamount=tfFinalAmount.getText();
+            String department=tfDepartment.getText();
+            String add = "INSERT INTO fp.pchand_billing (patientid,patientname,doctorid,doctorname,departmentname,diseasename,dischargedate,finalamount)"
+                    + "VALUES (?,?, ?, ?,?, ?,?,?)";
+            Connection con=null;
+            try {
+                con=Connect_with_database.createConnection();
+                PreparedStatement ps = con.prepareStatement(add);
+                ps.setInt(1,Integer.parseInt(patientId.trim()));
+                ps.setString(2, patientname);
+                ps.setInt(3, Integer.parseInt(doctorId.trim()));
+                ps.setString(4, doctorName);
+                ps.setString(5, department);
+                ps.setString(6, disease);
+                ps.setString(7, dischargeDate);
+                ps.setDouble(8, Double.parseDouble(finalamount.trim()));
+                int res=ps.executeUpdate();
+                if(res>0)
+                {
+                    
+                    ps.close();
+                    patientData.remove(cbPatientId.getSelectionModel().getSelectedIndex());
+                    tfFinalAmount.setText("");
+                    tfBillId.setText(Integer.parseInt(tfBillId.getText())+1+"");
+                    Display_message.showInformation("Sucessful", "Record inserted Sucessfully!");
+                    cbPatientinit();
+                }
+                else
+                {
+                    Display_message.showError("Error", "Record Not Inserted!");
+                }
+            } catch (SQLException ex) 
+            {
+                ex.printStackTrace();
+                Display_message.showError("Exception", "Ooops, there was an exception!");
+            }
+            finally
+            {
+            Connect_with_database.closeConnection(con);
+            }
+        }
+       
+    }
+    public void getPatientDetail()
+    {
+         Connection con=null;
+                    try {
+                        con=Connect_with_database.createConnection();
+                        patientData.clear();
+            //String sql = "SELECT patient.patientid, patient.patientname, patient.address, doctor.doctorname ";
+            String sql = "SELECT fp.pchand_patient.*, fp.pchand_doctor.doctorname, fp.pchand_department.departmentname FROM fp.pchand_patient,fp.pchand_Doctor,fp.pchand_department where fp.pchand_patient.doctorid = fp.pchand_doctor.doctorid and fp.pchand_doctor.departmentid=fp.pchand_department.departmentid and fp.pchand_patient.patientid not in(select patientid from fp.pchand_billing)";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            while (rs.next()) {
+                Patient p = new Patient();
+                p.setIdProperty(rs.getInt(1)+"");
+                p.setNameProperty(rs.getString(2));
+                p.setAgeProperty(rs.getInt(3)+"");
+                p.setSexProperty(rs.getString(4));
+                p.setAddressProperty(rs.getString(5));
+                p.setPhoneProperty(rs.getLong(6)+"");
+                p.setWeightProperty(rs.getDouble(7)+"");
+                p.setDoctorIdProperty(rs.getInt(8)+"");
+                p.setDiseaseProperty(rs.getString(9));
+                p.setDoctorNameProperty(rs.getString(10));
+                p.setDepartmentNameProperty(rs.getString(11));
+                patientData.add(p);
+                
+            }
+        } catch (SQLException ex) 
+        {
+            ex.printStackTrace();
+           
+        }
+                    finally
+                    {
+                        Connect_with_database.closeConnection(con);
+                    }
+       
+    }
+    public void cbPatientinit() 
+     {
+         cbPatientId.getItems().clear();
+         for(int i=0;i<patientData.size();i++)
+         {
+             cbPatientId.getItems().add(patientData.get(i).getIdProperty());
+         }
+        if(patientData.size()>0)
+            cbPatientId.setValue(patientData.get(0).getIdProperty());
+    }
+    public void setData()
+    {
+        int index=cbPatientId.getSelectionModel().getSelectedIndex();
+        if(index>=0)
+        {
+        Patient p=patientData.get(index);
+            tfDoctorId.setText(p.getDoctorIdProperty());
+            tfDoctorName.setText(p.getDoctorNameProperty());
+            tfPatientName.setText(p.getNameProperty());
+            tfDiseaseName.setText(p.getDiseaseProperty());
+            tfDepartment.setText(p.getDepartmentNameProperty());
+        }
+    }
+    
+    public void getCurrentBillId()
+    {
+         Connection con=null;
+         try {
+            con=Connect_with_database.createConnection();
+            patientData.clear();
+            String sql = "SELECT max(billno) FROM fp.pchand_billing";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            if (rs.next()) {
+                tfBillId.setText(rs.getInt(1)+1+"");
+            }
+        } catch (SQLException ex) 
+        {
+            ex.printStackTrace();
+           
+        }
+                    finally
+                    {
+                        Connect_with_database.closeConnection(con);
+                    }
+    }
+    
+}

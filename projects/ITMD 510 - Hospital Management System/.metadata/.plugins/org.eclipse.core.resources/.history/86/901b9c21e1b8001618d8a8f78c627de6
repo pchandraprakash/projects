@@ -1,0 +1,37 @@
+package com;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+/**
+ *
+ * @author Phanindra
+ */
+public class Com extends Application {
+    
+    @Override
+    public void start(Stage stage) throws Exception {
+        //Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/com/view/Login.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    	//date and calendar objects are used to format the current date and time.
+    	String timeStamp = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime());
+    	System.out.println("Current Date = " + timeStamp + "\nProgrammed by Phanindra Chandraprakash\n");
+    	launch(args);
+    }
+    
+}

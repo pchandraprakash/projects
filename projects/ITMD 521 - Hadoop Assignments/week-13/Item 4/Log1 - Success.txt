@@ -1,0 +1,106 @@
+hive> select substr(logdate,6,2), uristem, count(uristem) as urlcount from bwslogs where status='200' group by substr(logdate,6,2), ur
+istem order by urlcount DESC LIMIT 19;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engin
+e (i.e. tez, spark) or using Hive 1.X releases.
+Query ID = vagrant_20170430043746_a7a32958-1547-45ef-9050-cc5b65c1e49e
+Total jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 6
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1493524805520_0016, Tracking URL = http://vagrant-ubuntu-trusty-64:8088/proxy/application_1493524805520_0016/
+Kill Command = /home/vagrant/hadoop-2.7.3/bin/hadoop job  -kill job_1493524805520_0016
+Hadoop job information for Stage-1: number of mappers: 6; number of reducers: 6
+2017-04-30 04:38:05,819 Stage-1 map = 0%,  reduce = 0%
+2017-04-30 04:39:07,006 Stage-1 map = 0%,  reduce = 0%, Cumulative CPU 13.91 sec
+2017-04-30 04:40:07,696 Stage-1 map = 0%,  reduce = 0%, Cumulative CPU 34.49 sec
+2017-04-30 04:40:09,810 Stage-1 map = 17%,  reduce = 0%, Cumulative CPU 35.3 sec
+2017-04-30 04:40:47,035 Stage-1 map = 22%,  reduce = 0%, Cumulative CPU 42.78 sec
+2017-04-30 04:40:49,141 Stage-1 map = 33%,  reduce = 0%, Cumulative CPU 43.81 sec
+2017-04-30 04:40:52,429 Stage-1 map = 39%,  reduce = 0%, Cumulative CPU 44.55 sec
+2017-04-30 04:40:54,532 Stage-1 map = 44%,  reduce = 0%, Cumulative CPU 45.43 sec
+2017-04-30 04:41:55,288 Stage-1 map = 44%,  reduce = 0%, Cumulative CPU 60.7 sec
+2017-04-30 04:42:07,234 Stage-1 map = 56%,  reduce = 0%, Cumulative CPU 63.92 sec
+2017-04-30 04:42:08,357 Stage-1 map = 78%,  reduce = 0%, Cumulative CPU 65.03 sec
+2017-04-30 04:42:09,443 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 65.71 sec
+2017-04-30 04:42:51,108 Stage-1 map = 100%,  reduce = 33%, Cumulative CPU 68.52 sec
+2017-04-30 04:42:52,379 Stage-1 map = 100%,  reduce = 56%, Cumulative CPU 70.4 sec
+2017-04-30 04:42:53,804 Stage-1 map = 100%,  reduce = 67%, Cumulative CPU 71.35 sec
+2017-04-30 04:42:57,737 Stage-1 map = 100%,  reduce = 83%, Cumulative CPU 74.29 sec
+2017-04-30 04:42:59,020 Stage-1 map = 100%,  reduce = 94%, Cumulative CPU 76.8 sec
+2017-04-30 04:43:00,116 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 77.98 sec
+MapReduce Total cumulative CPU time: 1 minutes 17 seconds 980 msec
+Ended Job = job_1493524805520_0016
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1493524805520_0017, Tracking URL = http://vagrant-ubuntu-trusty-64:8088/proxy/application_1493524805520_0017/
+Kill Command = /home/vagrant/hadoop-2.7.3/bin/hadoop job  -kill job_1493524805520_0017
+Hadoop job information for Stage-2: number of mappers: 1; number of reducers: 1
+2017-04-30 04:43:16,629 Stage-2 map = 0%,  reduce = 0%
+2017-04-30 04:43:26,353 Stage-2 map = 100%,  reduce = 0%, Cumulative CPU 1.9 sec
+2017-04-30 04:43:38,333 Stage-2 map = 100%,  reduce = 100%, Cumulative CPU 3.88 sec
+MapReduce Total cumulative CPU time: 3 seconds 880 msec
+Ended Job = job_1493524805520_0017
+MapReduce Jobs Launched:
+Stage-Stage-1: Map: 6  Reduce: 6   Cumulative CPU: 77.98 sec   HDFS Read: 1421788516 HDFS Write: 388063 SUCCESS
+Stage-Stage-2: Map: 1  Reduce: 1   Cumulative CPU: 3.88 sec   HDFS Read: 395538 HDFS Write: 655 SUCCESS
+Total MapReduce CPU Time Spent: 1 minutes 21 seconds 860 msec
+OK
+12      /xmlrpc.php     4164685
+01      /xmlrpc.php     1116619
+11      /xmlrpc.php     323282
+10      /xmlrpc.php     25073
+03      /xmlrpc.php     22166
+04      /xmlrpc.php     18975
+05      /xmlrpc.php     8776
+04      /wp-login.php   6698
+02      /xmlrpc.php     5677
+12      /       3411
+01      /wp-login.php   3389
+01      /       3126
+03      /       3009
+04      /       2747
+05      /       2615
+02      /       2547
+11      /wp-login.php   2191
+11      /       1933
+06      /wp-admin/admin-ajax.php        1740
+Time taken: 353.302 seconds, Fetched: 19 row(s)
+hive>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

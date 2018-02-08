@@ -1,0 +1,52 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.WrapperSubsetEval -B weka.classifiers.trees.RandomTree -F 5 -T 0.01 -R 1 -E DEFAULT -- -K 0 -M 1.0 -V 0.001 -S 1
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     CR17filtered-weka.filters.unsupervised.attribute.Remove-R1-3-weka.filters.unsupervised.attribute.Remove-R3-weka.filters.unsupervised.instance.Resample-S1-Z7.0-no-replacement-weka.filters.unsupervised.instance.Resample-S1-Z66.0-no-replacement
+Instances:    3366
+Attributes:   19
+              Date
+              Block
+              Primary.Type
+              Description
+              Location.Description
+              Arrest
+              Domestic
+              Beat
+              District
+              Ward
+              Community.Area
+              FBI.Code
+              X.Coordinate
+              Y.Coordinate
+              Year
+              Updated.On
+              Latitude
+              Longitude
+              Location
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 126
+	Merit of best subset found:    0.882
+
+Attribute Subset Evaluator (supervised, Class (nominal): 6 Arrest):
+	Wrapper Subset Evaluator
+	Learning scheme: weka.classifiers.trees.RandomTree
+	Scheme options: -K 0 -M 1.0 -V 0.001 -S 1 
+	Subset evaluation: classification accuracy
+	Number of folds for accuracy estimation: 5
+
+Selected attributes: 3,4,15 : 3
+                     Primary.Type
+                     Description
+                     Year
+

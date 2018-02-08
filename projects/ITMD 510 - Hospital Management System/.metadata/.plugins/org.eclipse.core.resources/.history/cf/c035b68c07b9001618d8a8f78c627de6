@@ -1,0 +1,750 @@
+/* <h1>FileName: PatientTabController.java</h1>
+ * @author	Phanindra Chandraprakash
+ * @version	1.0
+ * @date	12/02/2016
+ * FinalProject: HospitalManagementSystem
+ * Description: This is an FXML controller class which manages Patients page.
+ */
+package com.controller.Tab;
+
+import com.model.Connect_with_database;
+import com.model.Current_user_detail;
+import com.model.Disease;
+import com.model.Display_message;
+import com.model.Doctor;
+import com.model.Patient;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.application.Platform;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.event.EventHandler;
+import javafx.fxml.Initializable;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.cell.TextFieldTableCell;
+
+public class PatientTabController implements Initializable {
+
+    private PreparedStatement ps;
+    private Statement st;
+    private ResultSet rs;
+    @FXML
+    private TableView patientTable;
+    @FXML
+    private TableColumn patientIdColumn;
+    @FXML
+    private TableColumn patientNameColumn;
+    @FXML
+    private TableColumn patientDiseaseColumn;
+    @FXML
+    private TableColumn doctorColumn;
+    @FXML
+    private TableColumn patientAgeColumn;
+    @FXML
+    private TableColumn patientSexColumn;
+    @FXML
+    private TableColumn patientAddressColumn;
+    @FXML
+    private TableColumn patientPhoneColumn;
+    @FXML
+    private TableColumn patientWeightColumn;
+    @FXML
+    private TableColumn patientDischargeDateColumn;
+    @FXML
+    private TableColumn patientAmountPaidColumn;
+    @FXML
+    private Button btAdd;
+    @FXML
+    private Button btDelete;
+    @FXML
+    private TextArea taDetails;
+     @FXML
+    private TextField tfSearch;
+    @FXML
+    private TextField tfPatientName;
+    @FXML
+    private TextField tfPatientSex;
+    @FXML
+    private TextField tfPhone;
+    @FXML
+    private ComboBox cbDisease;//private TextField tfDisease;
+    @FXML
+    private TextField tfPatientAge;
+    @FXML
+    private TextField tfPatientAddress;
+    @FXML
+    private TextField tfWeight;
+    @FXML
+    private ComboBox cbAddDoctorID;//TextField tfAddDoctorID;
+   @FXML
+    private TextField tfPatientId;
+    @FXML
+    private ComboBox<String> cbSearch;
+    @FXML
+    private ToggleGroup viewMode;
+    @FXML
+    private RadioButton btViewAll;
+    @FXML
+    private RadioButton btViewMine;
+    @FXML
+    private TextField tfAddNewDisease;
+    private int level = 3;
+    //private String isActiveUser;
+    private ObservableList<Patient> patientData = FXCollections.observableArrayList();
+    private ObservableList<Disease> diseaseData = FXCollections.observableArrayList();
+    private ObservableList<Doctor> doctorData = FXCollections.observableArrayList();
+
+        @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        tfAddNewDisease.setDisable(true);
+        btDelete.setDisable(true);
+        initTable();
+        cbSearchInit();
+        getDisease();
+        cbDiseaseinit();
+        getDoctor();
+        cbDoctorinit();
+        reloadTable();
+        
+        if(Current_user_detail.current_user_role.equals("doctor"))
+            btAdd.setDisable(true);
+        if(Current_user_detail.current_user_role.equals("admin"))
+        {
+            btViewAll.setVisible(false);
+            btViewMine.setVisible(false);
+            btDelete.setVisible(false);
+        }
+        btViewAll.selectedProperty().addListener(ov -> {
+            if (btViewAll.isSelected()) 
+            {                
+                patientTable.setEditable(false);
+                reloadTable();
+                btDelete.setDisable(true);
+            }
+        });
+        btViewMine.selectedProperty().addListener(ov -> {
+            if (btViewMine.isSelected()) {
+                viewMineMode();
+                setEditable();
+                btDelete.setDisable(false);
+            }
+        });
+        
+    }
+    
+
+    @FXML
+    public void handleAddButton() 
+    {
+        if (tfPatientName.getText().trim().equals("") || tfPatientName.getText().equals("") || tfPatientSex.getText().equals("") || tfPatientAge.getText().equals("") || tfPatientAddress.getText().equals("") || tfWeight.getText().equals("") || tfPhone.getText().equals("")) {
+            Display_message.showError("Error", "All Text Field must be filled!");
+            
+        } 
+        else if(cbDisease.getSelectionModel().getSelectedIndex()<0)
+        {
+            Display_message.showError("Error", "Select the disease!");
+        }
+        else if(cbAddDoctorID.getSelectionModel().getSelectedIndex()<0)
+        {
+            Display_message.showError("Error", "Select the doctor!");
+        }
+        else {
+            int patientid=Integer.parseInt(tfPatientId.getText().trim());
+            if(!checkUserAvailable(patientid))
+            {
+                Display_message.showError("Error", "Please first create user id for this user!");
+                return;
+            }
+            String name = tfPatientName.getText();
+            String address = tfPatientAddress.getText();
+            String doctorId =doctorData.get(cbAddDoctorID.getSelectionModel().getSelectedIndex()).getIdProperty();
+            int age=Integer.parseInt(tfPatientAge.getText());
+            double weight=Double.parseDouble(tfWeight.getText());
+            long phone=Long.parseLong(tfPhone.getText());
+            String sex=tfPatientSex.getText();
+            int index=cbDisease.getSelectionModel().getSelectedIndex();
+            String disease=null;
+            if(tfAddNewDisease.isDisable())
+                disease=diseaseData.get(index).getDiseaseNameProperty();
+            else
+            {
+                if(tfAddNewDisease.getText().trim().equals(""))
+                {
+                    Display_message.showError("Error", "Please enter the disease name.");
+                    return;
+                }
+                disease=tfAddNewDisease.getText().trim();
+                
+            }
+             String doctorName = "";
+            
+            String add = "INSERT INTO fp.pchand_patient (patientid,patientname,age,sex,address,phone,weight,doctorid,disease)" 
+                    + "VALUES (?,?, ?, ?, ?,?,?,?,?)";       
+            Connection con=null;
+            try {
+                con=Connect_with_database.createConnection();
+                ps = con.prepareStatement(add);
+                ps.setInt(1,patientid);
+                ps.setString(2, name);
+                ps.setInt(3, age);
+                ps.setString(4, sex);
+                ps.setString(5, address);
+                ps.setLong(6, phone);
+                ps.setDouble(7, weight);
+                ps.setInt(8, Integer.parseInt(doctorId.trim()));
+                ps.setString(9,disease);
+                int res=ps.executeUpdate();
+                if(res>0)
+                {
+                    
+                    ps.close();
+                    doctorName=getDoctorName(con, doctorId);
+                    Patient patient = new Patient();
+                    patient.setIdProperty(patientid+"");
+                     patient.setNameProperty(name);
+                     patient.setDiseaseProperty(disease);
+                     patient.setDoctorNameProperty(doctorName);
+                     patient.setAddressProperty(address);
+                     patient.setPhoneProperty(phone+"");
+                     patient.setSexProperty(sex);
+                     patient.setWeightProperty(weight+"");
+                     patient.setAgeProperty(age+"");
+                     patient.setDoctorIdProperty(doctorId);
+                     patientData.add(patient);
+                    reloadTable();
+                    clearData();
+                }
+                else
+                {
+                    Display_message.showError("Error", "Record Not Inserted!");
+                }
+            } catch (SQLException ex) 
+            {
+                ex.printStackTrace();
+                Display_message.showError("Exception", "Ooops, there was an exception!");
+            }
+            finally
+            {
+            Connect_with_database.closeConnection(con);
+            }
+        }
+        
+    }
+    public boolean checkUserAvailable(int patientid)
+    {
+        Connection con=null;
+            try {
+                con=Connect_with_database.createConnection();
+            String sql = "SELECT * FROM fp.pchand_user where userid="+patientid+" and role="+"'patient'";
+            st = con.createStatement();
+            rs = st.executeQuery(sql);
+            if(rs.next()) {
+            rs.close();
+            sql = "SELECT * FROM fp.pchand_patient where patientid="+patientid;
+            st = con.createStatement();
+            rs = st.executeQuery(sql);
+            if(rs.next()) 
+            {
+                rs.close();
+                Display_message.showError("Error", "Patient already created!");
+                return false;
+            }
+             return true;
+            }
+            }
+            catch (Exception ex) 
+            {
+                ex.printStackTrace();
+        }
+            finally
+            {
+                Connect_with_database.closeConnection(con);
+            }
+            return false;
+    }
+    public String getDoctorName(Connection con,String id)
+    {
+        String doctorName="";
+            try {
+                String checkAccount = "SELECT doctorname FROM fp.pchand_doctor Where doctorid = ?";
+                ps = con.prepareStatement(checkAccount);
+                ps.setInt(1, Integer.parseInt(id.trim()));
+                rs = ps.executeQuery();
+                if (rs.next()) {
+                    doctorName = rs.getString(1);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            finally
+            {
+            try {
+                ps.close();
+                rs.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(PatientTabController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+                
+            }
+            return doctorName;
+    }
+    
+    public String getMaxPatientId(Connection con)
+    {
+        String patientId="";
+            try {
+                String checkAccount = "SELECT max(patientid) FROM fp.pchand_patient";
+                ps = con.prepareStatement(checkAccount);
+                rs = ps.executeQuery();
+                if (rs.next()) {
+                    patientId = rs.getInt(1)+"";
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            finally
+            {
+            try {
+                ps.close();
+                rs.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(PatientTabController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+                
+            }
+            return patientId;
+    }
+    public void clearData()
+    {
+        tfPatientId.setText("");
+        tfPatientAddress.setText("");
+        tfPatientAge.setText("");
+        tfPatientName.setText("");
+        tfPatientSex.setText("");
+        tfPhone.setText("");
+        tfWeight.setText("");
+        tfAddNewDisease.setText("");
+        tfAddNewDisease.setDisable(true);
+    }
+
+    @FXML
+    public void handleBtDelete() {
+        int selectedIndex = patientTable.getSelectionModel().getSelectedIndex();
+        if(selectedIndex<0)
+        {
+            Display_message.showError("Error", "Please select the record to delete!");
+            return;
+        }
+        String selectedID = patientData.get(selectedIndex).getIdProperty();
+        String detele = "DELETE FROM fp.pchand_Patient WHERE patientid = ?";
+        Connection con=null;
+        try {
+            con=Connect_with_database.createConnection();
+            ps = con.prepareStatement(detele);
+            ps.setString(1, selectedID);
+            int res=ps.executeUpdate();
+            if(res>0)
+            {
+                patientData.remove(selectedIndex);
+                Display_message.showInformation("Deleted...","Record deleted sucessfully!");
+            }
+            else
+            {
+            Display_message.showError("Not Deleted...", "Record not deleted!");
+            }
+            ps.close();
+            ps = null;
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        finally
+        {
+            Connect_with_database.closeConnection(con);
+        }
+        
+    }
+
+    private void initTable() {
+        patientIdColumn.setCellValueFactory(
+                new PropertyValueFactory<>("IdProperty")
+        );
+        patientNameColumn.setCellValueFactory(
+                new PropertyValueFactory<>("NameProperty")
+        );
+        patientDiseaseColumn.setCellValueFactory(
+                new PropertyValueFactory<>("diseaseProperty")
+        );
+        doctorColumn.setCellValueFactory(
+                new PropertyValueFactory<>("doctorNameProperty")
+        );
+        patientAgeColumn.setCellValueFactory(
+                new PropertyValueFactory<>("ageProperty")
+        );
+        patientSexColumn.setCellValueFactory(
+                new PropertyValueFactory<>("sexProperty")
+        );
+        patientAddressColumn.setCellValueFactory(
+                new PropertyValueFactory<>("addressProperty")
+        );
+        patientPhoneColumn.setCellValueFactory(
+                new PropertyValueFactory<>("phoneProperty")
+        );
+        patientWeightColumn.setCellValueFactory(
+                new PropertyValueFactory<>("weightProperty")
+        );
+        patientDischargeDateColumn.setCellValueFactory(
+                new PropertyValueFactory<>("dischargeDateProperty")
+        );
+        patientAmountPaidColumn.setCellValueFactory(
+                new PropertyValueFactory<>("patientAmountPaidProperty")
+        );
+   
+        
+        if (level != 3) {
+            setEditable();
+        }
+        //Create filter for search field
+        FilteredList<Patient> filteredData = new FilteredList<>(patientData, p -> true);
+        patientTable.setItems(filteredData);
+
+        tfSearch.textProperty().addListener((observable, oldValue, newValue) -> {
+            filteredData.setPredicate(patient -> {
+                // If filter text is empty, display all p
+                if (newValue == null || newValue.isEmpty()) {
+                    return true;
+                }
+                // Compare first name and last name of every person with filter text.
+                String lowerCaseFilter = newValue.toLowerCase();
+                switch (cbSearch.getValue()) {
+                    case "ID":
+                        if (patient.getIdProperty().toLowerCase().contains(lowerCaseFilter)) {
+                            return true; 
+                        }
+                        break;
+                    case "Name":
+                        if (patient.getNameProperty().toLowerCase().contains(lowerCaseFilter)) {
+                            return true; 
+                        }
+                        break;
+                    case "Disease":
+                        if (patient.getDiseaseProperty().toLowerCase().contains(lowerCaseFilter)) {
+                            return true;
+                        }
+                        break;
+                    case "Doctor":
+                        if (patient.getDoctorNameProperty().toLowerCase().contains(lowerCaseFilter)) {
+                            return true;
+                        }
+                        break;
+                }
+                return false;
+            });
+        });
+    }
+    
+    private void cbSearchInit() {
+        cbSearch.getItems().addAll("ID", "Name", "Disease", "Doctor");
+        cbSearch.setValue("ID");
+    }
+
+    
+    private void setEditable() {
+        patientTable.setEditable(true);
+        setTableColumnProperty(patientNameColumn, "patientname",0);
+        setTableColumnProperty(patientAgeColumn, "age",1);
+        setTableColumnProperty(patientSexColumn, "sex",0);
+        setTableColumnProperty(patientAddressColumn, "address",0);
+        setTableColumnProperty(patientPhoneColumn, "phone",3);
+        setTableColumnProperty(patientWeightColumn, "weight",2);
+        setTableColumnProperty(patientDiseaseColumn, "disease",0);
+    
+    }
+    
+    private void setTableColumnProperty(TableColumn column,String column_name,int type)
+    {
+        column.setEditable(true);
+        column.setCellFactory(TextFieldTableCell.forTableColumn());
+        column.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent<Patient, String>>() {
+            @Override
+            public void handle(TableColumn.CellEditEvent<Patient, String> t) {
+                Patient patient = ((Patient) t.getTableView().getItems().get(t.getTablePosition().getRow()));
+                if (t.getNewValue().length() == 0) {
+                    forceRefresh();
+                    Display_message.showError("Error","Field cannot be empty!");
+                } 
+                else {
+                    String update = "UPDATE fp.pchand_patient SET "+column_name+" = ? WHERE patientid = ?";
+                    Connection con=null;
+                    try {
+                        con=Connect_with_database.createConnection();
+                        ps = con.prepareStatement(update);
+                        switch(type)
+                        {
+                            case 0:
+                                ps.setString(1, t.getNewValue());
+                                break;
+                            case 1:
+                                ps.setInt(1, Integer.parseInt(t.getNewValue()));
+                                break;
+                            case 2:
+                                ps.setDouble(1, Double.parseDouble(t.getNewValue()));
+                                break;
+                            case 3:
+                                ps.setLong(1, Long.parseLong(t.getNewValue()));
+                                break;
+                        }
+                                ps.setInt(2, Integer.parseInt(patient.getIdProperty().trim()));
+                        int res=ps.executeUpdate();
+                        if(res>0)
+                        {
+                            //Display_message.showInformation("Success", "Record sucessfully updated!");
+                        }
+                        else
+                        {
+                            Display_message.showError("Error", "Record not updated!");
+                        }
+                    }
+                    catch (SQLException ex) 
+                    {
+                        Display_message.showError("Exception", "Ooops, there was an exception!");
+                        ex.printStackTrace();
+                    }
+                    finally
+                    {
+                    Connect_with_database.closeConnection(con);
+                    }
+                    patient.setDiseaseProperty(t.getNewValue());
+                }
+            }
+        });
+        
+    }
+
+    public void forceRefresh() {
+        new java.util.Timer().schedule(new java.util.TimerTask() {
+            public void run() {
+                Platform.runLater(() -> {
+                    TableView<Patient> patientTab;
+                    patientTab = patientTable;
+                    patientTab.getColumns().get(0).setVisible(false);
+                    patientTab.getColumns().get(0).setVisible(true);
+                });
+            }
+        }, 50);
+    }
+
+    public boolean isDuplicate(String s) {
+        for (Patient patient : patientData) {
+            if (s.equals(patient.getIdProperty())) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    private void reloadTable(){
+       
+        Connection con=null;
+                    try {
+                        con=Connect_with_database.createConnection();
+            patientData.clear();
+            //String sql = "SELECT patient.patientid, patient.patientname, patient.address, doctor.doctorname ";
+            String sql = "SELECT fp.pchand_patient.*, fp.pchand_doctor.doctorname, fp.pchand_billing.dischargedate,fp.pchand_billing.finalamount FROM (fp.pchand_patient INNER JOIN fp.pchand_Doctor On fp.pchand_Patient.doctorid = fp.pchand_doctor.doctorid) left outer join fp.pchand_billing On fp.pchand_Patient.patientid = fp.pchand_billing.patientid order by fp.pchand_patient.patientid ";
+           st = con.createStatement();
+            rs = st.executeQuery(sql);
+            while (rs.next()) {
+                Patient p = new Patient();
+                p.setIdProperty(rs.getInt(1)+"");
+                p.setNameProperty(rs.getString(2));
+                p.setAgeProperty(rs.getInt(3)+"");
+                p.setSexProperty(rs.getString(4));
+                p.setAddressProperty(rs.getString(5));
+                p.setPhoneProperty(rs.getLong(6)+"");
+                p.setWeightProperty(rs.getDouble(7)+"");
+                p.setDoctorIdProperty(rs.getInt(8)+"");
+                p.setDiseaseProperty(rs.getString(9));
+                p.setDoctorNameProperty(rs.getString(10));
+                p.setDischargeDateProperty(rs.getString(11));
+                String amount=rs.getString(12);
+                if(amount==null)
+                    p.setPatientAmountPaidProperty("Not Paid");
+                else
+                    p.setPatientAmountPaidProperty("Paid");
+                patientData.add(p);
+            }
+            if (st != null) {
+                st.close();
+            }
+            if (rs != null) {
+                rs.close();
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(PatientTabController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+                    finally
+                    {
+                        Connect_with_database.closeConnection(con);
+                    }
+        
+    }
+
+    public void viewMineMode(){
+        Connection con=null;
+                    try {
+                        con=Connect_with_database.createConnection();
+            patientData.clear();
+            //String sql = "SELECT Patient.ID, Patient.Name, Patient.Details, Doctor.Name ";
+            String sql="SELECT fp.pchand_patient.*, fp.pchand_doctor.doctorname, fp.pchand_billing.dischargedate,fp.pchand_billing.finalamount FROM (fp.pchand_patient INNER JOIN fp.pchand_Doctor On fp.pchand_Patient.doctorid = fp.pchand_doctor.doctorid) left outer join fp.pchand_billing On fp.pchand_Patient.patientid = fp.pchand_billing.patientid where fp.pchand_Patient.doctorid = ? order by fp.pchand_patient.patientid";
+            ps = con.prepareStatement(sql);
+            ps.setInt(1, Current_user_detail.current_user_id);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                Patient p = new Patient();
+                p.setIdProperty(rs.getInt(1)+"");
+                p.setNameProperty(rs.getString(2));
+                p.setAgeProperty(rs.getInt(3)+"");
+                p.setSexProperty(rs.getString(4));
+                p.setAddressProperty(rs.getString(5));
+                p.setPhoneProperty(rs.getLong(6)+"");
+                p.setWeightProperty(rs.getDouble(7)+"");
+                p.setDoctorIdProperty(rs.getInt(8)+"");
+                p.setDiseaseProperty(rs.getString(9));
+                p.setDoctorNameProperty(rs.getString(10));
+                p.setDischargeDateProperty(rs.getString(11));
+                String amount=rs.getString(12);
+                if(amount==null)
+                {
+                    p.setPatientAmountPaidProperty("Not Paid");
+                }
+                else
+                {
+                    p.setPatientAmountPaidProperty("Paid");
+                }
+                patientData.add(p);
+            }
+            if (ps != null) {
+                st.close();
+            }
+            if (rs != null) {
+                rs.close();
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+                    finally
+                    {
+                        Connect_with_database.closeConnection(con);
+                    }
+    }
+    private void getDisease(){
+       
+        Connection con=null;
+                    try {
+                        con=Connect_with_database.createConnection();
+            diseaseData.clear();
+            String sql = "SELECT * from fp.pchand_disease";
+            st = con.createStatement();
+            rs = st.executeQuery(sql);
+            while (rs.next()) {
+                Disease d = new Disease();
+                d.setDiseaseidProperty(rs.getInt(1)+"");
+                d.setDiseaseNameProperty(rs.getString(2));
+                diseaseData.add(d);
+            }
+        } catch (SQLException ex)
+        {
+            ex.printStackTrace();
+           
+        }
+                    finally
+                    {
+                        Connect_with_database.closeConnection(con);
+                    }
+        
+    }
+    
+    public void cbDiseaseinit() 
+     {
+         for(int i=0;i<diseaseData.size();i++)
+         {
+             cbDisease.getItems().add(diseaseData.get(i).getDiseaseNameProperty());
+         }
+        if(diseaseData.size()>0)
+            cbDisease.setValue(diseaseData.get(0).getDiseaseNameProperty());
+        else
+        {
+            cbDisease.setValue("Other");
+            tfAddNewDisease.setDisable(false);
+        }
+        cbDisease.getItems().add("Other");
+        cbDisease.getSelectionModel().selectedItemProperty().addListener(new  
+        ChangeListener<String>() 
+        {
+            public void changed(ObservableValue<? extends String> observable,String  
+            oldValue,String newValue) 
+            {
+                if(newValue.equals("Other"))
+                    tfAddNewDisease.setDisable(false);
+                else
+                    tfAddNewDisease.setDisable(true);
+            }   
+        });
+     } 
+    private void getDoctor(){
+       
+        Connection con=null;
+                    try {
+                        con=Connect_with_database.createConnection();
+            doctorData.clear();
+            String sql = "SELECT * from fp.pchand_doctor";
+            st = con.createStatement();
+            rs = st.executeQuery(sql);
+            while (rs.next()) {
+                Doctor d = new Doctor();
+                d.setIdProperty(rs.getInt(1)+"");
+                d.setNameProperty(rs.getString(2));
+                d.setDepartmentProperty(rs.getInt(3)+"");
+                doctorData.add(d);
+            }
+        } catch (SQLException ex)
+        {
+            ex.printStackTrace();
+           
+        }
+                    finally
+                    {
+                        Connect_with_database.closeConnection(con);
+                    }
+        
+    }
+    public void cbDoctorinit() 
+     {
+         for(int i=0;i<doctorData.size();i++)
+         {
+             cbAddDoctorID.getItems().add(doctorData.get(i).getNameProperty());
+         }
+        if(doctorData.size()>0)
+            cbAddDoctorID.setValue(doctorData.get(0).getNameProperty());
+    }
+   
+
+}

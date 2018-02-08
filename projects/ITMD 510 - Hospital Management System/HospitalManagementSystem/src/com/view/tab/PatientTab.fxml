@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<!--<?import org.controlsfx.control.textfield.*?>-->
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.Tab.PatientTabController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="16.0" prefHeight="40.0" prefWidth="484.0" spacing="30.0">
+         <children>
+            <Label layoutX="14.0" layoutY="37.0" prefHeight="17.0" prefWidth="96.0" text="Search keyword:" />
+            <TextField fx:id="tfSearch" layoutX="121.0" layoutY="33.0" prefHeight="25.0" prefWidth="190.0" />
+            <ComboBox fx:id="cbSearch" prefHeight="25.0" prefWidth="123.0" promptText="Search by..." />
+         </children>
+      </HBox>
+      <TableView fx:id="patientTable" layoutY="70.0" prefHeight="309.0" prefWidth="754.0">
+         <columns>
+            <TableColumn fx:id="patientIdColumn" prefWidth="100.0" text="Patient ID" />
+            <TableColumn fx:id="patientNameColumn" prefWidth="191.0" text="Patient Name" />
+            <TableColumn fx:id="patientAgeColumn" prefWidth="100.0" text="Age" />
+            <TableColumn fx:id="patientSexColumn" prefWidth="100.0" text="Sex" />
+            <TableColumn fx:id="patientAddressColumn" prefWidth="200.0" text="Address" />
+            <TableColumn fx:id="patientPhoneColumn" prefWidth="150.0" text="Phone" />
+            <TableColumn fx:id="patientWeightColumn" prefWidth="100.0" text="Weight" />
+            <TableColumn fx:id="patientDiseaseColumn" prefWidth="150.0" text="Disease" />
+            <TableColumn fx:id="doctorColumn" prefWidth="150.0" text="Doctor" />
+            <TableColumn fx:id="patientDischargeDateColumn" prefWidth="150.0" text="Discharge Date" />
+            <TableColumn fx:id="patientAmountPaidColumn" prefWidth="150.0" text="Paid" />
+            
+         </columns>
+      </TableView>
+      <GridPane layoutX="14.0" layoutY="394.0" prefHeight="173.0" prefWidth="267.0" vgap="10.0">
+         <children>
+            <TextField fx:id="tfPatientName" layoutX="328.0" layoutY="317.0" GridPane.columnIndex="1"  GridPane.rowIndex="1"  />
+            <Label layoutX="229.0" layoutY="321.0" text="Patient Name" GridPane.rowIndex="1"/>
+            <TextField fx:id="tfPatientId" layoutX="328.0" layoutY="297.0"  GridPane.columnIndex="1" />
+            <Label layoutX="229.0" layoutY="301.0" text="Patient Id" />
+            <Label layoutX="229.0" layoutY="364.0" prefHeight="17.0" prefWidth="83.0" text="Patient Sex" GridPane.rowIndex="2" />
+            <TextField fx:id="tfPatientSex" layoutX="328.0" layoutY="360.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Phone" GridPane.rowIndex="3" />
+            <TextField fx:id="tfPhone" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Disease" GridPane.rowIndex="4" />
+            <ComboBox fx:id="cbDisease" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+            
+           
+         </children>
+            <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      
+      <GridPane layoutX="350.0" layoutY="394.0" prefHeight="173.0" prefWidth="267.0" vgap="10.0">
+        <children>
+         <TextField fx:id="tfPatientAge" layoutX="328.0" layoutY="317.0" GridPane.columnIndex="1" />
+            <Label layoutX="229.0" layoutY="321.0" text="Patient Age" />
+            <Label layoutX="229.0" layoutY="364.0" prefHeight="17.0" prefWidth="83.0" text="Address" GridPane.rowIndex="1" />
+            <TextField fx:id="tfPatientAddress" layoutX="328.0" layoutY="360.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Weight" GridPane.rowIndex="2" />
+            <TextField fx:id="tfWeight" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Doctor ID" GridPane.rowIndex="3" />
+            <ComboBox fx:id="cbAddDoctorID" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="tfAddNewDisease"  GridPane.rowIndex="4" prefColumnCount="2" />
+            
+            
+        </children>
+            <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Button fx:id="btDelete" layoutX="657.0" layoutY="388.0" mnemonicParsing="false" onAction="#handleBtDelete" prefHeight="25.0" prefWidth="83.0" text="Delete" />
+      <Button fx:id="btAdd" layoutX="657.0" layoutY="545.0"  mnemonicParsing="false" onAction="#handleAddButton" prefHeight="25.0" prefWidth="83.0" text="Add"/>
+      <Separator layoutX="523.0" layoutY="2.0" orientation="VERTICAL" prefHeight="69.0" prefWidth="0.0" />
+      <RadioButton fx:id="btViewAll" layoutX="536.0" layoutY="40.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="78.0" selected="true" text="All Patient">
+         <toggleGroup>
+            <ToggleGroup fx:id="viewMode" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="btViewMine" layoutX="646.0" layoutY="40.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="83.0" text="My Patient" toggleGroup="$viewMode" />
+      <Label layoutX="589.0" layoutY="14.0" prefHeight="19.0" prefWidth="71.0" text="View Mode" textFill="#d1781b">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

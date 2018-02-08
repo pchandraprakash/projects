@@ -1,0 +1,29 @@
+package com.model;
+
+public class Connector 
+{
+	public static Connection createConnection()
+    {
+        try {
+             String driver = "com.mysql.jdbc.Driver";
+            Class.forName(driver).newInstance();
+            //return DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/app","root","");
+            return DriverManager.getConnection("jdbc:mysql://www.papademas.net:3306/fp","dbfp","510");
+        } catch (ClassNotFoundException | SQLException ex) {
+            ex.printStackTrace();
+        } catch (InstantiationException | IllegalAccessException ex) {
+            ex.printStackTrace();
+        }
+        return null;
+    }
+    
+    public static void closeConnection(Connection con)
+    {
+        if(con!=null)
+            try {
+                con.close();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+    }
+}

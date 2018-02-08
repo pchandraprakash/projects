@@ -1,0 +1,135 @@
+
+package com.controller.Tab;
+
+import com.model.Appoinment;
+import com.model.Connect_with_database;
+import com.model.Current_user_detail;
+import com.model.Doctor;
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ResourceBundle;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+
+public class Doctor_my_appoinmentsController implements Initializable {
+
+    /**
+     * Initializes the controller class.
+     */
+    @FXML
+    private TableView appoinmentsTable;
+    @FXML
+    private TableColumn appoinmentIdColumn;
+    @FXML
+    private TableColumn patientNameColumn;
+     @FXML
+    private TableColumn patientDiseaseColumn;
+    @FXML
+    private TableColumn doctorNameColumn;
+    @FXML
+    private TableColumn appoinmentDateColumn;
+    @FXML
+    private TableColumn isConfirmedColumn;
+    
+    
+    private ObservableList<Doctor> doctorData = FXCollections.observableArrayList();
+     private ObservableList<Appoinment> appoinmentData = FXCollections.observableArrayList();
+   
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        getDoctorData();
+        getAppoinmentData();
+        initTable();
+    }    
+     private void getDoctorData() 
+    {
+    Connection con=null;
+            try {
+                con=Connect_with_database.createConnection();
+            String sql = "SELECT * FROM fp.pchand_Doctor";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            while (rs.next()) {
+                Doctor doctor = new Doctor();
+                doctor.setIdProperty(rs.getInt(1)+"");
+                doctor.setNameProperty(rs.getString(2));
+                doctor.setDepartmentProperty(rs.getInt(3)+"");
+                doctorData.add(doctor);
+            }
+            }
+            catch (Exception ex) {
+            ex.printStackTrace();
+        }
+            finally
+            {
+                Connect_with_database.closeConnection(con);
+            }
+    }
+    private void getAppoinmentData() 
+    {
+        Connection con=null;
+            try {
+                con=Connect_with_database.createConnection();
+            String sql = "SELECT fp.pchand_appoinments.*,fp.pchand_doctor.doctorname,fp.pchand_patient.patientname,fp.pchand_patient.disease FROM (fp.pchand_appoinments  INNER JOIN fp.pchand_Doctor On fp.pchand_appoinments.doctorid = fp.pchand_doctor.doctorid) INNER JOIN fp.pchand_patient on fp.pchand_appoinments.patientid=fp.pchand_patient.patientid where fp.pchand_appoinments.confirmed=1 and fp.pchand_appoinments.doctorid="+Current_user_detail.current_user_id+" order by fp.pchand_appoinments.appoinmenttime desc";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            while (rs.next()) 
+            {
+                Appoinment appoinment=new Appoinment();
+                appoinment.setAppoinmentidProperty(rs.getInt(1)+"");
+                appoinment.setPatientIdProperty(rs.getInt(2)+"");
+                appoinment.setDoctorIdProperty(rs.getInt(3)+"");
+                appoinment.setAppoinmentDateProperty(rs.getString(4));
+                appoinment.setAppoinmentStatusProperty("Confirmed");
+                appoinment.setDoctorNameProperty(rs.getString(6));
+                appoinment.setPatientNameProperty(rs.getString(7));
+                appoinment.setPatientDiseaseProperty(rs.getString(8));
+                appoinmentData.add(appoinment);
+            }
+            if(rs!=null)
+                rs.close();
+            }
+            catch (Exception ex) {
+            ex.printStackTrace();
+        }
+            finally
+            {
+                Connect_with_database.closeConnection(con);
+            }
+    }
+    private void initTable() {
+        appoinmentIdColumn.setCellValueFactory(
+                new PropertyValueFactory<>("appoinmentidProperty")
+        );
+        patientNameColumn.setCellValueFactory(
+                new PropertyValueFactory<>("patientNameProperty")
+        );
+        patientDiseaseColumn.setCellValueFactory(
+                new PropertyValueFactory<>("patientDiseaseProperty")
+        );
+        appoinmentDateColumn.setCellValueFactory(
+                new PropertyValueFactory<>("appoinmentDateProperty")
+        );
+        doctorNameColumn.setCellValueFactory(
+                new PropertyValueFactory<>("doctorNameProperty")
+        );
+        isConfirmedColumn.setCellValueFactory(
+                new PropertyValueFactory<>("appoinmentStatusProperty")
+        );
+        
+        
+        FilteredList<Appoinment> filteredData = new FilteredList<>(appoinmentData, p -> true);
+        appoinmentsTable.setItems(filteredData);
+
+       
+    }
+    
+}

@@ -1,0 +1,355 @@
+/* <h1>FileName: Patient_detail_fill_tabController.java</h1>
+ * @author	Phanindra Chandraprakash
+ * @version	1.0
+ * @date	12/02/2016
+ * FinalProject: HospitalManagementSystem
+ * Description: This is an FXML controller class which manages Patient details page.
+ */
+package com.controller.Tab;
+
+import com.model.Connect_with_database;
+import com.model.Current_user_detail;
+import com.model.Disease;
+import com.model.Display_message;
+import com.model.Doctor;
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ResourceBundle;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
+
+public class Patient_detail_fill_tabController implements Initializable {
+
+    /**
+     * Initializes the controller class.
+     */
+    @FXML
+    private TextField tfPatientName;
+    @FXML
+    private TextField tfPatientSex;
+    @FXML
+    private TextField tfPhone;
+    @FXML
+    private ComboBox cbDisease;//private TextField tfDisease;
+    @FXML
+    private TextField tfPatientAge;
+    @FXML
+    private TextField tfPatientAddress;
+    @FXML
+    private TextField tfWeight;
+    @FXML
+    private ComboBox cbAddDoctorID;//TextField tfAddDoctorID;
+   @FXML
+    private TextField tfPatientId;
+    @FXML
+    private ComboBox<String> cbSearch;
+    @FXML
+    private TextField tfAddNewDisease;
+    @FXML
+    private Button btAdd;
+    @FXML
+    private Button btUpdate;
+    
+     private ObservableList<Disease> diseaseData = FXCollections.observableArrayList();
+    private ObservableList<Doctor> doctorData = FXCollections.observableArrayList();
+    
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        tfAddNewDisease.setDisable(true);
+        tfPatientId.setDisable(true);
+        tfPatientId.setText(Current_user_detail.current_user_id+"");
+        btUpdate.setDisable(true);
+        getDisease();
+        cbDiseaseinit();
+        getDoctor();
+        cbDoctorinit();
+        getUserData();
+    }  
+    
+    public void handleAddButton()
+    {
+        if (tfPatientName.getText().trim().equals("") || tfPatientName.getText().equals("") || tfPatientSex.getText().equals("") || tfPatientAge.getText().equals("") || tfPatientAddress.getText().equals("") || tfWeight.getText().equals("") || tfPhone.getText().equals("")) {
+            Display_message.showError("Error", "All Text Field must be filled!");
+            
+        } 
+        else if(cbDisease.getSelectionModel().getSelectedIndex()<0)
+        {
+            Display_message.showError("Error", "Select the disease!");
+        }
+        else if(cbAddDoctorID.getSelectionModel().getSelectedIndex()<0)
+        {
+            Display_message.showError("Error", "Select the doctor!");
+        }
+        else {
+            int patientid=Integer.parseInt(tfPatientId.getText().trim());
+            String name = tfPatientName.getText();
+            String address = tfPatientAddress.getText();
+            String doctorId =doctorData.get(cbAddDoctorID.getSelectionModel().getSelectedIndex()).getIdProperty();
+            int age=Integer.parseInt(tfPatientAge.getText());
+            double weight=Double.parseDouble(tfWeight.getText());
+            long phone=Long.parseLong(tfPhone.getText());
+            String sex=tfPatientSex.getText();
+            int index=cbDisease.getSelectionModel().getSelectedIndex();
+            String disease=null;
+            if(tfAddNewDisease.isDisable())
+                disease=diseaseData.get(index).getDiseaseNameProperty();
+            else
+            {
+                if(tfAddNewDisease.getText().trim().equals(""))
+                {
+                    Display_message.showError("Error", "Please enter the disease name.");
+                    return;
+                }
+                disease=tfAddNewDisease.getText().trim();
+                
+            }
+             String doctorName = "";
+            
+            String add = "INSERT INTO fp.pchand_patient (patientid,patientname,age,sex,address,phone,weight,doctorid,disease)"
+                    + "VALUES (?,?, ?, ?, ?,?,?,?,?)";
+            Connection con=null;
+            try {
+                con=Connect_with_database.createConnection();
+                PreparedStatement ps = con.prepareStatement(add);
+                ps.setInt(1,patientid);
+                ps.setString(2, name);
+                ps.setInt(3, age);
+                ps.setString(4, sex);
+                ps.setString(5, address);
+                ps.setLong(6, phone);
+                ps.setDouble(7, weight);
+                ps.setInt(8, Integer.parseInt(doctorId.trim()));
+                ps.setString(9,disease);
+                int res=ps.executeUpdate();
+                if(res>0)
+                {
+                    btUpdate.setDisable(false);
+                    btAdd.setDisable(true);
+                    Display_message.showInformation("Sucessful", "Record Inserted Sucessfully!");
+                }
+                else
+                {
+                    Display_message.showError("Error", "Record Not Inserted!");
+                }
+            } catch (SQLException ex) 
+            {
+                ex.printStackTrace();
+                Display_message.showError("Exception", "Ooops, there was an exception!");
+            }
+            finally
+            {
+            Connect_with_database.closeConnection(con);
+            }
+        }
+        
+    }
+    public void getUserData()
+    {
+ Connection con=null;
+                    try {
+                        con=Connect_with_database.createConnection();
+            String sql = "SELECT fp.pchand_patient.*,fp.pchand_doctor.doctorname from fp.pchand_patient inner join fp.pchand_doctor on fp.pchand_patient.doctorid=fp.pchand_doctor.doctorid where fp.pchand_patient.patientid="+Current_user_detail.current_user_id;
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            if (rs.next()) {
+                
+                tfPatientName.setText(rs.getString(2));
+                tfPatientAge.setText(rs.getInt(3)+"");
+                tfPatientSex.setText(rs.getString(4));
+                tfPatientAddress.setText(rs.getString(5));
+                tfPhone.setText(rs.getLong(6)+"");
+                tfWeight.setText(rs.getDouble(7)+"");
+                cbDisease.setValue(rs.getString(9));
+                cbAddDoctorID.setValue(rs.getString(10));
+                btAdd.setDisable(true);
+                btUpdate.setDisable(false);
+            }
+        } catch (SQLException ex)
+        {
+            ex.printStackTrace();
+           
+        }
+                    finally
+                    {
+                        Connect_with_database.closeConnection(con);
+                    }
+        
+    }
+    
+    public void handleUpdateButton()
+    {
+        if (tfPatientName.getText().trim().equals("") || tfPatientName.getText().equals("") || tfPatientSex.getText().equals("") || tfPatientAge.getText().equals("") || tfPatientAddress.getText().equals("") || tfWeight.getText().equals("") || tfPhone.getText().equals("")) {
+            Display_message.showError("Error", "All Text Field must be filled!");
+            
+        } 
+        else if(cbDisease.getSelectionModel().getSelectedIndex()<0)
+        {
+            Display_message.showError("Error", "Select the disease!");
+        }
+        else if(cbAddDoctorID.getSelectionModel().getSelectedIndex()<0)
+        {
+            Display_message.showError("Error", "Select the doctor!");
+        }
+        else {
+            int patientid=Integer.parseInt(tfPatientId.getText().trim());
+            String name = tfPatientName.getText();
+            String address = tfPatientAddress.getText();
+            String doctorId =doctorData.get(cbAddDoctorID.getSelectionModel().getSelectedIndex()).getIdProperty();
+            int age=Integer.parseInt(tfPatientAge.getText());
+            double weight=Double.parseDouble(tfWeight.getText());
+            long phone=Long.parseLong(tfPhone.getText());
+            String sex=tfPatientSex.getText();
+            int index=cbDisease.getSelectionModel().getSelectedIndex();
+            String disease=null;
+            if(tfAddNewDisease.isDisable())
+                disease=diseaseData.get(index).getDiseaseNameProperty();
+            else
+            {
+                if(tfAddNewDisease.getText().trim().equals(""))
+                {
+                    Display_message.showError("Error", "Please enter the disease name.");
+                    return;
+                }
+                disease=tfAddNewDisease.getText().trim();
+                
+            }
+             String doctorName = "";
+            
+            String add = "update fp.pchand_patient set patientname=?,age=?,sex=?,address=?,phone=?,weight=?,doctorid=?,disease=? where patientid=?";
+            Connection con=null;
+            try {
+                con=Connect_with_database.createConnection();
+                PreparedStatement ps = con.prepareStatement(add);
+                ps.setString(1, name);
+                ps.setInt(2, age);
+                ps.setString(3, sex);
+                ps.setString(4, address);
+                ps.setLong(5, phone);
+                ps.setDouble(6, weight);
+                ps.setInt(7, Integer.parseInt(doctorId.trim()));
+                ps.setString(8,disease);
+                ps.setInt(9,patientid);
+                int res=ps.executeUpdate();
+                if(res>0)
+                {
+                    btUpdate.setDisable(false);
+                    btAdd.setDisable(true);
+                    Display_message.showInformation("Sucessful", "Record Updated Sucessfully!");
+                }
+                else
+                {
+                    Display_message.showError("Error", "Record Not Updated!");
+                }
+            } catch (SQLException ex) 
+            {
+                ex.printStackTrace();
+                Display_message.showError("Exception", "Ooops, there was an exception!");
+            }
+            finally
+            {
+            Connect_with_database.closeConnection(con);
+            }
+        }
+    }
+    private void getDisease(){
+       
+        Connection con=null;
+                    try {
+                        con=Connect_with_database.createConnection();
+            diseaseData.clear();
+            String sql = "SELECT * from fp.pchand_disease";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            while (rs.next()) {
+                Disease d = new Disease();
+                d.setDiseaseidProperty(rs.getInt(1)+"");
+                d.setDiseaseNameProperty(rs.getString(2));
+                diseaseData.add(d);
+            }
+        } catch (SQLException ex)
+        {
+            ex.printStackTrace();
+           
+        }
+                    finally
+                    {
+                        Connect_with_database.closeConnection(con);
+                    }
+        
+    }
+    
+    public void cbDiseaseinit() 
+     {
+         for(int i=0;i<diseaseData.size();i++)
+         {
+             cbDisease.getItems().add(diseaseData.get(i).getDiseaseNameProperty());
+         }
+        if(diseaseData.size()>0)
+            cbDisease.setValue(diseaseData.get(0).getDiseaseNameProperty());
+        else
+        {
+            cbDisease.setValue("Other");
+            tfAddNewDisease.setDisable(false);
+        }
+        cbDisease.getItems().add("Other");
+        cbDisease.getSelectionModel().selectedItemProperty().addListener(new  
+        ChangeListener<String>() 
+        {
+            public void changed(ObservableValue<? extends String> observable,String  
+            oldValue,String newValue) 
+            {
+                if(newValue.equals("Other"))
+                    tfAddNewDisease.setDisable(false);
+                else
+                    tfAddNewDisease.setDisable(true);
+            }   
+        });
+     } 
+    private void getDoctor(){
+       
+        Connection con=null;
+                    try {
+                        con=Connect_with_database.createConnection();
+            doctorData.clear();
+            String sql = "SELECT * from fp.pchand_doctor";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            while (rs.next()) {
+                Doctor d = new Doctor();
+                d.setIdProperty(rs.getInt(1)+"");
+                d.setNameProperty(rs.getString(2));
+                d.setDepartmentProperty(rs.getInt(3)+"");
+                doctorData.add(d);
+            }
+        } catch (SQLException ex)
+        {
+            ex.printStackTrace();
+           
+        }
+                    finally
+                    {
+                        Connect_with_database.closeConnection(con);
+                    }
+        
+    }
+    public void cbDoctorinit() 
+     {
+         for(int i=0;i<doctorData.size();i++)
+         {
+             cbAddDoctorID.getItems().add(doctorData.get(i).getNameProperty());
+         }
+        if(doctorData.size()>0)
+            cbAddDoctorID.setValue(doctorData.get(0).getNameProperty());
+    }
+}

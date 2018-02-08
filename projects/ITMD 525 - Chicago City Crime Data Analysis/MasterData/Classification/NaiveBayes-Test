@@ -1,0 +1,1512 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.bayes.NaiveBayes
+Relation:     CR17filtered-weka.filters.unsupervised.attribute.Remove-R1-3-weka.filters.unsupervised.attribute.Remove-R3-weka.filters.unsupervised.instance.Resample-S1-Z7.0-no-replacement-weka.filters.unsupervised.instance.Resample-S1-Z66.0-no-replacement-weka.filters.unsupervised.attribute.Remove-R1-3,5,9-10,12-19
+Instances:    3366
+Attributes:   5
+              Description
+              Arrest
+              Domestic
+              Beat
+              Community.Area
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+Naive Bayes Classifier
+
+                                                                    Class
+Attribute                                                           false      true
+                                                                    (0.8)     (0.2)
+====================================================================================
+Description
+  DOMESTIC BATTERY SIMPLE                                            238.0      63.0
+  FINANCIAL IDENTITY THEFT OVER $ 300                                 51.0       2.0
+  HARASSMENT BY ELECTRONIC MEANS                                      43.0       1.0
+  SELL/GIVE/DEL LIQUOR TO MINOR                                        1.0       1.0
+  FROM BUILDING                                                      140.0       1.0
+  OVER $500                                                          192.0       4.0
+  TO LAND                                                             11.0      44.0
+  SIMPLE                                                             296.0      63.0
+  TO VEHICLE                                                         184.0       9.0
+  TELEPHONE THREAT                                                    48.0       3.0
+  FORCIBLE ENTRY                                                     102.0       2.0
+  FINANCIAL IDENTITY THEFT $300 AND UNDER                             11.0       1.0
+  OTHER OFFENSE                                                        6.0       1.0
+  TO PROPERTY                                                        172.0      19.0
+  $500 AND UNDER                                                     269.0      15.0
+  POCKET-PICKING                                                      32.0       1.0
+  COUNTERFEIT CHECK                                                    7.0       3.0
+  AGGRAVATED: OTHER DANG WEAPON                                       28.0       9.0
+  AGGRAVATED: OTHER                                                    3.0       2.0
+  AGG PRO.EMP:KNIFE/CUTTING INST                                       2.0       1.0
+  CHILD ABDUCTION                                                      1.0       2.0
+  COMPUTER FRAUD                                                       5.0       1.0
+  OTHER VEHICLE OFFENSE                                               18.0       2.0
+  AUTOMOBILE                                                         130.0      11.0
+  OTHER CRIME INVOLVING PROPERTY                                       5.0       1.0
+  TO CITY OF CHICAGO PROPERTY                                          7.0       1.0
+  STRONGARM - NO WEAPON                                               34.0       1.0
+  UNLAWFUL ENTRY                                                      62.0       3.0
+  HARASSMENT BY TELEPHONE                                             43.0       1.0
+  AGGRAVATED: HANDGUN                                                 56.0      11.0
+  ARMED: HANDGUN                                                      55.0       4.0
+  ILLEGAL USE CASH CARD                                               17.0       1.0
+  ENDANGERING LIFE/HEALTH CHILD                                        1.0       3.0
+  TRUCK, BUS, MOTOR HOME                                               5.0       1.0
+  RETAIL THEFT                                                        55.0      73.0
+  AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST                      8.0       5.0
+  POSS: AMPHETAMINES                                                   1.0       1.0
+  POSS: CANNABIS 30GMS OR LESS                                         1.0      14.0
+  PAROLE VIOLATION                                                     1.0      12.0
+  SEX OFFENDER: FAIL TO REGISTER                                       2.0       1.0
+  AGGRAVATED:KNIFE/CUTTING INSTR                                      17.0       6.0
+  FALSE/STOLEN/ALTERED TRP                                             8.0      13.0
+  VIOLATE ORDER OF PROTECTION                                         16.0       9.0
+  THEFT OF LABOR/SERVICES                                              9.0       3.0
+  SOLICIT ON PUBLIC WAY                                                1.0      12.0
+  AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON                      13.0       4.0
+  FALSE POLICE REPORT                                                  1.0       1.0
+  UNLAWFUL USE HANDGUN                                                 4.0       3.0
+  PREDATORY                                                            2.0       1.0
+  FRAUD OR CONFIDENCE GAME                                            23.0       1.0
+  MANU/DELIVER: HEROIN (WHITE)                                         1.0       7.0
+  POSS: HEROIN(WHITE)                                                  1.0      28.0
+  MANU/DELIVER:CRACK                                                   1.0       3.0
+  FOUND SUSPECT NARCOTICS                                              1.0       9.0
+  VEHICULAR HIJACKING                                                  4.0       1.0
+  NON-AGGRAVATED                                                      14.0       1.0
+  MANU/DEL:CANNABIS 10GM OR LESS                                       1.0       9.0
+  CRIMINAL DEFACEMENT                                                 12.0       1.0
+  FIRST DEGREE MURDER                                                  7.0       4.0
+  CREDIT CARD FRAUD                                                   37.0       1.0
+  ATTEMPT THEFT                                                        3.0       2.0
+  UNLAWFUL POSS OF HANDGUN                                             6.0      37.0
+  SOLICIT NARCOTICS ON PUBLICWAY                                       1.0       4.0
+  ARMED:KNIFE/CUTTING INSTRUMENT                                       4.0       4.0
+  POSS: COCAINE                                                        1.0       3.0
+  POSS: CRACK                                                          1.0      17.0
+  OBSTRUCTING IDENTIFICATION                                           1.0       9.0
+  VEHICLE TITLE/REG OFFENSE                                            2.0      17.0
+  AGGRAVATED                                                          16.0       1.0
+  MANU/DEL:CANNABIS OVER 10 GMS                                        1.0      12.0
+  AGGRAVATED PO: OTHER DANG WEAP                                       4.0       2.0
+  OTHER VIOLATION                                                      2.0       2.0
+  OTHER                                                                1.0       2.0
+  MANU/DELIVER: HEROIN(BRN/TAN)                                        1.0       1.0
+  GUN OFFENDER: DUTY TO REGISTER                                       1.0       5.0
+  UNLAWFUL USE OTHER FIREARM                                           1.0       1.0
+  ATTEMPT: ARMED-HANDGUN                                               2.0       1.0
+  RECKLESS CONDUCT                                                     5.0      17.0
+  POSS: SYNTHETIC DRUGS                                                1.0       3.0
+  PROHIBITED PLACES                                                    1.0       2.0
+  ATTEMPT FORCIBLE ENTRY                                               9.0       1.0
+  POSS: CANNABIS MORE THAN 30GMS                                       1.0      12.0
+  AGGRAVATED VEHICULAR HIJACKING                                       3.0       2.0
+  TO STATE SUP LAND                                                    1.0       5.0
+  SEX OFFENDER: FAIL REG NEW ADD                                       5.0       1.0
+  POSS: HALLUCINOGENS                                                  1.0       1.0
+  PURSE-SNATCHING                                                     11.0       1.0
+  AGG CRIMINAL SEXUAL ABUSE                                            2.0       1.0
+  BY FIRE                                                              6.0       2.0
+  TO RESIDENCE                                                        12.0      10.0
+  RESIST/OBSTRUCT/DISARM OFFICER                                       1.0       6.0
+  CALL OPERATION                                                       1.0       2.0
+  CHILD ABUSE                                                         14.0       2.0
+  THEFT OF LOST/MISLAID PROP                                           1.0       2.0
+  BOGUS CHECK                                                          4.0       1.0
+  OTHER CRIME AGAINST PERSON                                           3.0       2.0
+  ATT: AUTOMOBILE                                                      8.0       1.0
+  AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY          4.0       3.0
+  UNAUTHORIZED VIDEOTAPING                                             1.0       1.0
+  ARMED: OTHER DANGEROUS WEAPON                                        5.0       1.0
+  CYCLE, SCOOTER, BIKE NO VIN                                          1.0       1.0
+  LICENSE VIOLATION                                                    9.0       1.0
+  ABUSE/NEGLECT: CARE FACILITY                                         1.0       1.0
+  POSS: PCP                                                            1.0       6.0
+  GUN OFFENDER: ANNUAL REGISTRATION                                    1.0       6.0
+  AGGRAVATED FINANCIAL IDENTITY THEFT                                  4.0       1.0
+  POSS: BARBITUATES                                                    1.0       5.0
+  THEFT/RECOVERY: TRUCK,BUS,MHOME                                      1.0       1.0
+  HOME INVASION                                                        1.0       2.0
+  AGG SEX ASSLT OF CHILD FAM MBR                                       2.0       1.0
+  AGG PO HANDS NO/MIN INJURY                                           3.0       7.0
+  ATTEMPT: STRONGARM-NO WEAPON                                         5.0       1.0
+  AGG PRO.EMP: HANDGUN                                                 1.0       1.0
+  THEFT/RECOVERY: AUTOMOBILE                                          10.0       6.0
+  CHILD ABDUCTION/STRANGER                                             2.0       1.0
+  CYCLE, SCOOTER, BIKE W-VIN                                           2.0       1.0
+  GUN OFFENDER: DUTY TO REPORT CHANGE OF INFORMATION                   1.0       2.0
+  PROBATION VIOLATION                                                  1.0       2.0
+  POSSESSION OF BURGLARY TOOLS                                         1.0       1.0
+  ATT CRIM SEXUAL ABUSE                                                1.0       1.0
+  PRO EMP HANDS NO/MIN INJURY                                         15.0      10.0
+  UNLAWFUL RESTRAINT                                                   1.0       1.0
+  ARSONIST: FAIL TO REGISTER NEW ADDRESS                               1.0       1.0
+  AGG CRIM SEX ABUSE FAM MEMBER                                        1.0       1.0
+  OBSTRUCTING JUSTICE                                                  1.0       2.0
+  GAME/DICE                                                            1.0       2.0
+  OTHER WEAPONS VIOLATION                                              2.0       2.0
+  POSS: HEROIN(BRN/TAN)                                                1.0       3.0
+  INTIMIDATION                                                         2.0       1.0
+  RECKLESS FIREARM DISCHARGE                                           1.0       2.0
+  FORGERY                                                              4.0       1.0
+  COUNTERFEITING DOCUMENT                                              9.0       4.0
+  AGGRAVATED OF A CHILD                                                1.0       1.0
+  OTHER PROSTITUTION OFFENSE                                           1.0       1.0
+  AGGRAVATED DOMESTIC BATTERY: OTHER FIREARM                           1.0       1.0
+  POSS FIREARM/AMMO:NO FOID CARD                                       1.0       2.0
+  LIQUOR LICENSE VIOLATION                                             1.0       5.0
+  OBSTRUCTING SERVICE                                                  2.0       2.0
+  POSSESSION OF DRUG EQUIPMENT                                         1.0       2.0
+  ATTEMPT: ARMED-OTHER DANG WEAP                                       5.0       1.0
+  ATTEMPT - FINANCIAL IDENTITY THEFT                                  10.0       1.0
+  CRIMINAL SEXUAL ABUSE                                                5.0       3.0
+  FINAN EXPLOIT-ELDERLY/DISABLED                                       1.0       1.0
+  ATTEMPT NON-AGGRAVATED                                               3.0       1.0
+  POSS: METHAMPHETAMINES                                               1.0       1.0
+  AGG: HANDS/FIST/FEET NO/MINOR INJURY                                 3.0       1.0
+  ATTEMPT: ARMED-OTHER FIREARM                                         1.0       1.0
+  ARMED: OTHER FIREARM                                                 1.0       1.0
+  TO STATE SUP PROP                                                    4.0       2.0
+  PUBLIC INDECENCY                                                     1.0       3.0
+  SEX ASSLT OF CHILD BY FAM MBR                                        1.0       1.0
+  SEXUAL EXPLOITATION OF A CHILD                                       2.0       1.0
+  AGGRAVATED: OTHER FIREARM                                            2.0       1.0
+  AGG: HANDS/FIST/FEET SERIOUS INJURY                                  2.0       1.0
+  AGGRAVATED OF A SENIOR CITIZEN                                       1.0       1.0
+  UNLAWFUL USE OF A COMPUTER                                           2.0       1.0
+  VIOLENT OFFENDER: DUTY TO REGISTER                                   1.0       1.0
+  CHILD PORNOGRAPHY                                                    3.0       1.0
+  LOST PASSPORT                                                        1.0       1.0
+  VIOLENT OFFENDER: ANNUAL REGISTRATION                                2.0       2.0
+  VIOLATION OF CIVIL NO CONTACT ORDER                                  1.0       1.0
+  ATTEMPT: ARMED-KNIFE/CUT INSTR                                       1.0       1.0
+  TAMPER WITH MOTOR VEHICLE                                            1.0       1.0
+  TO AIRPORT                                                           1.0       1.0
+  VIO BAIL BOND: DOM VIOLENCE                                          1.0       2.0
+  FORFEIT PROPERTY                                                     1.0       1.0
+  UNLAWFUL POSS OTHER FIREARM                                          1.0       2.0
+  THEFT BY LESSEE,MOTOR VEH                                            4.0       1.0
+  AGG PO HANDS ETC SERIOUS INJ                                         1.0       1.0
+  CHILD ABANDONMENT                                                    1.0       1.0
+  ANIMAL ABUSE/NEGLECT                                                 3.0       1.0
+  ARMED WHILE UNDER THE INFLUENCE                                      1.0       1.0
+  BOMB THREAT                                                          4.0       1.0
+  INDECENT SOLICITATION/CHILD                                          1.0       1.0
+  UNLAWFUL INTERFERE/VISITATION                                        2.0       1.0
+  ATT AGG CRIMINAL SEXUAL ABUSE                                        1.0       1.0
+  ARSON THREAT                                                         3.0       1.0
+  UNLAWFUL USE OTHER DANG WEAPON                                       1.0       2.0
+  OBSCENE MATTER                                                       1.0       1.0
+  AGG PRO.EMP: OTHER DANG WEAPON                                       2.0       2.0
+  MANU/DELIVER:BARBITUATES                                             1.0       2.0
+  POSSESSION: SYNTHETIC MARIJUANA                                      1.0       2.0
+  ATTEMPT: CYCLE, SCOOTER, BIKE W-VIN                                  1.0       1.0
+  ARSONIST: DUTY TO REGISTER                                           1.0       1.0
+  PEEPING TOM                                                          2.0       1.0
+  ATTEMPT ARSON                                                        1.0       1.0
+  SOLICIT FOR BUSINESS                                                 1.0       1.0
+  EMBEZZLEMENT                                                         1.0       1.0
+  CRIM SEX ABUSE BY FAM MEMBER                                         1.0       1.0
+  UNLAWFUL POSS AMMUNITION                                             1.0       2.0
+  AGGRAVATED PO: HANDGUN                                               1.0       2.0
+  BOARD PLANE WITH WEAPON                                              1.0       3.0
+  MOB ACTION                                                           1.0       1.0
+  SECOND DEGREE MURDER                                                 1.0       1.0
+  MANU/DELIVER: METHAMPHETAMINES                                       1.0       1.0
+  ATTEMPT: AGGRAVATED                                                  2.0       1.0
+  SEX RELATION IN FAMILY                                               2.0       1.0
+  OBSCENE TELEPHONE CALLS                                              4.0       1.0
+  DELIVERY CONTAINER THEFT                                             1.0       1.0
+  BY EXPLOSIVE                                                         1.0       1.0
+  CAB OPERATION                                                        1.0       1.0
+  MANU/DELIVER:PCP                                                     1.0       2.0
+  AGGRAVATED: KNIFE/CUT INSTR                                          1.0       1.0
+  AGGRAVATED PO: KNIFE/CUT INSTR                                       1.0       1.0
+  FORCIBLE DETENTION                                                   1.0       1.0
+  AGGRAVATED PO:KNIFE/CUT INSTR                                        2.0       1.0
+  OF UNBORN CHILD                                                      1.0       1.0
+  INTERFERENCE JUDICIAL PROCESS                                        1.0       1.0
+  PAY TV SERVICE OFFENSES                                              3.0       1.0
+  UNLAWFUL USE OF RECORDED SOUND                                       1.0       1.0
+  AGGRAVATED OF A UNBORN CHILD                                         1.0       1.0
+  ALTER/FORGE PRESCRIPTION                                             1.0       2.0
+  POS: HYPODERMIC NEEDLE                                               1.0       1.0
+  FALSE FIRE ALARM                                                     1.0       1.0
+  UNLAWFUL USE/SALE AIR RIFLE                                          1.0       1.0
+  EXTORTION                                                            4.0       1.0
+  EAVESDROPPING                                                        2.0       1.0
+  CONTRIBUTE DELINQUENCY OF A CHILD                                    2.0       1.0
+  THEFT BY LESSEE,NON-VEH                                              1.0       1.0
+  DECEPTIVE COLLECTION PRACTICES                                       1.0       1.0
+  VIOLATION OF STALKING NO CONTACT ORDER                               2.0       1.0
+  POS: PORNOGRAPHIC PRINT                                              1.0       1.0
+  MONEY LAUNDERING                                                     1.0       1.0
+  MANU/DELIVER:COCAINE                                                 1.0       1.0
+  FROM COIN-OP MACHINE/DEVICE                                          1.0       1.0
+  AGGRAVATED DOMESTIC BATTERY: HANDGUN                                 1.0       1.0
+  GAME/CARDS                                                           1.0       1.0
+  DELIVER CANNABIS TO PERSON <18                                       1.0       1.0
+  COMMERCIAL SEX ACTS                                                  1.0       1.0
+  TO FIRE FIGHT.APP.EQUIP                                              2.0       1.0
+  CONTRIBUTE CRIM DELINQUENCY JUVENILE                                 1.0       1.0
+  VIOLENT OFFENDER: FAIL TO REGISTER NEW ADDRESS                       1.0       1.0
+  FOUND PASSPORT                                                       1.0       1.0
+  AGG PRO EMP HANDS SERIOUS INJ                                        1.0       1.0
+  SOLICIT FOR PROSTITUTE                                               1.0       1.0
+  INTOXICATING COMPOUNDS                                               1.0       1.0
+  DEL CONT SUBS TO PERSON <18                                          1.0       1.0
+  MANU/DELIVER: HALLUCINOGEN                                           1.0       1.0
+  KIDNAPPING                                                           1.0       1.0
+  CANNABIS PLANT                                                       1.0       1.0
+  VIOLATION GPS MONITORING DEVICE                                      1.0       1.0
+  POSS: HEROIN(BLACK TAR)                                              1.0       1.0
+  INSTITUTIONAL VANDALISM                                              2.0       1.0
+  CRIMINAL DRUG CONSPIRACY                                             1.0       1.0
+  OBSCENITY                                                            1.0       1.0
+  ILLEGAL POSSESSION BY MINOR                                          1.0       1.0
+  INVOLUNTARY SERVITUDE                                                2.0       1.0
+  VIOLATION OF SMOKING BAN                                             1.0       1.0
+  NOTIFICATION OF CIVIL NO CONTACT ORDER                               1.0       1.0
+  ILLEGAL CONSUMPTION BY MINOR                                         1.0       1.0
+  SALE/DIST OBSCENE MAT TO MINOR                                       1.0       1.0
+  ATTEMPT POSSESSION NARCOTICS                                         1.0       1.0
+  ATTEMPT AGG: HANDGUN                                                 1.0       1.0
+  INDECENT SOLICITATION/ADULT                                          1.0       1.0
+  UNLAWFUL SALE HANDGUN                                                1.0       2.0
+  CYBERSTALKING                                                        1.0       1.0
+  STOLEN PROP: BUY/RECEIVE/POS.                                        1.0       1.0
+  PUBLIC DEMONSTRATION                                                 1.0       1.0
+  SEX OFFENDER: PROHIBITED ZONE                                        1.0       1.0
+  MANU/POSS. W/INTENT TO DELIVER: SYNTHETIC MARIJUANA                  1.0       1.0
+  IMPERSONATION                                                        1.0       1.0
+  ILLEGAL POSSESSION CASH CARD                                         1.0       1.0
+  LICENSED PREMISE                                                     1.0       1.0
+  MANU/DELIVER:SYNTHETIC DRUGS                                         1.0       1.0
+  ARSONIST: ANNUAL REGISTRATION                                        1.0       1.0
+  HARBOR RUNAWAY                                                       1.0       1.0
+  INTERFERE W/ HIGHER EDUCATION                                        2.0       1.0
+  ATTEMPT AGG: OTHER                                                   1.0       1.0
+  SALE/DEL DRUG PARAPHERNALIA                                          1.0       1.0
+  BRIBERY                                                              1.0       1.0
+  POS: EXPLOSIVE/INCENDIARY DEV                                        1.0       1.0
+  RECKLESS HOMICIDE                                                    1.0       1.0
+  SOLICIT OFF PUBLIC WAY                                               1.0       1.0
+  LIBRARY VANDALISM                                                    2.0       1.0
+  MANU/DELIVER:AMPHETAMINES                                            1.0       1.0
+  POSS: LOOK-ALIKE DRUGS                                               1.0       1.0
+  KEEP PLACE OF PROSTITUTION                                           1.0       1.0
+  ESCAPE                                                               1.0       1.0
+  [total]                                                           2962.0     960.0
+
+Domestic
+  true                                                               443.0     102.0
+  false                                                             2243.0     582.0
+  [total]                                                           2686.0     684.0
+
+Beat
+  mean                                                           1146.3581 1050.1832
+  std. dev.                                                       708.7322  642.2678
+  weight sum                                                          2684       682
+  precision                                                         8.9446    8.9446
+
+Community.Area
+  mean                                                             36.8852   39.3431
+  std. dev.                                                        21.4272   20.5851
+  weight sum                                                          2684       682
+  precision                                                              1         1
+
+
+Attribute mappings:
+
+Model attributes          	    Incoming attributes
+--------------------------	    ----------------
+(nominal) Description     	--> 4 (nominal) Description
+(nominal) Arrest          	--> 6 (nominal) Arrest
+(nominal) Domestic        	--> 7 (nominal) Domestic
+(numeric) Beat            	--> 8 (numeric) Beat
+(numeric) Community.Area  	--> 11 (numeric) Community.Area
+
+
+Time taken to build model: 0.01 seconds
+
+=== Predictions on test set ===
+
+inst#,actual,predicted,error,prediction
+1,1:false,1:false,,0.813
+2,1:false,1:false,,0.958
+3,1:false,1:false,,0.911
+4,2:true,1:false,+,0.965
+5,1:false,1:false,,0.896
+6,1:false,1:false,,0.913
+7,1:false,1:false,,0.973
+8,1:false,1:false,,0.955
+9,2:true,1:false,+,0.817
+10,1:false,1:false,,0.983
+11,1:false,1:false,,0.984
+12,2:true,2:true,,0.867
+13,1:false,1:false,,0.503
+14,1:false,1:false,,0.978
+15,2:true,2:true,,0.967
+16,1:false,1:false,,0.858
+17,1:false,1:false,,0.959
+18,1:false,1:false,,0.902
+19,1:false,1:false,,0.828
+20,1:false,1:false,,0.996
+21,2:true,1:false,+,0.817
+22,1:false,1:false,,0.938
+23,2:true,1:false,+,0.539
+24,1:false,1:false,,0.974
+25,1:false,1:false,,0.941
+26,1:false,1:false,,0.933
+27,1:false,1:false,,0.821
+28,2:true,1:false,+,0.828
+29,1:false,1:false,,0.879
+30,2:true,2:true,,0.603
+31,2:true,1:false,+,0.886
+32,1:false,1:false,,0.951
+33,2:true,2:true,,0.671
+34,2:true,1:false,+,0.58
+35,1:false,1:false,,0.984
+36,1:false,1:false,,0.949
+37,1:false,1:false,,0.984
+38,2:true,2:true,,0.575
+39,2:true,1:false,+,0.613
+40,1:false,1:false,,0.964
+41,1:false,1:false,,0.967
+42,1:false,1:false,,0.982
+43,1:false,1:false,,0.851
+44,1:false,1:false,,0.965
+45,1:false,1:false,,0.993
+46,2:true,1:false,+,0.602
+47,2:true,2:true,,0.894
+48,2:true,1:false,+,0.855
+49,2:true,2:true,,0.914
+50,1:false,1:false,,0.993
+51,1:false,1:false,,0.875
+52,2:true,2:true,,0.725
+53,1:false,1:false,,0.87
+54,1:false,2:true,+,0.59
+55,2:true,2:true,,0.904
+56,2:true,1:false,+,0.847
+57,1:false,1:false,,0.932
+58,1:false,1:false,,0.673
+59,1:false,1:false,,0.945
+60,2:true,2:true,,0.857
+61,1:false,1:false,,0.936
+62,1:false,1:false,,0.981
+63,1:false,1:false,,0.658
+64,2:true,2:true,,0.924
+65,1:false,1:false,,0.979
+66,1:false,1:false,,0.936
+67,1:false,1:false,,0.979
+68,2:true,2:true,,0.799
+69,1:false,1:false,,0.914
+70,1:false,1:false,,0.844
+71,1:false,1:false,,0.969
+72,1:false,1:false,,0.981
+73,1:false,1:false,,0.861
+74,1:false,1:false,,0.989
+75,1:false,1:false,,0.897
+76,1:false,1:false,,0.977
+77,1:false,1:false,,0.994
+78,1:false,1:false,,0.989
+79,1:false,1:false,,0.956
+80,1:false,1:false,,0.981
+81,1:false,1:false,,0.997
+82,1:false,1:false,,0.989
+83,1:false,1:false,,0.855
+84,1:false,1:false,,0.994
+85,1:false,1:false,,0.965
+86,1:false,1:false,,0.952
+87,2:true,1:false,+,0.84
+88,1:false,1:false,,0.958
+89,2:true,2:true,,0.539
+90,1:false,1:false,,0.806
+91,1:false,1:false,,0.991
+92,1:false,1:false,,0.969
+93,2:true,2:true,,0.768
+94,1:false,1:false,,0.925
+95,1:false,1:false,,0.751
+96,1:false,1:false,,0.953
+97,1:false,1:false,,0.959
+98,1:false,1:false,,0.97
+99,2:true,2:true,,0.836
+100,1:false,2:true,+,0.518
+101,1:false,1:false,,0.981
+102,2:true,1:false,+,0.85
+103,1:false,1:false,,0.652
+104,2:true,1:false,+,0.979
+105,2:true,1:false,+,0.877
+106,1:false,1:false,,0.979
+107,1:false,1:false,,0.977
+108,2:true,1:false,+,0.807
+109,1:false,1:false,,0.985
+110,1:false,1:false,,0.797
+111,1:false,1:false,,0.829
+112,1:false,1:false,,0.982
+113,1:false,1:false,,0.829
+114,1:false,1:false,,0.742
+115,1:false,1:false,,0.828
+116,1:false,1:false,,0.845
+117,1:false,1:false,,0.948
+118,1:false,1:false,,0.825
+119,1:false,1:false,,0.996
+120,1:false,1:false,,0.819
+121,1:false,1:false,,0.918
+122,1:false,1:false,,0.956
+123,1:false,1:false,,0.992
+124,1:false,1:false,,0.943
+125,1:false,1:false,,0.863
+126,1:false,1:false,,0.661
+127,1:false,1:false,,0.979
+128,1:false,1:false,,0.817
+129,1:false,1:false,,0.834
+130,2:true,2:true,,0.898
+131,1:false,1:false,,0.55
+132,1:false,1:false,,0.803
+133,1:false,1:false,,0.992
+134,1:false,1:false,,0.962
+135,1:false,1:false,,0.84
+136,2:true,2:true,,0.749
+137,1:false,1:false,,0.897
+138,1:false,1:false,,0.784
+139,2:true,1:false,+,0.614
+140,1:false,1:false,,0.976
+141,1:false,1:false,,0.865
+142,1:false,1:false,,0.968
+143,1:false,1:false,,0.983
+144,2:true,2:true,,0.782
+145,1:false,1:false,,0.951
+146,2:true,2:true,,0.914
+147,1:false,1:false,,0.961
+148,2:true,1:false,+,0.962
+149,2:true,2:true,,0.897
+150,1:false,1:false,,0.981
+151,1:false,1:false,,0.791
+152,1:false,1:false,,0.979
+153,1:false,1:false,,0.96
+154,1:false,1:false,,0.903
+155,1:false,1:false,,0.533
+156,1:false,1:false,,0.786
+157,1:false,1:false,,0.993
+158,1:false,1:false,,0.964
+159,2:true,1:false,+,0.835
+160,2:true,1:false,+,0.842
+161,1:false,1:false,,0.992
+162,2:true,1:false,+,0.617
+163,1:false,1:false,,0.943
+164,1:false,1:false,,0.959
+165,1:false,1:false,,0.971
+166,1:false,1:false,,0.899
+167,2:true,2:true,,0.771
+168,1:false,1:false,,0.853
+169,2:true,2:true,,0.829
+170,1:false,1:false,,0.897
+171,2:true,2:true,,0.924
+172,1:false,1:false,,0.806
+173,1:false,1:false,,0.832
+174,1:false,1:false,,0.994
+175,1:false,1:false,,0.793
+176,1:false,2:true,+,0.54
+177,1:false,1:false,,0.966
+178,1:false,1:false,,0.964
+179,1:false,1:false,,0.996
+180,1:false,1:false,,0.959
+181,1:false,1:false,,0.998
+182,1:false,1:false,,0.85
+183,2:true,2:true,,0.569
+184,2:true,2:true,,0.59
+185,1:false,2:true,+,0.779
+186,1:false,1:false,,0.812
+187,2:true,1:false,+,0.821
+188,2:true,2:true,,0.798
+189,1:false,1:false,,0.856
+190,1:false,1:false,,0.853
+191,2:true,2:true,,0.583
+192,2:true,2:true,,0.867
+193,1:false,1:false,,0.982
+194,1:false,1:false,,0.917
+195,1:false,1:false,,0.831
+196,1:false,1:false,,0.797
+197,1:false,1:false,,0.923
+198,1:false,1:false,,0.978
+199,1:false,1:false,,0.919
+200,1:false,1:false,,0.952
+201,1:false,1:false,,0.896
+202,2:true,2:true,,0.96
+203,1:false,1:false,,0.896
+204,1:false,1:false,,0.969
+205,1:false,1:false,,0.982
+206,2:true,2:true,,0.863
+207,1:false,1:false,,0.937
+208,1:false,1:false,,0.852
+209,1:false,1:false,,0.987
+210,1:false,1:false,,0.939
+211,1:false,1:false,,0.949
+212,1:false,1:false,,0.917
+213,1:false,1:false,,0.744
+214,1:false,1:false,,0.992
+215,1:false,1:false,,0.976
+216,1:false,1:false,,0.934
+217,1:false,1:false,,0.956
+218,1:false,1:false,,0.934
+219,1:false,1:false,,0.817
+220,2:true,2:true,,0.819
+221,2:true,2:true,,0.903
+222,1:false,1:false,,0.985
+223,1:false,1:false,,0.822
+224,1:false,1:false,,0.955
+225,1:false,1:false,,0.682
+226,1:false,1:false,,0.936
+227,1:false,1:false,,0.946
+228,2:true,1:false,+,0.619
+229,1:false,1:false,,0.959
+230,1:false,1:false,,0.814
+231,1:false,1:false,,0.802
+232,1:false,1:false,,0.821
+233,1:false,1:false,,0.996
+234,1:false,1:false,,0.946
+235,1:false,1:false,,0.948
+236,2:true,1:false,+,0.802
+237,1:false,1:false,,0.979
+238,1:false,1:false,,0.972
+239,1:false,1:false,,0.95
+240,1:false,1:false,,0.961
+241,1:false,1:false,,0.977
+242,1:false,1:false,,0.96
+243,2:true,1:false,+,0.573
+244,1:false,1:false,,0.956
+245,1:false,1:false,,0.976
+246,1:false,1:false,,0.896
+247,1:false,1:false,,0.993
+248,1:false,1:false,,0.735
+249,1:false,1:false,,0.832
+250,1:false,1:false,,0.984
+251,1:false,1:false,,0.788
+252,1:false,1:false,,0.994
+253,1:false,1:false,,0.872
+254,1:false,1:false,,0.951
+255,2:true,1:false,+,0.819
+256,2:true,1:false,+,0.842
+257,1:false,1:false,,0.707
+258,1:false,1:false,,0.674
+259,1:false,1:false,,0.946
+260,1:false,1:false,,0.615
+261,1:false,1:false,,0.995
+262,1:false,1:false,,0.981
+263,1:false,1:false,,0.943
+264,1:false,1:false,,0.99
+265,1:false,1:false,,0.902
+266,1:false,1:false,,0.967
+267,2:true,2:true,,0.751
+268,1:false,1:false,,0.844
+269,1:false,1:false,,0.836
+270,1:false,1:false,,0.987
+271,1:false,1:false,,0.802
+272,1:false,1:false,,0.982
+273,2:true,2:true,,0.621
+274,2:true,1:false,+,0.772
+275,1:false,1:false,,0.988
+276,1:false,1:false,,0.819
+277,2:true,1:false,+,0.83
+278,1:false,1:false,,0.816
+279,1:false,1:false,,0.689
+280,1:false,1:false,,0.957
+281,1:false,1:false,,0.855
+282,1:false,1:false,,0.828
+283,1:false,1:false,,0.81
+284,1:false,1:false,,0.921
+285,1:false,1:false,,0.803
+286,1:false,1:false,,0.983
+287,1:false,1:false,,0.853
+288,1:false,1:false,,0.948
+289,1:false,1:false,,0.862
+290,2:true,2:true,,0.91
+291,1:false,1:false,,0.952
+292,2:true,2:true,,0.86
+293,1:false,1:false,,0.98
+294,1:false,1:false,,0.789
+295,1:false,1:false,,0.974
+296,1:false,1:false,,0.994
+297,2:true,1:false,+,0.594
+298,1:false,1:false,,0.943
+299,1:false,1:false,,0.901
+300,2:true,1:false,+,0.525
+301,1:false,1:false,,0.952
+302,2:true,2:true,,0.964
+303,1:false,1:false,,0.804
+304,1:false,1:false,,0.963
+305,1:false,1:false,,0.961
+306,2:true,1:false,+,0.987
+307,1:false,1:false,,0.979
+308,2:true,2:true,,0.706
+309,2:true,1:false,+,0.953
+310,1:false,1:false,,0.803
+311,1:false,1:false,,0.981
+312,1:false,1:false,,0.987
+313,1:false,1:false,,0.996
+314,1:false,2:true,+,0.58
+315,1:false,1:false,,0.979
+316,1:false,1:false,,0.982
+317,1:false,1:false,,0.981
+318,2:true,2:true,,0.54
+319,1:false,1:false,,0.953
+320,1:false,1:false,,0.803
+321,1:false,1:false,,0.954
+322,1:false,1:false,,0.809
+323,1:false,1:false,,0.983
+324,1:false,1:false,,0.994
+325,2:true,2:true,,0.822
+326,1:false,1:false,,0.948
+327,1:false,1:false,,0.951
+328,1:false,1:false,,0.962
+329,2:true,2:true,,0.54
+330,1:false,1:false,,0.622
+331,2:true,1:false,+,0.757
+332,1:false,1:false,,0.979
+333,1:false,1:false,,0.802
+334,2:true,2:true,,0.96
+335,1:false,1:false,,0.972
+336,2:true,2:true,,0.632
+337,1:false,1:false,,0.922
+338,2:true,2:true,,0.927
+339,1:false,1:false,,0.94
+340,1:false,1:false,,0.992
+341,2:true,1:false,+,0.506
+342,2:true,1:false,+,0.803
+343,1:false,1:false,,0.728
+344,1:false,1:false,,0.873
+345,1:false,1:false,,0.983
+346,1:false,1:false,,0.979
+347,1:false,2:true,+,0.54
+348,2:true,1:false,+,0.802
+349,1:false,1:false,,0.952
+350,1:false,1:false,,0.948
+351,1:false,1:false,,0.944
+352,1:false,1:false,,0.959
+353,1:false,1:false,,0.899
+354,1:false,1:false,,0.983
+355,2:true,2:true,,0.888
+356,1:false,1:false,,0.941
+357,2:true,2:true,,0.896
+358,2:true,1:false,+,0.817
+359,1:false,1:false,,0.972
+360,1:false,1:false,,0.876
+361,1:false,1:false,,0.961
+362,2:true,2:true,,0.896
+363,2:true,1:false,+,0.807
+364,2:true,2:true,,0.845
+365,1:false,1:false,,0.953
+366,1:false,1:false,,0.967
+367,2:true,2:true,,0.935
+368,2:true,1:false,+,0.852
+369,1:false,1:false,,0.658
+370,1:false,1:false,,0.983
+371,1:false,1:false,,0.961
+372,2:true,1:false,+,0.958
+373,1:false,1:false,,0.98
+374,1:false,1:false,,0.597
+375,1:false,2:true,+,0.714
+376,1:false,1:false,,0.859
+377,1:false,1:false,,0.905
+378,1:false,1:false,,0.965
+379,1:false,1:false,,0.84
+380,1:false,1:false,,0.896
+381,1:false,1:false,,0.899
+382,1:false,1:false,,0.878
+383,1:false,1:false,,0.896
+384,1:false,1:false,,0.981
+385,1:false,1:false,,0.911
+386,1:false,1:false,,0.915
+387,1:false,1:false,,0.973
+388,1:false,1:false,,0.852
+389,2:true,1:false,+,0.918
+390,2:true,2:true,,0.672
+391,2:true,1:false,+,0.828
+392,1:false,1:false,,0.546
+393,2:true,2:true,,0.899
+394,2:true,1:false,+,0.863
+395,1:false,1:false,,0.899
+396,1:false,1:false,,0.812
+397,1:false,1:false,,0.992
+398,2:true,2:true,,0.805
+399,1:false,1:false,,0.956
+400,1:false,1:false,,0.877
+401,2:true,1:false,+,0.535
+402,1:false,1:false,,0.996
+403,1:false,1:false,,0.939
+404,2:true,1:false,+,0.945
+405,1:false,1:false,,0.963
+406,2:true,2:true,,0.958
+407,1:false,1:false,,0.985
+408,2:true,2:true,,0.807
+409,1:false,1:false,,0.922
+410,1:false,1:false,,0.804
+411,1:false,1:false,,0.979
+412,1:false,1:false,,0.9
+413,1:false,1:false,,0.934
+414,1:false,1:false,,0.996
+415,1:false,1:false,,0.993
+416,1:false,1:false,,0.98
+417,1:false,1:false,,0.968
+418,1:false,1:false,,0.952
+419,1:false,1:false,,0.66
+420,1:false,1:false,,0.979
+421,1:false,1:false,,0.973
+422,2:true,1:false,+,0.971
+423,1:false,1:false,,0.973
+424,1:false,1:false,,0.94
+425,1:false,1:false,,0.919
+426,2:true,2:true,,0.91
+427,1:false,1:false,,0.955
+428,1:false,1:false,,0.752
+429,1:false,1:false,,0.971
+430,1:false,1:false,,0.851
+431,1:false,1:false,,0.981
+432,1:false,1:false,,0.82
+433,1:false,1:false,,0.951
+434,1:false,1:false,,0.976
+435,2:true,1:false,+,0.593
+436,1:false,1:false,,0.742
+437,1:false,1:false,,0.983
+438,2:true,1:false,+,0.815
+439,1:false,1:false,,0.985
+440,1:false,1:false,,0.905
+441,1:false,1:false,,0.802
+442,1:false,1:false,,0.849
+443,2:true,2:true,,0.78
+444,1:false,1:false,,0.804
+445,1:false,1:false,,0.625
+446,1:false,1:false,,0.878
+447,1:false,1:false,,0.954
+448,1:false,1:false,,0.945
+449,1:false,1:false,,0.945
+450,1:false,1:false,,0.919
+451,1:false,1:false,,0.833
+452,1:false,1:false,,0.837
+453,1:false,1:false,,0.926
+454,1:false,1:false,,0.993
+455,1:false,1:false,,0.956
+456,1:false,1:false,,0.965
+457,2:true,1:false,+,0.959
+458,1:false,1:false,,0.965
+459,1:false,1:false,,0.814
+460,1:false,1:false,,0.915
+461,1:false,1:false,,0.977
+462,2:true,1:false,+,0.956
+463,1:false,1:false,,0.922
+464,1:false,1:false,,0.987
+465,1:false,1:false,,0.97
+466,1:false,2:true,+,0.78
+467,1:false,1:false,,0.952
+468,1:false,1:false,,0.805
+469,2:true,1:false,+,0.834
+470,1:false,1:false,,0.906
+471,1:false,1:false,,0.941
+472,2:true,1:false,+,0.947
+473,2:true,2:true,,0.625
+474,1:false,1:false,,0.981
+475,1:false,1:false,,0.973
+476,1:false,1:false,,0.825
+477,1:false,1:false,,0.996
+478,1:false,1:false,,0.958
+479,1:false,1:false,,0.972
+480,1:false,2:true,+,0.569
+481,1:false,1:false,,0.934
+482,1:false,1:false,,0.976
+483,1:false,1:false,,0.893
+484,2:true,2:true,,0.583
+485,1:false,1:false,,0.948
+486,1:false,1:false,,0.896
+487,2:true,1:false,+,0.807
+488,1:false,1:false,,0.957
+489,1:false,1:false,,0.915
+490,1:false,1:false,,0.921
+491,2:true,1:false,+,0.756
+492,1:false,1:false,,0.963
+493,1:false,1:false,,0.943
+494,1:false,1:false,,0.904
+495,1:false,1:false,,0.814
+496,1:false,1:false,,0.987
+497,2:true,2:true,,0.661
+498,1:false,1:false,,0.832
+499,2:true,2:true,,0.954
+500,1:false,1:false,,0.979
+501,2:true,2:true,,0.841
+502,1:false,1:false,,0.793
+503,1:false,1:false,,0.975
+504,1:false,1:false,,0.968
+505,1:false,1:false,,0.956
+506,1:false,1:false,,0.853
+507,2:true,2:true,,0.564
+508,2:true,2:true,,0.936
+509,1:false,1:false,,0.815
+510,1:false,1:false,,0.989
+511,1:false,1:false,,0.95
+512,1:false,1:false,,0.85
+513,1:false,1:false,,0.99
+514,2:true,2:true,,0.805
+515,1:false,1:false,,0.977
+516,2:true,2:true,,0.716
+517,2:true,1:false,+,0.845
+518,1:false,1:false,,0.568
+519,1:false,1:false,,0.967
+520,1:false,1:false,,0.983
+521,1:false,1:false,,0.938
+522,1:false,1:false,,0.934
+523,2:true,2:true,,0.685
+524,1:false,1:false,,0.84
+525,1:false,1:false,,0.951
+526,2:true,1:false,+,0.539
+527,1:false,1:false,,0.903
+528,1:false,1:false,,0.81
+529,2:true,2:true,,0.806
+530,2:true,1:false,+,0.845
+531,1:false,1:false,,0.955
+532,1:false,1:false,,0.555
+533,1:false,1:false,,0.968
+534,1:false,1:false,,0.981
+535,2:true,1:false,+,0.62
+536,1:false,1:false,,0.957
+537,1:false,1:false,,0.825
+538,1:false,1:false,,0.803
+539,1:false,1:false,,0.752
+540,1:false,1:false,,0.964
+541,1:false,1:false,,0.98
+542,1:false,1:false,,0.98
+543,1:false,1:false,,0.953
+544,1:false,1:false,,0.842
+545,1:false,1:false,,0.673
+546,1:false,1:false,,0.98
+547,1:false,1:false,,0.988
+548,1:false,1:false,,0.823
+549,1:false,1:false,,0.994
+550,2:true,2:true,,0.549
+551,1:false,1:false,,0.993
+552,2:true,2:true,,0.864
+553,2:true,2:true,,0.725
+554,1:false,1:false,,0.979
+555,2:true,1:false,+,0.865
+556,1:false,1:false,,0.952
+557,1:false,1:false,,0.658
+558,1:false,1:false,,0.98
+559,1:false,1:false,,0.989
+560,1:false,1:false,,0.707
+561,1:false,1:false,,0.966
+562,1:false,1:false,,0.917
+563,1:false,1:false,,0.995
+564,1:false,1:false,,0.896
+565,1:false,1:false,,0.981
+566,2:true,1:false,+,0.545
+567,1:false,1:false,,0.983
+568,2:true,1:false,+,0.779
+569,2:true,2:true,,0.938
+570,1:false,1:false,,0.869
+571,1:false,1:false,,0.954
+572,1:false,1:false,,0.965
+573,1:false,1:false,,0.891
+574,1:false,1:false,,0.895
+575,1:false,1:false,,0.912
+576,1:false,1:false,,0.993
+577,2:true,2:true,,0.864
+578,1:false,1:false,,0.954
+579,1:false,1:false,,0.863
+580,2:true,2:true,,0.549
+581,1:false,1:false,,0.936
+582,1:false,1:false,,0.953
+583,1:false,1:false,,0.709
+584,2:true,2:true,,0.629
+585,2:true,2:true,,0.622
+586,1:false,1:false,,0.939
+587,1:false,1:false,,0.989
+588,1:false,1:false,,0.982
+589,1:false,1:false,,0.982
+590,1:false,1:false,,0.984
+591,2:true,1:false,+,0.959
+592,1:false,1:false,,0.983
+593,1:false,1:false,,0.967
+594,1:false,1:false,,0.982
+595,1:false,1:false,,0.98
+596,2:true,2:true,,0.902
+597,2:true,1:false,+,0.933
+598,1:false,1:false,,0.983
+599,1:false,1:false,,0.942
+600,2:true,1:false,+,0.774
+601,1:false,2:true,+,0.862
+602,1:false,1:false,,0.834
+603,1:false,1:false,,0.872
+604,1:false,1:false,,0.953
+605,1:false,1:false,,0.832
+606,1:false,1:false,,0.814
+607,1:false,1:false,,0.989
+608,2:true,2:true,,0.908
+609,1:false,1:false,,0.965
+610,1:false,1:false,,0.891
+611,1:false,1:false,,0.856
+612,1:false,1:false,,0.993
+613,1:false,1:false,,0.931
+614,2:true,1:false,+,0.82
+615,1:false,1:false,,0.829
+616,2:true,2:true,,0.507
+617,2:true,1:false,+,0.642
+618,1:false,1:false,,0.945
+619,1:false,1:false,,0.989
+620,1:false,1:false,,0.949
+621,2:true,1:false,+,0.791
+622,1:false,1:false,,0.94
+623,1:false,1:false,,0.953
+624,1:false,1:false,,0.921
+625,1:false,1:false,,0.973
+626,1:false,1:false,,0.953
+627,1:false,1:false,,0.993
+628,1:false,1:false,,0.955
+629,1:false,1:false,,0.886
+630,1:false,1:false,,0.979
+631,1:false,1:false,,0.788
+632,1:false,1:false,,0.984
+633,2:true,2:true,,0.803
+634,1:false,1:false,,0.943
+635,1:false,1:false,,0.93
+636,1:false,1:false,,0.961
+637,1:false,1:false,,0.994
+638,2:true,1:false,+,0.817
+639,2:true,2:true,,0.638
+640,1:false,1:false,,0.66
+641,1:false,1:false,,0.983
+642,2:true,1:false,+,0.581
+643,1:false,1:false,,0.98
+644,2:true,2:true,,0.848
+645,1:false,1:false,,0.98
+646,1:false,1:false,,0.976
+647,1:false,1:false,,0.992
+648,1:false,1:false,,0.994
+649,1:false,1:false,,0.945
+650,1:false,1:false,,0.981
+651,1:false,1:false,,0.972
+652,1:false,1:false,,0.967
+653,1:false,1:false,,0.955
+654,1:false,1:false,,0.993
+655,1:false,1:false,,0.981
+656,1:false,1:false,,0.849
+657,1:false,1:false,,0.973
+658,1:false,1:false,,0.983
+659,1:false,1:false,,0.971
+660,1:false,1:false,,0.863
+661,1:false,1:false,,0.979
+662,1:false,1:false,,0.877
+663,2:true,2:true,,0.564
+664,1:false,1:false,,0.85
+665,1:false,1:false,,0.918
+666,1:false,1:false,,0.986
+667,2:true,1:false,+,0.662
+668,1:false,1:false,,0.814
+669,1:false,1:false,,0.961
+670,2:true,1:false,+,0.626
+671,1:false,1:false,,0.902
+672,1:false,1:false,,0.945
+673,1:false,1:false,,0.96
+674,1:false,1:false,,0.96
+675,1:false,1:false,,0.977
+676,1:false,1:false,,0.983
+677,1:false,1:false,,0.964
+678,1:false,1:false,,0.926
+679,2:true,1:false,+,0.835
+680,2:true,2:true,,0.913
+681,1:false,1:false,,0.944
+682,1:false,1:false,,0.886
+683,1:false,1:false,,0.947
+684,1:false,1:false,,0.988
+685,1:false,1:false,,0.976
+686,2:true,2:true,,0.959
+687,1:false,1:false,,0.886
+688,2:true,2:true,,0.786
+689,2:true,1:false,+,0.981
+690,1:false,1:false,,0.99
+691,1:false,1:false,,0.972
+692,1:false,1:false,,0.806
+693,1:false,1:false,,0.631
+694,1:false,1:false,,0.75
+695,1:false,1:false,,0.987
+696,1:false,1:false,,0.984
+697,1:false,1:false,,0.948
+698,2:true,1:false,+,0.757
+699,1:false,1:false,,0.925
+700,1:false,1:false,,0.914
+701,2:true,1:false,+,0.844
+702,1:false,1:false,,0.985
+703,1:false,1:false,,0.817
+704,2:true,1:false,+,0.607
+705,1:false,1:false,,0.992
+706,1:false,1:false,,0.811
+707,1:false,1:false,,0.979
+708,2:true,1:false,+,0.805
+709,2:true,2:true,,0.626
+710,1:false,1:false,,0.834
+711,2:true,2:true,,0.622
+712,1:false,1:false,,0.975
+713,1:false,1:false,,0.863
+714,1:false,1:false,,0.914
+715,1:false,1:false,,0.955
+716,1:false,1:false,,0.981
+717,1:false,1:false,,0.958
+718,2:true,2:true,,0.706
+719,2:true,1:false,+,0.915
+720,1:false,1:false,,0.834
+721,2:true,2:true,,0.908
+722,1:false,1:false,,0.958
+723,1:false,1:false,,0.829
+724,1:false,1:false,,0.952
+725,2:true,2:true,,0.857
+726,1:false,1:false,,0.98
+727,1:false,1:false,,0.81
+728,2:true,2:true,,0.926
+729,1:false,1:false,,0.96
+730,1:false,1:false,,0.946
+731,1:false,1:false,,0.839
+732,1:false,1:false,,0.931
+733,1:false,1:false,,0.827
+734,1:false,1:false,,0.99
+735,1:false,1:false,,0.873
+736,1:false,1:false,,0.952
+737,1:false,1:false,,0.946
+738,1:false,1:false,,0.861
+739,2:true,2:true,,0.91
+740,1:false,1:false,,0.795
+741,1:false,1:false,,0.901
+742,2:true,1:false,+,0.748
+743,2:true,1:false,+,0.902
+744,1:false,1:false,,0.946
+745,1:false,1:false,,0.973
+746,1:false,1:false,,0.93
+747,1:false,1:false,,0.994
+748,1:false,1:false,,0.984
+749,1:false,1:false,,0.984
+750,1:false,1:false,,0.597
+751,2:true,2:true,,0.58
+752,2:true,2:true,,0.909
+753,1:false,1:false,,0.873
+754,1:false,1:false,,0.959
+755,1:false,1:false,,0.814
+756,1:false,1:false,,0.949
+757,1:false,1:false,,0.972
+758,1:false,1:false,,0.983
+759,1:false,1:false,,0.946
+760,1:false,1:false,,0.597
+761,1:false,1:false,,0.793
+762,1:false,1:false,,0.923
+763,1:false,1:false,,0.967
+764,2:true,1:false,+,0.853
+765,1:false,1:false,,0.965
+766,1:false,1:false,,0.849
+767,2:true,1:false,+,0.806
+768,1:false,1:false,,0.853
+769,1:false,1:false,,0.953
+770,1:false,1:false,,0.689
+771,1:false,1:false,,0.938
+772,1:false,1:false,,0.983
+773,2:true,1:false,+,0.822
+774,1:false,1:false,,0.962
+775,1:false,1:false,,0.976
+776,2:true,1:false,+,0.503
+777,1:false,1:false,,0.952
+778,1:false,1:false,,0.961
+779,1:false,1:false,,0.941
+780,1:false,1:false,,0.786
+781,1:false,1:false,,0.864
+782,1:false,1:false,,0.856
+783,1:false,1:false,,0.952
+784,1:false,1:false,,0.82
+785,1:false,1:false,,0.884
+786,1:false,1:false,,0.952
+787,1:false,1:false,,0.993
+788,1:false,1:false,,0.896
+789,1:false,1:false,,0.961
+790,2:true,2:true,,0.54
+791,1:false,1:false,,0.811
+792,1:false,1:false,,0.983
+793,1:false,1:false,,0.974
+794,1:false,1:false,,0.618
+795,1:false,1:false,,0.98
+796,1:false,1:false,,0.896
+797,1:false,1:false,,0.988
+798,2:true,2:true,,0.926
+799,2:true,2:true,,0.924
+800,1:false,1:false,,0.656
+801,2:true,2:true,,0.96
+802,1:false,1:false,,0.526
+803,2:true,2:true,,0.747
+804,1:false,1:false,,0.988
+805,1:false,1:false,,0.946
+806,1:false,1:false,,0.956
+807,1:false,1:false,,0.903
+808,1:false,1:false,,0.825
+809,1:false,1:false,,0.953
+810,1:false,1:false,,0.945
+811,1:false,1:false,,0.925
+812,1:false,1:false,,0.949
+813,1:false,1:false,,0.56
+814,1:false,1:false,,0.895
+815,1:false,1:false,,0.984
+816,1:false,1:false,,0.87
+817,1:false,1:false,,0.979
+818,1:false,1:false,,0.911
+819,2:true,1:false,+,0.806
+820,1:false,1:false,,0.979
+821,1:false,1:false,,0.806
+822,1:false,1:false,,0.995
+823,1:false,1:false,,0.845
+824,2:true,1:false,+,0.548
+825,2:true,1:false,+,0.807
+826,2:true,2:true,,0.967
+827,1:false,1:false,,0.923
+828,2:true,2:true,,0.755
+829,1:false,1:false,,0.922
+830,1:false,1:false,,0.981
+831,2:true,2:true,,0.866
+832,1:false,1:false,,0.819
+833,1:false,1:false,,0.996
+834,1:false,1:false,,0.994
+835,1:false,1:false,,0.947
+836,1:false,1:false,,0.971
+837,2:true,2:true,,0.804
+838,2:true,2:true,,0.808
+839,2:true,2:true,,0.9
+840,1:false,1:false,,0.982
+841,1:false,1:false,,0.773
+842,1:false,1:false,,0.947
+843,1:false,1:false,,0.852
+844,1:false,1:false,,0.863
+845,1:false,2:true,+,0.553
+846,2:true,2:true,,0.937
+847,1:false,1:false,,0.954
+848,2:true,1:false,+,0.905
+849,1:false,1:false,,0.807
+850,1:false,1:false,,0.973
+851,1:false,2:true,+,0.839
+852,2:true,2:true,,0.924
+853,1:false,1:false,,0.983
+854,1:false,1:false,,0.597
+855,1:false,1:false,,0.805
+856,2:true,1:false,+,0.655
+857,1:false,1:false,,0.952
+858,1:false,1:false,,0.979
+859,1:false,1:false,,0.949
+860,2:true,1:false,+,0.939
+861,1:false,2:true,+,0.838
+862,2:true,2:true,,0.935
+863,1:false,1:false,,0.953
+864,2:true,2:true,,0.771
+865,2:true,1:false,+,0.504
+866,1:false,1:false,,0.981
+867,1:false,1:false,,0.921
+868,2:true,1:false,+,0.692
+869,1:false,1:false,,0.993
+870,1:false,1:false,,0.913
+871,1:false,1:false,,0.964
+872,1:false,1:false,,0.829
+873,1:false,1:false,,0.956
+874,1:false,1:false,,0.68
+875,1:false,1:false,,0.98
+876,2:true,1:false,+,0.787
+877,1:false,2:true,+,0.804
+878,1:false,1:false,,0.689
+879,1:false,1:false,,0.926
+880,2:true,1:false,+,0.599
+881,1:false,1:false,,0.902
+882,1:false,1:false,,0.853
+883,1:false,1:false,,0.958
+884,1:false,1:false,,0.945
+885,1:false,2:true,+,0.804
+886,1:false,1:false,,0.903
+887,2:true,2:true,,0.815
+888,1:false,1:false,,0.844
+889,1:false,1:false,,0.966
+890,1:false,1:false,,0.986
+891,1:false,1:false,,0.996
+892,1:false,1:false,,0.938
+893,1:false,1:false,,0.899
+894,1:false,1:false,,0.965
+895,1:false,1:false,,0.985
+896,1:false,1:false,,0.954
+897,1:false,1:false,,0.974
+898,2:true,2:true,,0.912
+899,1:false,1:false,,0.981
+900,1:false,2:true,+,0.582
+901,1:false,1:false,,0.953
+902,1:false,1:false,,0.817
+903,2:true,2:true,,0.867
+904,1:false,1:false,,0.952
+905,1:false,1:false,,0.964
+906,1:false,1:false,,0.966
+907,1:false,1:false,,0.907
+908,1:false,1:false,,0.996
+909,1:false,1:false,,0.916
+910,1:false,1:false,,0.917
+911,2:true,2:true,,0.745
+912,1:false,1:false,,0.829
+913,1:false,1:false,,0.803
+914,1:false,1:false,,0.956
+915,1:false,1:false,,0.829
+916,1:false,1:false,,0.911
+917,2:true,2:true,,0.866
+918,1:false,1:false,,0.979
+919,2:true,1:false,+,0.836
+920,1:false,1:false,,0.965
+921,1:false,1:false,,0.953
+922,1:false,1:false,,0.987
+923,1:false,1:false,,0.924
+924,1:false,1:false,,0.811
+925,1:false,1:false,,0.803
+926,1:false,1:false,,0.983
+927,1:false,2:true,+,0.58
+928,1:false,1:false,,0.982
+929,1:false,1:false,,0.982
+930,2:true,1:false,+,0.819
+931,1:false,1:false,,0.993
+932,1:false,1:false,,0.991
+933,1:false,1:false,,0.73
+934,1:false,1:false,,0.983
+935,2:true,2:true,,0.909
+936,2:true,1:false,+,0.868
+937,1:false,1:false,,0.897
+938,1:false,1:false,,0.802
+939,1:false,1:false,,0.996
+940,1:false,1:false,,0.99
+941,1:false,1:false,,0.907
+942,1:false,1:false,,0.718
+943,1:false,1:false,,0.909
+944,1:false,1:false,,0.742
+945,1:false,1:false,,0.961
+946,1:false,1:false,,0.994
+947,1:false,1:false,,0.818
+948,2:true,1:false,+,0.897
+949,1:false,1:false,,0.956
+950,1:false,1:false,,0.817
+951,2:true,2:true,,0.862
+952,1:false,1:false,,0.981
+953,1:false,1:false,,0.703
+954,1:false,1:false,,0.994
+955,1:false,1:false,,0.869
+956,1:false,1:false,,0.825
+957,1:false,1:false,,0.961
+958,2:true,2:true,,0.86
+959,1:false,1:false,,0.968
+960,1:false,1:false,,0.964
+961,2:true,1:false,+,0.972
+962,1:false,1:false,,0.972
+963,1:false,1:false,,0.925
+964,1:false,1:false,,0.979
+965,2:true,2:true,,0.763
+966,2:true,1:false,+,0.703
+967,1:false,1:false,,0.952
+968,1:false,1:false,,0.951
+969,2:true,1:false,+,0.835
+970,1:false,1:false,,0.961
+971,1:false,1:false,,0.993
+972,1:false,1:false,,0.972
+973,1:false,1:false,,0.887
+974,1:false,1:false,,0.906
+975,1:false,1:false,,0.835
+976,2:true,1:false,+,0.86
+977,1:false,1:false,,0.996
+978,1:false,1:false,,0.533
+979,2:true,2:true,,0.574
+980,1:false,1:false,,0.995
+981,1:false,1:false,,0.953
+982,2:true,2:true,,0.935
+983,1:false,1:false,,0.951
+984,2:true,2:true,,0.838
+985,2:true,2:true,,0.904
+986,1:false,1:false,,0.948
+987,1:false,1:false,,0.597
+988,2:true,1:false,+,0.832
+989,1:false,1:false,,0.956
+990,1:false,2:true,+,0.58
+991,1:false,1:false,,0.803
+992,1:false,1:false,,0.953
+993,1:false,1:false,,0.994
+994,2:true,2:true,,0.926
+995,2:true,2:true,,0.922
+996,1:false,1:false,,0.793
+997,1:false,1:false,,0.803
+998,1:false,1:false,,0.897
+999,1:false,1:false,,0.879
+1000,1:false,1:false,,0.919
+1001,2:true,1:false,+,0.793
+1002,1:false,1:false,,0.884
+1003,1:false,2:true,+,0.676
+1004,1:false,1:false,,0.777
+1005,1:false,1:false,,0.994
+1006,1:false,1:false,,0.975
+1007,1:false,1:false,,0.948
+1008,1:false,1:false,,0.989
+1009,1:false,1:false,,0.986
+1010,1:false,1:false,,0.817
+1011,1:false,1:false,,0.948
+1012,1:false,1:false,,0.952
+1013,1:false,1:false,,0.845
+1014,1:false,1:false,,0.681
+1015,1:false,1:false,,0.97
+1016,1:false,1:false,,0.802
+1017,2:true,2:true,,0.867
+1018,2:true,2:true,,0.808
+1019,2:true,1:false,+,0.896
+1020,2:true,1:false,+,0.782
+1021,1:false,1:false,,0.829
+1022,2:true,1:false,+,0.701
+1023,1:false,1:false,,0.901
+1024,1:false,1:false,,0.941
+1025,2:true,1:false,+,0.679
+1026,1:false,1:false,,0.847
+1027,1:false,1:false,,0.841
+1028,1:false,1:false,,0.93
+1029,2:true,2:true,,0.786
+1030,1:false,1:false,,0.829
+1031,1:false,1:false,,0.948
+1032,1:false,1:false,,0.937
+1033,1:false,1:false,,0.802
+1034,1:false,1:false,,0.981
+1035,1:false,1:false,,0.615
+1036,2:true,2:true,,0.772
+1037,2:true,2:true,,0.806
+1038,1:false,1:false,,0.852
+1039,1:false,1:false,,0.984
+1040,1:false,1:false,,0.956
+1041,1:false,1:false,,0.987
+1042,1:false,1:false,,0.995
+1043,2:true,2:true,,0.639
+1044,1:false,1:false,,0.829
+1045,2:true,2:true,,0.925
+1046,1:false,1:false,,0.827
+1047,1:false,1:false,,0.776
+1048,1:false,1:false,,0.916
+1049,2:true,1:false,+,0.911
+1050,1:false,1:false,,0.996
+1051,1:false,1:false,,0.943
+1052,1:false,1:false,,0.906
+1053,1:false,1:false,,0.99
+1054,1:false,1:false,,0.833
+1055,1:false,1:false,,0.946
+1056,1:false,1:false,,0.952
+1057,1:false,1:false,,0.953
+1058,1:false,1:false,,0.956
+1059,2:true,1:false,+,0.672
+1060,1:false,1:false,,0.977
+1061,2:true,2:true,,0.769
+1062,1:false,1:false,,0.931
+1063,1:false,1:false,,0.981
+1064,1:false,1:false,,0.799
+1065,1:false,1:false,,0.831
+1066,1:false,1:false,,0.729
+1067,1:false,1:false,,0.978
+1068,1:false,1:false,,0.961
+1069,1:false,1:false,,0.984
+1070,1:false,1:false,,0.987
+1071,1:false,1:false,,0.965
+1072,1:false,1:false,,0.98
+1073,1:false,1:false,,0.945
+1074,1:false,1:false,,0.825
+1075,1:false,1:false,,0.987
+1076,1:false,1:false,,0.828
+1077,1:false,1:false,,0.935
+1078,1:false,1:false,,0.823
+1079,1:false,1:false,,0.918
+1080,1:false,1:false,,0.962
+1081,1:false,1:false,,0.963
+1082,1:false,1:false,,0.919
+1083,1:false,1:false,,0.931
+1084,1:false,1:false,,0.961
+1085,2:true,2:true,,0.913
+1086,1:false,1:false,,0.996
+1087,1:false,1:false,,0.989
+1088,1:false,1:false,,0.982
+1089,1:false,1:false,,0.965
+1090,1:false,1:false,,0.747
+1091,1:false,1:false,,0.898
+1092,2:true,1:false,+,0.591
+1093,1:false,1:false,,0.884
+1094,1:false,1:false,,0.95
+1095,1:false,1:false,,0.943
+1096,2:true,2:true,,0.839
+1097,1:false,1:false,,0.93
+1098,2:true,2:true,,0.936
+1099,1:false,1:false,,0.981
+1100,1:false,1:false,,0.981
+1101,1:false,1:false,,0.931
+1102,1:false,1:false,,0.953
+1103,2:true,2:true,,0.819
+1104,2:true,1:false,+,0.915
+1105,1:false,1:false,,0.852
+1106,1:false,1:false,,0.807
+1107,1:false,1:false,,0.829
+1108,1:false,1:false,,0.976
+1109,2:true,2:true,,0.779
+1110,1:false,1:false,,0.802
+1111,1:false,1:false,,0.964
+1112,1:false,1:false,,0.819
+1113,1:false,1:false,,0.982
+1114,2:true,1:false,+,0.668
+1115,2:true,2:true,,0.852
+1116,1:false,1:false,,0.948
+1117,1:false,1:false,,0.796
+1118,1:false,1:false,,0.667
+1119,1:false,1:false,,0.815
+1120,1:false,1:false,,0.97
+1121,1:false,1:false,,0.976
+1122,1:false,1:false,,0.98
+1123,1:false,1:false,,0.952
+1124,1:false,1:false,,0.817
+1125,2:true,2:true,,0.769
+1126,1:false,1:false,,0.98
+1127,1:false,1:false,,0.992
+1128,1:false,1:false,,0.981
+1129,1:false,1:false,,0.969
+1130,1:false,1:false,,0.947
+1131,1:false,1:false,,0.803
+1132,1:false,1:false,,0.952
+1133,1:false,1:false,,0.896
+1134,1:false,1:false,,0.85
+1135,1:false,1:false,,0.953
+1136,2:true,2:true,,0.902
+1137,1:false,1:false,,0.936
+1138,1:false,1:false,,0.988
+1139,1:false,1:false,,0.956
+1140,1:false,1:false,,0.842
+1141,1:false,1:false,,0.834
+1142,1:false,1:false,,0.983
+1143,2:true,2:true,,0.758
+1144,1:false,1:false,,0.747
+1145,1:false,1:false,,0.936
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 3.02 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1012               88.3843 %
+Incorrectly Classified Instances       133               11.6157 %
+Kappa statistic                          0.6131
+Mean absolute error                      0.1815
+Root mean squared error                  0.2992
+Relative absolute error                 54.1569 %
+Root relative squared error             71.8303 %
+Total Number of Instances             1145     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.979    0.447    0.884      0.979    0.929      0.638    0.902     0.964     false
+                 0.553    0.021    0.881      0.553    0.680      0.638    0.902     0.802     true
+Weighted Avg.    0.884    0.352    0.884      0.884    0.873      0.638    0.902     0.928     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 871  19 |   a = false
+ 114 141 |   b = true
+

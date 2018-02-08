@@ -1,0 +1,38 @@
+//Create Table Query for year 1990.
+
+create table set1
+(
+year varchar(125),
+obstime varchar(125),
+latitude varchar(125),
+longitude varchar(125),
+winddirection varchar(125),
+airtemp varchar(125),
+dewpointtemp varchar(125)
+);
+
+//Create Table Query for year 1990 and 1992.
+
+create table set1
+(
+year varchar(125),
+obstime varchar(125),
+latitude varchar(125),
+longitude varchar(125),
+winddirection varchar(125),
+airtemp varchar(125),
+dewpointtemp varchar(125)
+);
+
+//Create Table Query for year 1990, 1991, 1992 and 1993.
+
+create table set1
+(
+year varchar(125),
+obstime varchar(125),
+latitude varchar(125),
+longitude varchar(125),
+winddirection varchar(125),
+airtemp varchar(125),
+dewpointtemp varchar(125)
+);

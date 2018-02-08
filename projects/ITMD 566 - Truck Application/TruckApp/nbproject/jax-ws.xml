@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="CustomerInfo">
+      <implementation-class>com.truckapp.webservices.CustomerInfo</implementation-class>
+    </service>
+    <service name="TruckInfo">
+      <implementation-class>com.truckapp.webservices.TruckInfo</implementation-class>
+    </service>
+    <service name="TransactionInfo">
+      <implementation-class>com.truckapp.webservices.TransactionInfo</implementation-class>
+    </service>
+    <service name="OrdersInfo">
+      <implementation-class>com.truckapp.webservices.OrdersInfo</implementation-class>
+    </service>
+    <service name="PricingInfo">
+      <implementation-class>com.truckapp.webservices.PricingInfo</implementation-class>
+    </service>
+    <service name="PaymentInfo">
+      <implementation-class>com.truckapp.webservices.PaymentInfo</implementation-class>
+    </service>
+    <service name="LocationInfo">
+      <implementation-class>com.truckapp.webservices.LocationInfo</implementation-class>
+    </service>
+    <service name="InvoiceInfo">
+      <implementation-class>com.truckapp.webservices.InvoiceInfo</implementation-class>
+    </service>
+    <service name="ExpenseInfo">
+      <implementation-class>com.truckapp.webservices.ExpenseInfo</implementation-class>
+    </service>
+    <service name="EmployeeInfo">
+      <implementation-class>com.truckapp.webservices.EmployeeInfo</implementation-class>
+    </service>
+    <service name="TruckAppWebServices">
+      <implementation-class>com.truckapp.webservices.TruckAppWebServices</implementation-class>
+    </service>
+  </services>
+  <clients>
+    <client name="TruckAppWebServices">
+      <wsdl-url>http://localhost:8080/TruckApp/TruckAppWebServices?WSDL</wsdl-url>
+      <local-wsdl-file>localhost_8080/TruckApp/TruckAppWebServices.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">com.truckapp.webservices.model</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>fork</wsimport-option-name>
+          <wsimport-option-value>false</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>wsdlLocation</wsimport-option-name>
+          <wsimport-option-value>http://localhost:8080/TruckApp/TruckAppWebServices?WSDL</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>package</wsimport-option-name>
+          <wsimport-option-value>com.truckapp.webservices.model</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </client>
+  </clients>
+</jax-ws>

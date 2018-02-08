@@ -1,0 +1,161 @@
+package com.controller;
+
+import com.model.Connect_with_database;
+import com.model.Current_user_detail;
+import com.model.Display_message;
+import java.io.IOException;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.layout.GridPane;
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ResourceBundle;
+import javafx.fxml.Initializable;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+
+public class LoginController implements Initializable {
+
+    @FXML
+    private GridPane gridPane;
+    @FXML
+    private PasswordField tfPassword;
+    @FXML
+    private Button btLogin;
+    @FXML
+    private Button btForgot;
+    @FXML
+    private TextField tfUser;
+    @FXML
+    private ComboBox cbUsertype;
+    private boolean checkAccount = false;
+    private PreparedStatement ps;
+    private Statement st;
+    private final String driver = "com.mysql.jdbc.Driver";
+    private ResultSet rs;
+    
+    List<String> usertype=new ArrayList<>();
+    
+    @FXML
+    private void btLoginAction(ActionEvent e) throws IOException {
+        Connection con=null;
+        try {
+            con=Connect_with_database.createConnection();
+            String sql = "SELECT * FROM fp.pchand_user WHERE username = ? AND password = ? and role='"+cbUsertype.getSelectionModel().getSelectedItem()+"'";
+            String pass = tfPassword.getText();         
+            ps = con.prepareStatement(sql);
+            ps.setString(1,tfUser.getText());
+            ps.setString(2, pass);
+            rs = ps.executeQuery();
+            if (rs.next()) 
+            {
+                //System.out.println("Logged in...");
+                checkAccount = true;
+                int value=rs.getInt(1);
+                Current_user_detail.current_user_id=value;
+                Current_user_detail.current_user_role=rs.getString(3);
+                ps.close();
+                ps = null;
+                
+            } else {
+                Display_message.showError("Error","Check your username or password!");
+            }
+        } catch (SQLException ex) {
+            /*
+            Notifications.create().title("Login Error")
+                    .text("Database is in use by another instance")
+                    .showError();
+             */
+        	ex.printStackTrace();
+            System.out.println("Database is in use by another instance");
+        }
+        finally
+        {
+        Connect_with_database.closeConnection(con);
+        }
+
+        if (checkAccount) 
+        {
+            //String update = "Update APP.Account Set isActive = true Where username = ?";
+            try {
+               /*
+                ps = con.prepareStatement(update);
+                ps.setString(1, tfUser.getText());
+                ps.executeUpdate();
+               */
+                ((Node) (e.getSource())).getScene().getWindow().hide();
+                Parent parent = FXMLLoader.load(getClass().getResource("/com/view/Main.fxml"));
+                Stage stage = new Stage();
+                Scene scene = new Scene(parent);
+                stage.setScene(scene);
+                stage.setTitle("Hospital Management");
+                stage.getIcons().add(new Image("http://icons.iconarchive.com/icons/medicalwp/medical/24/Hospital-red-icon.png"));
+                stage.setResizable(false);
+                stage.show();
+                
+            }
+            /*catch (SQLException ex) {
+                ex.printStackTrace();
+            }*/
+            catch(Exception ee)
+            {
+                ee.printStackTrace();
+            }
+        }
+    }
+
+    @FXML
+    private void handleBtForgot() {
+        try {
+            // Load the fxml file and create a new stage for the popup dialog.
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/com/view/Dialog/CodeSender.fxml"));
+            AnchorPane page = (AnchorPane) loader.load();
+
+            // Create the dialog Stage.
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Enter your Email");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            dialogStage.showAndWait();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        Platform.runLater(() -> {
+            tfUser.requestFocus();
+        });
+        usertype.add("admin");
+        usertype.add("doctor");
+        usertype.add("patient");
+        cbUsertype.getItems().add("admin");
+        cbUsertype.getItems().add("doctor");
+        cbUsertype.getItems().add("patient");
+        
+        cbUsertype.setValue("admin");
+    }
+
+}
