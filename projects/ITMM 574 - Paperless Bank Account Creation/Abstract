@@ -1,0 +1,26 @@
+The existing system of opening a bank account is a tedious multilevel process which requires human interactions at each level and 
+is time consuming. With time, this may lead to human errors and may result in lower productivity. To save time, we can digitize the 
+complete process of bank account creation using latest biometric technologies. Fingerprint and Iris recognition are some of the most 
+prominent biometric methods which are used in the present-day world for data collection. 
+
+A customer would have given their fingerprint or Iris scan data while generating a Social Security Number (SSN) whose data would be 
+stored and maintained at a unified location. When a customer approaches a bank to open an account, the bank will have to only scan the 
+customer’s Iris or take the fingerprint and send the details to centralized database to get the necessary information about that customer. 
+The data received from the unified database would be locally stored and then displayed to the customer. 
+Upon validation check, only relevant details of the customer will be populated on the online account creation page. The bank will retrieve 
+data from a third-party vendor and may outsource the data management to an external businessperson, but holds the authorization on 
+data security. Since, we are only re-populating an already authorized and validated data again on a different webpage, there is no need 
+to cross verify customer documents again. In this way we can eliminate human errors during data entry, save time at both ends, 
+reduce cost and resource count. In future, if a customer wants to open a different account type, only the type of account must 
+be updated with the bank, which avoids repetitive documentation check.
+
+Keywords: Paperless, Iris recognition, Social Security Number, Fingerprint, Biometrics, Database.
+
+References
+Rakhi C. Motwani, F.C. Harris, Kostas E. Bekris (2010) 7th IEEE
+A Proposed Digital Rights Management System for 3D Graphics Using Biometric Watermarks
+Amit Verma (2013) 
+
+A Multi-Layer Bank Security System
+Kan-Ru Chen, Chia-Te Chou, Sheng-Wen Shih (2007) 
+Feature Selection for Iris Recognition with AdaBoost
